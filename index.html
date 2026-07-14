@@ -266,6 +266,8 @@
 const POSTS = [
   { deck:"story", avatar:"R", uname:"a.reminder.we.all.need", sub:"a story worth sitting with" },
   { deck:"revealed", avatar:"S", uname:"revealed.for.us.too", sub:"the qur'an's stories aren't history — they're mirrors" },
+  { deck:"search", avatar:"F", uname:"where.our.search.begins", sub:"qur'an, sunnah, and the humans in between" },
+  { deck:"whose", avatar:"W", uname:"whose.story.reaches.us", sub:"a principle, not an accusation" },
   { deck:"letter", avatar:"L", uname:"a.letter.to.bukhari", sub:"written with respect, not blame" },
   { deck:"characters", avatar:"R2", uname:"what.the.record.shows", sub:"not hadith — history" },
   { deck:"umayyads", avatar:"D", uname:"the.dynasty.after.karbala", sub:"ninety years, one family" },
@@ -322,6 +324,58 @@ const DATA = {
             "Allah did not preserve these stories simply so that we would know what happened to those who came before us. He preserved them because every generation will face its own tests, its own uncertainties and its own search for the truth. The pages that follow are simply an invitation to continue that journey with sincerity, humility and an open heart."],
       source:{ label:"Qur'an 12:111", url:"https://quran.com/12/111" } }
   ],
+  search: [
+    { title:"Where Should Our Search Begin?",
+      body:["Every sincere search for the truth needs a firm foundation.",
+            "For a Muslim, that foundation begins with Allah and His revelation. The Qur'an is the word of Allah, preserved by Him, and it remains the primary source against which everything else is understood."] },
+    { title:"Follow the Messenger",
+      body:["Allah also commanded us to follow His Messenger.",
+            "The Prophet ﷺ was sent not only to recite the Qur'an but to explain it, live it and teach it. His guidance is an essential part of Islam, and no sincere Muslim wishes to separate the Qur'an from the example of the Prophet ﷺ."],
+      source:{ label:"Qur'an 59:7", url:"https://quran.com/59/7" } },
+    { title:"The Real Question",
+      body:["The question, however, is not whether the Prophet ﷺ should be followed.",
+            "The question is how Muslims, generations after his passing, came to identify which reports truly preserve his words, actions and approvals. That was a challenge faced by the scholars who dedicated their lives to preserving this trust."] },
+    { title:"Their Efforts Deserve Gratitude",
+      body:["They travelled across lands, compared narrations, examined chains of transmission and studied the lives of thousands of narrators with remarkable dedication.",
+            "Few fields of history have been studied with such care and commitment."] },
+    { title:"Yet It Was Human Judgment",
+      body:["Determining whether a narrator was reliable, whether a report was accurately preserved and whether one narration was stronger than another involved careful evaluation.",
+            "It was a sincere and rigorous effort, but it remained the work of human beings rather than divine revelation."] },
+    { title:"An Important Distinction",
+      body:["The words of the Prophet ﷺ are sacred. Our confidence that a particular narration accurately preserves those words comes through the work of scholars who applied principles of authentication to the best of their knowledge and ability."] },
+    { title:"Not an Act of Disrespect",
+      body:["If the process of authentication was carried out by sincere scholars using human judgment, then understanding that process more deeply is not an act of disrespect.",
+            "It is simply a continuation of the same search for truth that has always existed within the Islamic tradition. The next chapter begins by exploring that journey with appreciation, respect and an open mind."],
+      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Hadith_studies" } }
+  ],
+  whose: [
+    { title:"Whose Story Reaches Us?",
+      body:["Every generation inherits history through the people who preserve it.",
+            "Some events are taught in every classroom, repeated from every pulpit and printed in every book. Others are mentioned only briefly, discussed by specialists or gradually forgotten. That is true of every civilisation, and Muslim history is no exception."],
+      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Historiography" } },
+    { title:"A Pattern Across Every Empire",
+      body:["Throughout history, those who held influence often shaped the stories that future generations would hear.",
+            "Kings commissioned chronicles. Empires supported particular scholars. Governments promoted ideas that strengthened unity or reinforced their legitimacy. This is not unique to Islamic history; it is a pattern found across the world."] },
+    { title:"We See It Today, Too",
+      body:["Every day, governments, news organisations, corporations and social media platforms compete to shape public opinion.",
+            "One nation describes itself as defending peace while another experiences the same actions as oppression. The facts on the ground may be the same, yet the stories told about them can be very different."] },
+    { title:"So We Don't Stop at Headlines",
+      body:["That is precisely why thoughtful people do not stop at headlines.",
+            "They ask who recorded an event, when it was recorded, what evidence exists, and whether other voices from the same period tell a different part of the story. Seeking a broader picture is not cynicism; it is careful inquiry."] },
+    { title:"Islamic History Deserves the Same",
+      body:["Rather than beginning with assumptions, we can begin with the earliest available sources, compare different accounts and allow the evidence to speak for itself.",
+            "Respect for our scholars and a willingness to examine history can exist side by side."] },
+    { title:"A Timeless Warning",
+      body:["The Qur'an repeatedly reminds believers to remain alert to truth and falsehood. Among its powerful descriptions are those who claim to be setting things right while, in reality, they spread corruption — yet they fail to recognise it.",
+            { type:"cite", kicker:"Qur'an",
+              text:"And when it is said to them, “Do not spread corruption on the earth,” they say, “We are only peacemakers.” Unquestionably, it is they who are the corrupters, but they do not perceive.",
+              ref:"Qur'an 2:11–12",
+              url:"https://quran.com/2/11-12" },
+            "These verses are a timeless warning to examine claims carefully rather than accepting them simply because they are confidently presented."] },
+    { title:"An Invitation",
+      body:["This project is an invitation to do exactly that.",
+            "Read the earliest sources. Compare different perspectives. Examine the evidence with sincerity and ask Allah for guidance before reaching conclusions."] }
+  ],
   letter: [
     { title:"Hello, Mr. Bukhari",
       body:["We respect you. You gave your life to something great, and we hope Allah rewards you for it.",
@@ -334,10 +388,6 @@ const DATA = {
               ref:"Sahih Muslim 2766a · Book of Repentance",
               url:"https://sunnah.com/muslim:2766a" },
             { type:"reflect", text:"A murderer of 100 was forgiven. Judgment belongs to Allah alone — not to us, and not even to our own deeds." }] },
-    { title:"About That Word — Kufr",
-      body:["From these same teachings — Hanbali thought, later Wahhabism — came a habit of calling other Muslims out. Shia. Qur'anists. Even other Sunnis, over the smallest things. “Kufr,” said easily.",
-            "But the only real certainty is Allah, and His word. Not our verdicts on each other."],
-      source:{ label:"Reference — en.wikipedia.org/Takfir", url:"https://en.wikipedia.org/wiki/Takfir" } },
     { title:"650,000 Narrations. 7,000 Chosen.",
       body:["You examined roughly 650,000 narrations and kept about 7,000. Extraordinary discipline.",
             "But a new Muslim is handed a Qur'an — not your book. Generations have prayed simply by watching others, never reading a hadith directly. We're not rejecting hadith. We're noticing how much rides on one man's judgment."],
@@ -439,7 +489,7 @@ function renderBlock(b){
   if(b.type === 'cite'){
     return `
       <div class="blk-cite">
-        <div class="cite-kicker">Authentic Narration</div>
+        <div class="cite-kicker">${b.kicker || 'Authentic Narration'}</div>
         <p class="cite-text">&ldquo;${b.text}&rdquo;</p>
         <span class="cite-ref">${b.ref}</span>
       </div>`;
@@ -456,7 +506,9 @@ function renderBlock(b){
 
 function findCiteUrl(body){
   const c = body.find(b => b && typeof b === 'object' && b.type === 'cite');
-  return c ? { label:'Verify on Sunnah.com', url:c.url } : null;
+  if(!c) return null;
+  const label = c.url.includes('quran.com') ? 'Read on Quran.com' : 'Verify on Sunnah.com';
+  return { label, url:c.url };
 }
 
 function buildSlideHTML(item){
