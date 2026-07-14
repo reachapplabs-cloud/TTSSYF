@@ -94,6 +94,10 @@
     initial-value: 0deg;
     inherits: false;
   }
+  @keyframes run-light-spin{
+    from{ --run-angle:0deg; }
+    to{ --run-angle:360deg; }
+  }
   .ig-carousel{
     position:relative;
     width:100%;
@@ -105,28 +109,6 @@
     box-shadow:0 8px 20px -12px rgba(20,30,25,0.35);
     container-type: inline-size;
     container-name: card;
-  }
-  .ig-carousel::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    border-radius:14px;
-    padding:2px;
-    background:conic-gradient(from var(--run-angle), transparent 0deg, transparent 300deg, var(--gold-500) 330deg, #fff8e4 345deg, var(--gold-500) 360deg);
-    -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    -webkit-mask-composite:xor;
-    mask-composite:exclude;
-    opacity:0;
-    pointer-events:none;
-    z-index:6;
-  }
-  .ig-carousel.run-light::after{
-    opacity:1;
-    animation:run-light-spin 1.3s linear;
-  }
-  @keyframes run-light-spin{
-    from{ --run-angle:0deg; }
-    to{ --run-angle:360deg; }
   }
   .ig-track{
     display:flex;
@@ -194,13 +176,34 @@
   .ig-dots .dot.active{ background:var(--gold-600); width:18px; border-radius:5px; }
 
   .nudge-hint{
-    position:absolute; right:12px; bottom:8px; z-index:4;
-    color:var(--gold-600); font-weight:700; letter-spacing:0.3px;
-    font-size:clamp(0.62rem, 3cqw, 0.72rem);
-    text-shadow:0 1px 3px rgba(255,255,255,0.8), 0 1px 3px rgba(255,255,255,0.8);
+    position:absolute; right:10px; bottom:10px; z-index:4;
+    display:inline-flex; align-items:center;
+    padding:5px 12px;
+    border-radius:20px;
+    background:#fff8ea;
+    border:1px solid var(--gold-600);
+    color:var(--emerald-900); font-weight:700; letter-spacing:0.3px;
+    font-size:clamp(0.6rem, 2.9cqw, 0.7rem);
+    box-shadow:0 2px 6px rgba(0,0,0,0.15);
     opacity:0; transition:opacity .3s; pointer-events:none;
   }
   .nudge-hint.show{ opacity:1; }
+  .nudge-hint::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:20px;
+    padding:1.5px;
+    background:conic-gradient(from var(--run-angle), transparent 0deg, transparent 300deg, var(--gold-500) 330deg, #fff8e4 345deg, var(--gold-500) 360deg);
+    -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;
+    mask-composite:exclude;
+    opacity:0;
+  }
+  .nudge-hint.run-light::after{
+    opacity:1;
+    animation:run-light-spin 1.3s linear;
+  }
 
   /* ---- citation & reflection blocks (inside slides) ---- */
   .blk-cite{
@@ -734,17 +737,14 @@ class Deck{
     if(this.interacted) return;
     this.interacted = true;
     clearInterval(this.nudgeTimer);
-    this.hint.classList.remove('show');
-    this.carousel.classList.remove('run-light');
+    this.hint.classList.remove('show', 'run-light');
   }
   _armNudge(){
     const pulse = () => {
       if(this.interacted) return;
-      this.hint.classList.add('show');
-      this.carousel.classList.add('run-light');
+      this.hint.classList.add('show', 'run-light');
       setTimeout(() => {
-        this.carousel.classList.remove('run-light');
-        this.hint.classList.remove('show');
+        this.hint.classList.remove('show', 'run-light');
       }, 1300);
     };
     setTimeout(pulse, 1600);
