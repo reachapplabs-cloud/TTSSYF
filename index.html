@@ -238,31 +238,24 @@
     font-size:clamp(0.66rem, 3.75cqw, 0.84rem); line-height:1.38; margin:0;
   }
 
-  /* ---- in-card reference pills (never sit outside the card) ---- */
+  /* ---- in-card reference links: highlighted underline, never a pill ---- */
   .ref-pill{
-    display:inline-flex; align-items:center; gap:4px;
-    font-weight:700; color:var(--emerald-900);
-    text-decoration:none; border:1px solid var(--gold-600);
-    border-radius:14px; max-width:100%;
-    line-height:1.25;
-  }
-  .ref-pill span{ white-space:normal; }
-  .ref-pill svg{ width:10px; height:10px; flex-shrink:0; align-self:flex-start; margin-top:0.2em; }
-  .ref-pill:active{ transform:scale(0.97); }
-  .cite-ref-link{
-    margin-top:1.6cqw;
-    font-size:clamp(0.54rem, 2.6cqw, 0.62rem);
+    color:var(--emerald-900);
+    font-weight:700;
+    text-decoration:underline;
+    text-decoration-color:var(--gold-600);
+    text-decoration-thickness:1.5px;
+    text-underline-offset:2px;
     background:#ffffff;
-    padding:0.9cqw 2.4cqw;
+    padding:0.05em 0.3em;
+    border-radius:3px;
+    box-decoration-break:clone;
+    -webkit-box-decoration-break:clone;
   }
-  .slide-source-pill{
-    margin-top:1.8cqw;
-    font-size:clamp(0.56rem, 2.7cqw, 0.66rem);
-    background:#fff8ea;
-    padding:1cqw 2.6cqw;
-    align-self:flex-start;
-    flex-shrink:0;
-  }
+  .cite-ref-wrap{ margin-top:1.6cqw; }
+  .cite-ref-link{ font-size:clamp(0.54rem, 2.6cqw, 0.62rem); }
+  .source-pill-wrap{ margin-top:1.8cqw; flex-shrink:0; }
+  .slide-source-pill{ font-size:clamp(0.56rem, 2.7cqw, 0.66rem); }
 
   footer{
     text-align:center; color:#6b6355; font-size:0.75rem; padding:22px 10px 0;
@@ -300,7 +293,7 @@ const DATA = {
   story: [
     { title:"A Reminder We All Need",
       body:["There are some stories that remain in the heart for a lifetime.",
-            "The story of Sarah, the wife of Prophet Ibrahim, is one of them. It reminds us that faith is often tested when every worldly door appears to have closed. In those moments, when every reason to hope seems to disappear, the greatest strength a believer can possess is complete trust in Allah."],
+            "The story of Sarah, the wife of Prophet Ibrahim, is one of them. It reminds us that faith is often tested when every worldly door appears to have closed. It is in those moments, when we can no longer rely on our own abilities or the help of others, that complete trust in Allah becomes a believer's greatest source of strength."],
       source:{ label:"Sahih al-Bukhari 3358", url:"https://sunnah.com/bukhari:3358" } },
     { title:"No Way Out",
       body:["Sarah was taken before a powerful ruler who intended to violate her dignity.",
@@ -615,10 +608,7 @@ function renderBlock(b){
       <div class="blk-cite">
         <div class="cite-kicker">${b.kicker || 'Authentic Narration'}</div>
         <p class="cite-text">&ldquo;${b.text}&rdquo;</p>
-        <a class="ref-pill cite-ref-link" href="${b.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
-          ${LINK_ICON}
-          <span>See ${shortRef} on ${domain}</span>
-        </a>
+        <div class="cite-ref-wrap"><a class="ref-pill cite-ref-link" href="${b.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">See ${shortRef} on ${domain}</a></div>
       </div>`;
   }
   if(b.type === 'reflect'){
@@ -637,7 +627,7 @@ function buildSlideHTML(item){
   let sourcePill = '';
   if(!hasCite && item.source){
     const domain = domainLabel(item.source.url);
-    sourcePill = `<a class="ref-pill slide-source-pill" href="${item.source.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${LINK_ICON}<span>See ${item.source.label} on ${domain}</span></a>`;
+    sourcePill = `<div class="source-pill-wrap"><a class="ref-pill slide-source-pill" href="${item.source.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">See ${item.source.label} on ${domain}</a></div>`;
   }
   return `
     <div class="ig-slide-inner">
@@ -646,8 +636,6 @@ function buildSlideHTML(item){
       ${sourcePill}
     </div>`;
 }
-
-const LINK_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>`;
 
 function renderPost(post){
   return `
