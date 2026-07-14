@@ -14,9 +14,11 @@
     --gold-600:#b8933f;
     --cream:#faf6ee;
     --cream-2:#f3ede0;
+    --card-bg:#fffdf8;
     --ink:#1c211f;
     --ink-soft:#5b6560;
     --line:#e7e2d4;
+    --ig-gradient: linear-gradient(45deg, #FEDA75 0%, #FA7E1E 25%, #D62976 50%, #962FBF 75%, #4F5BD5 100%);
     font-size:16px;
   }
   *{box-sizing:border-box;}
@@ -43,7 +45,7 @@
   .app-header{
     display:flex;
     align-items:center;
-    justify-content:space-between;
+    justify-content:center;
     padding:14px 16px 12px;
     border-bottom:1px solid var(--line);
     position:sticky; top:0; background:#fff; z-index:5;
@@ -58,8 +60,6 @@
     background-clip:text;
     color:transparent;
   }
-  .app-header .icons{ display:flex; gap:16px; color:var(--ink); }
-  .app-header svg{ width:22px; height:22px; }
 
   .feed{ padding-bottom:12px; }
 
@@ -73,7 +73,7 @@
   .avatar{
     width:38px; height:38px; border-radius:50%;
     padding:2px;
-    background:conic-gradient(from 210deg, var(--gold-500), var(--emerald-800), var(--gold-500));
+    background:var(--ig-gradient);
     flex-shrink:0;
   }
   .avatar span{
@@ -86,9 +86,8 @@
   .post-head .who{ line-height:1.15; min-width:0; }
   .post-head .uname{ font-weight:600; font-size:0.92rem; }
   .post-head .sub{ font-size:0.78rem; color:var(--ink-soft); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-  .post-head .dots{ margin-left:auto; color:var(--ink-soft); font-size:1.3rem; padding:4px; }
 
-  /* ---- Instagram-style carousel ---- */
+  /* ---- carousel (native scroll-snap: fixes touch drag + backward-swipe bugs) ---- */
   .deck-wrap{ padding:0 14px; }
   .ig-carousel{
     position:relative;
@@ -96,124 +95,140 @@
     aspect-ratio: 4/5;
     border-radius:14px;
     overflow:hidden;
-    background:var(--emerald-950);
-    touch-action:pan-y;
+    background:var(--card-bg);
+    border:1px solid var(--line);
+    box-shadow:0 8px 20px -12px rgba(20,30,25,0.35);
   }
   .ig-track{
     display:flex;
     height:100%;
     width:100%;
-    transform:translateX(0);
-    transition:transform .32s cubic-bezier(.22,.8,.25,1);
-    will-change:transform;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    gap:10px;
+    padding:0 6%;
   }
-  .ig-track.dragging{ transition:none; }
+  .ig-track::-webkit-scrollbar{ display:none; }
   .ig-slide{
-    flex:0 0 100%;
+    flex:0 0 88%;
     height:100%;
     position:relative;
-    overflow:hidden;
+    scroll-snap-align:center;
+    scroll-snap-stop:always;
+    opacity:0.5;
+    transform:scale(0.94);
+    transition:opacity .25s, transform .25s;
   }
+  .ig-slide.is-active{ opacity:1; transform:scale(1); }
+  @keyframes nudge-shimmy{
+    0%,100%{ transform:scale(1) translateX(0); }
+    50%{ transform:scale(1) translateX(-14px); }
+  }
+  .ig-slide.is-active.nudging{ animation:nudge-shimmy 0.6s ease-in-out; }
   .ig-slide-inner{
     position:absolute; inset:0;
-    background:linear-gradient(155deg,var(--emerald-900),var(--emerald-950) 60%);
-    color:var(--cream);
-    padding:24px 20px 18px;
+    background:var(--card-bg);
+    border-radius:12px;
+    color:var(--ink);
+    padding:22px 18px 16px;
     display:flex; flex-direction:column;
-  }
-  .ig-slide-inner::before{
-    content:"";
-    position:absolute; inset:0;
-    background-image:
-      radial-gradient(circle at 15% 12%, rgba(224,194,107,0.16), transparent 42%),
-      radial-gradient(circle at 88% 92%, rgba(224,194,107,0.12), transparent 45%);
-    pointer-events:none;
-  }
-  .slide-kicker{
-    font-size:0.68rem; letter-spacing:1.5px; text-transform:uppercase;
-    color:var(--gold-400); font-weight:700; position:relative;
   }
   .slide-title{
     font-family:Georgia,"Times New Roman",serif;
-    font-size:1.4rem; line-height:1.24; margin:9px 0 10px;
+    color:var(--emerald-900);
+    font-size:1.32rem; line-height:1.24; margin:0 0 10px;
     position:relative;
   }
   .slide-body{
-    font-size:0.92rem; line-height:1.5; color:#eef4ef;
+    font-size:0.92rem; line-height:1.52; color:#333b36;
     position:relative;
     overflow-y:auto;
     flex:1;
     min-height:0;
-    padding-right:2px;
+    padding-right:6px;
+    scrollbar-width:thin;
+    scrollbar-color: var(--gold-500) transparent;
   }
+  .slide-body::-webkit-scrollbar{ width:4px; }
+  .slide-body::-webkit-scrollbar-track{ background:transparent; }
+  .slide-body::-webkit-scrollbar-thumb{ background:var(--gold-500); border-radius:2px; }
   .slide-body p{ margin:0 0 9px; }
   .slide-body p:last-child{ margin-bottom:0; }
 
-  .slide-fade{
-    position:absolute; left:0; right:0; bottom:0; height:28px;
-    background:linear-gradient(to bottom, rgba(10,46,36,0), rgba(9,38,30,0.9));
+  .more-hint{
+    position:absolute; right:14px; bottom:10px;
+    display:none; align-items:center; gap:3px;
+    font-size:0.65rem; font-weight:700; color:var(--gold-600);
+    background:rgba(255,255,255,0.85); padding:3px 8px; border-radius:10px;
     pointer-events:none; z-index:2;
+    animation: bob 1.6s ease-in-out infinite;
   }
+  .more-hint.show{ display:inline-flex; }
+  @keyframes bob{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(3px);} }
 
   .ig-badge{
     position:absolute; top:10px; right:10px;
-    background:rgba(0,0,0,0.5); color:#fff; font-size:0.68rem; font-weight:700;
-    padding:3px 9px; border-radius:20px; z-index:3; letter-spacing:0.3px;
+    background:var(--emerald-900); color:var(--cream); font-size:0.74rem; font-weight:800;
+    padding:4px 11px; border-radius:20px; z-index:3; letter-spacing:0.3px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.25);
   }
   .ig-dots{
-    position:absolute; bottom:10px; left:0; right:0;
-    display:flex; justify-content:center; gap:5px; z-index:3;
+    display:flex; justify-content:center; gap:6px; padding:10px 0 2px;
   }
-  .ig-dots .dot{ width:5px; height:5px; border-radius:50%; background:rgba(255,255,255,0.4); transition:all .2s; }
-  .ig-dots .dot.active{ background:#fff; width:6px; height:6px; }
-
+  .ig-dots .dot{
+    width:7px; height:7px; border-radius:50%;
+    background:#ddd6c4; border:none; cursor:pointer; padding:0;
+    transition:all .2s;
+  }
+  .ig-dots .dot.active{ background:var(--gold-600); width:18px; border-radius:5px; }
 
   .nudge-hint{
-    position:absolute; left:50%; bottom:22px; transform:translateX(-50%);
-    background:rgba(10,20,16,0.6); color:#fff; font-size:0.72rem;
-    padding:5px 11px; border-radius:20px; z-index:4;
+    position:absolute; left:50%; top:10px; transform:translateX(-50%);
+    background:rgba(10,20,16,0.72); color:#fff; font-size:0.7rem;
+    padding:4px 10px; border-radius:20px; z-index:4;
     opacity:0; transition:opacity .3s; pointer-events:none;
   }
   .nudge-hint.show{ opacity:1; }
 
   /* ---- citation & reflection blocks (inside slides) ---- */
   .blk-cite{
-    background:var(--cream);
+    background:#f6f1e4;
     color:var(--ink);
-    border-radius:12px;
-    padding:12px 14px;
-    margin:6px 0 12px;
+    border-radius:10px;
+    padding:11px 13px;
+    margin:6px 0 10px;
     border-left:3px solid var(--gold-500);
-    box-shadow:0 4px 12px -6px rgba(0,0,0,0.3);
   }
   .blk-cite .cite-kicker{
-    font-size:0.6rem; letter-spacing:1.3px; text-transform:uppercase;
-    color:#93897a; font-weight:700; margin-bottom:6px;
+    font-size:0.58rem; letter-spacing:1.3px; text-transform:uppercase;
+    color:#93897a; font-weight:700; margin-bottom:5px;
   }
   .blk-cite .cite-text{
     font-family:Georgia,"Times New Roman",serif; font-style:italic;
-    font-size:0.87rem; line-height:1.46; color:#242a26; margin:0;
+    font-size:0.86rem; line-height:1.44; color:#242a26; margin:0;
   }
   .blk-cite .cite-ref{
-    display:block; margin-top:8px;
-    font-size:0.64rem; letter-spacing:0.4px; text-transform:uppercase;
+    display:block; margin-top:7px;
+    font-size:0.62rem; letter-spacing:0.4px; text-transform:uppercase;
     color:#93897a; font-weight:700;
   }
   .blk-reflect{
-    background:rgba(0,0,0,0.2);
-    border:1px solid rgba(224,194,107,0.4);
+    background:var(--emerald-900);
     border-left:3px solid var(--gold-500);
-    border-radius:12px;
-    padding:12px 14px;
-    margin:6px 0 12px;
+    border-radius:10px;
+    padding:11px 13px;
+    margin:6px 0 10px;
   }
   .blk-reflect .refl-kicker{
     font-family:Georgia,serif; font-style:italic; color:var(--gold-400);
-    font-size:0.76rem; margin-bottom:4px; display:flex; align-items:center; gap:6px;
+    font-size:0.74rem; margin-bottom:4px; display:flex; align-items:center; gap:6px;
   }
   .blk-reflect .refl-text{
     font-family:Georgia,serif; font-style:italic; color:#f2ede0;
-    font-size:0.85rem; line-height:1.46; margin:0;
+    font-size:0.84rem; line-height:1.44; margin:0;
   }
 
   /* ---- reference row (replaces like/comment/share) ---- */
@@ -229,10 +244,6 @@
   .ref-link svg{ width:13px; height:13px; flex-shrink:0; }
   .ref-link:active{ transform:scale(0.97); }
 
-  .post-caption{ padding:8px 14px 4px; font-size:0.88rem; line-height:1.4; }
-  .post-caption b{ font-weight:600; }
-  .post-caption .cap-title{ color:var(--ink-soft); }
-
   footer{
     text-align:center; color:#6b6355; font-size:0.75rem; padding:22px 10px 0;
     max-width:420px;
@@ -244,10 +255,6 @@
 <div class="phone">
   <div class="app-header">
     <div class="logo">reflections</div>
-    <div class="icons">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>
-    </div>
   </div>
 
   <div class="feed" id="feed"></div>
@@ -257,143 +264,170 @@
 
 <script>
 const POSTS = [
-  { deck:"story", avatar:"R", uname:"a.reminder.we.all.need", sub:"a story worth sitting with", caption:"A reminder we all need ✨" },
-  { deck:"letter", avatar:"L", uname:"a.letter.to.bukhari", sub:"written with respect, not blame", caption:"Hello, Mr. Bukhari 📜" },
-  { deck:"characters", avatar:"R2", uname:"what.the.record.shows", sub:"not hadith — history", caption:"Let's look at the people 🕊️" },
-  { deck:"umayyads", avatar:"D", uname:"the.dynasty.after.karbala", sub:"ninety years, one family", caption:"The family history keeps circling back to 🕌" },
-  { deck:"mahdi", avatar:"A2", uname:"the.awaited.justice", sub:"twelve imams, one still to come", caption:"Twelve, and the one still to come ⭐" }
+  { deck:"story", avatar:"R", uname:"a.reminder.we.all.need", sub:"a story worth sitting with" },
+  { deck:"revealed", avatar:"S", uname:"revealed.for.us.too", sub:"the qur'an's stories aren't history — they're mirrors" },
+  { deck:"letter", avatar:"L", uname:"a.letter.to.bukhari", sub:"written with respect, not blame" },
+  { deck:"characters", avatar:"R2", uname:"what.the.record.shows", sub:"not hadith — history" },
+  { deck:"umayyads", avatar:"D", uname:"the.dynasty.after.karbala", sub:"ninety years, one family" },
+  { deck:"mahdi", avatar:"A2", uname:"the.awaited.justice", sub:"twelve imams, one still to come" }
 ];
 
 const DATA = {
   story: [
-    { kicker:"1 / 6", title:"A Reminder We All Need",
+    { title:"A Reminder We All Need",
       body:["There are some stories that remain in the heart for a lifetime.",
             "The story of Sarah, the wife of Prophet Ibrahim, is one of them. It reminds us that faith is often tested when every worldly door appears to have closed. In those moments, when every reason to hope seems to disappear, the greatest strength a believer can possess is complete trust in Allah."],
       source:{ label:"Sahih al-Bukhari 3358", url:"https://sunnah.com/bukhari:3358" } },
-    { kicker:"2 / 6", title:"No Way Out",
+    { title:"No Way Out",
       body:["Sarah was taken before a powerful ruler who intended to violate her dignity.",
             "For a moment, imagine standing in her place. There is no family waiting outside, no friend who can intervene, no authority willing to protect you, and no way to simply walk away. Every means that people normally rely upon has disappeared, leaving only one question: Where will your heart turn?"] },
-    { kicker:"3 / 6", title:"A Different Form, The Same Test",
+    { title:"A Different Form, The Same Test",
       body:["Every one of us faces moments like these, even if they take a different form.",
             "A serious illness. The loss of someone we love. A financial hardship. A betrayal we never expected. A future that suddenly feels uncertain.",
             "There comes a point in life when we realise that no amount of planning, influence or effort can change what stands before us."] },
-    { kicker:"4 / 6", title:"Trust, Completely",
+    { title:"Trust, Completely",
       body:["Sarah placed her trust entirely in Allah.",
             "When every human solution had come to an end, she knew that Allah's help was not limited by the circumstances around her. The narration tells us that Allah protected her from the ruler and returned her safely, leaving behind a timeless lesson for every believer."],
       source:{ label:"Sahih al-Bukhari 3358", url:"https://sunnah.com/bukhari:3358" } },
-    { kicker:"5 / 6", title:"Before Islam Had a Name",
+    { title:"Before Islam Had a Name",
       body:["There is another beautiful reminder hidden within this story.",
             "Sarah lived centuries before the Qur'an was revealed and long before Muslims came to be identified by different schools of thought. Yet her life reflected the very meaning of Islam: submitting oneself completely to Allah and placing one's trust in Him above all else."] },
-    { kicker:"6 / 6", title:"Before We Go Any Further",
+    { title:"Before We Go Any Further",
       body:["Perhaps that is why this story deserves to be remembered before every discussion about history or differences among Muslims.",
             "Before we ask who was right and who was wrong, it is worth remembering what lies at the very foundation of our faith. Islam begins with a heart that sincerely submits to Allah. Everything else is built upon that foundation."] }
   ],
+  revealed: [
+    { title:"The Stories Were Revealed for Us Too",
+      body:["The stories of the Qur'an were never meant to remain in the past.",
+            "They were revealed so that every believer, in every generation, could find themselves within them. Although our lives may look different from those of the prophets and the righteous, the tests of faith, trust and standing for what is right remain remarkably familiar."],
+      source:{ label:"Qur'an 12:111", url:"https://quran.com/12/111" } },
+    { title:"Knowledge Isn't the Same as Submission",
+      body:["The story of Adam reminds us that even those who know the truth can choose pride over humility.",
+            "Iblis was not lacking in knowledge, yet when Allah's command became clear, arrogance prevented him from accepting it. From the very beginning of humanity, we are shown that every believer will face moments where the heart must choose between submitting to Allah and following its own desires."],
+      source:{ label:"Qur'an 7:11-12", url:"https://quran.com/7/11-12" } },
+    { title:"The Same Question, Every Time",
+      body:["The stories of Nuh, Ibrahim and Musa carry the same message.",
+            "Nuh continued to call his people despite years of rejection. Ibrahim stood against beliefs that had been accepted for generations. Musa stood before Fir'awn with nothing but the certainty that Allah would never abandon him. Their circumstances were different, but each was tested by the same question: Will you stand by the truth when it is not the easy path?"] },
+    { title:"Human Nature Hasn't Changed",
+      body:["The life of Prophet Muhammad ﷺ completes that same picture.",
+            "He was mocked, opposed and persecuted by people who knew him better than anyone else. Some accepted the truth the moment they recognised it. Others rejected it because accepting it meant letting go of status, comfort or long-held beliefs. Human nature has changed very little since then."] },
+    { title:"Faith Is More Than Belief",
+      body:["These stories gently remind us that faith is more than belief.",
+            "It is the willingness to recognise the truth, to remain patient during hardship and to stand for what is right even when it demands sacrifice. That lesson has never belonged to one generation alone; it belongs to every believer who seeks Allah with sincerity."] },
+    { title:"More Than Admiration",
+      body:["That is why these stories deserve more than admiration.",
+            "They invite us to pause and reflect whenever we face uncertainty in our own lives. Before asking what others should have done, they encourage us to ask whether we are prepared to recognise the truth, accept it with humility and remain steadfast when it asks something difficult of us."] },
+    { title:"An Invitation, Not Just a History",
+      body:["Perhaps that is the greatest lesson shared by every story in the Qur'an.",
+            "Allah did not preserve these stories simply so that we would know what happened to those who came before us. He preserved them because every generation will face its own tests, its own uncertainties and its own search for the truth. The pages that follow are simply an invitation to continue that journey with sincerity, humility and an open heart."],
+      source:{ label:"Qur'an 12:111", url:"https://quran.com/12/111" } }
+  ],
   letter: [
-    { kicker:"1 / 6", title:"Hello, Mr. Bukhari",
+    { title:"Hello, Mr. Bukhari",
       body:["We respect you. You gave your life to something great, and we hope Allah rewards you for it.",
             "We're not here to blame you — or anyone. Only Allah knows what's in a heart. This is just an honest conversation."],
       source:{ label:"Sahih al-Bukhari — the collection", url:"https://sunnah.com/bukhari" } },
-    { kicker:"2 / 6", title:"The Man Who Killed 100 People",
+    { title:"The Man Who Killed 100 People",
       body:["He'd killed 99 people. A worshipper told him repentance was impossible — so he killed him too. A scholar told him yes, and sent him toward a righteous village.",
             { type:"cite",
               text:"He set out, but death overtook him on the way. The angels of mercy and punishment disputed over him — and by a hand-span, he was found closer to the righteous land. So he was forgiven.",
               ref:"Sahih Muslim 2766a · Book of Repentance",
               url:"https://sunnah.com/muslim:2766a" },
             { type:"reflect", text:"A murderer of 100 was forgiven. Judgment belongs to Allah alone — not to us, and not even to our own deeds." }] },
-    { kicker:"3 / 6", title:"About That Word — Kufr",
+    { title:"About That Word — Kufr",
       body:["From these same teachings — Hanbali thought, later Wahhabism — came a habit of calling other Muslims out. Shia. Qur'anists. Even other Sunnis, over the smallest things. “Kufr,” said easily.",
             "But the only real certainty is Allah, and His word. Not our verdicts on each other."],
       source:{ label:"Reference — en.wikipedia.org/Takfir", url:"https://en.wikipedia.org/wiki/Takfir" } },
-    { kicker:"4 / 6", title:"650,000 Narrations. 7,000 Chosen.",
+    { title:"650,000 Narrations. 7,000 Chosen.",
       body:["You examined roughly 650,000 narrations and kept about 7,000. Extraordinary discipline.",
             "But a new Muslim is handed a Qur'an — not your book. Generations have prayed simply by watching others, never reading a hadith directly. We're not rejecting hadith. We're noticing how much rides on one man's judgment."],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Sahih_al-Bukhari" } },
-    { kicker:"5 / 6", title:"Let's Look at One",
+    { title:"Let's Look at One",
       body:[{ type:"cite",
               text:"During the pre-Islamic period of ignorance, I saw a she-monkey surrounded by monkeys, all of them stoning it because it had committed illegal intercourse.",
               ref:"Sahih al-Bukhari 3849 · Merits of the Ansar",
               url:"https://sunnah.com/bukhari:3849" },
             "How would anyone know a monkey was married? We're told to use our own reasoning. Here, reasoning says: this doesn't hold up.",
             { type:"reflect", text:"If this can be questioned, was your grading — sahih or not — ever really beyond question? You were brilliant. You were also human." }] },
-    { kicker:"6 / 6", title:"Let's Look at the People",
+    { title:"Let's Look at the People",
       body:["For centuries, your verdicts were treated as untouchable. Now that we agree they can be questioned — could the same bias have shaped who you trusted, and who you didn't?",
             "A narrator's grade was really a verdict on their character. So let's look at the people themselves: Uthman. Muawiya. Yazid. Ibn Umar. Swipe on →"],
       source:{ label:"Sahih Muslim 1855 — on rulers", url:"https://sunnah.com/muslim:1855a" } }
   ],
   characters: [
-    { kicker:"1 / 6", title:"What the Prophet ﷺ Said About Rulers",
+    { title:"What the Prophet ﷺ Said About Rulers",
       body:[{ type:"cite",
               text:"The best of your rulers are those you love and who love you. The worst are those you hate and who hate you, and whom you curse and who curse you.",
               ref:"Sahih Muslim 1855a · Book on Government",
               url:"https://sunnah.com/muslim:1855a" },
             { type:"reflect", text:"Noticing a ruler did wrong isn't an accusation — it's something we were told to expect." }] },
-    { kicker:"2 / 6", title:"Uthman ibn Affan",
+    { title:"Uthman ibn Affan",
       body:["He filled nearly every province with Umayyad relatives — including Marwan, a man the Prophet ﷺ had exiled.",
             "One of his governors was caught leading Fajr prayer drunk. That favoritism is what historians point to as the spark behind his assassination in 656."],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Uthman_ibn_Affan" } },
-    { kicker:"3 / 6", title:"Muawiya ibn Abi Sufyan",
+    { title:"Muawiya ibn Abi Sufyan",
       body:["As governor, he lived like a king — something Umar allowed no one else.",
             "He fought Ali, then broke the shura tradition by naming his own son Yazid as heir. He also made cursing Ali from the pulpit official policy — for the next 60 years."],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Mu%27awiya_I" } },
-    { kicker:"4 / 6", title:"Yazid ibn Muawiya",
+    { title:"Yazid ibn Muawiya",
       body:["He inherited the caliphate — no consultation needed.",
             "In 680, his forces killed Husayn ibn Ali, the Prophet's own grandson, at Karbala. Three years later, his army sacked Madinah itself."],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Yazid_I" } },
-    { kicker:"5 / 6", title:"Abdullah ibn Umar",
+    { title:"Abdullah ibn Umar",
       body:["Umar's son. Deeply pious. One of the most-quoted narrators in hadith.",
             "He also pledged allegiance to whoever held power — including Yazid — to avoid conflict. Wisdom, or comfort chosen over conscience? We leave that to you."],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Abdullah_ibn_Umar" } },
-    { kicker:"6 / 6", title:"So, Where Does That Leave Us?",
+    { title:"So, Where Does That Leave Us?",
       body:["Not blame. Not takfir on anyone — not Bukhari, not Uthman, not anyone. Allah alone is the true Judge.",
             "If the graders were human, and the graded were flawed — the only safe thing left to hold is what saved Sarah: sincere submission to Allah."],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Succession_to_Muhammad" } }
   ],
   umayyads: [
-    { kicker:"1 / 5", title:"90 Years, One Family",
+    { title:"90 Years, One Family",
       body:["One clan ran the Muslim world for nearly a century — 661 to 750 CE. Here's the family, generation by generation."],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Umayyad_Caliphate" } },
-    { kicker:"2 / 5", title:"The Sufyanid Line",
+    { title:"The Sufyanid Line",
       body:["Abu Sufyan fought the Prophet ﷺ for years before submitting at the conquest of Makkah. His son Muawiya founded the dynasty. His grandson Yazid presided over Karbala.",
             "His great-grandson Muawiya II reigned months, then died young — ending the line and igniting a second civil war."],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Mu%27awiya_I" } },
-    { kicker:"3 / 5", title:"Abd al-Malik & His Four Sons",
+    { title:"Abd al-Malik & His Four Sons",
       body:["Marwan I won the civil war that followed. His son Abd al-Malik reunified the empire, and leaned on al-Hajjaj — a governor remembered for brutally crushing revolt.",
             "Four of Abd al-Malik's sons ruled after him, one by one: al-Walid I, Sulayman, Yazid II, and Hisham."],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Abd_al-Malik_ibn_Marwan" } },
-    { kicker:"4 / 5", title:"The Exception: Umar ibn Abd al-Aziz",
+    { title:"The Exception: Umar ibn Abd al-Aziz",
       body:["Between two of those brothers sits Umar II — the Umayyad many Sunni scholars call “the fifth rightly-guided caliph.”",
             { type:"reflect", text:"He ended sixty years of cursing Ali from the pulpit. That it took a “rightly-guided” exception to stop it tells you it was real, official policy — not a footnote." }],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Umar_II" } },
-    { kicker:"5 / 5", title:"The Fall",
+    { title:"The Fall",
       body:["Three caliphs in two years followed Hisham's death — one killed by his own cousins.",
             "Then Marwan II faced a revolutionary army marching out of Khorasan under black banners. It ended at the Battle of the Great Zab, 750 CE. That banner and that province are about to come up again →"],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Abbasid_Revolution" } }
   ],
   mahdi: [
-    { kicker:"1 / 6", title:"The Hadith Both Sides Agree On",
+    { title:"The Hadith Both Sides Agree On",
       body:[{ type:"cite",
               text:"There will be twelve Muslim rulers, all of them from Quraish.",
               ref:"Sahih al-Bukhari 7222 · Book of Judgments",
               url:"https://sunnah.com/bukhari:7222" },
             "Sunni scholars read this as a list of early caliphs. Twelver Shia scholars read it as a precise prophecy of twelve specific Imams. Same words. Very different conclusions."] },
-    { kicker:"2 / 6", title:"The Twelve Imams",
+    { title:"The Twelve Imams",
       body:["Ali. Hasan. Husayn. Zayn al-Abidin. al-Baqir. al-Sadiq. al-Kadhim. al-Rida. al-Jawad. al-Hadi. al-Askari. And twelfth — Muhammad al-Mahdi.",
             "Every one, in Twelver belief, a direct descendant of the Prophet ﷺ through Fatimah and Ali."],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Twelve_Imams" } },
-    { kicker:"3 / 6", title:"The Hidden Twelfth",
+    { title:"The Hidden Twelfth",
       body:["Muhammad al-Mahdi was born around 869 CE. When his father died in 874, he went into hiding — and in this belief, he's been alive, and hidden, ever since."],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Muhammad_al-Mahdi" } },
-    { kicker:"4 / 6", title:"Same Word, Different Shape",
+    { title:"Same Word, Different Shape",
       body:["Sunni tradition also expects a Mahdi — a future, righteous descendant, not yet identified.",
             "Shia belief says we already know exactly who he is: the twelfth Imam, already born, already waiting."],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Mahdi" } },
-    { kicker:"5 / 6", title:"Black Banners From Khorasan",
+    { title:"Black Banners From Khorasan",
       body:[{ type:"cite",
               text:"Then the black banners will come from the east... when you see them, pledge your allegiance, for that is the Mahdi.",
               ref:"Sunan Ibn Majah 4084 · Book of Tribulations",
               url:"https://sunnah.com/ibnmajah:4084" },
             "A related narration names Khorasan specifically — but scholars including Ibn Hajar, Ahmad Shakir, and Al-Albani all graded it weak."] },
-    { kicker:"6 / 6", title:"What Actually Happened",
+    { title:"What Actually Happened",
       body:["In 747 CE, a revolutionary raised black banners in Khorasan — and by 750, that movement had destroyed the Umayyads.",
             { type:"reflect", text:"A weak hadith. A real revolution that used its exact wording. It worked — a dynasty fell. Make of that what you will. Allah alone is the true Judge. May He guide us all." }],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Abbasid_Revolution" } }
@@ -431,7 +465,7 @@ function buildSlideHTML(item){
     <div class="ig-slide-inner">
       <div class="slide-title">${item.title}</div>
       <div class="slide-body">${bodyHtml}</div>
-      <div class="slide-fade"></div>
+      <div class="more-hint">more &#8595;</div>
     </div>`;
 }
 
@@ -446,15 +480,14 @@ function renderPost(post){
           <div class="uname">${post.uname}</div>
           <div class="sub">${post.sub}</div>
         </div>
-        <div class="dots">&#8942;</div>
       </header>
       <div class="deck-wrap">
         <div class="ig-carousel">
           <div class="ig-track"></div>
           <div class="ig-badge"></div>
-          <div class="ig-dots"></div>
           <div class="nudge-hint">swipe</div>
         </div>
+        <div class="ig-dots"></div>
       </div>
       <div class="ref-row">
         <a class="ref-link" href="#" target="_blank" rel="noopener noreferrer">
@@ -462,7 +495,6 @@ function renderPost(post){
           <span></span>
         </a>
       </div>
-      <div class="post-caption"><b>${post.uname}</b> <span class="cap-title">${post.caption}</span></div>
     </article>`;
 }
 
@@ -480,26 +512,39 @@ class Deck{
     this.hint = article.querySelector('.nudge-hint');
     this.current = 0;
     this.interacted = false;
-    this.dragging = false;
+    this.scrollRaf = null;
     this.nudgeTimer = null;
     this._build();
-    this._goTo(0, false);
+    this._updateUI(false);
     this._bind();
+    this._checkOverflow();
     this._armNudge();
   }
   _build(){
     this.track.innerHTML = this.items.map(item => `<div class="ig-slide">${buildSlideHTML(item)}</div>`).join('');
-    this.dotsEl.innerHTML = this.items.map((_, i) => `<span class="dot" data-i="${i}"></span>`).join('');
+    this.slideEls = [...this.track.children];
+    this.dotsEl.innerHTML = this.items.map((_, i) => `<button class="dot" data-i="${i}" aria-label="slide ${i+1}"></button>`).join('');
+    this.dotEls = [...this.dotsEl.children];
   }
-  _goTo(i, animate = true){
-    this.current = Math.max(0, Math.min(this.items.length - 1, i));
-    this.track.style.transition = animate ? '' : 'none';
-    this.track.style.transform = `translateX(-${this.current * 100}%)`;
-    if(!animate){
-      void this.track.offsetWidth;
-      this.track.style.transition = '';
-    }
-    [...this.dotsEl.children].forEach((d, idx) => d.classList.toggle('active', idx === this.current));
+  _checkOverflow(){
+    this.slideEls.forEach(slide => {
+      const body = slide.querySelector('.slide-body');
+      const hint = slide.querySelector('.more-hint');
+      if(body.scrollHeight > body.clientHeight + 4){
+        hint.classList.add('show');
+        body.addEventListener('scroll', () => {
+          if(body.scrollTop + body.clientHeight >= body.scrollHeight - 4){
+            hint.classList.remove('show');
+          } else {
+            hint.classList.add('show');
+          }
+        });
+      }
+    });
+  }
+  _updateUI(animate = true){
+    this.slideEls.forEach((el, idx) => el.classList.toggle('is-active', idx === this.current));
+    this.dotEls.forEach((d, idx) => d.classList.toggle('active', idx === this.current));
     this.badgeEl.textContent = `${this.current + 1}/${this.items.length}`;
     this._updateRef();
   }
@@ -514,36 +559,37 @@ class Deck{
       this.refLink.style.display = 'none';
     }
   }
+  _goTo(i){
+    this.current = Math.max(0, Math.min(this.items.length - 1, i));
+    this.slideEls[this.current].scrollIntoView({ behavior:'smooth', inline:'center', block:'nearest' });
+    this._updateUI();
+  }
+  _closestIndex(){
+    const trackRect = this.track.getBoundingClientRect();
+    const centerX = trackRect.left + trackRect.width / 2;
+    let best = 0, bestDist = Infinity;
+    this.slideEls.forEach((el, i) => {
+      const r = el.getBoundingClientRect();
+      const c = r.left + r.width / 2;
+      const d = Math.abs(c - centerX);
+      if(d < bestDist){ bestDist = d; best = i; }
+    });
+    return best;
+  }
   _bind(){
-    [...this.dotsEl.children].forEach((d, i) => d.addEventListener('click', () => { this._markInteracted(); this._goTo(i); }));
-
-    let startX = 0, width = 0;
-    this.track.addEventListener('pointerdown', (e) => {
-      this._markInteracted();
-      this.dragging = true;
-      startX = e.clientX;
-      width = this.carousel.clientWidth;
-      this.track.classList.add('dragging');
-      this.track.setPointerCapture(e.pointerId);
-    });
-    this.track.addEventListener('pointermove', (e) => {
-      if(!this.dragging) return;
-      const dx = e.clientX - startX;
-      this.track.style.transform = `translateX(calc(-${this.current * 100}% + ${dx}px))`;
-    });
-    const endDrag = (e) => {
-      if(!this.dragging) return;
-      this.dragging = false;
-      this.track.classList.remove('dragging');
-      const dx = e.clientX - startX;
-      if(Math.abs(dx) > width * 0.15){
-        this._goTo(this.current + (dx < 0 ? 1 : -1));
-      } else {
-        this._goTo(this.current);
-      }
-    };
-    this.track.addEventListener('pointerup', endDrag);
-    this.track.addEventListener('pointercancel', endDrag);
+    this.dotEls.forEach((d, i) => d.addEventListener('click', () => { this._markInteracted(); this._goTo(i); }));
+    this.track.addEventListener('pointerdown', () => this._markInteracted(), { passive:true });
+    this.track.addEventListener('scroll', () => {
+      if(this.scrollRaf) return;
+      this.scrollRaf = requestAnimationFrame(() => {
+        this.scrollRaf = null;
+        const idx = this._closestIndex();
+        if(idx !== this.current){
+          this.current = idx;
+          this._updateUI();
+        }
+      });
+    }, { passive:true });
   }
   _markInteracted(){
     if(this.interacted) return;
@@ -554,13 +600,13 @@ class Deck{
   _armNudge(){
     const pulse = () => {
       if(this.interacted) return;
-      const base = `translateX(-${this.current * 100}%)`;
-      this.track.style.transform = `${base} translateX(-16px)`;
+      const activeEl = this.slideEls[this.current];
       this.hint.classList.add('show');
+      activeEl.classList.add('nudging');
       setTimeout(() => {
-        this.track.style.transform = base;
-        setTimeout(() => this.hint.classList.remove('show'), 500);
-      }, 260);
+        activeEl.classList.remove('nudging');
+        this.hint.classList.remove('show');
+      }, 650);
     };
     setTimeout(pulse, 1600);
     this.nudgeTimer = setInterval(pulse, 4500);
