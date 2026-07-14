@@ -98,6 +98,8 @@
     background:var(--card-bg);
     border:1px solid var(--line);
     box-shadow:0 8px 20px -12px rgba(20,30,25,0.35);
+    container-type: inline-size;
+    container-name: card;
   }
   .ig-track{
     display:flex;
@@ -133,41 +135,25 @@
     background:var(--card-bg);
     border-radius:12px;
     color:var(--ink);
-    padding:22px 18px 16px;
+    padding:6.2cqw 4.8cqw 4.2cqw;
     display:flex; flex-direction:column;
   }
   .slide-title{
     font-family:Georgia,"Times New Roman",serif;
     color:var(--emerald-900);
-    font-size:1.32rem; line-height:1.24; margin:0 0 10px;
+    font-size:clamp(1rem, 6.4cqw, 1.55rem); line-height:1.22; margin:0 0 2.6cqw;
     position:relative;
+    flex-shrink:0;
   }
   .slide-body{
-    font-size:0.92rem; line-height:1.52; color:#333b36;
+    font-size:clamp(0.72rem, 4.15cqw, 1.02rem); line-height:1.46; color:#333b36;
     position:relative;
-    overflow-y:auto;
+    overflow:hidden;
     flex:1;
     min-height:0;
-    padding-right:6px;
-    scrollbar-width:thin;
-    scrollbar-color: var(--gold-500) transparent;
   }
-  .slide-body::-webkit-scrollbar{ width:4px; }
-  .slide-body::-webkit-scrollbar-track{ background:transparent; }
-  .slide-body::-webkit-scrollbar-thumb{ background:var(--gold-500); border-radius:2px; }
-  .slide-body p{ margin:0 0 9px; }
+  .slide-body p{ margin:0 0 2.4cqw; }
   .slide-body p:last-child{ margin-bottom:0; }
-
-  .more-hint{
-    position:absolute; right:14px; bottom:10px;
-    display:none; align-items:center; gap:3px;
-    font-size:0.65rem; font-weight:700; color:var(--gold-600);
-    background:rgba(255,255,255,0.85); padding:3px 8px; border-radius:10px;
-    pointer-events:none; z-index:2;
-    animation: bob 1.6s ease-in-out infinite;
-  }
-  .more-hint.show{ display:inline-flex; }
-  @keyframes bob{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(3px);} }
 
   .ig-badge{
     position:absolute; top:10px; right:10px;
@@ -197,38 +183,38 @@
   .blk-cite{
     background:#f6f1e4;
     color:var(--ink);
-    border-radius:10px;
-    padding:11px 13px;
-    margin:6px 0 10px;
+    border-radius:9px;
+    padding:3.2cqw 3.6cqw;
+    margin:1.6cqw 0 2.6cqw;
     border-left:3px solid var(--gold-500);
   }
   .blk-cite .cite-kicker{
-    font-size:0.58rem; letter-spacing:1.3px; text-transform:uppercase;
-    color:#93897a; font-weight:700; margin-bottom:5px;
+    font-size:clamp(0.52rem, 2.6cqw, 0.6rem); letter-spacing:1.1px; text-transform:uppercase;
+    color:#93897a; font-weight:700; margin-bottom:1.2cqw;
   }
   .blk-cite .cite-text{
     font-family:Georgia,"Times New Roman",serif; font-style:italic;
-    font-size:0.86rem; line-height:1.44; color:#242a26; margin:0;
+    font-size:clamp(0.68rem, 3.85cqw, 0.86rem); line-height:1.38; color:#242a26; margin:0;
   }
   .blk-cite .cite-ref{
-    display:block; margin-top:7px;
-    font-size:0.62rem; letter-spacing:0.4px; text-transform:uppercase;
+    display:block; margin-top:1.6cqw;
+    font-size:clamp(0.55rem, 2.7cqw, 0.62rem); letter-spacing:0.3px; text-transform:uppercase;
     color:#93897a; font-weight:700;
   }
   .blk-reflect{
     background:var(--emerald-900);
     border-left:3px solid var(--gold-500);
-    border-radius:10px;
-    padding:11px 13px;
-    margin:6px 0 10px;
+    border-radius:9px;
+    padding:3.2cqw 3.6cqw;
+    margin:1.6cqw 0 2.6cqw;
   }
   .blk-reflect .refl-kicker{
     font-family:Georgia,serif; font-style:italic; color:var(--gold-400);
-    font-size:0.74rem; margin-bottom:4px; display:flex; align-items:center; gap:6px;
+    font-size:clamp(0.66rem, 3.4cqw, 0.74rem); margin-bottom:1cqw; display:flex; align-items:center; gap:6px;
   }
   .blk-reflect .refl-text{
     font-family:Georgia,serif; font-style:italic; color:#f2ede0;
-    font-size:0.84rem; line-height:1.44; margin:0;
+    font-size:clamp(0.66rem, 3.75cqw, 0.84rem); line-height:1.38; margin:0;
   }
 
   /* ---- reference row (replaces like/comment/share) ---- */
@@ -368,36 +354,37 @@ const DATA = {
       body:["Rather than beginning with assumptions, we can begin with the earliest available sources, compare different accounts and allow the evidence to speak for itself.",
             "Respect for our scholars and a willingness to examine history can exist side by side."] },
     { title:"A Timeless Warning",
-      body:["The Qur'an repeatedly reminds believers to remain alert to truth and falsehood. Among its powerful descriptions are those who claim to be setting things right while, in reality, they spread corruption — yet they fail to recognise it.",
+      body:["The Qur'an warns believers to stay alert to truth and falsehood — including those who claim to set things right while spreading corruption, without recognising it.",
             { type:"cite", kicker:"Qur'an",
               text:"And when it is said to them, “Do not spread corruption on the earth,” they say, “We are only peacemakers.” Unquestionably, it is they who are the corrupters, but they do not perceive.",
               ref:"Qur'an 2:11–12",
               url:"https://quran.com/2/11-12" },
-            "These verses are a timeless warning to examine claims carefully rather than accepting them simply because they are confidently presented."] },
+            "A timeless warning: examine claims carefully, rather than accept them simply because they're confidently presented."] },
     { title:"He Never Called Himself a Tyrant",
       body:["There is one pattern that appears again and again throughout the Qur'an.",
-            "Those who possessed authority rarely presented themselves as oppressors. They often claimed to be acting for the good of the people, protecting society or preserving what was right.",
-            "Fir'awn did not introduce himself as a tyrant. He portrayed Musa as the danger. Allah tells us that Fir'awn said:",
+            "Those who possessed authority rarely presented themselves as oppressors. They often claimed to be acting for the good of the people.",
+            "Fir'awn did not introduce himself as a tyrant. He portrayed Musa as the danger."] },
+    { title:"Justified by Claiming to Protect",
+      body:["Allah tells us that Fir'awn said:",
             { type:"cite", kicker:"Qur'an",
               text:"Indeed, I fear that he will change your religion or cause corruption to appear throughout the land.",
               ref:"Qur'an 40:26",
               url:"https://quran.com/40/26" },
             "Even one of the greatest oppressors in history justified his actions by claiming to protect the people."] },
     { title:"Power Cannot Change the Truth",
-      body:["That is why the Qur'an repeatedly teaches us not to judge a claim merely by how confidently it is presented or by who presents it.",
+      body:["That is why the Qur'an teaches us not to judge a claim merely by how confidently it is presented, or by who presents it.",
             "Power can shape public opinion. It can influence which voices are amplified and which are forgotten. But power cannot change the truth.",
-            "With that reminder in mind, the next chapter turns to a simple question:",
-            "When the events of early Islamic history were recorded and preserved, whose voices became the loudest, and which voices became quieter over time?"] }
+            "With that in mind, the next chapter asks a simple question: whose voices became loudest as history was recorded — and which quietly faded?"] }
   ],
   intentions: [
     { title:"What Does Allah Look At?",
-      body:["Before we speak about scholars, schools of thought or differences among Muslims, there is a principle that deserves to come first.",
+      body:["Before we speak about scholars or schools of thought, one principle deserves to come first.",
             "The Prophet ﷺ taught:",
             { type:"cite",
               text:"Actions are judged by intentions, and every person will have only what they intended.",
               ref:"Sahih al-Bukhari 1 · Innamal a'mālu bin-niyyāt",
               url:"https://sunnah.com/bukhari:1" },
-            "Two people may perform the very same action, yet stand before Allah very differently. While we see only what is visible, Allah alone knows every intention, every struggle and every sincerity hidden within the heart."] },
+            "Two people can do the same action, yet stand before Allah very differently — we see only what's visible, but Allah knows the intention."] },
     { title:"The Same Man, A Different Lesson",
       body:["The story of the man who had taken many lives carries the same lesson.",
             "After killing ninety-nine people, he sought forgiveness. Misguided by poor advice, he committed yet another murder. Even then, when his heart sincerely turned back to Allah and he set out in search of repentance, Allah accepted his effort and judged him with perfect justice and mercy.",
@@ -418,17 +405,19 @@ const DATA = {
             { type:"cite", kicker:"Qur'an",
               text:"Indeed, my Lord has guided me to a straight path — a correct religion, the way of Ibrahim, inclining to truth...",
               ref:"Qur'an 6:161",
-              url:"https://quran.com/6/161" },
-            { type:"cite", kicker:"Qur'an",
+              url:"https://quran.com/6/161" }] },
+    { title:"A Man of Pure Faith",
+      body:[{ type:"cite", kicker:"Qur'an",
               text:"Ibrahim was neither a Jew nor a Christian. Rather, he was a man of pure faith, a Muslim who submitted himself to Allah.",
               ref:"Qur'an 3:67",
               url:"https://quran.com/3/67" },
-            "Long before today's schools of thought existed, Allah had already shown us what sincere submission looked like."] },
+            "Long before today's schools of thought existed, Allah had already shown what sincere submission looked like."] },
     { title:"Why Ibrahim?",
       body:["Why does Allah honour Ibrahim so often throughout the Qur'an?",
-            "It was not because Ibrahim belonged to a particular school or carried a particular title. Allah honoured him because his heart was completely surrendered to Him.",
-            "Imagine being asked to leave your family in a barren desert with no visible means of survival. Imagine being commanded to sacrifice the son you had prayed for over many years. In every test, Ibrahim placed his trust in Allah above his own understanding, believing that whatever Allah commanded could only be for the ultimate good.",
-            "Perhaps this is why Allah presents Ibrahim as an example for every believer."] },
+            "Not because he belonged to a particular school or carried a particular title. Allah honoured him because his heart was completely surrendered to Him."] },
+    { title:"Trust Above Understanding",
+      body:["Imagine being asked to leave your family in a barren desert with no visible means of survival. Imagine being commanded to sacrifice the son you had prayed for over many years.",
+            "In every test, Ibrahim placed his trust in Allah above his own understanding — believing that whatever Allah commanded could only be for the ultimate good. Perhaps this is why Allah presents him as an example for every believer."] },
     { title:"Where the Search Begins",
       body:["If Allah describes Ibrahim as being upon the straight path because of his sincere submission, then perhaps that is where every Muslim's search should begin.",
             "Our schools of thought can help us learn. Our scholars can help us understand. But none of them replace the standard that Allah Himself has already given us.",
@@ -464,9 +453,9 @@ const DATA = {
       body:["Similarly, a believer asks difficult questions and reflects deeply, not to weaken faith, but to draw closer to the truth and, through it, closer to Allah.",
             "If a question strengthens what we already know, our faith grows stronger. If it uncovers something that deserves closer examination, then seeking clarity is not a sign of doubt — it is a sincere desire to understand Allah's religion as accurately as possible."] },
     { title:"Honouring Their Legacy",
-      body:["The chapters that follow are therefore not an attempt to place ourselves above the scholars who came before us.",
-            "They are an attempt to understand the process they followed, to appreciate the remarkable work they accomplished, and to ask whether any human judgment — however sincere — can be revisited in the light of stronger evidence or a broader historical perspective.",
-            "After all, if the scholars themselves devoted their lives to searching for the truth, then continuing that search with humility may be one of the greatest ways of honouring their legacy."] }
+      body:["The chapters that follow are not an attempt to place ourselves above the scholars who came before us.",
+            "They are an attempt to understand the process they followed, appreciate their remarkable work, and ask whether even sincere human judgment can be revisited given stronger evidence or a broader perspective.",
+            "If the scholars devoted their lives to the truth, continuing that search with humility may be the greatest way of honouring their legacy."] }
   ],
   letter: [
     { title:"Hello, Mr. Bukhari",
@@ -474,23 +463,24 @@ const DATA = {
             "We're not here to blame you — or anyone. Only Allah knows what's in a heart. This is just an honest conversation."],
       source:{ label:"Sahih al-Bukhari — the collection", url:"https://sunnah.com/bukhari" } },
     { title:"The Man Who Killed 100 People",
-      body:["He'd killed 99 people. A worshipper told him repentance was impossible — so he killed him too. A scholar told him yes, and sent him toward a righteous village.",
+      body:["He'd killed 99 people, then a hundred, on bad advice. A scholar told him repentance was still possible, and sent him toward a righteous village.",
             { type:"cite",
               text:"He set out, but death overtook him on the way. The angels of mercy and punishment disputed over him — and by a hand-span, he was found closer to the righteous land. So he was forgiven.",
               ref:"Sahih Muslim 2766a · Book of Repentance",
-              url:"https://sunnah.com/muslim:2766a" },
-            { type:"reflect", text:"A murderer of 100 was forgiven. Judgment belongs to Allah alone — not to us, and not even to our own deeds." }] },
+              url:"https://sunnah.com/muslim:2766a" }] },
+    { title:"What That Story Teaches",
+      body:[{ type:"reflect", text:"A murderer of 100 was forgiven. Judgment belongs to Allah alone — not to us, and not even to our own deeds." }] },
     { title:"650,000 Narrations. 7,000 Chosen.",
       body:["You examined roughly 650,000 narrations and kept about 7,000. Extraordinary discipline.",
             "But a new Muslim is handed a Qur'an — not your book. Generations have prayed simply by watching others, never reading a hadith directly. We're not rejecting hadith. We're noticing how much rides on one man's judgment."],
       source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Sahih_al-Bukhari" } },
     { title:"Let's Look at One",
       body:[{ type:"cite",
-              text:"During the pre-Islamic period of ignorance, I saw a she-monkey surrounded by monkeys, all of them stoning it because it had committed illegal intercourse.",
+              text:"During the days of ignorance, I saw monkeys stoning a she-monkey to death for illegal intercourse.",
               ref:"Sahih al-Bukhari 3849 · Merits of the Ansar",
               url:"https://sunnah.com/bukhari:3849" },
-            "How would anyone know a monkey was married? We're told to use our own reasoning. Here, reasoning says: this doesn't hold up.",
-            { type:"reflect", text:"If this can be questioned, was your grading — sahih or not — ever really beyond question? You were brilliant. You were also human." }] },
+            "How would anyone know a monkey was married? We're told to use our own reasoning — and here, it says this doesn't hold up.",
+            { type:"reflect", text:"If this can be questioned, was your grading ever beyond question? Brilliant, yes. But human too." }] },
     { title:"Let's Look at the People",
       body:["For centuries, your verdicts were treated as untouchable. Now that we agree they can be questioned — could the same bias have shaped who you trusted, and who you didn't?",
             "A narrator's grade was really a verdict on their character. So let's look at the people themselves: Uthman. Muawiya. Yazid. Ibn Umar. Swipe on →"],
@@ -609,7 +599,6 @@ function buildSlideHTML(item){
     <div class="ig-slide-inner">
       <div class="slide-title">${item.title}</div>
       <div class="slide-body">${bodyHtml}</div>
-      <div class="more-hint">more &#8595;</div>
     </div>`;
 }
 
@@ -661,7 +650,6 @@ class Deck{
     this._build();
     this._updateUI(false);
     this._bind();
-    this._checkOverflow();
     this._armNudge();
   }
   _build(){
@@ -669,22 +657,6 @@ class Deck{
     this.slideEls = [...this.track.children];
     this.dotsEl.innerHTML = this.items.map((_, i) => `<button class="dot" data-i="${i}" aria-label="slide ${i+1}"></button>`).join('');
     this.dotEls = [...this.dotsEl.children];
-  }
-  _checkOverflow(){
-    this.slideEls.forEach(slide => {
-      const body = slide.querySelector('.slide-body');
-      const hint = slide.querySelector('.more-hint');
-      if(body.scrollHeight > body.clientHeight + 4){
-        hint.classList.add('show');
-        body.addEventListener('scroll', () => {
-          if(body.scrollTop + body.clientHeight >= body.scrollHeight - 4){
-            hint.classList.remove('show');
-          } else {
-            hint.classList.add('show');
-          }
-        });
-      }
-    });
   }
   _updateUI(animate = true){
     this.slideEls.forEach((el, idx) => el.classList.toggle('is-active', idx === this.current));
