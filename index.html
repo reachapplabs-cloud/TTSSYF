@@ -222,11 +222,6 @@
     font-family:Georgia,"Times New Roman",serif; font-style:italic;
     font-size:clamp(0.68rem, 3.85cqw, 0.86rem); line-height:1.38; color:#242a26; margin:0;
   }
-  .blk-cite .cite-ref{
-    display:block; margin-top:1.6cqw;
-    font-size:clamp(0.55rem, 2.7cqw, 0.62rem); letter-spacing:0.3px; text-transform:uppercase;
-    color:#93897a; font-weight:700;
-  }
   .blk-reflect{
     background:var(--emerald-900);
     border-left:3px solid var(--gold-500);
@@ -243,18 +238,31 @@
     font-size:clamp(0.66rem, 3.75cqw, 0.84rem); line-height:1.38; margin:0;
   }
 
-  /* ---- reference row (replaces like/comment/share) ---- */
-  .ref-row{ padding:11px 14px 2px; }
-  .ref-link{
-    display:inline-flex; align-items:center; gap:7px;
-    font-size:0.78rem; font-weight:700; color:var(--emerald-900);
+  /* ---- in-card reference pills (never sit outside the card) ---- */
+  .ref-pill{
+    display:inline-flex; align-items:center; gap:4px;
+    font-weight:700; color:var(--emerald-900);
     text-decoration:none; border:1px solid var(--gold-600);
-    background:#fff8ea; padding:7px 13px; border-radius:20px;
-    max-width:100%;
+    border-radius:14px; max-width:100%;
+    line-height:1.25;
   }
-  .ref-link span{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-  .ref-link svg{ width:13px; height:13px; flex-shrink:0; }
-  .ref-link:active{ transform:scale(0.97); }
+  .ref-pill span{ white-space:normal; }
+  .ref-pill svg{ width:10px; height:10px; flex-shrink:0; align-self:flex-start; margin-top:0.2em; }
+  .ref-pill:active{ transform:scale(0.97); }
+  .cite-ref-link{
+    margin-top:1.6cqw;
+    font-size:clamp(0.54rem, 2.6cqw, 0.62rem);
+    background:#ffffff;
+    padding:0.9cqw 2.4cqw;
+  }
+  .slide-source-pill{
+    margin-top:1.8cqw;
+    font-size:clamp(0.56rem, 2.7cqw, 0.66rem);
+    background:#fff8ea;
+    padding:1cqw 2.6cqw;
+    align-self:flex-start;
+    flex-shrink:0;
+  }
 
   footer{
     text-align:center; color:#6b6355; font-size:0.75rem; padding:22px 10px 0;
@@ -360,13 +368,13 @@ const DATA = {
     { title:"Not an Act of Disrespect",
       body:["If the process of authentication was carried out by sincere scholars using human judgment, then understanding that process more deeply is not an act of disrespect.",
             "It is simply a continuation of the same search for truth that has always existed within the Islamic tradition. The next chapter begins by exploring that journey with appreciation, respect and an open mind."],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Hadith_studies" } }
+      source:{ label:"Hadith Studies", url:"https://en.wikipedia.org/wiki/Hadith_studies" } }
   ],
   whose: [
     { title:"Whose Story Reaches Us?",
       body:["Every generation inherits history through the people who preserve it.",
             "Some events are taught in every classroom, repeated from every pulpit and printed in every book. Others are mentioned only briefly, discussed by specialists or gradually forgotten. That is true of every civilisation, and Muslim history is no exception."],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Historiography" } },
+      source:{ label:"Historiography", url:"https://en.wikipedia.org/wiki/Historiography" } },
     { title:"A Pattern Across Every Empire",
       body:["Throughout history, those who held influence often shaped the stories that future generations would hear.",
             "Kings commissioned chronicles. Empires supported particular scholars. Governments promoted ideas that strengthened unity or reinforced their legitimacy. This is not unique to Islamic history; it is a pattern found across the world."] },
@@ -380,12 +388,11 @@ const DATA = {
       body:["Rather than beginning with assumptions, we can begin with the earliest available sources, compare different accounts and allow the evidence to speak for itself.",
             "Respect for our scholars and a willingness to examine history can exist side by side."] },
     { title:"A Timeless Warning",
-      body:["The Qur'an warns believers to stay alert to truth and falsehood — including those who claim to set things right while spreading corruption, without recognising it.",
+      body:["The Qur'an warns believers to stay alert to truth and falsehood — including those who claim to set things right while spreading corruption.",
             { type:"cite", kicker:"Qur'an",
               text:"And when it is said to them, “Do not spread corruption on the earth,” they say, “We are only peacemakers.” Unquestionably, it is they who are the corrupters, but they do not perceive.",
               ref:"Qur'an 2:11–12",
-              url:"https://quran.com/2/11-12" },
-            "A timeless warning: examine claims carefully, rather than accept them simply because they're confidently presented."] },
+              url:"https://quran.com/2/11-12" }] },
     { title:"He Never Called Himself a Tyrant",
       body:["There is one pattern that appears again and again throughout the Qur'an.",
             "Those who possessed authority rarely presented themselves as oppressors. They often claimed to be acting for the good of the people.",
@@ -413,8 +420,8 @@ const DATA = {
             "Two people can do the same action, yet stand before Allah very differently — we see only what's visible, but Allah knows the intention."] },
     { title:"The Same Man, A Different Lesson",
       body:["The story of the man who had taken many lives carries the same lesson.",
-            "After killing ninety-nine people, he sought forgiveness. Misguided by poor advice, he committed yet another murder. Even then, when his heart sincerely turned back to Allah and he set out in search of repentance, Allah accepted his effort and judged him with perfect justice and mercy.",
-            "The lesson is profound: no human being could see what was truly within his heart, but Allah could."],
+            "After killing ninety-nine people, he sought forgiveness. Misguided by poor advice, he committed a hundredth. Even then, when his heart sincerely turned back to Allah, Allah accepted his effort and judged him with perfect justice and mercy.",
+            "No human being could see what was truly within his heart. But Allah could."],
       source:{ label:"Sahih Muslim 2766a", url:"https://sunnah.com/muslim:2766a" } },
     { title:"What This Means for Scholars",
       body:["The same principle teaches us how to think about those who sought knowledge.",
@@ -461,7 +468,7 @@ const DATA = {
             "What should a sincere Muslim do?",
             "Should the question be ignored?",
             "Or should it be explored with humility and respect?"],
-      source:{ label:"Sahih al-Bukhari — the collection", url:"https://sunnah.com/bukhari" } },
+      source:{ label:"Sahih al-Bukhari", url:"https://sunnah.com/bukhari" } },
     { title:"Every Field Grows Through Inquiry",
       body:["Every field of knowledge grows through sincere inquiry.",
             "A doctor does not abandon medicine because a treatment is improved. An engineer does not reject mathematics because a calculation is corrected. In the same way, carefully examining a historical conclusion is not a rejection of Islam. It is an acknowledgement that every human effort, however sincere or remarkable, remains open to learning, refinement and deeper understanding."] },
@@ -487,7 +494,7 @@ const DATA = {
     { title:"Hello, Mr. Bukhari",
       body:["We respect you. You gave your life to something great, and we hope Allah rewards you for it.",
             "We're not here to blame you — or anyone. Only Allah knows what's in a heart. This is just an honest conversation."],
-      source:{ label:"Sahih al-Bukhari — the collection", url:"https://sunnah.com/bukhari" } },
+      source:{ label:"Sahih al-Bukhari", url:"https://sunnah.com/bukhari" } },
     { title:"The Man Who Killed 100 People",
       body:["He'd killed 99 people, then a hundred, on bad advice. A scholar told him repentance was still possible, and sent him toward a righteous village.",
             { type:"cite",
@@ -499,7 +506,7 @@ const DATA = {
     { title:"650,000 Narrations. 7,000 Chosen.",
       body:["You examined roughly 650,000 narrations and kept about 7,000. Extraordinary discipline.",
             "But a new Muslim is handed a Qur'an — not your book. Generations have prayed simply by watching others, never reading a hadith directly. We're not rejecting hadith. We're noticing how much rides on one man's judgment."],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Sahih_al-Bukhari" } },
+      source:{ label:"Sahih al-Bukhari", url:"https://en.wikipedia.org/wiki/Sahih_al-Bukhari" } },
     { title:"Let's Look at One",
       body:[{ type:"cite",
               text:"During the days of ignorance, I saw monkeys stoning a she-monkey to death for illegal intercourse.",
@@ -510,7 +517,7 @@ const DATA = {
     { title:"Let's Look at the People",
       body:["For centuries, your verdicts were treated as untouchable. Now that we agree they can be questioned — could the same bias have shaped who you trusted, and who you didn't?",
             "A narrator's grade was really a verdict on their character. So let's look at the people themselves: Uthman. Muawiya. Yazid. Ibn Umar. Swipe on →"],
-      source:{ label:"Sahih Muslim 1855 — on rulers", url:"https://sunnah.com/muslim:1855a" } }
+      source:{ label:"Sahih Muslim 1855", url:"https://sunnah.com/muslim:1855a" } }
   ],
   characters: [
     { title:"What the Prophet ﷺ Said About Rulers",
@@ -522,44 +529,44 @@ const DATA = {
     { title:"Uthman ibn Affan",
       body:["He filled nearly every province with Umayyad relatives — including Marwan, a man the Prophet ﷺ had exiled.",
             "One of his governors was caught leading Fajr prayer drunk. That favoritism is what historians point to as the spark behind his assassination in 656."],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Uthman_ibn_Affan" } },
+      source:{ label:"Uthman ibn Affan", url:"https://en.wikipedia.org/wiki/Uthman_ibn_Affan" } },
     { title:"Muawiya ibn Abi Sufyan",
       body:["As governor, he lived like a king — something Umar allowed no one else.",
             "He fought Ali, then broke the shura tradition by naming his own son Yazid as heir. He also made cursing Ali from the pulpit official policy — for the next 60 years."],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Mu%27awiya_I" } },
+      source:{ label:"Muawiya I", url:"https://en.wikipedia.org/wiki/Mu%27awiya_I" } },
     { title:"Yazid ibn Muawiya",
       body:["He inherited the caliphate — no consultation needed.",
             "In 680, his forces killed Husayn ibn Ali, the Prophet's own grandson, at Karbala. Three years later, his army sacked Madinah itself."],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Yazid_I" } },
+      source:{ label:"Yazid I", url:"https://en.wikipedia.org/wiki/Yazid_I" } },
     { title:"Abdullah ibn Umar",
       body:["Umar's son. Deeply pious. One of the most-quoted narrators in hadith.",
             "He also pledged allegiance to whoever held power — including Yazid — to avoid conflict. Wisdom, or comfort chosen over conscience? We leave that to you."],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Abdullah_ibn_Umar" } },
+      source:{ label:"Abdullah ibn Umar", url:"https://en.wikipedia.org/wiki/Abdullah_ibn_Umar" } },
     { title:"So, Where Does That Leave Us?",
       body:["Not blame. Not takfir on anyone — not Bukhari, not Uthman, not anyone. Allah alone is the true Judge.",
             "If the graders were human, and the graded were flawed — the only safe thing left to hold is what saved Sarah: sincere submission to Allah."],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Succession_to_Muhammad" } }
+      source:{ label:"Succession to Muhammad", url:"https://en.wikipedia.org/wiki/Succession_to_Muhammad" } }
   ],
   umayyads: [
     { title:"90 Years, One Family",
       body:["One clan ran the Muslim world for nearly a century — 661 to 750 CE. Here's the family, generation by generation."],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Umayyad_Caliphate" } },
+      source:{ label:"Umayyad Caliphate", url:"https://en.wikipedia.org/wiki/Umayyad_Caliphate" } },
     { title:"The Sufyanid Line",
       body:["Abu Sufyan fought the Prophet ﷺ for years before submitting at the conquest of Makkah. His son Muawiya founded the dynasty. His grandson Yazid presided over Karbala.",
             "His great-grandson Muawiya II reigned months, then died young — ending the line and igniting a second civil war."],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Mu%27awiya_I" } },
+      source:{ label:"Muawiya I", url:"https://en.wikipedia.org/wiki/Mu%27awiya_I" } },
     { title:"Abd al-Malik & His Four Sons",
       body:["Marwan I won the civil war that followed. His son Abd al-Malik reunified the empire, and leaned on al-Hajjaj — a governor remembered for brutally crushing revolt.",
             "Four of Abd al-Malik's sons ruled after him, one by one: al-Walid I, Sulayman, Yazid II, and Hisham."],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Abd_al-Malik_ibn_Marwan" } },
+      source:{ label:"Abd al-Malik ibn Marwan", url:"https://en.wikipedia.org/wiki/Abd_al-Malik_ibn_Marwan" } },
     { title:"The Exception: Umar ibn Abd al-Aziz",
       body:["Between two of those brothers sits Umar II — the Umayyad many Sunni scholars call “the fifth rightly-guided caliph.”",
             { type:"reflect", text:"He ended sixty years of cursing Ali from the pulpit. That it took a “rightly-guided” exception to stop it tells you it was real, official policy — not a footnote." }],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Umar_II" } },
+      source:{ label:"Umar II", url:"https://en.wikipedia.org/wiki/Umar_II" } },
     { title:"The Fall",
       body:["Three caliphs in two years followed Hisham's death — one killed by his own cousins.",
             "Then Marwan II faced a revolutionary army marching out of Khorasan under black banners. It ended at the Battle of the Great Zab, 750 CE. That banner and that province are about to come up again →"],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Abbasid_Revolution" } }
+      source:{ label:"Abbasid Revolution", url:"https://en.wikipedia.org/wiki/Abbasid_Revolution" } }
   ],
   mahdi: [
     { title:"The Hadith Both Sides Agree On",
@@ -571,14 +578,14 @@ const DATA = {
     { title:"The Twelve Imams",
       body:["Ali. Hasan. Husayn. Zayn al-Abidin. al-Baqir. al-Sadiq. al-Kadhim. al-Rida. al-Jawad. al-Hadi. al-Askari. And twelfth — Muhammad al-Mahdi.",
             "Every one, in Twelver belief, a direct descendant of the Prophet ﷺ through Fatimah and Ali."],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Twelve_Imams" } },
+      source:{ label:"Twelve Imams", url:"https://en.wikipedia.org/wiki/Twelve_Imams" } },
     { title:"The Hidden Twelfth",
       body:["Muhammad al-Mahdi was born around 869 CE. When his father died in 874, he went into hiding — and in this belief, he's been alive, and hidden, ever since."],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Muhammad_al-Mahdi" } },
+      source:{ label:"Muhammad al-Mahdi", url:"https://en.wikipedia.org/wiki/Muhammad_al-Mahdi" } },
     { title:"Same Word, Different Shape",
       body:["Sunni tradition also expects a Mahdi — a future, righteous descendant, not yet identified.",
             "Shia belief says we already know exactly who he is: the twelfth Imam, already born, already waiting."],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Mahdi" } },
+      source:{ label:"Mahdi", url:"https://en.wikipedia.org/wiki/Mahdi" } },
     { title:"Black Banners From Khorasan",
       body:[{ type:"cite",
               text:"Then the black banners will come from the east... when you see them, pledge your allegiance, for that is the Mahdi.",
@@ -588,18 +595,30 @@ const DATA = {
     { title:"What Actually Happened",
       body:["In 747 CE, a revolutionary raised black banners in Khorasan — and by 750, that movement had destroyed the Umayyads.",
             { type:"reflect", text:"A weak hadith. A real revolution that used its exact wording. It worked — a dynasty fell. Make of that what you will. Allah alone is the true Judge. May He guide us all." }],
-      source:{ label:"Reference — en.wikipedia.org", url:"https://en.wikipedia.org/wiki/Abbasid_Revolution" } }
+      source:{ label:"Abbasid Revolution", url:"https://en.wikipedia.org/wiki/Abbasid_Revolution" } }
   ]
 };
+
+function domainLabel(url){
+  if(url.includes('sunnah.com')) return 'Sunnah.com';
+  if(url.includes('quran.com')) return 'Quran.com';
+  if(url.includes('wikipedia.org')) return 'Wikipedia';
+  try{ return new URL(url).hostname.replace(/^www\./,''); } catch(e){ return url; }
+}
 
 function renderBlock(b){
   if(typeof b === 'string') return `<p>${b}</p>`;
   if(b.type === 'cite'){
+    const shortRef = b.ref.split('·')[0].trim();
+    const domain = domainLabel(b.url);
     return `
       <div class="blk-cite">
         <div class="cite-kicker">${b.kicker || 'Authentic Narration'}</div>
         <p class="cite-text">&ldquo;${b.text}&rdquo;</p>
-        <span class="cite-ref">${b.ref}</span>
+        <a class="ref-pill cite-ref-link" href="${b.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+          ${LINK_ICON}
+          <span>See ${shortRef} on ${domain}</span>
+        </a>
       </div>`;
   }
   if(b.type === 'reflect'){
@@ -612,19 +631,19 @@ function renderBlock(b){
   return '';
 }
 
-function findCiteUrl(body){
-  const c = body.find(b => b && typeof b === 'object' && b.type === 'cite');
-  if(!c) return null;
-  const label = c.url.includes('quran.com') ? 'Read on Quran.com' : 'Verify on Sunnah.com';
-  return { label, url:c.url };
-}
-
 function buildSlideHTML(item){
   const bodyHtml = item.body.map(renderBlock).join('');
+  const hasCite = item.body.some(b => b && typeof b === 'object' && b.type === 'cite');
+  let sourcePill = '';
+  if(!hasCite && item.source){
+    const domain = domainLabel(item.source.url);
+    sourcePill = `<a class="ref-pill slide-source-pill" href="${item.source.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${LINK_ICON}<span>See ${item.source.label} on ${domain}</span></a>`;
+  }
   return `
     <div class="ig-slide-inner">
       <div class="slide-title">${item.title}</div>
       <div class="slide-body">${bodyHtml}</div>
+      ${sourcePill}
     </div>`;
 }
 
@@ -648,12 +667,6 @@ function renderPost(post){
         </div>
         <div class="ig-dots"></div>
       </div>
-      <div class="ref-row">
-        <a class="ref-link" href="#" target="_blank" rel="noopener noreferrer">
-          ${LINK_ICON}
-          <span></span>
-        </a>
-      </div>
     </article>`;
 }
 
@@ -666,8 +679,6 @@ class Deck{
     this.track = article.querySelector('.ig-track');
     this.dotsEl = article.querySelector('.ig-dots');
     this.badgeEl = article.querySelector('.ig-badge');
-    this.refLink = article.querySelector('.ref-link');
-    this.refLabel = article.querySelector('.ref-link span');
     this.hint = article.querySelector('.nudge-hint');
     this.current = 0;
     this.interacted = false;
@@ -688,18 +699,6 @@ class Deck{
     this.slideEls.forEach((el, idx) => el.classList.toggle('is-active', idx === this.current));
     this.dotEls.forEach((d, idx) => d.classList.toggle('active', idx === this.current));
     this.badgeEl.textContent = `${this.current + 1}/${this.items.length}`;
-    this._updateRef();
-  }
-  _updateRef(){
-    const item = this.items[this.current];
-    const src = item.source || findCiteUrl(item.body);
-    if(src){
-      this.refLink.style.display = 'inline-flex';
-      this.refLink.href = src.url;
-      this.refLabel.textContent = src.label;
-    } else {
-      this.refLink.style.display = 'none';
-    }
   }
   _goTo(i){
     this.current = Math.max(0, Math.min(this.items.length - 1, i));
