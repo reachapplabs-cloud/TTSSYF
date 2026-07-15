@@ -71,7 +71,7 @@
     padding:0 14px 10px;
   }
   .avatar{
-    width:38px; height:38px; border-radius:50%;
+    width:34px; height:34px; border-radius:50%;
     padding:2px;
     background:var(--ig-gradient);
     flex-shrink:0;
@@ -80,12 +80,11 @@
     display:flex; align-items:center; justify-content:center;
     width:100%; height:100%; border-radius:50%;
     background:var(--emerald-950);
-    color:var(--gold-400); font-family:Georgia,serif; font-weight:700; font-size:0.95rem;
+    color:var(--gold-400); font-family:Georgia,serif; font-weight:700; font-size:0.82rem;
     border:2px solid #fff;
   }
   .post-head .who{ line-height:1.15; min-width:0; }
-  .post-head .uname{ font-weight:600; font-size:0.92rem; }
-  .post-head .sub{ font-size:0.78rem; color:var(--ink-soft); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .post-head .uname{ font-weight:600; font-size:0.92rem; color:var(--ink); }
 
   /* ---- carousel (native scroll-snap: fixes touch drag + backward-swipe bugs) ---- */
   .deck-wrap{ padding:0 14px; }
@@ -142,22 +141,42 @@
     padding:6.2cqw 4.8cqw 4.2cqw;
     display:flex; flex-direction:column;
   }
-  .slide-title{
-    font-family:Georgia,"Times New Roman",serif;
-    color:var(--emerald-900);
-    font-size:clamp(1rem, 6.4cqw, 1.55rem); line-height:1.22; margin:0 0 2.6cqw;
-    position:relative;
-    flex-shrink:0;
-  }
   .slide-body{
-    font-size:clamp(0.72rem, 4.15cqw, 1.02rem); line-height:1.46; color:#333b36;
+    font-family:Georgia,Cambria,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    font-size:clamp(0.76rem, 4.3cqw, 1.05rem); line-height:1.62; color:#2b2f2c;
+    letter-spacing:0.1px;
     position:relative;
     overflow:hidden;
     flex:1;
     min-height:0;
+    display:flex; flex-direction:column; justify-content:center;
   }
-  .slide-body p{ margin:0 0 2.4cqw; }
+  .slide-body p{ margin:0 0 2.8cqw; }
   .slide-body p:last-child{ margin-bottom:0; }
+
+  /* ---- chapter cover slide (one per carousel) ---- */
+  .chapter-inner{
+    justify-content:center; align-items:center; text-align:center;
+    background:linear-gradient(165deg, #fffdf8, #f6f0dd 130%);
+  }
+  .chapter-kicker{
+    font-size:clamp(0.6rem, 2.9cqw, 0.72rem);
+    letter-spacing:3px; text-transform:uppercase;
+    color:var(--gold-600); font-weight:700;
+  }
+  .chapter-emblem{ color:var(--gold-500); margin:3cqw 0; }
+  .chapter-emblem svg{ width:clamp(18px,7cqw,26px); height:clamp(18px,7cqw,26px); }
+  .chapter-title{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(1.25rem, 7.6cqw, 1.85rem); line-height:1.2;
+    color:var(--emerald-900);
+    margin-bottom:2.8cqw;
+  }
+  .chapter-tagline{
+    font-family:Georgia,serif; font-style:italic;
+    font-size:clamp(0.74rem, 3.8cqw, 0.92rem);
+    color:var(--ink-soft);
+  }
 
   .ig-badge{
     position:absolute; top:10px; right:10px;
@@ -277,16 +296,16 @@
 
 <script>
 const POSTS = [
-  { deck:"story", avatar:"R", uname:"a.reminder.we.all.need", sub:"a story worth sitting with" },
-  { deck:"revealed", avatar:"S", uname:"revealed.for.us.too", sub:"the qur'an's stories aren't history — they're mirrors" },
-  { deck:"search", avatar:"F", uname:"where.our.search.begins", sub:"qur'an, sunnah, and the humans in between" },
-  { deck:"whose", avatar:"W", uname:"whose.story.reaches.us", sub:"a principle, not an accusation" },
-  { deck:"intentions", avatar:"N", uname:"what.allah.looks.at", sub:"before schools, before labels, before names" },
-  { deck:"mistaken", avatar:"M", uname:"what.if.we.were.mistaken", sub:"respect and examination can exist together" },
-  { deck:"letter", avatar:"L", uname:"a.letter.to.bukhari", sub:"written with respect, not blame" },
-  { deck:"characters", avatar:"R2", uname:"what.the.record.shows", sub:"not hadith — history" },
-  { deck:"umayyads", avatar:"D", uname:"the.dynasty.after.karbala", sub:"ninety years, one family" },
-  { deck:"mahdi", avatar:"A2", uname:"the.awaited.justice", sub:"twelve imams, one still to come" }
+  { deck:"story", uname:"a.reminder.we.all.need", sub:"a story worth sitting with", chapterTitle:"A Reminder We All Need" },
+  { deck:"revealed", uname:"revealed.for.us.too", sub:"the qur'an's stories aren't history — they're mirrors", chapterTitle:"The Stories Were Revealed for Us Too" },
+  { deck:"search", uname:"where.our.search.begins", sub:"qur'an, sunnah, and the humans in between", chapterTitle:"Where Should Our Search Begin?" },
+  { deck:"whose", uname:"whose.story.reaches.us", sub:"a principle, not an accusation", chapterTitle:"Whose Story Reaches Us?" },
+  { deck:"intentions", uname:"what.allah.looks.at", sub:"before schools, before labels, before names", chapterTitle:"What Does Allah Look At?" },
+  { deck:"mistaken", uname:"what.if.we.were.mistaken", sub:"respect and examination can exist together", chapterTitle:"What If We Discover We Were Mistaken?" },
+  { deck:"letter", uname:"a.letter.to.bukhari", sub:"written with respect, not blame", chapterTitle:"A Letter to Imam Bukhari" },
+  { deck:"characters", uname:"what.the.record.shows", sub:"not hadith — history", chapterTitle:"What the Record Actually Shows" },
+  { deck:"umayyads", uname:"the.dynasty.after.karbala", sub:"ninety years, one family", chapterTitle:"Ninety Years, One Family" },
+  { deck:"mahdi", uname:"the.awaited.justice", sub:"twelve imams, one still to come", chapterTitle:"Twelve Imams, One Still to Come" }
 ];
 
 const DATA = {
@@ -450,10 +469,9 @@ const DATA = {
       body:["Imagine being asked to leave your family in a barren desert with no visible means of survival. Imagine being commanded to sacrifice the son you had prayed for over many years.",
             "In every test, Ibrahim placed his trust in Allah above his own understanding — believing that whatever Allah commanded could only be for the ultimate good. Perhaps this is why Allah presents him as an example for every believer."] },
     { title:"Where the Search Begins",
-      body:["If Allah describes Ibrahim as being upon the straight path because of his sincere submission, then perhaps that is where every Muslim's search should begin.",
-            "Our schools of thought can help us learn. Our scholars can help us understand. But none of them replace the standard that Allah Himself has already given us.",
-            "Before asking, “Which group should I belong to?” perhaps we should first ask, “Am I striving to submit to Allah with the sincerity of Ibrahim?”",
-            "That is a question every believer can carry into the chapters that follow."] }
+      body:["If Allah describes Ibrahim as being on the straight path because of his sincere submission, that is where every Muslim's search should begin.",
+            "Our schools of thought can help us learn. But none of them replace the standard Allah has already given us.",
+            "Before asking “Which group should I belong to?” — perhaps ask first, “Am I striving to submit with the sincerity of Ibrahim?” A question to carry into the chapters that follow."] }
   ],
   mistaken: [
     { title:"A Difficult Moment",
@@ -636,20 +654,30 @@ function buildSlideHTML(item){
   }
   return `
     <div class="ig-slide-inner">
-      <div class="slide-title">${item.title}</div>
       <div class="slide-body">${bodyHtml}</div>
       ${sourcePill}
     </div>`;
 }
 
-function renderPost(post){
+const CHAPTER_EMBLEM = `<svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M20 4 L23 17 L36 20 L23 23 L20 36 L17 23 L4 20 L17 17 Z"/></svg>`;
+
+function buildChapterSlideHTML(post, num){
+  return `
+    <div class="ig-slide-inner chapter-inner">
+      <div class="chapter-kicker">Chapter ${num}</div>
+      <div class="chapter-emblem">${CHAPTER_EMBLEM}</div>
+      <div class="chapter-title">${post.chapterTitle}</div>
+      <div class="chapter-tagline">${post.sub}</div>
+    </div>`;
+}
+
+function renderPost(post, idx){
   return `
     <article class="post" data-deck="${post.deck}">
       <header class="post-head">
-        <div class="avatar"><span>${post.avatar[0]}</span></div>
+        <div class="avatar"><span>${idx + 1}</span></div>
         <div class="who">
           <div class="uname">${post.uname}</div>
-          <div class="sub">${post.sub}</div>
         </div>
       </header>
       <div class="deck-wrap">
@@ -664,9 +692,11 @@ function renderPost(post){
 }
 
 class Deck{
-  constructor(article){
+  constructor(article, post, num){
     this.article = article;
     this.key = article.dataset.deck;
+    this.post = post;
+    this.num = num;
     this.items = DATA[this.key];
     this.carousel = article.querySelector('.ig-carousel');
     this.track = article.querySelector('.ig-track');
@@ -683,18 +713,21 @@ class Deck{
     this._armNudge();
   }
   _build(){
-    this.track.innerHTML = this.items.map(item => `<div class="ig-slide">${buildSlideHTML(item)}</div>`).join('');
+    const chapterHTML = `<div class="ig-slide">${buildChapterSlideHTML(this.post, this.num)}</div>`;
+    const cardHTML = this.items.map(item => `<div class="ig-slide">${buildSlideHTML(item)}</div>`).join('');
+    this.track.innerHTML = chapterHTML + cardHTML;
     this.slideEls = [...this.track.children];
-    this.dotsEl.innerHTML = this.items.map((_, i) => `<button class="dot" data-i="${i}" aria-label="slide ${i+1}"></button>`).join('');
+    this.total = this.slideEls.length;
+    this.dotsEl.innerHTML = this.slideEls.map((_, i) => `<button class="dot" data-i="${i}" aria-label="slide ${i+1}"></button>`).join('');
     this.dotEls = [...this.dotsEl.children];
   }
   _updateUI(animate = true){
     this.slideEls.forEach((el, idx) => el.classList.toggle('is-active', idx === this.current));
     this.dotEls.forEach((d, idx) => d.classList.toggle('active', idx === this.current));
-    this.badgeEl.textContent = `${this.current + 1}/${this.items.length}`;
+    this.badgeEl.textContent = `${this.current + 1}/${this.total}`;
   }
   _goTo(i){
-    this.current = Math.max(0, Math.min(this.items.length - 1, i));
+    this.current = Math.max(0, Math.min(this.total - 1, i));
     this.slideEls[this.current].scrollIntoView({ behavior:'smooth', inline:'center', block:'nearest' });
     this._updateUI();
   }
@@ -745,7 +778,7 @@ class Deck{
 }
 
 document.getElementById('feed').innerHTML = POSTS.map(renderPost).join('');
-document.querySelectorAll('.post').forEach(article => new Deck(article));
+document.querySelectorAll('.post').forEach((article, idx) => new Deck(article, POSTS[idx], idx + 1));
 </script>
 </body>
 </html>
