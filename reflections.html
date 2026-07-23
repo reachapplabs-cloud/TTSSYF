@@ -255,13 +255,8 @@
   <p>Honest reflections on recent learnings — early Islamic history, the status of non-Muslims under Muslim rule, and hadith sciences. Answer in your own words, as many times as you like; entries save below each question.</p>
   <div class="toolbar">
     <button id="exportBtn">Export my answers (.csv)</button>
-    <button id="clearBtn">Clear all answers</button>
   </div>
 </header>
-
-<div class="notice" id="storageNotice">
-  Note: answers typed here are saved only in <strong>this browser</strong> (via localStorage). Click "Export my answers (.csv)" and replace <code>data/reflections.csv</code> in the repo with the downloaded file (or paste the answers back into chat) to make them part of the permanent record.
-</div>
 
 <nav class="jump" id="jumpNav"></nav>
 
@@ -449,14 +444,6 @@
       data[qid].splice(idx, 1);
       saveData(data);
       renderEntries();
-    }
-  });
-
-  document.getElementById('clearBtn').addEventListener('click', () => {
-    if (confirm('Clear all saved answers on this device? This cannot be undone.')) {
-      localStorage.removeItem(STORAGE_KEY);
-      renderEntries();
-      showToast('All answers cleared');
     }
   });
 
