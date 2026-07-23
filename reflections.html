@@ -254,13 +254,13 @@
   <h1>Reflection Journal</h1>
   <p>Honest reflections on recent learnings — early Islamic history, the status of non-Muslims under Muslim rule, and hadith sciences. Answer in your own words, as many times as you like; entries save below each question.</p>
   <div class="toolbar">
-    <button id="exportBtn">Export my answers (.txt)</button>
+    <button id="exportBtn">Export my answers (.csv)</button>
     <button id="clearBtn">Clear all answers</button>
   </div>
 </header>
 
 <div class="notice" id="storageNotice">
-  Note: answers typed here are saved only in <strong>this browser</strong> (via localStorage) — see the chat for what hosting this on GitHub would and wouldn't do.
+  Note: answers typed here are saved only in <strong>this browser</strong> (via localStorage). Click "Export my answers (.csv)" and replace <code>data/reflections.csv</code> in the repo with the downloaded file (or paste the answers back into chat) to make them part of the permanent record.
 </div>
 
 <nav class="jump" id="jumpNav"></nav>
@@ -460,25 +460,32 @@
     }
   });
 
+  function csvField(value) {
+    const s = String(value);
+    if (/[",\n]/.test(s)) {
+      return '"' + s.replace(/"/g, '""') + '"';
+    }
+    return s;
+  }
+
   document.getElementById('exportBtn').addEventListener('click', () => {
     const data = loadData();
-    let out = 'Reflection Journal Export\n' + new Date().toString() + '\n\n';
-    QUESTIONS.forEach((q, i) => {
-      out += 'Q' + (i + 1) + ': ' + q.title + '\n' + '-'.repeat(40) + '\n';
+    const rows = ['id,question,answer,submitted_at'];
+    QUESTIONS.forEach(q => {
       const entries = data[q.id] || [];
       if (entries.length === 0) {
-        out += '(no answers yet)\n\n';
+        rows.push([csvField(q.id), csvField(q.title), '', ''].join(','));
       } else {
         entries.forEach(e => {
-          out += '[' + formatDate(e.date) + ']\n' + e.text + '\n\n';
+          rows.push([csvField(q.id), csvField(q.title), csvField(e.text), csvField(e.date)].join(','));
         });
       }
     });
-    const blob = new Blob([out], { type: 'text/plain' });
+    const blob = new Blob([rows.join('\n') + '\n'], { type: 'text/csv' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'reflection-journal-export.txt';
+    a.download = 'reflections.csv';
     a.click();
     URL.revokeObjectURL(url);
   });
