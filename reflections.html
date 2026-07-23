@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reflection Journal — Islamic History &amp; Hadith Sciences</title>
+<style>
+  :root {
+    --red: #b92b27;
+    --red-dark: #8f211e;
+    --ink: #1c1c1c;
+    --sub: #636466;
+    --line: #e0e0e0;
+    --bg: #f5f5f2;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  header {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    padding: 28px 20px 22px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 6px;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  header p {
+    margin: 0 auto;
+    color: var(--sub);
+    font-size: 0.95rem;
+    max-width: 600px;
+  }
+  .toolbar {
+    max-width: 700px;
+    margin: 16px auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .toolbar button {
+    background: none;
+    border: 1px solid var(--line);
+    color: var(--sub);
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 0.82rem;
+    cursor: pointer;
+  }
+  .toolbar button:hover { background: #f0f0ee; }
+
+  .jump {
+    max-width: 700px;
+    margin: 16px auto 0;
+    padding: 0 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+  }
+  .jump a {
+    font-size: 0.75rem;
+    color: var(--sub);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 3px 9px;
+    background: var(--card);
+  }
+  .jump a:hover { color: var(--red); border-color: var(--red); }
+
+  main {
+    max-width: 700px;
+    margin: 20px auto 60px;
+    padding: 0 16px;
+  }
+
+  .question-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    margin-bottom: 22px;
+    overflow: hidden;
+    scroll-margin-top: 16px;
+  }
+  .question-head {
+    padding: 18px 20px 14px;
+    border-bottom: 1px solid var(--line);
+  }
+  .q-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--red);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .q-title {
+    font-size: 1.08rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .answer-box {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--line);
+    background: #fafafa;
+  }
+  .answer-box label {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--sub);
+    margin-bottom: 8px;
+  }
+  textarea {
+    width: 100%;
+    min-height: 110px;
+    resize: vertical;
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--ink);
+  }
+  textarea:focus {
+    outline: none;
+    border-color: var(--red);
+  }
+  .answer-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  .submit-btn {
+    background: var(--red);
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .submit-btn:hover { background: var(--red-dark); }
+
+  .entries {
+    padding: 6px 20px 16px;
+  }
+  .entries-count {
+    font-size: 0.8rem;
+    color: var(--sub);
+    padding: 12px 0 4px;
+  }
+  .entry {
+    display: flex;
+    gap: 12px;
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+  }
+  .entry:first-of-type { border-top: none; }
+  .avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--red);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+  .entry-body { flex: 1; }
+  .entry-meta {
+    font-size: 0.78rem;
+    color: var(--sub);
+    margin-bottom: 4px;
+  }
+  .entry-text {
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+  }
+  .entry-remove {
+    background: none;
+    border: none;
+    color: var(--sub);
+    font-size: 0.75rem;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 6px;
+  }
+  .entry-remove:hover { color: var(--red); text-decoration: underline; }
+
+  .empty-state {
+    color: var(--sub);
+    font-size: 0.85rem;
+    padding: 10px 0;
+    font-style: italic;
+  }
+
+  .notice {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    padding: 12px 16px;
+    background: #fff8e6;
+    border: 1px solid #f0dca0;
+    border-radius: 8px;
+    font-size: 0.83rem;
+    color: #6b5410;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--sub);
+    font-size: 0.78rem;
+    padding: 20px;
+  }
+
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--ink);
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+  .toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Reflection Journal</h1>
+  <p>Honest reflections on recent learnings — early Islamic history, the status of non-Muslims under Muslim rule, and hadith sciences. Answer in your own words, as many times as you like; entries save below each question.</p>
+  <div class="toolbar">
+    <button id="exportBtn">Export my answers (.txt)</button>
+    <button id="clearBtn">Clear all answers</button>
+  </div>
+</header>
+
+<div class="notice" id="storageNotice">
+  Note: answers typed here are saved only in <strong>this browser</strong> (via localStorage) — see the chat for what hosting this on GitHub would and wouldn't do.
+</div>
+
+<nav class="jump" id="jumpNav"></nav>
+
+<main id="main"></main>
+
+<footer>Reflection Journal · stored locally in your browser</footer>
+<div class="toast" id="toast"></div>
+
+<script>
+  const STORAGE_KEY = 'reflection_journal_v1';
+
+  const QUESTIONS = [
+    {
+      id: 'q1',
+      title: "Who were the Arab people during the first 40 years of the Prophet's life (before revelation)? Who were their previous wars with — among the tribes themselves, or with the Jews?"
+    },
+    {
+      id: 'q2',
+      title: "Beyond being either masterful Arabic poets or the complete opposite (illiterate) — is there any indication that the Arabs of that era were divinely gifted with perfect memory?"
+    },
+    {
+      id: 'q3',
+      title: "What were the implications of being a Jew living under Muslim protection in the early Islamic state? While free to practice one's faith openly and exempt from battle, what restrictions applied that couldn't be done openly — apart from the jizya tax? Were there objective reasons someone might convert to Islam ‘for namesake’ to gain benefits?"
+    },
+    {
+      id: 'q4',
+      title: "Hind bint Utbah and her family sought vengeance for their forefathers killed at Badr. Is there a possibility they harbored a hidden agenda — accepting Islam only for namesake while plotting to seize power during the Prophet's absence? What was Hind's significance in later reports as a powerful woman — did she also transmit letters, hadith, etc.?"
+    },
+    {
+      id: 'q5',
+      title: "Sahih means the chain (isnad) is authentic and the narrators' character was vetted. But what if the narration describes an event from Jahiliyyah with no connection to the Prophet, and some facts in it were humanly impossible to know? Would it still be graded sahih, or be acceptable for inclusion in Bukhari, Muslim, etc., and in our kulliyah teaching and propagation?"
+    },
+    {
+      id: 'q6',
+      title: "Have we ourselves found contradictions within the Sahih Sittah and simply flagged them as ‘not to be spoken of’ — ignored, or requiring omission altogether — given that one of the compilers could have erred, and such a level of correction isn't permitted within our methodology of uncovering the truth? Are we allowed to do this?"
+    },
+    {
+      id: 'q7',
+      title: "If no, skip this question. If yes — what is our methodology, and what is the cost of acting on it once we're made aware such an instance is possible? Is it to omit the problematic hadith, or to go a level deeper and question the compiling scholar's own methodology — acknowledging he could have erred in his approach?"
+    },
+    {
+      id: 'q8',
+      title: "Do we consider oral hadith transmission a sound, scientific methodology — even though much of it is essentially hearsay? How much more authentic have we found written records to be by comparison, and why?"
+    },
+    {
+      id: 'q9',
+      title: "If I wanted to check the character and traits of transmitters, is there a book (or books) considered absolute in accuracy — taking a holistic approach across a narrator's life and narrations (e.g. no personal gain, no contradicting narrations, etc.)? For narrators known to be false, what was the criteria for that falsehood?"
+    },
+    {
+      id: 'q10',
+      title: "Historically, do we find instances of state-sponsored appointment of religious leaders and scholars? Who were the initial hadith workers appointed under the Umayyad dynasty? Who trained the four madhhab founders, and are there reports on how they earned their living, or whether they were given high rank by their masters/leaders?"
+    },
+    {
+      id: 'q11',
+      title: "Just as the Jews are described as having killed their own, changed their texts, and modified rules to suit themselves — were such schemes present within the caliphate after Uthman? Why is it that there are only four ‘rightly guided’ (Rashidun) caliphs?"
+    },
+    {
+      id: 'q12',
+      title: "There is a hadith about 12 imams attributed to the Prophet, and a lot narrated about the Mahdi. Do we as Sunnis have a clear answer to this trail leading to the Mahdi? The claim from Ali's faction is that the Mahdi will come from his progeny through Hussain's lineage — is this true or false, and why?"
+    },
+    {
+      id: 'q13',
+      title: "What are some reports made in favour of the caliphs — the Rashidun and those following — that were instead graded da'if, and why? Did any of them indicate an effort to push forward an agenda?"
+    },
+    {
+      id: 'q14',
+      title: "The Prophet, over more than 15 years, would have delivered many Jumu'ah khutbahs. Do we have these in detailed record? Where can I read them?"
+    },
+    {
+      id: 'q15',
+      title: "What is the last speech and the last notes attributed to the Prophet? What are the last verses and surahs given to him before his death?"
+    }
+  ];
+
+  function loadData() {
+    try {
+      return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+    } catch (e) {
+      return {};
+    }
+  }
+
+  function saveData(data) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  }
+
+  function formatDate(iso) {
+    const d = new Date(iso);
+    return d.toLocaleString(undefined, {
+      year: 'numeric', month: 'short', day: 'numeric',
+      hour: '2-digit', minute: '2-digit'
+    });
+  }
+
+  function buildLayout() {
+    const nav = document.getElementById('jumpNav');
+    nav.innerHTML = QUESTIONS.map(q => `<a href="#${q.id}">${q.id.toUpperCase()}</a>`).join('');
+
+    const main = document.getElementById('main');
+    main.innerHTML = QUESTIONS.map((q, i) => `
+      <section class="question-card" id="${q.id}" data-qid="${q.id}">
+        <div class="question-head">
+          <span class="q-tag">Question ${i + 1}</span>
+          <h3 class="q-title"></h3>
+        </div>
+        <div class="answer-box">
+          <label for="input-${q.id}">Your reflection</label>
+          <textarea id="input-${q.id}" placeholder="Write what you've learned so far, in your own words..."></textarea>
+          <div class="answer-actions">
+            <button class="submit-btn" data-target="${q.id}">Submit Answer</button>
+          </div>
+        </div>
+        <div class="entries" id="entries-${q.id}"></div>
+      </section>
+    `).join('');
+
+    // set titles via textContent to avoid HTML injection from the data
+    QUESTIONS.forEach(q => {
+      document.querySelector('#' + q.id + ' .q-title').textContent = q.title;
+    });
+
+    document.querySelectorAll('.submit-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const qid = btn.getAttribute('data-target');
+        const textarea = document.getElementById('input-' + qid);
+        const text = textarea.value.trim();
+        if (!text) return;
+        const data = loadData();
+        data[qid] = data[qid] || [];
+        data[qid].push({ text: text, date: new Date().toISOString() });
+        saveData(data);
+        textarea.value = '';
+        renderEntries();
+        showToast('Answer submitted');
+      });
+    });
+  }
+
+  function renderEntries() {
+    const data = loadData();
+    QUESTIONS.forEach(q => {
+      const qid = q.id;
+      const container = document.getElementById('entries-' + qid);
+      const entries = data[qid] || [];
+      if (entries.length === 0) {
+        container.innerHTML = '<div class="empty-state">No answers yet — be the first to reflect.</div>';
+        return;
+      }
+      const countHtml = '<div class="entries-count">' + entries.length + ' answer' + (entries.length > 1 ? 's' : '') + '</div>';
+      const entriesHtml = entries.map(() => `
+        <div class="entry">
+          <div class="avatar">Me</div>
+          <div class="entry-body">
+            <div class="entry-meta"></div>
+            <div class="entry-text"></div>
+            <button class="entry-remove">Remove</button>
+          </div>
+        </div>
+      `).join('');
+      container.innerHTML = countHtml + entriesHtml;
+
+      const rows = container.querySelectorAll('.entry');
+      entries.forEach((e, idx) => {
+        rows[idx].querySelector('.entry-meta').textContent = formatDate(e.date);
+        rows[idx].querySelector('.entry-text').textContent = e.text;
+        const removeBtn = rows[idx].querySelector('.entry-remove');
+        removeBtn.setAttribute('data-qid', qid);
+        removeBtn.setAttribute('data-idx', idx);
+      });
+    });
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    toast.textContent = msg;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 1800);
+  }
+
+  document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('entry-remove')) {
+      const qid = e.target.getAttribute('data-qid');
+      const idx = parseInt(e.target.getAttribute('data-idx'), 10);
+      const data = loadData();
+      data[qid].splice(idx, 1);
+      saveData(data);
+      renderEntries();
+    }
+  });
+
+  document.getElementById('clearBtn').addEventListener('click', () => {
+    if (confirm('Clear all saved answers on this device? This cannot be undone.')) {
+      localStorage.removeItem(STORAGE_KEY);
+      renderEntries();
+      showToast('All answers cleared');
+    }
+  });
+
+  document.getElementById('exportBtn').addEventListener('click', () => {
+    const data = loadData();
+    let out = 'Reflection Journal Export\n' + new Date().toString() + '\n\n';
+    QUESTIONS.forEach((q, i) => {
+      out += 'Q' + (i + 1) + ': ' + q.title + '\n' + '-'.repeat(40) + '\n';
+      const entries = data[q.id] || [];
+      if (entries.length === 0) {
+        out += '(no answers yet)\n\n';
+      } else {
+        entries.forEach(e => {
+          out += '[' + formatDate(e.date) + ']\n' + e.text + '\n\n';
+        });
+      }
+    });
+    const blob = new Blob([out], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'reflection-journal-export.txt';
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  buildLayout();
+  renderEntries();
+</script>
+
+</body>
+</html>
