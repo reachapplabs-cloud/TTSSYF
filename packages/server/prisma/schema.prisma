@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// SQLite has no native enum support, so `source` is a plain string
+// constrained in application code to "YOUTUBE" | "INSTAGRAM"
+// (see SourcePlatform in src/types.ts).
+
+model User {
+  id                  String   @id @default(cuid())
+  email               String   @unique
+  name                String?
+  avatarUrl           String?
+  googleId            String?  @unique
+  googleRefreshToken  String?
+  googleAccessToken   String?
+  googleTokenExpiry   DateTime?
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  items      SavedItem[]
+  categories Category[]
+}
+
+model SavedItem {
+  id               String         @id @default(cuid())
+  userId           String
+  user             User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  source           String
+  externalId       String
+  title            String?
+  caption          String?
+  url              String
+  thumbnailUrl     String?
+  author           String?
+  sourceCollection String?
+  metadata         String?
+  savedAt          DateTime?
+  categoryId       String?
+  category         Category?      @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+
+  @@unique([userId, source, externalId])
+  @@index([userId, categoryId])
+}
+
+model Category {
+  id        String      @id @default(cuid())
+  userId    String
+  user      User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name      String
+  color     String?
+  createdAt DateTime    @default(now())
+  items     SavedItem[]
+
+  @@unique([userId, name])
+}
