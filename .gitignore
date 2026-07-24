@@ -11,6 +11,8 @@ npm-debug.log*
 # server
 packages/server/prisma/dev.db
 packages/server/prisma/dev.db-journal
+packages/server/prisma/test.db
+packages/server/prisma/test.db-journal
 packages/server/generated/
 
 # web

@@ -1,0 +1,26 @@
+# Self-hosts just the API server (the piece that actually needs to run
+# somewhere persistent). The extension and web dashboard are static
+# clients — see docs/DEPLOY.md for how to host the web dashboard.
+#
+# Usage: create a `.env` file next to this one with JWT_SECRET,
+# GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET (and optionally CLIENT_ORIGIN),
+# then `docker compose up --build`.
+services:
+  server:
+    build:
+      context: .
+      dockerfile: packages/server/Dockerfile
+    ports:
+      - '4000:4000'
+    environment:
+      PORT: '4000'
+      DATABASE_URL: 'file:/data/ugram.db'
+      JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET in a .env file next to docker-compose.yml}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:?Set GOOGLE_CLIENT_ID in a .env file next to docker-compose.yml}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:?Set GOOGLE_CLIENT_SECRET in a .env file next to docker-compose.yml}
+      CLIENT_ORIGIN: ${CLIENT_ORIGIN:-http://localhost:5173}
+    volumes:
+      - server_data:/data
+
+volumes:
+  server_data:
