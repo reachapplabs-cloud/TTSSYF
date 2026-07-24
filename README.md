@@ -44,8 +44,9 @@ ugram/
 
 ## Quick start
 
-See [`docs/SETUP.md`](docs/SETUP.md) for full setup (Google OAuth
-credentials, env vars, running each package). The short version:
+See [`docs/SETUP.md`](docs/SETUP.md) for full local setup (Google OAuth
+credentials, env vars, running each package), or [`docs/DEPLOY.md`](docs/DEPLOY.md)
+for self-hosting the server with Docker. The short version:
 
 ```bash
 npm install

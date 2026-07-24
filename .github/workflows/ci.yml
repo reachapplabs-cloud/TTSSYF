@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  server:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm install
+      - run: npm run db:generate --workspace=packages/server
+      - run: npm run build --workspace=packages/server
+      - run: npm test --workspace=packages/server
+
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm install
+      - run: npm run build --workspace=packages/web
+
+  extension:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Syntax-check extension scripts
+        run: |
+          for f in packages/extension/background.js \
+                   packages/extension/lib/*.js \
+                   packages/extension/content-scripts/*.js \
+                   packages/extension/popup/*.js; do
+            echo "checking $f"
+            node --check "$f"
+          done
