@@ -1,34 +1,25 @@
 {
-  "name": "@ugram/server",
-  "private": true,
+  "name": "@relay/server",
   "version": "0.1.0",
-  "description": "Ugram API server — auth, YouTube/Instagram sync, items & categories",
-  "type": "commonjs",
+  "private": true,
+  "description": "Relay API: submissions, review/approve, voice profile, repurposing, and the free Voice Sample wedge endpoint.",
+  "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "dev": "tsx watch src/index.ts",
     "build": "tsc -p tsconfig.json",
-    "start": "node dist/index.js",
-    "db:migrate": "prisma migrate dev --name init",
-    "db:generate": "prisma generate",
-    "db:studio": "prisma studio"
+    "start": "node dist/index.js"
   },
   "dependencies": {
-    "@prisma/client": "^5.19.1",
+    "@relay/engine": "*",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "google-auth-library": "^9.14.1",
-    "googleapis": "^140.0.1",
-    "jsonwebtoken": "^9.0.2"
+    "express": "^4.19.2"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.17",
+    "typescript": "^5.5.4",
+    "tsx": "^4.16.2",
     "@types/express": "^4.17.21",
-    "@types/jsonwebtoken": "^9.0.7",
-    "@types/node": "^20.14.15",
-    "prisma": "^5.19.1",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.5.4"
+    "@types/cors": "^2.8.17",
+    "@types/node": "^20.14.10"
   }
 }
