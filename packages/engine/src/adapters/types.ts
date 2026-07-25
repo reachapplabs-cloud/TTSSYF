@@ -16,7 +16,7 @@ export interface RepurposeAdapter {
   providerLabel: string;
   repurpose(args: {
     approvedDraft: string;
-    voiceProfile: GenerationInput["voiceProfile"];
+    avatar: GenerationInput["avatar"];
     formatId: string;
     formatDescription: string;
   }): Promise<string>;

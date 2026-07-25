@@ -1,9 +1,10 @@
 # @relay/engine
 
-Framework-free core of Relay: generation lanes, voice profile learning, the
-repurposing pipeline, and the free Voice Sample tool. No API keys required
-— ships with rule-based mock adapters so the full workflow is demoable and
-testable end-to-end (`npm run test:engine`).
+Framework-free core of Relay: generation lanes, the Avatar model (identity
++ voice profile + insights), direction-steered generation, the repurposing
+pipeline, generate-from-Avatar, and the free Voice Sample tool. No API keys
+required — ships with rule-based mock adapters so the full workflow is
+demoable and testable end-to-end (`npm run test:engine`).
 
 ## Wiring in a real model provider
 
@@ -33,6 +34,14 @@ Same pattern for `RepurposeAdapter` (`mockRepurposeAdapter` in
 `src/adapters/mockAdapters.ts`) — swap it for a real drafting-model call
 when ready.
 
-Per [`docs/03-PRD.md`](../../docs/03-PRD.md) §6, phase 1 plans to wire
+Every adapter's `generate()` receives the same three things a real prompt
+needs: `rawInput`, the optional `direction` (the founder's steering note —
+this is what makes Relay directable rather than automated, see
+`docs/03-PRD.md` §3-4), and the `avatar` (`voiceProfile` for style,
+`insights` for substance). A real adapter should fold `direction` in as an
+explicit instruction, not just extra context — if a live model call ignores
+it, the product's actual differentiator silently disappears.
+
+Per [`docs/03-PRD.md`](../../docs/03-PRD.md) §7, phase 1 plans to wire
 exactly one real adapter (the drafting lane) before spending on the other
 two — validate the workflow with a live model before paying for three.

@@ -1,14 +1,14 @@
 import { randomUUID } from "node:crypto";
 import { GenerationAdapter, RepurposeAdapter } from "./adapters/types.js";
 import {
+  Avatar,
   DEFAULT_OUTPUT_PROFILE,
   OUTPUT_FORMATS,
   OutputProfile,
   RepurposedPiece,
   Submission,
-  VoiceProfile,
 } from "./types.js";
-import { learnFromApproval } from "./voiceProfile.js";
+import { addInsight, learnFromApproval } from "./voiceProfile.js";
 import { Notifier } from "./notify.js";
 
 export interface PipelineDeps {
@@ -18,24 +18,32 @@ export interface PipelineDeps {
 }
 
 /**
- * Orchestrates the core workflow from PRD §4: fan out to the generation
- * lanes, hold the submission for human review, then on approval learn from
- * the edit and fan out into every configured output format.
+ * Orchestrates the core workflow from PRD §5: fan out to the generation
+ * lanes (directed by an optional steering note, not just the raw input),
+ * hold the submission for human review, then on approval learn the
+ * founder's style from the edit, optionally fold in an explicit insight,
+ * and fan out into every configured output format.
  */
 export class RelayPipeline {
   private submissions = new Map<string, Submission>();
 
   constructor(private deps: PipelineDeps) {}
 
-  async submit(founderId: string, rawInput: string, voiceProfile: VoiceProfile): Promise<Submission> {
+  async submit(
+    founderId: string,
+    rawInput: string,
+    avatar: Avatar,
+    direction?: string
+  ): Promise<Submission> {
     const laneResults = await Promise.all(
-      this.deps.adapters.map((adapter) => adapter.generate({ rawInput, voiceProfile }))
+      this.deps.adapters.map((adapter) => adapter.generate({ rawInput, avatar, direction }))
     );
 
     const submission: Submission = {
       id: randomUUID(),
       founderId,
       rawInput,
+      direction,
       laneResults,
       status: "in_review",
       createdAt: new Date().toISOString(),
@@ -58,17 +66,19 @@ export class RelayPipeline {
   async approve(
     id: string,
     mergedDraft: string,
-    voiceProfile: VoiceProfile,
-    outputProfile: OutputProfile = DEFAULT_OUTPUT_PROFILE
-  ): Promise<{ submission: Submission; updatedVoiceProfile: VoiceProfile }> {
+    avatar: Avatar,
+    outputProfile: OutputProfile = DEFAULT_OUTPUT_PROFILE,
+    approvalInsight?: string
+  ): Promise<{ submission: Submission; updatedAvatar: Avatar }> {
     const submission = this.submissions.get(id);
     if (!submission) throw new Error(`Unknown submission: ${id}`);
 
-    const updatedVoiceProfile = learnFromApproval(
-      voiceProfile,
+    const styleUpdated = learnFromApproval(
+      avatar,
       submission.laneResults.map((r) => r.content),
       mergedDraft
     );
+    const updatedAvatar = approvalInsight ? addInsight(styleUpdated, approvalInsight) : styleUpdated;
 
     const pieces: RepurposedPiece[] = await Promise.all(
       outputProfile.map(async (formatId) => {
@@ -76,7 +86,7 @@ export class RelayPipeline {
         if (!format) throw new Error(`Unknown output format: ${formatId}`);
         const content = await this.deps.repurposeAdapter.repurpose({
           approvedDraft: mergedDraft,
-          voiceProfile: updatedVoiceProfile,
+          avatar: updatedAvatar,
           formatId: format.id,
           formatDescription: format.description,
         });
@@ -85,6 +95,7 @@ export class RelayPipeline {
     );
 
     submission.mergedDraft = mergedDraft;
+    submission.approvalInsight = approvalInsight;
     submission.status = "approved";
     submission.approvedAt = new Date().toISOString();
     submission.pieces = pieces;
@@ -94,6 +105,6 @@ export class RelayPipeline {
       message: `Your draft + ${pieces.length} repurposed piece(s) are ready to review.`,
     });
 
-    return { submission, updatedVoiceProfile };
+    return { submission, updatedAvatar };
   }
 }

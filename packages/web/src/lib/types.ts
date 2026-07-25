@@ -39,9 +39,11 @@ export interface Submission {
   id: string;
   founderId: string;
   rawInput: string;
+  direction?: string;
   laneResults: GenerationResult[];
   status: SubmissionStatus;
   mergedDraft?: string;
+  approvalInsight?: string;
   approvedAt?: string;
   pieces?: RepurposedPiece[];
   createdAt: string;
@@ -50,5 +52,32 @@ export interface Submission {
 export interface VoiceSampleResult {
   observations: string[];
   rewritten: string;
+  generatedAt: string;
+}
+
+export interface VoiceProfile {
+  toneNotes: string[];
+  signaturePhrases: string[];
+  bannedPhrases: string[];
+  sampleSentences: string[];
+}
+
+export interface AvatarIdentity {
+  name?: string;
+  role?: string;
+  company?: string;
+}
+
+export interface Avatar {
+  founderId: string;
+  identity: AvatarIdentity;
+  voiceProfile: VoiceProfile;
+  insights: string[];
+  updatedAt: string;
+}
+
+export interface AvatarIdea {
+  headline: string;
+  angle: string;
   generatedAt: string;
 }

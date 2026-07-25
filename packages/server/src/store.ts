@@ -1,9 +1,4 @@
-import {
-  DEFAULT_OUTPUT_PROFILE,
-  emptyVoiceProfile,
-  OutputProfile,
-  VoiceProfile,
-} from "@relay/engine";
+import { Avatar, DEFAULT_OUTPUT_PROFILE, emptyAvatar, OutputProfile } from "@relay/engine";
 
 /**
  * In-memory store for the MVP — no auth, single demo founder. Swap for a
@@ -11,18 +6,18 @@ import {
  * (see docs/05-ROADMAP.md).
  */
 class InMemoryStore {
-  private voiceProfiles = new Map<string, VoiceProfile>();
+  private avatars = new Map<string, Avatar>();
   private outputProfiles = new Map<string, OutputProfile>();
 
-  getVoiceProfile(founderId: string): VoiceProfile {
-    if (!this.voiceProfiles.has(founderId)) {
-      this.voiceProfiles.set(founderId, emptyVoiceProfile(founderId));
+  getAvatar(founderId: string): Avatar {
+    if (!this.avatars.has(founderId)) {
+      this.avatars.set(founderId, emptyAvatar(founderId));
     }
-    return this.voiceProfiles.get(founderId)!;
+    return this.avatars.get(founderId)!;
   }
 
-  setVoiceProfile(founderId: string, profile: VoiceProfile): void {
-    this.voiceProfiles.set(founderId, profile);
+  setAvatar(founderId: string, avatar: Avatar): void {
+    this.avatars.set(founderId, avatar);
   }
 
   getOutputProfile(founderId: string): OutputProfile {

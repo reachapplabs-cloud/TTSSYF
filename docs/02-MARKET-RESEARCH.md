@@ -86,6 +86,19 @@ distribution wedge — it's a subsidy war, one this team cannot win.
    explicit low-friction top-of-funnel hook combined with a voice-profile
    product behind it. OpusClip does async free processing but for video
    only, with no voice/brand data capture behind it.
+6. **Explicit directability is nobody's pitch, including the fully
+   autonomous players.** Polsia can be steered by its operator — an
+   autonomous platform still takes configuration/prompting — but "you are
+   in control of the direction, on purpose" is not how it's marketed; the
+   headline story is "zero employees, it just runs." Meet Sona and the
+   repurposing tools default to "edit the output," not "tell it where to
+   go before it generates." Nobody is selling "the human supplies the
+   insight, the machine builds around it" as the core mechanic — see PRD
+   §4's "Direct" step and `01-ROAST.md`'s 2026-07-25 addendum. This is a
+   cleaner articulation of gap #1/#2 above than "voice profile" alone: the
+   product captures an **avatar** (identity, beliefs, expertise, stories)
+   plus voice, and the human directs what gets built from it, rather than
+   only reviewing what came out.
 
 ## 4. Where this plan should NOT compete in phase 1
 

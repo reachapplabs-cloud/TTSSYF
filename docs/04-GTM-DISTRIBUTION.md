@@ -32,14 +32,26 @@ Relay's ideation lane analyzes it and returns, free, in under 2 minutes:
    founder-story snippet, LinkedIn post, or blog intro) as a live proof
    point — not a template, a piece that reads like *them*, delivered async
    with an email/Slack ping when ready ("your voice sample is ready").
-3. A single clear CTA: "This is one output from one input. Relay does this
-   automatically, in 5 formats, every time you publish — want it running
-   on your content?"
+3. A single clear CTA: "This is one output from one input, and you didn't
+   have to tell it what to do — imagine what it builds once you actually
+   direct it. Relay does this automatically, in 5 formats, every time you
+   publish, and you're always the one steering it. Want it running on your
+   content?"
 
 This is deliberately narrow, fast to build, fast to try, and produces a
 personal, screenshot-able artifact people want to share (which is itself a
 distribution loop — a good voice readout is the kind of thing founders
 post about).
+
+**Positioning note (added 2026-07-25, per Aditya):** the wedge sells the
+*style* proof (it sounds like you) cheaply and fast, but the CTA should
+plant the *substance + directability* pitch — "an engine you can actually
+steer" — as the reason to come back for the full product, not just "more
+formats." That's the differentiator from both the generic AI-writer
+category and from fully autonomous players like Polsia (see
+`01-ROAST.md`'s addendum and `03-PRD.md` §3-4). Don't let the wedge's copy
+imply "hands-off automation" — that undersells the actual product and
+invites exactly the "robotic" comparison Relay exists to avoid.
 
 ## 3. Why this wedge specifically
 
