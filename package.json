@@ -1,19 +1,20 @@
 {
-  "name": "ugram",
+  "name": "relay",
   "private": true,
   "version": "0.1.0",
-  "description": "Ugram (YouGram) — connect your YouTube and Instagram accounts and collect everything you've saved in one organized place.",
+  "description": "Relay — a human-in-the-loop content automation engine. AI drafts across multiple lanes, a founder's voice shapes and approves, one approval fans out into every format they publish.",
   "workspaces": [
+    "packages/engine",
     "packages/server",
     "packages/web"
   ],
   "scripts": {
+    "build:engine": "npm run build --workspace=packages/engine",
     "dev:server": "npm run dev --workspace=packages/server",
     "build:server": "npm run build --workspace=packages/server",
     "dev:web": "npm run dev --workspace=packages/web",
     "build:web": "npm run build --workspace=packages/web",
-    "db:migrate": "npm run db:migrate --workspace=packages/server",
-    "db:studio": "npm run db:studio --workspace=packages/server"
+    "test:engine": "npm run test --workspace=packages/engine"
   },
   "engines": {
     "node": ">=18"
