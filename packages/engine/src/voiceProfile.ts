@@ -1,20 +1,24 @@
-import { VoiceProfile } from "./types.js";
+import { Avatar } from "./types.js";
 import { splitSentences } from "./adapters/textUtils.js";
 
 const MAX_SAMPLE_SENTENCES = 25;
 const MAX_SIGNATURE_PHRASES = 10;
+const MAX_INSIGHTS = 50;
 
 /**
- * Updates a founder's voice profile from the diff between what a lane
- * generated and what the founder actually approved. This is the "voice
- * profile compounds" mechanic from the PRD: every review makes future
- * generations sound more like this person, not just less wrong.
+ * Updates a founder's avatar from the diff between what a lane generated
+ * and what the founder actually approved. This only touches the voice
+ * profile (style) — sentence rhythm, openers, sample sentences. It's the
+ * "review teaches the engine" mechanic from the PRD, deliberately kept
+ * separate from `addInsight` below, which is where substance (beliefs,
+ * stories, POV) gets captured. Style compounds passively from every edit;
+ * substance compounds only from what the founder explicitly says matters.
  */
 export function learnFromApproval(
-  profile: VoiceProfile,
+  avatar: Avatar,
   generatedDrafts: string[],
   approvedText: string
-): VoiceProfile {
+): Avatar {
   const approvedSentences = splitSentences(approvedText);
   const generatedSentences = new Set(
     generatedDrafts.flatMap((d) => splitSentences(d))
@@ -27,7 +31,7 @@ export function learnFromApproval(
   );
 
   const sampleSentences = dedupeTail(
-    [...profile.sampleSentences, ...novelSentences],
+    [...avatar.voiceProfile.sampleSentences, ...novelSentences],
     MAX_SAMPLE_SENTENCES
   );
 
@@ -38,14 +42,34 @@ export function learnFromApproval(
     .filter((o) => o.length > 5);
 
   const signaturePhrases = dedupeTail(
-    [...profile.signaturePhrases, ...openers],
+    [...avatar.voiceProfile.signaturePhrases, ...openers],
     MAX_SIGNATURE_PHRASES
   );
 
   return {
-    ...profile,
-    sampleSentences,
-    signaturePhrases,
+    ...avatar,
+    voiceProfile: {
+      ...avatar.voiceProfile,
+      sampleSentences,
+      signaturePhrases,
+    },
+    updatedAt: new Date().toISOString(),
+  };
+}
+
+/**
+ * Captures an explicit insight (belief, story, POV, expertise claim) into
+ * the avatar's substance bank. This is the founder actively directing/
+ * teaching the avatar, as distinct from the passive style-learning above —
+ * see PRD §4's distinction between Avatar insights and Voice Profile.
+ */
+export function addInsight(avatar: Avatar, insight: string): Avatar {
+  const trimmed = insight.trim();
+  if (!trimmed) return avatar;
+
+  return {
+    ...avatar,
+    insights: dedupeTail([...avatar.insights, trimmed], MAX_INSIGHTS),
     updatedAt: new Date().toISOString(),
   };
 }

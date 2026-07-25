@@ -129,3 +129,39 @@ which the PRD and roadmap below bake in:
 See `02-MARKET-RESEARCH.md` for the fuller competitive landscape,
 `03-PRD.md` for what v1 actually is, and `04-GTM-DISTRIBUTION.md` /
 `05-ROADMAP.md` for how it ships and who owns what.
+
+## Addendum (2026-07-25) — Aditya's correction, and why it sharpens §5 and §2
+
+Aditya's pushback: we shouldn't capture just a "voice profile" (tone,
+phrases, sentence rhythm) — we should capture an **Avatar**, the fuller
+person (identity, beliefs, expertise, stories, POV), *and* the voice
+profile sits inside that. The avatar is what gets replicated and extended
+into new content, not just restyled input. And separately: the product
+should not be pitched as automation, because automation is what cuts
+creativity out of the loop — the human has to be able to actively **direct**
+generation with real insight, not just approve or reject what comes out.
+His framing: even Polsia, the fully-autonomous comparison this whole plan
+is reacting to, can be directed/prompted by its operator — so "you can
+steer this" is not something Relay gets for free by being manual instead
+of autonomous. It has to be a built, visible capability.
+
+This doesn't overturn the verdict, it makes §5's point sharper and fixes a
+real gap in it:
+
+- §5 said the moat is "how much of the person's actual voice/data gets
+  into the pipeline before generation." That was still too narrow — it
+  described capturing *style*, not *substance*. An avatar with insights,
+  stories, and POV is capturable knowledge that can generate genuinely new
+  ideas, not just restyle whatever the founder pastes in. That's a real
+  answer to "robotic," stronger than a style profile alone.
+- §2 said "pick one story" between Polsia's autonomy pitch and this plan's
+  human-in-the-loop pitch. Aditya's point sharpens that further: the
+  honest story isn't "human review vs. no human review," it's
+  **"directable, on purpose, with a visible mechanism for it" vs. "runs on
+  autopilot unless you go dig into settings to steer it."** Direction has
+  to be a first-class step in the workflow (see PRD §4, "Direct"), not an
+  implicit side effect of an edit box.
+
+Updated verdict for point 3 above: the moat is **Avatar + Voice Profile +
+explicit Direction**, not voice profile alone. See `03-PRD.md` for the
+reworked core workflow and data model.

@@ -1,19 +1,28 @@
 import { GenerationAdapter, RepurposeAdapter } from "./types.js";
-import { GenerationInput, VoiceProfile } from "../types.js";
+import { Avatar, GenerationInput } from "../types.js";
 import { keyPhrases, titleCase, truncate, splitSentences } from "./textUtils.js";
 
 /**
  * These are deliberately rule-based, not real model calls: they let the
- * whole workflow (three labeled lanes -> merge -> voice profile -> fan-out)
- * be demoed and tested with zero API keys. Each one implements the same
+ * whole workflow (three labeled lanes -> merge -> avatar -> fan-out) be
+ * demoed and tested with zero API keys. Each one implements the same
  * GenerationAdapter interface a real Claude/GPT/Perplexity call would, so
  * swapping in a live provider is a one-file change — see README in this
  * package for the wiring point.
+ *
+ * Every lane takes the same three inputs a real prompt would: the raw
+ * input, the founder's direction (if given — see PRD §4/§5), and their
+ * avatar (voice profile for style, insights for substance). That's the
+ * "directable, not automated" mechanic made concrete at the adapter level.
  */
 
-function voicePrefix(voiceProfile: VoiceProfile): string {
-  if (voiceProfile.signaturePhrases.length === 0) return "";
-  return voiceProfile.signaturePhrases[0];
+function voicePrefix(avatar: Avatar): string {
+  if (avatar.voiceProfile.signaturePhrases.length === 0) return "";
+  return avatar.voiceProfile.signaturePhrases[0];
+}
+
+function relevantInsight(avatar: Avatar): string | undefined {
+  return avatar.insights[avatar.insights.length - 1];
 }
 
 export const mockResearchAdapter: GenerationAdapter = {
@@ -21,8 +30,11 @@ export const mockResearchAdapter: GenerationAdapter = {
   providerLabel: "Research Lane (mock — wire to Perplexity/web-research API)",
   async generate(input: GenerationInput) {
     const topics = keyPhrases(input.rawInput, 4);
+    const insight = relevantInsight(input.avatar);
     const angles = [
-      `What's the contrarian take on ${topics[0] ?? "this"} that most people in the space won't say out loud?`,
+      input.direction
+        ? `Direction received: "${input.direction}" — lead with that, don't bury it.`
+        : `What's the contrarian take on ${topics[0] ?? "this"} that most people in the space won't say out loud?`,
       `A concrete example or number that makes "${topics[1] ?? "the claim"}" believable instead of generic.`,
       `Who specifically is this for, and who should explicitly ignore it?`,
       `What changes for the reader in the next 30 days if they act on this?`,
@@ -32,7 +44,10 @@ export const mockResearchAdapter: GenerationAdapter = {
       ...angles.map((a, i) => `${i + 1}. ${a}`),
       ``,
       `Key themes detected in the input: ${topics.join(", ") || "(none detected — input may be too short)"}.`,
-    ].join("\n");
+      insight ? `Connects to something already on file: "${insight}"` : ``,
+    ]
+      .filter(Boolean)
+      .join("\n");
 
     return {
       lane: "research",
@@ -47,9 +62,10 @@ export const mockDraftAdapter: GenerationAdapter = {
   lane: "draft",
   providerLabel: "Draft Lane (mock — wire to a fast drafting model API)",
   async generate(input: GenerationInput) {
-    const prefix = voicePrefix(input.voiceProfile);
+    const prefix = voicePrefix(input.avatar);
+    const directionLine = input.direction ? `${input.direction}\n\n` : "";
     const body = [
-      truncate(prefix ? `${prefix} ${input.rawInput}` : input.rawInput, 600),
+      directionLine + truncate(prefix ? `${prefix} ${input.rawInput}` : input.rawInput, 600),
       ``,
       `Here's the takeaway: most people overcomplicate this. Start with the smallest true version of the idea, say it plainly, and let the specifics do the convincing.`,
     ].join("\n");
@@ -73,6 +89,7 @@ export const mockStructureAdapter: GenerationAdapter = {
     const content = [
       `# ${title || "Working Title"}`,
       ``,
+      ...(input.direction ? [`## Direction`, input.direction, ``] : []),
       `## Why this matters`,
       sentences[0] ?? input.rawInput,
       ``,

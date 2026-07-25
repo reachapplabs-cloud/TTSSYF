@@ -38,7 +38,7 @@ export function runVoiceSample(rawInput: string): VoiceSampleResult {
     ``,
     sentences.slice(1, 3).join(" ") || "Here's the version of this that's actually worth saying out loud.",
     ``,
-    `This is one output from one input, in your voice, not a template. Relay does this automatically — across a blog post, a LinkedIn post, and a founder story — every time you publish.`,
+    `This is one output from one input, in your voice, not a template — and you didn't even tell it what to do. Relay does this automatically across a blog post, a LinkedIn post, and a founder story every time you publish, and you're always the one directing it.`,
   ].join("\n");
 
   return {

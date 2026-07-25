@@ -6,8 +6,11 @@
 - [x] Market research (`02-MARKET-RESEARCH.md`)
 - [x] PRD (`03-PRD.md`)
 - [x] GTM & distribution plan (`04-GTM-DISTRIBUTION.md`)
-- [x] MVP engine scaffold: adapters, voice profile, review UI, repurposing
-      pipeline (see `packages/`)
+- [x] MVP engine scaffold: adapters, Avatar (identity + voice profile +
+      insights), Direction input, review UI, repurposing pipeline, and a
+      generate-from-Avatar action (see `packages/`) — reworked
+      2026-07-25 per Aditya's correction, see `01-ROAST.md` addendum and
+      `03-PRD.md` §3-5
 
 ## Phase 1 — Prove the wedge (target: 4-6 weeks)
 
@@ -19,9 +22,13 @@ Owner split:
     mocks until there's usage to justify the spend)
   - Ship the Voice Sample wedge as a standalone hosted page (uses the
     ideation lane only, one input → one output, per GTM doc §2)
-  - Instrument the funnel events Aditya needs (§5 of GTM doc)
+  - Instrument the funnel events Aditya needs (§5 of GTM doc), including
+    the directed-vs-undirected submission split from PRD §8
   - Get one real founder (not Zoheb or Aditya) through a full
-    input → review → fan-out cycle and fix whatever breaks
+    direct → review → fan-out cycle and fix whatever breaks, and
+    specifically test whether they use the Direction field unprompted —
+    if nobody uses it without being told it exists, the UI is burying the
+    product's actual differentiator
 
 - **Aditya — distribution**
   - Ship Voice Sample copy/positioning and the upgrade CTA
@@ -62,3 +69,8 @@ wedge/ICP before building more product.
    this measurably less robotic than a fully autonomous competitor?" If
    the answer stops being yes, the product has drifted from its reason to
    exist.
+4. Direction stays a first-class, visible input, not a buried setting —
+   automation without a steering wheel is exactly the thing this product
+   is not (see PRD §3). If a future feature makes direction optional in a
+   way that quietly becomes "nobody uses it," that's a regression, not a
+   simplification.

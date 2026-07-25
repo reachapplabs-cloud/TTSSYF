@@ -6,8 +6,10 @@ const LANE_ORDER: Record<string, number> = { research: 0, draft: 1, structure: 2
 
 export default function ReviewPage() {
   const [rawInput, setRawInput] = useState("");
+  const [direction, setDirection] = useState("");
   const [submission, setSubmission] = useState<Submission | null>(null);
   const [mergedDraft, setMergedDraft] = useState("");
+  const [approvalInsight, setApprovalInsight] = useState("");
   const [loading, setLoading] = useState(false);
   const [approving, setApproving] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -20,7 +22,7 @@ export default function ReviewPage() {
     }
     setLoading(true);
     try {
-      const sub = await api.submit(rawInput);
+      const sub = await api.submit(rawInput, direction.trim() || undefined);
       setSubmission(sub);
       const draftLane = sub.laneResults.find((r) => r.lane === "draft");
       setMergedDraft(draftLane?.content ?? sub.laneResults[0]?.content ?? "");
@@ -40,7 +42,7 @@ export default function ReviewPage() {
     }
     setApproving(true);
     try {
-      const approved = await api.approve(submission.id, mergedDraft);
+      const approved = await api.approve(submission.id, mergedDraft, approvalInsight.trim() || undefined);
       setSubmission(approved);
     } catch (e) {
       setError((e as Error).message);
@@ -53,6 +55,8 @@ export default function ReviewPage() {
     setSubmission(null);
     setMergedDraft("");
     setRawInput("");
+    setDirection("");
+    setApprovalInsight("");
   }
 
   return (
@@ -60,19 +64,35 @@ export default function ReviewPage() {
       <section className="hero">
         <h1>The engine</h1>
         <p className="subhead">
-          Paste a topic, transcript, or rough note. Three lanes generate in parallel, each
-          labeled by source. Merge/edit into one draft, approve, and it fans out into every
-          format you've configured.
+          This isn't automation — it's directable. Tell it the angle before it generates, not
+          just what to fix after. Paste a topic, transcript, or rough note, three lanes generate
+          in parallel labeled by source, merge/edit into one draft, approve, and it fans out into
+          every format you've configured.
         </p>
       </section>
 
       {!submission && (
         <section className="card">
+          <label className="field-label" htmlFor="raw-input">
+            What's this about?
+          </label>
           <textarea
+            id="raw-input"
             value={rawInput}
             onChange={(e) => setRawInput(e.target.value)}
             placeholder="What do you want to write about? Paste notes, a transcript, or a rough idea."
             rows={6}
+          />
+          <label className="field-label" htmlFor="direction">
+            Direction (optional) — tell it the angle, who it's for, what to lead with. Leave it
+            blank and Relay falls back to what it already knows about you.
+          </label>
+          <textarea
+            id="direction"
+            value={direction}
+            onChange={(e) => setDirection(e.target.value)}
+            placeholder="e.g. Make the contrarian case. This is for investors, not customers."
+            rows={2}
           />
           <button onClick={handleSubmit} disabled={loading}>
             {loading ? "Generating across three lanes…" : "Generate"}
@@ -83,6 +103,13 @@ export default function ReviewPage() {
 
       {submission && submission.status === "in_review" && (
         <>
+          {submission.direction && (
+            <section className="card direction-banner">
+              <div className="lane-label">Directed with</div>
+              <p>{submission.direction}</p>
+            </section>
+          )}
+
           <section className="lanes">
             {[...submission.laneResults]
               .sort((a, b) => (LANE_ORDER[a.lane] ?? 99) - (LANE_ORDER[b.lane] ?? 99))
@@ -106,6 +133,17 @@ export default function ReviewPage() {
               value={mergedDraft}
               onChange={(e) => setMergedDraft(e.target.value)}
               rows={10}
+            />
+            <label className="field-label" htmlFor="approval-insight">
+              Insight (optional) — the real point, a belief, a story worth keeping. This teaches
+              Relay what to build more of, separate from how you write it.
+            </label>
+            <textarea
+              id="approval-insight"
+              value={approvalInsight}
+              onChange={(e) => setApprovalInsight(e.target.value)}
+              placeholder="e.g. Most onboarding failures are editorial, not technical."
+              rows={2}
             />
             <div className="actions">
               <button onClick={handleApprove} disabled={approving}>

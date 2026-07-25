@@ -2,14 +2,21 @@
 
 **By Zo & Aadi** (Zoheb + Aditya, ex-Yasity).
 
-Relay is a human-in-the-loop content automation engine: paste an idea,
-transcript, or note; three labeled generation lanes draft it in parallel;
-you merge/edit into one approved piece; one approval fans out into every
-format you publish (blog, LinkedIn, founder story, thread, newsletter).
-Every edit you make teaches Relay your voice, so review gets faster and
-output gets less generic over time — that's the whole bet, see
-[`docs/01-ROAST.md`](docs/01-ROAST.md) for why "AI + human review" alone
-isn't a differentiator without it.
+Relay is a **directable** content engine, not an automation tool —
+automation is what cuts creativity out of the loop. It captures an
+**Avatar** (your identity, beliefs, expertise, stories) and a **Voice
+Profile** (how you actually write), and lets you **direct** it before it
+generates, not just approve or edit after: paste an idea, transcript, or
+note; optionally tell it the angle to take; three labeled generation lanes
+draft it in parallel; you merge/edit into one approved piece; one approval
+fans out into every format you publish (blog, LinkedIn, founder story,
+thread, newsletter). Every edit teaches Relay your style, every insight you
+add teaches it your substance, and once there's enough Avatar built up you
+can ask it to propose new pieces on its own — always something you still
+direct and approve, never autopilot. See
+[`docs/01-ROAST.md`](docs/01-ROAST.md) (and its 2026-07-25 addendum) for
+why "AI + human review" alone isn't a differentiator, and why
+directability — not just automation-with-a-checkbox — is.
 
 ## Start here
 
@@ -32,12 +39,14 @@ Read in this order — each doc was written to survive the one before it:
 ```
 relay/
 ├── packages/
-│   ├── engine/   Core TS library: generation lanes, voice profile,
-│   │             repurposing pipeline, the free Voice Sample tool.
-│   │             Framework-free, fully unit tested, no API keys required
-│   │             to run (mock provider adapters — see engine README).
+│   ├── engine/   Core TS library: generation lanes, Avatar (identity +
+│   │             voice profile + insights), Direction input, repurposing
+│   │             pipeline, generate-from-Avatar, the free Voice Sample
+│   │             tool. Framework-free, fully unit tested, no API keys
+│   │             required to run (mock provider adapters — see engine
+│   │             README).
 │   ├── server/   Express API wrapping the engine (in-memory store, no
-│   │             auth — single demo founder, matches MVP scope in PRD §6).
+│   │             auth — single demo founder, matches MVP scope in PRD §7).
 │   └── web/      React + Vite UI: the free Voice Sample landing page and
 │                 the full review/approve/repurpose engine UI.
 └── docs/         Roast, market research, PRD, GTM, roadmap (see above).
