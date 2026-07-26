@@ -1,6 +1,6 @@
 # PRD — Relay
 
-**Studio**: Zo & Aadi (Zoheb + Aditya, ex-Yasity)
+**Studio**: Zo & Aadi (Zoheb + Aditya, from Yescity)
 **Product codename**: Relay — "AI drafts, you relay your voice through it,
 it relays out everywhere you publish."
 **Status**: Phase 1 / MVP planning

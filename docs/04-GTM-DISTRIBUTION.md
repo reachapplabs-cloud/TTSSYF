@@ -5,6 +5,14 @@ owns everything in this document — the wedge tool's execution, channel
 work, outreach, and the funnel metrics below. Treat this doc as Aditya's
 scope of responsibility for phase 1, to be revised by Aditya as he runs it.
 
+**Update (2026-07-26)**: the self-serve wedge tool below is now **Phase 1**,
+not Phase 0 — see
+[`docs/06-POLSIA-PLAYBOOK-AND-GTM-V2.md`](06-POLSIA-PLAYBOOK-AND-GTM-V2.md)
+§5 for why (Reforge's Product–Channel/Channel–Model fit logic: a
+self-serve tool needs a proven manual motion behind it first). Everything
+below is still the plan for once that Phase 0 concierge motion has signal
+— read doc 06 first.
+
 ## 1. Geography
 
 Primary: **US and EU** (paying-customer priority, English-first content
@@ -77,7 +85,7 @@ invites exactly the "robotic" comparison Relay exists to avoid.
 2a. Cross-post the same build-in-public thread to LinkedIn (higher density
    of the actual ICP — B2B/technical founders — than X for this specific
    audience).
-3. **Warm outreach to Yasity's existing network** — Aditya's prior company
+3. **Warm outreach to Yescity's existing network** — Aditya's company
    relationships are a pre-qualified list of founders/operators; direct
    1:1 outreach with the Voice Sample link, not a cold pitch.
 4. **Product Hunt launch** — once the wedge + upgrade funnel is proven on
