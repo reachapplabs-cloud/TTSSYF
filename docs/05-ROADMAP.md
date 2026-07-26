@@ -11,8 +11,22 @@
       generate-from-Avatar action (see `packages/`) — reworked
       2026-07-25 per Aditya's correction, see `01-ROAST.md` addendum and
       `03-PRD.md` §3-5
+- [x] Polsia research guide + roast/QA + GTM v2
+      (`06-POLSIA-PLAYBOOK-AND-GTM-V2.md`, 2026-07-26) — inserts a
+      concierge-first **Phase 0.5** below, ahead of the wedge tool
 
-## Phase 1 — Prove the wedge (target: 4-6 weeks)
+## Phase 0.5 — Concierge, before any wedge tool (this week/next)
+
+See `06-POLSIA-PLAYBOOK-AND-GTM-V2.md` §5.2-5.3 for the full motion. In
+short: Zo and Aditya manually run 10-15 real people (plus Zo's own company
+and Yescity, both already-confirmed dogfood targets) through the actual
+engine by hand — no signup, no public wedge tool yet. Exit criteria:
+8-10 of ~15 say it's clearly better/faster, 3+ say "I'd pay for this"
+unprompted. Only then does Phase 1 below start. This reorders Phase 1's
+original sequencing (wedge tool first) — the wedge tool now scales a
+proven manual motion instead of substituting for validating one.
+
+## Phase 1 — Prove the wedge (target: 4-6 weeks, starts after Phase 0.5 exit criteria)
 
 Owner split:
 
@@ -32,7 +46,7 @@ Owner split:
 
 - **Aditya — distribution**
   - Ship Voice Sample copy/positioning and the upgrade CTA
-  - Run channels 1-3 from GTM doc (own network, build-in-public, Yasity
+  - Run channels 1-3 from GTM doc (own network, build-in-public, Yescity
     warm outreach) — target: 100 Voice Samples run, 20 signups, 3 people
     through a full paid-consideration conversation
   - Own weekly funnel number reporting back to Zoheb

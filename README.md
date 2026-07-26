@@ -1,6 +1,6 @@
 # Relay
 
-**By Zo & Aadi** (Zoheb + Aditya, ex-Yasity).
+**By Zo & Aadi** (Zoheb + Aditya, from Yescity).
 
 Relay is a **directable** content engine, not an automation tool —
 automation is what cuts creativity out of the loop. It captures an
@@ -33,6 +33,13 @@ Read in this order — each doc was written to survive the one before it:
    owns this** — the free wedge tool, channels, funnel, US/EU/AUS focus.
 5. [`docs/05-ROADMAP.md`](docs/05-ROADMAP.md) — phases, ownership split,
    exit criteria for phase 1.
+6. [`docs/06-POLSIA-PLAYBOOK-AND-GTM-V2.md`](docs/06-POLSIA-PLAYBOOK-AND-GTM-V2.md)
+   — **read this one alongside #4, it supersedes the acquisition-motion
+   part of it**: a research guide for studying Polsia without taking it at
+   face value, a hard roast of the plan as it stood after Zo/Aditya's own
+   working thread, a QA pass on what survives, and a Reforge-style GTM
+   restart — concierge-first (Phase 0), using the two companies who
+   already have this problem, before any self-serve wedge tool.
 
 ## Monorepo layout
 
