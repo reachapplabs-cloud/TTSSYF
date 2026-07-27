@@ -1,4 +1,4 @@
-<title>Gajab — Feature Expectations</title>
+<title>Gajab — Tech Scope</title>
 <style>
   :root{
     --bg: #F6F4EF;
@@ -8,33 +8,31 @@
     --line: #E4DFD3;
     --accent: #285C56;
     --accent-soft: #DCE9E6;
-    --flag-high: #A8501E;
-    --flag-high-soft: #F4E3D6;
+    --p2: #6B6350;
+    --p2-soft: #EFEAE0;
+    --p3: #948C7A;
+    --p3-soft: #F1EEE6;
     --mono-ink: #4A463D;
   }
   @media (prefers-color-scheme: dark){
     :root{
-      --bg: #16181A;
-      --paper: #1D2022;
-      --ink: #ECE8DF;
-      --ink-soft: #A9A395;
-      --line: #34383A;
-      --accent: #7FBDB2;
-      --accent-soft: #223634;
-      --flag-high: #E08A54;
-      --flag-high-soft: #35271D;
+      --bg: #16181A; --paper: #1D2022; --ink: #ECE8DF; --ink-soft: #A9A395;
+      --line: #34383A; --accent: #7FBDB2; --accent-soft: #223634;
+      --p2: #C9BFA6; --p2-soft: #2B2A22; --p3: #8B8676; --p3-soft: #232320;
       --mono-ink: #B9B3A4;
     }
   }
   :root[data-theme="dark"]{
     --bg: #16181A; --paper: #1D2022; --ink: #ECE8DF; --ink-soft: #A9A395;
     --line: #34383A; --accent: #7FBDB2; --accent-soft: #223634;
-    --flag-high: #E08A54; --flag-high-soft: #35271D; --mono-ink: #B9B3A4;
+    --p2: #C9BFA6; --p2-soft: #2B2A22; --p3: #8B8676; --p3-soft: #232320;
+    --mono-ink: #B9B3A4;
   }
   :root[data-theme="light"]{
     --bg: #F6F4EF; --paper: #FFFFFF; --ink: #211F1B; --ink-soft: #5B564C;
     --line: #E4DFD3; --accent: #285C56; --accent-soft: #DCE9E6;
-    --flag-high: #A8501E; --flag-high-soft: #F4E3D6; --mono-ink: #4A463D;
+    --p2: #6B6350; --p2-soft: #EFEAE0; --p3: #948C7A; --p3-soft: #F1EEE6;
+    --mono-ink: #4A463D;
   }
 
   *{ box-sizing: border-box; }
@@ -42,243 +40,89 @@
     margin: 0;
     background: var(--bg);
     color: var(--ink);
-    font-family: Charter, "Iowan Old Style", "Georgia", ui-serif, serif;
+    font-family: Charter, "Iowan Old Style", Georgia, ui-serif, serif;
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
   }
-  .page{
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 56px 24px 96px;
-  }
+  .page{ max-width: 780px; margin: 0 auto; padding: 56px 24px 96px; }
   .label{
-    font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace;
-    font-size: 11.5px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase;
     color: var(--mono-ink);
   }
-  header.doc-head{
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 28px;
-    margin-bottom: 40px;
-  }
+  header.doc-head{ border-bottom: 1px solid var(--line); padding-bottom: 28px; margin-bottom: 20px; }
   header.doc-head .label{ color: var(--accent); margin-bottom: 10px; }
-  h1{
-    font-size: clamp(28px, 4vw, 36px);
-    font-weight: 600;
-    letter-spacing: -0.01em;
-    margin: 0 0 18px;
-    text-wrap: balance;
-  }
+  h1{ font-size: clamp(28px, 4vw, 36px); font-weight: 600; letter-spacing: -0.01em; margin: 0 0 18px; text-wrap: balance; }
   .meta-row{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 24px;
+    display: flex; flex-wrap: wrap; gap: 8px 24px;
     font-family: ui-monospace, "SF Mono", Menlo, monospace;
-    font-size: 13px;
-    color: var(--ink-soft);
+    font-size: 13px; color: var(--ink-soft);
   }
   .meta-row span b{ color: var(--ink); font-weight: 600; }
+  .intro{ font-family: ui-sans-serif, system-ui, sans-serif; font-size: 15.5px; color: var(--ink-soft); margin: 20px 0 44px; max-width: 62ch; }
 
-  .intro{
-    font-size: 16px;
-    color: var(--ink-soft);
-    margin-bottom: 48px;
-    max-width: 62ch;
+  .phase{ margin-bottom: 30px; }
+  .phase-head{ display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px; }
+  .phase-num{
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 13px; font-weight: 700; letter-spacing: 0.02em;
+    padding: 5px 12px; border-radius: 100px;
   }
+  .phase[data-p="1"] .phase-num{ background: var(--accent); color: var(--paper); }
+  .phase[data-p="2"] .phase-num{ background: var(--p2-soft); color: var(--p2); border: 1px solid var(--p2); }
+  .phase[data-p="3"] .phase-num{ background: transparent; color: var(--p3); border: 1px dashed var(--p3); }
+  .phase-title{ font-size: 22px; font-weight: 600; margin: 0; letter-spacing: -0.005em; }
+  .phase-sub{ font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13.5px; color: var(--ink-soft); margin-left: auto; white-space: nowrap; }
 
-  section.item{
+  .track-grid{ display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 640px){ .track-grid{ grid-template-columns: 1fr; } }
+  .track{
     background: var(--paper);
     border: 1px solid var(--line);
     border-radius: 10px;
-    padding: 32px clamp(20px, 4vw, 40px);
-    margin-bottom: 32px;
-    position: relative;
+    padding: 20px 22px;
   }
-  section.item::before{
-    content: "";
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
-    width: 4px;
-    background: var(--accent);
-    border-radius: 10px 0 0 10px;
-  }
-  .item-head{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px 16px;
-    margin-bottom: 6px;
-  }
-  h2{
-    font-size: 22px;
-    font-weight: 600;
-    margin: 0;
-    letter-spacing: -0.005em;
-  }
-  .chip{
+  .phase[data-p="3"] .track{ background: transparent; }
+  .track-label{
     font-family: ui-monospace, "SF Mono", Menlo, monospace;
-    font-size: 11px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    padding: 4px 9px;
-    border-radius: 100px;
-    background: var(--flag-high-soft);
-    color: var(--flag-high);
-    white-space: nowrap;
+    font-size: 10.5px; letter-spacing: 0.07em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 10px;
   }
-  .context{
-    font-size: 15px;
-    color: var(--ink-soft);
-    margin: 4px 0 26px;
-    max-width: 60ch;
+  .phase[data-p="2"] .track-label{ color: var(--p2); }
+  .phase[data-p="3"] .track-label{ color: var(--p3); }
+  .track ul{ margin: 0; padding-left: 20px; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 14.5px; }
+  .track li{ margin-bottom: 8px; }
+  .track li:last-child{ margin-bottom: 0; }
+  .track li::marker{ color: var(--ink-soft); }
+  .track li b{ color: var(--ink); }
+  .track-single{
+    background: var(--paper); border: 1px solid var(--line); border-radius: 10px;
+    padding: 20px 22px;
   }
+  .phase[data-p="3"] .track-single{ background: transparent; }
 
-  h3{
-    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 26px 0 10px;
-  }
-  section.item > h3:first-of-type{ margin-top: 0; }
-
-  p, li{
-    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-    font-size: 15.5px;
-    color: var(--ink);
-  }
-  ul{ margin: 0; padding-left: 22px; }
-  li{ margin-bottom: 7px; }
-  li:last-child{ margin-bottom: 0; }
-  li::marker{ color: var(--ink-soft); }
-
-  .questions{ list-style: none; padding-left: 0; counter-reset: q; }
-  .questions li{
-    counter-increment: q;
-    padding-left: 30px;
-    position: relative;
-  }
-  .questions li::before{
-    content: counter(q);
-    position: absolute;
-    left: 0; top: 0.5px;
-    width: 19px; height: 19px;
-    border: 1.5px solid var(--accent);
-    color: var(--accent);
-    border-radius: 5px;
-    font-family: ui-monospace, "SF Mono", Menlo, monospace;
-    font-size: 11px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .sub-label{
-    font-family: ui-monospace, "SF Mono", Menlo, monospace;
-    font-size: 11px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    margin: 18px 0 6px;
-  }
-
-  .note{
-    font-family: ui-sans-serif, system-ui, sans-serif;
-    color: var(--ink-soft);
-    font-size: 15px;
-    margin: 0 0 12px;
-  }
-
-  .trigger-tag{
-    display: inline-block;
-    font-family: ui-monospace, "SF Mono", Menlo, monospace;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--accent);
-    background: var(--accent-soft);
-    padding: 3px 10px;
-    border-radius: 5px;
-    margin: 22px 0 4px;
-  }
-
-  .table-wrap{
-    overflow-x: auto;
-    margin: 4px 0 8px;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-  }
-  table{
-    width: 100%;
-    border-collapse: collapse;
-    font-family: ui-sans-serif, system-ui, sans-serif;
-    font-size: 14px;
-    min-width: 520px;
-  }
+  .table-wrap{ overflow-x: auto; margin: 40px 0 0; border: 1px solid var(--line); border-radius: 8px; }
+  table{ width: 100%; border-collapse: collapse; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 14px; min-width: 560px; }
   thead th{
-    text-align: left;
-    font-family: ui-monospace, "SF Mono", Menlo, monospace;
-    font-size: 10.5px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    background: var(--accent-soft);
-    padding: 9px 14px;
-    white-space: nowrap;
+    text-align: left; font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-soft); background: var(--accent-soft); padding: 10px 16px;
   }
-  tbody td{
-    padding: 10px 14px;
-    border-top: 1px solid var(--line);
-    vertical-align: top;
-  }
-  tbody td:first-child{
-    font-family: ui-monospace, "SF Mono", Menlo, monospace;
-    color: var(--accent);
-    font-weight: 600;
-    width: 28px;
-  }
-  tbody td em{ font-style: normal; color: var(--ink-soft); }
+  tbody td{ padding: 12px 16px; border-top: 1px solid var(--line); vertical-align: top; }
+  tbody td:first-child{ font-weight: 600; white-space: nowrap; }
   tbody tr:last-child td{ border-bottom: none; }
-
-  .priority-note{
-    background: var(--flag-high-soft);
-    border-left: 3px solid var(--flag-high);
-    padding: 12px 16px;
-    border-radius: 0 6px 6px 0;
-    font-family: ui-sans-serif, system-ui, sans-serif;
-    font-size: 14.5px;
-    color: var(--ink);
-    margin: 4px 0 8px;
-  }
-
-  footer.doc-foot{
-    margin-top: 44px;
-    padding-top: 24px;
-    border-top: 1px solid var(--line);
-    font-family: ui-sans-serif, system-ui, sans-serif;
-    font-size: 14px;
-    color: var(--ink-soft);
-    max-width: 62ch;
-  }
 
   @media (max-width: 520px){
     .page{ padding: 40px 16px 72px; }
-    section.item{ padding: 26px 18px; }
+    .track, .track-single{ padding: 18px 16px; }
   }
 </style>
 
 <div class="page">
 
   <header class="doc-head">
-    <div class="label">Gajab &middot; internal brief</div>
-    <h1>Feature Expectations</h1>
+    <div class="label">Gajab &middot; tech scope</div>
+    <h1>Push Notifications &amp; Widget Performance</h1>
     <div class="meta-row">
       <span>From <b>Zo</b></span>
       <span>To <b>Vanitha</b> &middot; Gajab Dev</span>
@@ -286,178 +130,100 @@
     </div>
   </header>
 
-  <p class="intro">
-    High-level expectations for two active items, written so the dev team can
-    elaborate each into a frozen technical scope. Implementation detail
-    &mdash; data model, API shape, infra &mdash; is deliberately left open for
-    Vanitha's team to define.
-  </p>
+  <p class="intro">Ready-to-build scope, split into phases. Phase 1 is this sprint's assignment.</p>
 
-  <section class="item">
-    <div class="item-head">
-      <h2>1&#8202;&middot;&#8202;Push Notifications, Admin&nbsp;&rarr;&nbsp;Buyer</h2>
-      <span class="chip">Scope&#8209;freeze needed</span>
+  <section class="phase" data-p="1">
+    <div class="phase-head">
+      <span class="phase-num">Phase 1</span>
+      <h2 class="phase-title">This Sprint</h2>
+      <span class="phase-sub">assign now</span>
     </div>
-    <p class="context">
-      Two trigger types, both in scope, both landing as a push to the buyer:
-      <b style="color: var(--ink);">manual</b> (admin composes and sends to a
-      chosen segment) and <b style="color: var(--ink);">automated</b> (the
-      system fires on a defined event &mdash; order state, idle cart, stock/
-      price change &mdash; no human per send). They share one delivery
-      pipeline and one set of guardrails; what differs is who or what starts
-      the send.
-    </p>
-
-    <div class="trigger-tag">Trigger type A &middot; Manual</div>
-    <p class="note">Admin composes and sends/schedules from the admin panel to a chosen segment.</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Trigger</th><th>Audience</th><th>Example copy</th></tr></thead>
-        <tbody>
-          <tr><td>1</td><td>Business decides to run a sale</td><td>All buyers, or region-specific</td><td><em>"Independence Day Sale &mdash; flat 30% off, today only."</em></td></tr>
-          <tr><td>2</td><td>New seller/category goes live</td><td>Buyers with browse/purchase history in that category</td><td><em>"New arrivals from [Seller] just landed."</em></td></tr>
-          <tr><td>3</td><td>City/region launch or local promo</td><td>Buyers in that city/region</td><td><em>"Gajab is now live in Chennai &mdash; 10% off your first order."</em></td></tr>
-          <tr><td>4</td><td>Seller needs to clear inventory</td><td>Buyers who viewed/wishlisted that category</td><td><em>"Clearance on [Category] &mdash; up to 50% off, limited stock."</em></td></tr>
-          <tr><td>5</td><td>Platform feature/policy update</td><td>All buyers</td><td><em>"New: track your order in real time."</em></td></tr>
-        </tbody>
-      </table>
+    <div class="track-grid">
+      <div class="track">
+        <div class="track-label">Widget &middot; Monday deploy</div>
+        <ul>
+          <li>Ship bulk import + home screen as already scoped and tested (<b>20&ndash;25 products/widget</b>). Not blocked by anything below.</li>
+          <li>Kick off performance testing for the <b>100+ products/widget</b> case in parallel &mdash; that build is Phase 2, but testing starts now.</li>
+        </ul>
+      </div>
+      <div class="track">
+        <div class="track-label">Notifications &middot; Manual</div>
+        <ul>
+          <li>Compose: title, body, optional image, optional deep link (product / category / seller / in-app screen).</li>
+          <li>Send now, or schedule for later.</li>
+          <li>Segments: all buyers &middot; location/region &middot; seller/category history &middot; cart/wishlist no purchase &middot; new signups &middot; inactive.</li>
+          <li>Send history/log; daily send cap; respect opt-out; no off-hours sends.</li>
+        </ul>
+      </div>
     </div>
-
-    <h3>Audience targeting ("selected user base")</h3>
-    <p class="note">Proposed v1 segments &mdash; confirm/trim before scoping:</p>
-    <ul>
-      <li>All buyers</li>
-      <li>Buyers in a location / city / region</li>
-      <li>Buyers who've purchased from a given seller or category before</li>
-      <li>Buyers with items in cart or wishlist, no recent purchase</li>
-      <li>New signups in the last <em>N</em> days</li>
-      <li>Inactive buyers (no activity in last <em>N</em> days)</li>
-    </ul>
-    <p class="note" style="margin-top: 10px;">
-      Ship a usable subset (e.g. location + category/seller + all-buyers) rather than blocking v1 on every segment being possible.
-    </p>
-
-    <div class="trigger-tag">Trigger type B &middot; Automated</div>
-    <p class="note">System-fired on a defined event, no manual send required.</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Trigger event</th><th>Audience</th><th>Example copy</th></tr></thead>
-        <tbody>
-          <tr><td>1</td><td>Item(s) left in cart, no checkout after X hours</td><td>That buyer</td><td><em>"Still thinking it over? Your cart's waiting &mdash; [item]."</em></td></tr>
-          <tr><td>2</td><td>Item was wishlisted, then moved to cart, but never purchased after X hours</td><td>That buyer</td><td><em>"Your wishlist pick is in your cart &mdash; grab it before it's gone."</em></td></tr>
-          <tr><td>3</td><td>Wishlisted/out-of-stock item becomes available</td><td>Buyers who wishlisted it</td><td><em>"[Item] is back in stock."</em></td></tr>
-          <tr><td>4</td><td>Price drop on a wishlist/cart item</td><td>That buyer</td><td><em>"Price drop! [Item] is now &#8377;X."</em></td></tr>
-          <tr><td>5</td><td>Order state changes (placed / shipped / out for delivery / delivered / cancelled / refund)</td><td>Buyer on that order</td><td><em>"Your order #1234 has shipped."</em></td></tr>
-          <tr><td>6</td><td>Payment fails at checkout</td><td>That buyer</td><td><em>"Payment didn't go through &mdash; complete your order."</em></td></tr>
-          <tr><td>7</td><td>Product viewed repeatedly, no cart action in X hours</td><td>That buyer</td><td><em>"Still interested in [item]?"</em></td></tr>
-          <tr><td>8</td><td>Stock crosses a low threshold on a wishlisted/cart item</td><td>That buyer</td><td><em>"Only 2 left &mdash; [item]."</em></td></tr>
-          <tr><td>9</td><td>N days after delivery</td><td>That buyer</td><td><em>"How was your [item]? Leave a review."</em></td></tr>
-          <tr><td>10</td><td>No app activity in N days</td><td>Inactive segment</td><td><em>"We miss you &mdash; here's what's new."</em></td></tr>
-        </tbody>
-      </table>
+    <div class="track-single" style="margin-top: 16px;">
+      <div class="track-label">Notifications &middot; Automated (core 4)</div>
+      <ul>
+        <li><b>Order status change</b> &mdash; placed / shipped / out for delivery / delivered / cancelled / refund &rarr; buyer on that order.</li>
+        <li><b>Abandoned cart</b> &mdash; item(s) left in cart, no checkout after X hours &rarr; that buyer.</li>
+        <li><b>Wishlist-to-cart follow-through</b> &mdash; wishlisted item moved to cart, never purchased after X hours &rarr; that buyer.</li>
+        <li><b>Back-in-stock</b> &mdash; wishlisted/out-of-stock item becomes available &rarr; buyers who wishlisted it.</li>
+        <li>Admin trigger config: per-trigger on/off, message template with variables (<code>{item_name}</code>, <code>{order_id}</code>), condition tuning (e.g. the "X hours" threshold).</li>
+        <li>One unified send history/log for manual + automated together.</li>
+        <li>Guardrails: combined daily cap across manual + automated per buyer; dedup/priority when triggers overlap (order-status wins over cart nudges).</li>
+      </ul>
     </div>
-    <div class="priority-note">
-      Ten candidate triggers is too many to build at once. <b>Suggested v1
-      priority:</b> order status (#5), abandoned cart (#1), wishlist-to-cart
-      follow-through (#2), back-in-stock (#3) &mdash; highest value, likely
-      least new plumbing since order state is already core to the app and
-      wishlist/cart state is closely related to abandoned-cart tracking. The
-      rest are reasonable fast-follows once the trigger pipeline exists.
-    </div>
-
-    <h3>Shared mechanics (both types)</h3>
-    <ul>
-      <li>Same delivery pipeline: title/body/image/deep link, mobile push.</li>
-      <li>Automated triggers need an <b>event pipeline</b> wired to real system events (order state, cart state, wishlist state, stock level) &mdash; the actual cost driver, see open questions.</li>
-      <li>Admin needs one <b>unified history/log</b> covering manual sends and automated fires together, plus a per-trigger on/off toggle for automated ones.</li>
-      <li>Per-trigger message templates need variables (e.g. <code>{item_name}</code>, <code>{order_id}</code>) rather than hardcoded copy.</li>
-    </ul>
-
-    <h3>Message content</h3>
-    <ul>
-      <li>Title + body text, optional image</li>
-      <li>Optional deep link &mdash; to a product, category, seller, or in-app screen</li>
-      <li>Manual: send now or schedule for later. Automated: fires on the event, with a configurable delay (e.g. cart abandonment "X hours").</li>
-    </ul>
-
-    <h3>Guardrails</h3>
-    <ul>
-      <li><b>Combined</b> daily send cap per buyer across manual + automated together &mdash; no stacking an abandoned-cart ping with a browse-abandonment ping same day.</li>
-      <li>Dedup/priority rules when multiple automated triggers fire close together (e.g. order-status wins over browse-abandonment).</li>
-      <li>Respect existing opt-out / notification preferences.</li>
-      <li>No sends outside a reasonable local time window.</li>
-    </ul>
-
-    <h3>Admin-side deliverable</h3>
-    <ul>
-      <li>Manual compose screen: message, image, audience selector, deep link, schedule.</li>
-      <li>Automated trigger config screen: per-trigger on/off, message template with variables, per-trigger condition tuning (e.g. the "X hours" cart threshold).</li>
-      <li>Unified send history/log for both types.</li>
-      <li>Delivery stats &mdash; sent, opened, clicked (nice-to-have; can slip to v1.1 if it threatens the freeze deadline)</li>
-    </ul>
-
-    <h3>Out of scope for v1</h3>
-    <ul>
-      <li>Web push (mobile app push only, unless trivial given existing infra)</li>
-      <li>A/B testing of notification content</li>
-      <li>AI/ML-driven send-time optimization or personalized copy</li>
-    </ul>
-
-    <div class="sub-label">Open questions for Vanitha</div>
-    <ol class="questions">
-      <li>Which automated triggers already have real system events to hook into today (order status almost certainly does) vs. need new instrumentation (cart idle-time, wishlist stock/price watch, browse-repeat tracking)?</li>
-      <li>Given Q1, does the suggested v1 priority (order status, abandoned cart, back-in-stock) still hold, or does the data say a different set is cheaper?</li>
-      <li>Which manual-segment options are realistic given the user data we actually capture today?</li>
-      <li>Push infra already in place (FCM/APNs or similar) &mdash; confirm nothing new needs provisioning.</li>
-      <li>Any existing opt-out/preference setting to respect, or does that need building too?</li>
-      <li>Estimate and earliest developer slot, given this competes with the widget/performance work below.</li>
-    </ol>
   </section>
 
-  <section class="item">
-    <div class="item-head">
-      <h2>2&#8202;&middot;&#8202;Widget Bulk Import &mdash; Home Screen Performance</h2>
-      <span class="chip">Blocking Monday deploy</span>
+  <section class="phase" data-p="2">
+    <div class="phase-head">
+      <span class="phase-num">Phase 2</span>
+      <h2 class="phase-title">Fast Follow</h2>
+      <span class="phase-sub">next up</span>
     </div>
-    <p class="context">Needed for Kavish.</p>
-
-    <h3>Context</h3>
-    <ul>
-      <li>Original scope assumed 20&ndash;25 products per widget.</li>
-      <li>Seller team is now planning 100+ products per widget.</li>
-      <li>Bulk import itself is built and ready.</li>
-      <li>Gap: rendering that volume back on the home screen &mdash; Website and mobile &mdash; hasn't been performance-checked or optimized.</li>
-    </ul>
-
-    <h3>What's needed</h3>
-    <ul>
-      <li>Performance test the home screen with widgets carrying 100+ products each, on both Website and mobile.</li>
-      <li>Optimize rendering &mdash; candidates to evaluate: pagination/"load more", infinite scroll, or virtualized rendering of the widget's product list; image lazy-loading; response caching.</li>
-      <li>Confirm this covers <em>multiple</em> large widgets stacked on one home screen, not just one widget in isolation.</li>
-    </ul>
-
-    <h3>Expectation on Monday's deploy</h3>
-    <p style="color: var(--ink-soft); font-family: ui-sans-serif, system-ui, sans-serif;">Confirm explicitly whether this is:</p>
-    <ul>
-      <li>(a) part of Monday's deploy &mdash; i.e. Monday slips &mdash; or</li>
-      <li>(b) shipped Monday for the 20&ndash;25 case as originally scoped, with the 100+ optimization as a fast-follow.</li>
-    </ul>
-    <p style="color: var(--ink-soft); font-family: ui-sans-serif, system-ui, sans-serif; margin-top: 10px;">
-      Whichever it is, say so directly &mdash; Kavish needs a real date, not an implied one.
-    </p>
-
-    <div class="sub-label">Open questions for Vanitha</div>
-    <ol class="questions">
-      <li>What's the realistic ceiling to design for &mdash; ~100&ndash;150, or could sellers push further? Designing for the wrong ceiling wastes effort either way.</li>
-      <li>Does this affect only the home screen, or do category/search listings pull from the same widget data and need the same fix?</li>
-      <li>Is this a rendering fix only, or does the bulk-import &rarr; home-screen data pipeline itself need changes to support the volume?</li>
-    </ol>
+    <div class="track-grid">
+      <div class="track">
+        <div class="track-label">Widget &middot; performance at scale</div>
+        <ul>
+          <li>Optimize home-screen rendering for 100+ products/widget: pagination/infinite scroll or virtualized rendering, image lazy-loading, response caching.</li>
+          <li>Validate multiple large widgets stacked on one home screen, not just one in isolation.</li>
+          <li>Roll out on Website and mobile app.</li>
+        </ul>
+      </div>
+      <div class="track">
+        <div class="track-label">Notifications &middot; more automated triggers</div>
+        <ul>
+          <li><b>Price drop</b> on a wishlist/cart item &rarr; that buyer.</li>
+          <li><b>Payment failed</b> at checkout &rarr; that buyer (retry nudge).</li>
+          <li><b>Low-stock urgency</b> &mdash; stock crosses a low threshold on a wishlisted/cart item &rarr; that buyer.</li>
+          <li>Delivery analytics: sent / opened / click-through on the notification log.</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <footer class="doc-foot">
-    Both sections are expectations to elaborate from, not final specs.
-    Vanitha &mdash; please turn each into a scoped requirements doc, or flag
-    back here if something above is unrealistic, so we can freeze and assign.
-  </footer>
+  <section class="phase" data-p="3">
+    <div class="phase-head">
+      <span class="phase-num">Phase 3</span>
+      <h2 class="phase-title">Backlog</h2>
+      <span class="phase-sub">not scheduled</span>
+    </div>
+    <div class="track-single">
+      <ul>
+        <li><b>Browse abandonment</b> &mdash; product viewed repeatedly, no cart action in X hours &rarr; that buyer.</li>
+        <li><b>Post-delivery review reminder</b> &mdash; N days after delivery &rarr; that buyer.</li>
+        <li><b>Inactive-buyer re-engagement</b> &mdash; no app activity in N days &rarr; inactive segment.</li>
+        <li>Web push (mobile app push covers Phase 1&ndash;2; web is additive).</li>
+        <li>A/B testing of notification content.</li>
+        <li>AI/ML-driven send-time optimization or personalized copy.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Phase</th><th>Widget</th><th>Notifications</th></tr></thead>
+      <tbody>
+        <tr><td>1 &mdash; This sprint</td><td>Deploy 20&ndash;25/widget as scoped; start 100+ perf testing</td><td>Manual compose + 4 core automated triggers</td></tr>
+        <tr><td>2 &mdash; Fast follow</td><td>Ship 100+ optimization, Website + mobile</td><td>Price drop, payment failed, low-stock urgency; delivery analytics</td></tr>
+        <tr><td>3 &mdash; Backlog</td><td>&mdash;</td><td>Browse abandonment, review reminder, re-engagement, web push, A/B testing, send-time AI</td></tr>
+      </tbody>
+    </table>
+  </div>
 
 </div>
