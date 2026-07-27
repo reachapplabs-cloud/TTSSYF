@@ -344,23 +344,25 @@
         <thead><tr><th>#</th><th>Trigger event</th><th>Audience</th><th>Example copy</th></tr></thead>
         <tbody>
           <tr><td>1</td><td>Item(s) left in cart, no checkout after X hours</td><td>That buyer</td><td><em>"Still thinking it over? Your cart's waiting &mdash; [item]."</em></td></tr>
-          <tr><td>2</td><td>Wishlisted/out-of-stock item becomes available</td><td>Buyers who wishlisted it</td><td><em>"[Item] is back in stock."</em></td></tr>
-          <tr><td>3</td><td>Price drop on a wishlist/cart item</td><td>That buyer</td><td><em>"Price drop! [Item] is now &#8377;X."</em></td></tr>
-          <tr><td>4</td><td>Order state changes (placed / shipped / out for delivery / delivered / cancelled / refund)</td><td>Buyer on that order</td><td><em>"Your order #1234 has shipped."</em></td></tr>
-          <tr><td>5</td><td>Payment fails at checkout</td><td>That buyer</td><td><em>"Payment didn't go through &mdash; complete your order."</em></td></tr>
-          <tr><td>6</td><td>Product viewed repeatedly, no cart action in X hours</td><td>That buyer</td><td><em>"Still interested in [item]?"</em></td></tr>
-          <tr><td>7</td><td>Stock crosses a low threshold on a wishlisted/cart item</td><td>That buyer</td><td><em>"Only 2 left &mdash; [item]."</em></td></tr>
-          <tr><td>8</td><td>N days after delivery</td><td>That buyer</td><td><em>"How was your [item]? Leave a review."</em></td></tr>
-          <tr><td>9</td><td>No app activity in N days</td><td>Inactive segment</td><td><em>"We miss you &mdash; here's what's new."</em></td></tr>
+          <tr><td>2</td><td>Item was wishlisted, then moved to cart, but never purchased after X hours</td><td>That buyer</td><td><em>"Your wishlist pick is in your cart &mdash; grab it before it's gone."</em></td></tr>
+          <tr><td>3</td><td>Wishlisted/out-of-stock item becomes available</td><td>Buyers who wishlisted it</td><td><em>"[Item] is back in stock."</em></td></tr>
+          <tr><td>4</td><td>Price drop on a wishlist/cart item</td><td>That buyer</td><td><em>"Price drop! [Item] is now &#8377;X."</em></td></tr>
+          <tr><td>5</td><td>Order state changes (placed / shipped / out for delivery / delivered / cancelled / refund)</td><td>Buyer on that order</td><td><em>"Your order #1234 has shipped."</em></td></tr>
+          <tr><td>6</td><td>Payment fails at checkout</td><td>That buyer</td><td><em>"Payment didn't go through &mdash; complete your order."</em></td></tr>
+          <tr><td>7</td><td>Product viewed repeatedly, no cart action in X hours</td><td>That buyer</td><td><em>"Still interested in [item]?"</em></td></tr>
+          <tr><td>8</td><td>Stock crosses a low threshold on a wishlisted/cart item</td><td>That buyer</td><td><em>"Only 2 left &mdash; [item]."</em></td></tr>
+          <tr><td>9</td><td>N days after delivery</td><td>That buyer</td><td><em>"How was your [item]? Leave a review."</em></td></tr>
+          <tr><td>10</td><td>No app activity in N days</td><td>Inactive segment</td><td><em>"We miss you &mdash; here's what's new."</em></td></tr>
         </tbody>
       </table>
     </div>
     <div class="priority-note">
-      Nine candidate triggers is too many to build at once. <b>Suggested v1
-      priority:</b> order status (#4), abandoned cart (#1), back-in-stock
-      (#2) &mdash; highest value, likely least new plumbing since order
-      state is already core to the app. The rest are reasonable fast-follows
-      once the trigger pipeline exists.
+      Ten candidate triggers is too many to build at once. <b>Suggested v1
+      priority:</b> order status (#5), abandoned cart (#1), wishlist-to-cart
+      follow-through (#2), back-in-stock (#3) &mdash; highest value, likely
+      least new plumbing since order state is already core to the app and
+      wishlist/cart state is closely related to abandoned-cart tracking. The
+      rest are reasonable fast-follows once the trigger pipeline exists.
     </div>
 
     <h3>Shared mechanics (both types)</h3>

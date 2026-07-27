@@ -60,20 +60,23 @@ System-fired on a defined event, no manual send required.
 | # | Trigger event | Audience | Example copy |
 |---|---|---|---|
 | 1 | Item(s) left in cart, no checkout after X hours | That buyer | "Still thinking it over? Your cart's waiting — [item]." |
-| 2 | Wishlisted/out-of-stock item becomes available | Buyers who wishlisted it | "[Item] is back in stock." |
-| 3 | Price drop on a wishlist/cart item | That buyer | "Price drop! [Item] is now ₹X." |
-| 4 | Order state changes (placed / shipped / out for delivery / delivered / cancelled / refund initiated) | Buyer on that order | "Your order #1234 has shipped." |
-| 5 | Payment fails at checkout | That buyer | "Payment didn't go through — complete your order." |
-| 6 | Product viewed repeatedly, no cart action in X hours | That buyer | "Still interested in [item]?" |
-| 7 | Stock crosses a low threshold on a wishlisted/cart item | That buyer | "Only 2 left — [item]." |
-| 8 | N days after delivery | That buyer | "How was your [item]? Leave a review." |
-| 9 | No app activity in N days | Inactive segment | "We miss you — here's what's new." |
+| 2 | Item was wishlisted, then moved to cart, but never purchased after X hours | That buyer | "Your wishlist pick is in your cart — grab it before it's gone." |
+| 3 | Wishlisted/out-of-stock item becomes available | Buyers who wishlisted it | "[Item] is back in stock." |
+| 4 | Price drop on a wishlist/cart item | That buyer | "Price drop! [Item] is now ₹X." |
+| 5 | Order state changes (placed / shipped / out for delivery / delivered / cancelled / refund initiated) | Buyer on that order | "Your order #1234 has shipped." |
+| 6 | Payment fails at checkout | That buyer | "Payment didn't go through — complete your order." |
+| 7 | Product viewed repeatedly, no cart action in X hours | That buyer | "Still interested in [item]?" |
+| 8 | Stock crosses a low threshold on a wishlisted/cart item | That buyer | "Only 2 left — [item]." |
+| 9 | N days after delivery | That buyer | "How was your [item]? Leave a review." |
+| 10 | No app activity in N days | Inactive segment | "We miss you — here's what's new." |
 
-That's nine candidate triggers — too many to build at once. **Suggested v1
-priority:** order status updates (#4), abandoned cart (#1), and back-in-stock
-(#2) — these are the highest-value and likely the least new plumbing, since
-order state is already core to the app. The rest (#3, #5–9) are reasonable
-fast-follows once the trigger pipeline exists.
+That's ten candidate triggers — too many to build at once. **Suggested v1
+priority:** order status updates (#5), abandoned cart (#1), wishlist-to-cart
+follow-through (#2), and back-in-stock (#3) — these are the highest-value
+and likely the least new plumbing, since order state is already core to the
+app and wishlist/cart state is closely related to abandoned-cart tracking.
+The rest (#4, #6–10) are reasonable fast-follows once the trigger pipeline
+exists.
 
 ### Shared mechanics (both types)
 - Same delivery pipeline: title/body/image/deep link, mobile push.
