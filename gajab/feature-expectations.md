@@ -15,19 +15,33 @@ infra) is for the dev team to define.
 **Priority:** High. Needed to unblock scope-freeze and developer assignment.
 
 ### Goal
-Let admin send a **custom notification to a selected user base** of buyers —
-not a blast to everyone, not an automated trigger. A human on the admin side
-picks who hears about what, and sends it.
+Two trigger types, both in scope, both landing as a push to the buyer:
 
-### Who triggers it
-- Manual only for v1. Admin composes and sends/schedules from the admin
-  panel. No automated/event-based triggers (e.g. abandoned cart, back-in-stock,
-  price drop) in this phase — that's a logical v2 and should be called out as
-  out-of-scope now so it doesn't creep into the estimate.
+- **Manual** — a human on the admin side composes and sends to a chosen
+  buyer segment, ad hoc.
+- **Automated** — the system fires a notification on a defined event
+  (order state change, cart sitting idle, stock/price change, etc.),
+  no human in the loop per send.
 
-### Audience targeting ("selected user base")
-This is the part that decides the mechanism, so it needs to be pinned down
-first. Proposed v1 segment options — confirm/trim before Vanitha scopes:
+They share the same delivery pipeline (title/body/image/deep link) and the
+same guardrails. What differs is who/what starts the send, and that's the
+main thing this section needs to pin down before Vanitha scopes it.
+
+### Trigger Type A — Manual (Admin-initiated)
+
+Admin composes and sends/schedules from the admin panel to a chosen segment.
+
+**Use cases:**
+| # | Trigger | Audience | Example copy |
+|---|---|---|---|
+| 1 | Business decides to run a sale | All buyers, or region-specific | "Independence Day Sale — flat 30% off, today only." |
+| 2 | New seller/category goes live | Buyers with browse/purchase history in that category | "New arrivals from [Seller] just landed." |
+| 3 | City/region launch or local promo | Buyers in that city/region | "Gajab is now live in Chennai — 10% off your first order." |
+| 4 | Seller needs to clear inventory | Buyers who viewed/wishlisted that category | "Clearance on [Category] — up to 50% off, limited stock." |
+| 5 | Platform feature/policy update | All buyers | "New: track your order in real time." |
+
+**Audience targeting ("selected user base")** — proposed v1 segments,
+confirm/trim before scoping:
 - All buyers
 - Buyers in a location/city/region
 - Buyers who've purchased from a given seller/category before
@@ -38,39 +52,84 @@ first. Proposed v1 segment options — confirm/trim before Vanitha scopes:
 Ship with a **usable subset** of these (e.g. location + category/seller +
 all-buyers) rather than blocking v1 on every segment being possible.
 
+### Trigger Type B — Automated (Event-triggered)
+
+System-fired on a defined event, no manual send required.
+
+**Use cases:**
+| # | Trigger event | Audience | Example copy |
+|---|---|---|---|
+| 1 | Item(s) left in cart, no checkout after X hours | That buyer | "Still thinking it over? Your cart's waiting — [item]." |
+| 2 | Wishlisted/out-of-stock item becomes available | Buyers who wishlisted it | "[Item] is back in stock." |
+| 3 | Price drop on a wishlist/cart item | That buyer | "Price drop! [Item] is now ₹X." |
+| 4 | Order state changes (placed / shipped / out for delivery / delivered / cancelled / refund initiated) | Buyer on that order | "Your order #1234 has shipped." |
+| 5 | Payment fails at checkout | That buyer | "Payment didn't go through — complete your order." |
+| 6 | Product viewed repeatedly, no cart action in X hours | That buyer | "Still interested in [item]?" |
+| 7 | Stock crosses a low threshold on a wishlisted/cart item | That buyer | "Only 2 left — [item]." |
+| 8 | N days after delivery | That buyer | "How was your [item]? Leave a review." |
+| 9 | No app activity in N days | Inactive segment | "We miss you — here's what's new." |
+
+That's nine candidate triggers — too many to build at once. **Suggested v1
+priority:** order status updates (#4), abandoned cart (#1), and back-in-stock
+(#2) — these are the highest-value and likely the least new plumbing, since
+order state is already core to the app. The rest (#3, #5–9) are reasonable
+fast-follows once the trigger pipeline exists.
+
+### Shared mechanics (both types)
+- Same delivery pipeline: title/body/image/deep link, mobile push.
+- Automated triggers need an **event pipeline** wired to real system events
+  (order state, cart state, wishlist state, stock level). This is the actual
+  cost driver — see open questions below.
+- Admin needs **one unified history/log** covering manual sends and
+  automated fires together, plus a per-trigger on/off toggle for automated
+  ones (e.g. disable "abandoned cart" without touching "order status").
+- Per-trigger message templates need variables (e.g. `{item_name}`,
+  `{order_id}`) rather than hardcoded copy.
+
 ### Message content
 - Title + body (text)
 - Optional image
 - Optional deep link — to a product, category, seller, or a specific
   in-app screen
-- Send now, or schedule for a future time
+- Manual: send now or schedule for later. Automated: fires on the event,
+  with a configurable delay (e.g. cart abandonment "X hours").
 
 ### Guardrails (expect Vanitha to push back/refine these)
-- Rate limit: cap on notifications a single buyer receives per day, to avoid
-  spam complaints
-- Respect any existing opt-out/notification-preference setting
-- No silent-hours override (don't send outside a reasonable local time window)
+- **Combined** daily send cap per buyer across manual + automated together
+  — a buyer shouldn't get an abandoned-cart ping and a browse-abandonment
+  ping the same day.
+- Dedup/priority rules when multiple automated triggers fire close together
+  for the same buyer (e.g. order-status wins over browse-abandonment).
+- Respect any existing opt-out/notification-preference setting.
+- No sends outside a reasonable local time window.
 
 ### Admin-side deliverable
-- Compose screen: message, image, audience selector, deep link, schedule
-- Send history/log: what was sent, to how many, when
+- Manual compose screen: message, image, audience selector, deep link, schedule.
+- Automated trigger config screen: per-trigger on/off, message template with
+  variables, per-trigger condition tuning (e.g. the "X hours" cart threshold).
+- Unified send history/log for both types.
 - Basic delivery stats: sent count, open rate, click-through (nice-to-have
-  for v1, can slip to v1.1 if it threatens the scope-freeze deadline)
+  for v1, can slip to v1.1 if it threatens the scope-freeze deadline).
 
 ### Explicitly out of scope for v1
-- Automated/triggered notifications (cart, stock, price)
 - Web push (mobile app push only, unless Vanitha flags this as trivial given
-  existing infra)
-- A/B testing of notification content
+  existing infra).
+- A/B testing of notification content.
+- AI/ML-driven send-time optimization or personalized copy.
 
 ### Open questions for Vanitha to close out when drafting the frozen scope
-1. Which of the audience segments above are realistic for v1 given current
+1. Which automated triggers already have real system events to hook into
+   today (order status almost certainly does) vs. need new instrumentation
+   (cart idle-time, wishlist stock/price watch, browse-repeat tracking)?
+2. Given #1, does the suggested v1 priority (order status, abandoned cart,
+   back-in-stock) still hold, or does the data say a different set is cheaper?
+3. Which of the manual-segment options are realistic for v1 given current
    user data we actually capture?
-2. Push infra already in place (FCM/APNs or similar) — confirm nothing new
+4. Push infra already in place (FCM/APNs or similar) — confirm nothing new
    needs provisioning.
-3. Any existing notification-preference/opt-out setting to respect, or does
+5. Any existing notification-preference/opt-out setting to respect, or does
    that need to be built too?
-4. Estimate + earliest slot for developer assignment, given the widget/
+6. Estimate + earliest slot for developer assignment, given the widget/
    performance work below is also competing for the same dev time.
 
 ---

@@ -188,6 +188,76 @@
     margin: 18px 0 6px;
   }
 
+  .note{
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin: 0 0 12px;
+  }
+
+  .trigger-tag{
+    display: inline-block;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin: 22px 0 4px;
+  }
+
+  .table-wrap{
+    overflow-x: auto;
+    margin: 4px 0 8px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+  }
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 14px;
+    min-width: 520px;
+  }
+  thead th{
+    text-align: left;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    background: var(--accent-soft);
+    padding: 9px 14px;
+    white-space: nowrap;
+  }
+  tbody td{
+    padding: 10px 14px;
+    border-top: 1px solid var(--line);
+    vertical-align: top;
+  }
+  tbody td:first-child{
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    color: var(--accent);
+    font-weight: 600;
+    width: 28px;
+  }
+  tbody td em{ font-style: normal; color: var(--ink-soft); }
+  tbody tr:last-child td{ border-bottom: none; }
+
+  .priority-note{
+    background: var(--flag-high-soft);
+    border-left: 3px solid var(--flag-high);
+    padding: 12px 16px;
+    border-radius: 0 6px 6px 0;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 14.5px;
+    color: var(--ink);
+    margin: 4px 0 8px;
+  }
+
   footer.doc-foot{
     margin-top: 44px;
     padding-top: 24px;
@@ -229,21 +299,32 @@
       <span class="chip">Scope&#8209;freeze needed</span>
     </div>
     <p class="context">
-      Custom notification sent by admin to a selected buyer segment &mdash;
-      not a blast to everyone, not an automated trigger.
+      Two trigger types, both in scope, both landing as a push to the buyer:
+      <b style="color: var(--ink);">manual</b> (admin composes and sends to a
+      chosen segment) and <b style="color: var(--ink);">automated</b> (the
+      system fires on a defined event &mdash; order state, idle cart, stock/
+      price change &mdash; no human per send). They share one delivery
+      pipeline and one set of guardrails; what differs is who or what starts
+      the send.
     </p>
 
-    <h3>Who triggers it</h3>
-    <ul>
-      <li>Manual only for v1: admin composes and sends/schedules from the admin panel.</li>
-      <li>No automated or event-based triggers (abandoned cart, back-in-stock, price drop) this phase &mdash; call it out as out-of-scope now so it doesn't creep into the estimate.</li>
-    </ul>
+    <div class="trigger-tag">Trigger type A &middot; Manual</div>
+    <p class="note">Admin composes and sends/schedules from the admin panel to a chosen segment.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Trigger</th><th>Audience</th><th>Example copy</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Business decides to run a sale</td><td>All buyers, or region-specific</td><td><em>"Independence Day Sale &mdash; flat 30% off, today only."</em></td></tr>
+          <tr><td>2</td><td>New seller/category goes live</td><td>Buyers with browse/purchase history in that category</td><td><em>"New arrivals from [Seller] just landed."</em></td></tr>
+          <tr><td>3</td><td>City/region launch or local promo</td><td>Buyers in that city/region</td><td><em>"Gajab is now live in Chennai &mdash; 10% off your first order."</em></td></tr>
+          <tr><td>4</td><td>Seller needs to clear inventory</td><td>Buyers who viewed/wishlisted that category</td><td><em>"Clearance on [Category] &mdash; up to 50% off, limited stock."</em></td></tr>
+          <tr><td>5</td><td>Platform feature/policy update</td><td>All buyers</td><td><em>"New: track your order in real time."</em></td></tr>
+        </tbody>
+      </table>
+    </div>
 
-    <h3>Audience targeting</h3>
-    <p style="margin: 0 0 10px; color: var(--ink-soft); font-family: ui-sans-serif, system-ui, sans-serif;">
-      This decides the mechanism, so it needs pinning down first. Proposed v1
-      segments &mdash; confirm or trim before scoping:
-    </p>
+    <h3>Audience targeting ("selected user base")</h3>
+    <p class="note">Proposed v1 segments &mdash; confirm/trim before scoping:</p>
     <ul>
       <li>All buyers</li>
       <li>Buyers in a location / city / region</li>
@@ -252,41 +333,79 @@
       <li>New signups in the last <em>N</em> days</li>
       <li>Inactive buyers (no activity in last <em>N</em> days)</li>
     </ul>
-    <p style="color: var(--ink-soft); font-family: ui-sans-serif, system-ui, sans-serif; margin-top: 10px;">
+    <p class="note" style="margin-top: 10px;">
       Ship a usable subset (e.g. location + category/seller + all-buyers) rather than blocking v1 on every segment being possible.
     </p>
+
+    <div class="trigger-tag">Trigger type B &middot; Automated</div>
+    <p class="note">System-fired on a defined event, no manual send required.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Trigger event</th><th>Audience</th><th>Example copy</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Item(s) left in cart, no checkout after X hours</td><td>That buyer</td><td><em>"Still thinking it over? Your cart's waiting &mdash; [item]."</em></td></tr>
+          <tr><td>2</td><td>Wishlisted/out-of-stock item becomes available</td><td>Buyers who wishlisted it</td><td><em>"[Item] is back in stock."</em></td></tr>
+          <tr><td>3</td><td>Price drop on a wishlist/cart item</td><td>That buyer</td><td><em>"Price drop! [Item] is now &#8377;X."</em></td></tr>
+          <tr><td>4</td><td>Order state changes (placed / shipped / out for delivery / delivered / cancelled / refund)</td><td>Buyer on that order</td><td><em>"Your order #1234 has shipped."</em></td></tr>
+          <tr><td>5</td><td>Payment fails at checkout</td><td>That buyer</td><td><em>"Payment didn't go through &mdash; complete your order."</em></td></tr>
+          <tr><td>6</td><td>Product viewed repeatedly, no cart action in X hours</td><td>That buyer</td><td><em>"Still interested in [item]?"</em></td></tr>
+          <tr><td>7</td><td>Stock crosses a low threshold on a wishlisted/cart item</td><td>That buyer</td><td><em>"Only 2 left &mdash; [item]."</em></td></tr>
+          <tr><td>8</td><td>N days after delivery</td><td>That buyer</td><td><em>"How was your [item]? Leave a review."</em></td></tr>
+          <tr><td>9</td><td>No app activity in N days</td><td>Inactive segment</td><td><em>"We miss you &mdash; here's what's new."</em></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="priority-note">
+      Nine candidate triggers is too many to build at once. <b>Suggested v1
+      priority:</b> order status (#4), abandoned cart (#1), back-in-stock
+      (#2) &mdash; highest value, likely least new plumbing since order
+      state is already core to the app. The rest are reasonable fast-follows
+      once the trigger pipeline exists.
+    </div>
+
+    <h3>Shared mechanics (both types)</h3>
+    <ul>
+      <li>Same delivery pipeline: title/body/image/deep link, mobile push.</li>
+      <li>Automated triggers need an <b>event pipeline</b> wired to real system events (order state, cart state, wishlist state, stock level) &mdash; the actual cost driver, see open questions.</li>
+      <li>Admin needs one <b>unified history/log</b> covering manual sends and automated fires together, plus a per-trigger on/off toggle for automated ones.</li>
+      <li>Per-trigger message templates need variables (e.g. <code>{item_name}</code>, <code>{order_id}</code>) rather than hardcoded copy.</li>
+    </ul>
 
     <h3>Message content</h3>
     <ul>
       <li>Title + body text, optional image</li>
       <li>Optional deep link &mdash; to a product, category, seller, or in-app screen</li>
-      <li>Send now, or schedule for later</li>
+      <li>Manual: send now or schedule for later. Automated: fires on the event, with a configurable delay (e.g. cart abandonment "X hours").</li>
     </ul>
 
     <h3>Guardrails</h3>
     <ul>
-      <li>Daily send cap per buyer, to avoid spam complaints</li>
-      <li>Respect existing opt-out / notification preferences</li>
-      <li>No sends outside a reasonable local time window</li>
+      <li><b>Combined</b> daily send cap per buyer across manual + automated together &mdash; no stacking an abandoned-cart ping with a browse-abandonment ping same day.</li>
+      <li>Dedup/priority rules when multiple automated triggers fire close together (e.g. order-status wins over browse-abandonment).</li>
+      <li>Respect existing opt-out / notification preferences.</li>
+      <li>No sends outside a reasonable local time window.</li>
     </ul>
 
     <h3>Admin-side deliverable</h3>
     <ul>
-      <li>Compose screen: message, image, audience selector, deep link, schedule</li>
-      <li>Send history/log: what was sent, to how many, when</li>
+      <li>Manual compose screen: message, image, audience selector, deep link, schedule.</li>
+      <li>Automated trigger config screen: per-trigger on/off, message template with variables, per-trigger condition tuning (e.g. the "X hours" cart threshold).</li>
+      <li>Unified send history/log for both types.</li>
       <li>Delivery stats &mdash; sent, opened, clicked (nice-to-have; can slip to v1.1 if it threatens the freeze deadline)</li>
     </ul>
 
     <h3>Out of scope for v1</h3>
     <ul>
-      <li>Automated / triggered notifications</li>
       <li>Web push (mobile app push only, unless trivial given existing infra)</li>
       <li>A/B testing of notification content</li>
+      <li>AI/ML-driven send-time optimization or personalized copy</li>
     </ul>
 
     <div class="sub-label">Open questions for Vanitha</div>
     <ol class="questions">
-      <li>Which audience segments above are realistic given the user data we actually capture today?</li>
+      <li>Which automated triggers already have real system events to hook into today (order status almost certainly does) vs. need new instrumentation (cart idle-time, wishlist stock/price watch, browse-repeat tracking)?</li>
+      <li>Given Q1, does the suggested v1 priority (order status, abandoned cart, back-in-stock) still hold, or does the data say a different set is cheaper?</li>
+      <li>Which manual-segment options are realistic given the user data we actually capture today?</li>
       <li>Push infra already in place (FCM/APNs or similar) &mdash; confirm nothing new needs provisioning.</li>
       <li>Any existing opt-out/preference setting to respect, or does that need building too?</li>
       <li>Estimate and earliest developer slot, given this competes with the widget/performance work below.</li>
