@@ -13,26 +13,28 @@
     --p3: #948C7A;
     --p3-soft: #F1EEE6;
     --mono-ink: #4A463D;
+    --callout: #F4EDE1;
+    --callout-line: #D9C9A8;
   }
   @media (prefers-color-scheme: dark){
     :root{
       --bg: #16181A; --paper: #1D2022; --ink: #ECE8DF; --ink-soft: #A9A395;
       --line: #34383A; --accent: #7FBDB2; --accent-soft: #223634;
       --p2: #C9BFA6; --p2-soft: #2B2A22; --p3: #8B8676; --p3-soft: #232320;
-      --mono-ink: #B9B3A4;
+      --mono-ink: #B9B3A4; --callout: #2A2419; --callout-line: #4E4227;
     }
   }
   :root[data-theme="dark"]{
     --bg: #16181A; --paper: #1D2022; --ink: #ECE8DF; --ink-soft: #A9A395;
     --line: #34383A; --accent: #7FBDB2; --accent-soft: #223634;
     --p2: #C9BFA6; --p2-soft: #2B2A22; --p3: #8B8676; --p3-soft: #232320;
-    --mono-ink: #B9B3A4;
+    --mono-ink: #B9B3A4; --callout: #2A2419; --callout-line: #4E4227;
   }
   :root[data-theme="light"]{
     --bg: #F6F4EF; --paper: #FFFFFF; --ink: #211F1B; --ink-soft: #5B564C;
     --line: #E4DFD3; --accent: #285C56; --accent-soft: #DCE9E6;
     --p2: #6B6350; --p2-soft: #EFEAE0; --p3: #948C7A; --p3-soft: #F1EEE6;
-    --mono-ink: #4A463D;
+    --mono-ink: #4A463D; --callout: #F4EDE1; --callout-line: #D9C9A8;
   }
 
   *{ box-sizing: border-box; }
@@ -41,10 +43,10 @@
     background: var(--bg);
     color: var(--ink);
     font-family: Charter, "Iowan Old Style", Georgia, ui-serif, serif;
-    line-height: 1.55;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
-  .page{ max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+  .page{ max-width: 700px; margin: 0 auto; padding: 56px 24px 96px; }
   .label{
     font-family: ui-monospace, "SF Mono", Menlo, monospace;
     font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase;
@@ -52,7 +54,7 @@
   }
   header.doc-head{ border-bottom: 1px solid var(--line); padding-bottom: 28px; margin-bottom: 20px; }
   header.doc-head .label{ color: var(--accent); margin-bottom: 10px; }
-  h1{ font-size: clamp(28px, 4vw, 36px); font-weight: 600; letter-spacing: -0.01em; margin: 0 0 18px; text-wrap: balance; }
+  h1{ font-size: clamp(26px, 4vw, 34px); font-weight: 600; letter-spacing: -0.01em; margin: 0 0 18px; text-wrap: balance; }
   .meta-row{
     display: flex; flex-wrap: wrap; gap: 8px 24px;
     font-family: ui-monospace, "SF Mono", Menlo, monospace;
@@ -61,8 +63,8 @@
   .meta-row span b{ color: var(--ink); font-weight: 600; }
   .intro{ font-family: ui-sans-serif, system-ui, sans-serif; font-size: 15.5px; color: var(--ink-soft); margin: 20px 0 44px; max-width: 62ch; }
 
-  .phase{ margin-bottom: 30px; }
-  .phase-head{ display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px; }
+  .phase{ margin-bottom: 40px; }
+  .phase-head{ display: flex; align-items: baseline; gap: 14px; margin-bottom: 18px; }
   .phase-num{
     font-family: ui-monospace, "SF Mono", Menlo, monospace;
     font-size: 13px; font-weight: 700; letter-spacing: 0.02em;
@@ -74,28 +76,64 @@
   .phase-title{ font-size: 22px; font-weight: 600; margin: 0; letter-spacing: -0.005em; }
   .phase-sub{ font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13.5px; color: var(--ink-soft); margin-left: auto; white-space: nowrap; }
 
-  .track{
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 22px 24px;
-  }
-  .phase[data-p="3"] .track{ background: transparent; }
-  .track-label{
-    font-family: ui-monospace, "SF Mono", Menlo, monospace;
-    font-size: 10.5px; letter-spacing: 0.07em; text-transform: uppercase;
-    color: var(--accent); margin-bottom: 10px;
-  }
-  .phase[data-p="2"] .track-label{ color: var(--p2); }
-  .phase[data-p="3"] .track-label{ color: var(--p3); }
-  .track + .track{ margin-top: 14px; }
-  .track ul{ margin: 0; padding-left: 20px; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 14.5px; }
-  .track li{ margin-bottom: 8px; }
-  .track li:last-child{ margin-bottom: 0; }
-  .track li::marker{ color: var(--ink-soft); }
-  .track li b{ color: var(--ink); }
+  .block{ background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 24px clamp(18px, 4vw, 30px); margin-bottom: 16px; }
+  .phase[data-p="3"] .block{ background: transparent; }
 
-  .table-wrap{ overflow-x: auto; margin: 44px 0 0; border: 1px solid var(--line); border-radius: 8px; }
+  .block-label{
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--accent); margin: 0 0 14px;
+  }
+  .phase[data-p="2"] .block-label{ color: var(--p2); }
+  .phase[data-p="3"] .block-label{ color: var(--p3); }
+
+  p, li{ font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 15px; }
+  p{ margin: 0 0 12px; }
+  p:last-child{ margin-bottom: 0; }
+  ul{ margin: 0 0 12px; padding-left: 20px; }
+  ul:last-child{ margin-bottom: 0; }
+  li{ margin-bottom: 6px; }
+  li:last-child{ margin-bottom: 0; }
+  li::marker{ color: var(--ink-soft); }
+  code{
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 0.92em;
+    background: var(--accent-soft);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+
+  h4{
+    font-size: 15.5px;
+    font-weight: 700;
+    margin: 18px 0 6px;
+    color: var(--ink);
+  }
+  h4:first-of-type{ margin-top: 0; }
+  h4 .num{
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 20px; height: 20px;
+    background: var(--accent); color: var(--paper);
+    border-radius: 5px;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 11px; font-weight: 700;
+    margin-right: 8px;
+    vertical-align: -3px;
+  }
+
+  .callout{
+    background: var(--callout);
+    border: 1px solid var(--callout-line);
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin: 10px 0 12px;
+  }
+  .callout:last-child{ margin-bottom: 0; }
+  .callout p{ margin-bottom: 10px; }
+  .callout p:last-child{ margin-bottom: 0; }
+  .callout b{ color: var(--ink); }
+
+  .table-wrap{ overflow-x: auto; margin: 40px 0 0; border: 1px solid var(--line); border-radius: 8px; }
   table{ width: 100%; border-collapse: collapse; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 14px; min-width: 480px; }
   thead th{
     text-align: left; font-family: ui-monospace, "SF Mono", Menlo, monospace;
@@ -108,7 +146,7 @@
 
   @media (max-width: 520px){
     .page{ padding: 40px 16px 72px; }
-    .track{ padding: 18px 16px; }
+    .block{ padding: 18px 16px; }
   }
 </style>
 
@@ -124,7 +162,7 @@
     </div>
   </header>
 
-  <p class="intro">Ready-to-build scope, split into phases. Phase 1 is this sprint's assignment.</p>
+  <p class="intro">Every item below is spelled out in full &mdash; no shorthand, nothing left to interpret.</p>
 
   <section class="phase" data-p="1">
     <div class="phase-head">
@@ -132,26 +170,95 @@
       <h2 class="phase-title">This Sprint</h2>
       <span class="phase-sub">assign now</span>
     </div>
-    <div class="track">
-      <div class="track-label">Manual</div>
+
+    <div class="block">
+      <p class="block-label">A &middot; Manual notifications (admin composes and sends by hand)</p>
+      <p>This is the simple case: a person on the admin side writes a message and sends it to a group of buyers they pick. Nothing automatic here.</p>
+
+      <h4>What the admin enters when composing a message</h4>
       <ul>
-        <li>Compose: title, body, optional image, optional deep link (product / category / seller / in-app screen).</li>
-        <li>Send now, or schedule for later.</li>
-        <li>Segments: all buyers &middot; location/region &middot; seller/category history &middot; cart/wishlist no purchase &middot; new signups &middot; inactive.</li>
-        <li>Send history/log; daily send cap; respect opt-out; no off-hours sends.</li>
+        <li>A title &mdash; the short bold headline of the push notification.</li>
+        <li>A body &mdash; the longer message text underneath the title.</li>
+        <li>Optionally, an image attached to the notification.</li>
+        <li>Optionally, a deep link &mdash; tapping the notification opens directly to a specific product, category, or seller page, or another specific screen in the app, instead of just opening to the home screen.</li>
+        <li>A choice of "send immediately" or "schedule for a specific future date and time."</li>
       </ul>
+
+      <h4>Who the message goes to (admin picks one group)</h4>
+      <ul>
+        <li>Every buyer on the platform.</li>
+        <li>Buyers located in a specific city or region.</li>
+        <li>Buyers who've previously bought from a specific seller, or bought in a specific category before (e.g. "everyone who's bought electronics").</li>
+        <li>Buyers who currently have something in their cart or wishlist but haven't purchased recently.</li>
+        <li>Buyers who signed up within the last N days (a "new users" group).</li>
+        <li>Buyers who haven't opened the app or done anything on it in the last N days (an "inactive users" group).</li>
+      </ul>
+
+      <h4>A record of what was sent</h4>
+      <p>Every manual message that goes out is logged: what it said, which group it went to, and when it was sent, so it can be looked back on later.</p>
+
+      <h4>Limits on manual sending</h4>
+      <p>A cap on how many notifications one buyer can receive in a single day; the system respects it if a buyer has turned off notifications; and messages aren't sent late at night or early morning in the buyer's local time.</p>
     </div>
-    <div class="track">
-      <div class="track-label">Automated (core 4)</div>
-      <ul>
-        <li><b>Order status change</b> &mdash; placed / shipped / out for delivery / delivered / cancelled / refund &rarr; buyer on that order.</li>
-        <li><b>Abandoned cart</b> &mdash; item(s) left in cart, no checkout after X hours &rarr; that buyer.</li>
-        <li><b>Wishlist-to-cart follow-through</b> &mdash; wishlisted item moved to cart, never purchased after X hours &rarr; that buyer.</li>
-        <li><b>Back-in-stock</b> &mdash; wishlisted/out-of-stock item becomes available &rarr; buyers who wishlisted it.</li>
-        <li>Admin trigger config: per-trigger on/off, message template with variables (<code>{item_name}</code>, <code>{order_id}</code>), condition tuning (e.g. the "X hours" threshold).</li>
-        <li>One unified send history/log for manual + automated together.</li>
-        <li>Guardrails: combined daily cap across manual + automated per buyer; dedup/priority when triggers overlap (order-status wins over cart nudges).</li>
-      </ul>
+
+    <div class="block">
+      <p class="block-label">B &middot; Automated notifications (the system sends these on its own)</p>
+      <p>These go out automatically the moment something specific happens in the app &mdash; the admin doesn't write or click send for each one; they turn the feature on once, and the system handles it from then on for every buyer it applies to.</p>
+
+      <h4><span class="num">1</span>Order status change</h4>
+      <p>Every time an order moves to a new stage &mdash; placed, shipped, out for delivery, delivered, cancelled, or refunded &mdash; the buyer who placed that specific order automatically gets a notification saying so. The moment an order is marked "shipped" in the system, that buyer gets "Your order has shipped" without anyone sending it by hand.</p>
+
+      <h4><span class="num">2</span>Abandoned cart</h4>
+      <p>If a buyer adds something to their cart and doesn't complete checkout within a set number of hours (a number we choose &mdash; e.g. 6 or 24), the system automatically sends that one buyer a reminder about the item still in their cart.</p>
+
+      <h4><span class="num">3</span>Wishlist-to-cart follow-through</h4>
+      <p>A more specific version of the above: if a buyer had something in their wishlist, then moved it into their cart, but still hasn't bought it after a set number of hours, they get a reminder calling that out specifically &mdash; it's a stronger signal of intent than a random cart item.</p>
+
+      <h4><span class="num">4</span>Back-in-stock</h4>
+      <p>If a product was out of stock and a buyer had wishlisted it, the moment that product becomes available again, every buyer who wishlisted it automatically gets notified it's back.</p>
+    </div>
+
+    <div class="block">
+      <p class="block-label">The admin screen needed to control those four</p>
+      <p>One settings page in the admin panel, with each of the four triggers listed as its own row. For each row, the admin needs to do three separate things:</p>
+
+      <div class="callout">
+        <p><b>Turn it on or off.</b> A switch per trigger. For example, the admin could switch off "abandoned cart" reminders during a big sale event &mdash; so people aren't nagged about carts they're about to buy from anyway &mdash; while leaving "order status" notifications running as normal. Each trigger is switched independently; turning one off doesn't affect the others.</p>
+      </div>
+      <div class="callout">
+        <p><b>Edit the wording of the message, without needing a developer.</b> Right now, if "Your order has shipped" is hardcoded into the app, changing that wording later means asking a developer to change code and redeploy. Instead, the admin panel should let someone type the message directly, with placeholders the system fills in automatically per buyer.</p>
+        <p>Example: the admin writes the template <code>Your order {order_id} has shipped</code>, and the system replaces <code>{order_id}</code> with the buyer's real order number &mdash; "Your order #48213 has shipped" &mdash; when it actually sends it. Same idea for back-in-stock: the admin writes <code>{item_name} is back in stock</code>, and the system fills in the real product name for each buyer who receives it.</p>
+      </div>
+      <div class="callout">
+        <p><b>Adjust the timing that decides when it fires.</b> For abandoned-cart and wishlist-to-cart specifically, "how many hours of inactivity counts as abandoned" shouldn't be a fixed number buried in code &mdash; the admin should be able to change it from a settings field (e.g. from 6 hours to 12) if the timing isn't working well, without needing a developer to make a code change.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <p class="block-label">One combined record of everything sent, manual and automated together</p>
+      <p>The manual messages already have their own log. The automated ones need to show up in that <em>same</em> log, not a separate one. So looking at the notification history shows one single chronological list that includes both:</p>
+      <div class="callout">
+        <p>"Sale announcement &mdash; sent to all Chennai buyers &mdash; by admin &mdash; 2:00pm"<br>
+        sitting right alongside<br>
+        "Order #48213 shipped &mdash; sent to buyer X &mdash; automated &mdash; 2:15pm"</p>
+      </div>
+      <p>The reason this matters: with two separate logs, checking "what has this buyer received recently" or "did we send too much yesterday" means checking two different places every time. One combined log means one place to look.</p>
+    </div>
+
+    <div class="block">
+      <p class="block-label">Limits so a buyer doesn't get too many messages</p>
+
+      <h4>The daily cap is shared between manual and automated, not counted separately</h4>
+      <div class="callout">
+        <p>Say we decide a buyer should get at most 3 notifications in one day. If a buyer already received 2 automated ones today &mdash; their order shipped, and something they wishlisted came back in stock &mdash; and then an admin sends a manual sale announcement to everyone, that buyer is already at 2 of their 3 for the day. The manual send counts against the <em>same</em> limit &mdash; it isn't a separate "manual bucket."</p>
+        <p>If they're already at their cap of 3, the system needs to either skip that buyer for the new message or hold it until the next day (the exact behavior is a build decision) &mdash; the key point is the cap counts both kinds of message together, not one cap for manual and a separate cap for automated.</p>
+      </div>
+
+      <h4>When two automated triggers would fire for the same buyer around the same time, one needs to win</h4>
+      <div class="callout">
+        <p>Example: a buyer abandons a cart (triggering the abandoned-cart reminder) the same day one of their orders gets marked delivered (triggering the order-status notification). If sending both would push the buyer over their daily cap, or we simply don't want to send two things back-to-back, the order-status notification should be the one that actually goes out, and the cart reminder should be the one skipped or delayed.</p>
+        <p>Why: order status is about something the buyer already paid for and is waiting on; a cart reminder is closer to a marketing nudge. So the priority order, highest to lowest, is <b>order status first, then the cart-related nudges (abandoned cart, wishlist-to-cart) after.</b></p>
+      </div>
     </div>
   </section>
 
@@ -161,13 +268,16 @@
       <h2 class="phase-title">Fast Follow</h2>
       <span class="phase-sub">next up</span>
     </div>
-    <div class="track">
-      <ul>
-        <li><b>Price drop</b> on a wishlist/cart item &rarr; that buyer.</li>
-        <li><b>Payment failed</b> at checkout &rarr; that buyer (retry nudge).</li>
-        <li><b>Low-stock urgency</b> &mdash; stock crosses a low threshold on a wishlisted/cart item &rarr; that buyer.</li>
-        <li>Delivery analytics: sent / opened / click-through on the notification log.</li>
-      </ul>
+    <div class="block">
+      <p>Three more automated triggers, same pattern as the four above &mdash; each gets its own on/off toggle, an editable message template, and a place in the same unified log and shared daily cap.</p>
+      <h4>Price drop</h4>
+      <p>If the price of something in a buyer's cart or wishlist goes down, that buyer is notified of the new lower price.</p>
+      <h4>Payment failed</h4>
+      <p>If a buyer's payment doesn't go through at checkout, they get a nudge to try again and complete the order.</p>
+      <h4>Low-stock urgency</h4>
+      <p>If something in a buyer's cart or wishlist drops to a low quantity left in inventory (e.g. "only 2 left"), that buyer is notified to create urgency before it sells out.</p>
+      <h4>Delivery analytics</h4>
+      <p>On top of the send log, start tracking whether each notification was actually opened, and whether tapping it led to a click-through (e.g. did the buyer open the product page it linked to). This turns the log from just "what did we send" into "did it actually work" &mdash; how many people opened it, how many acted on it.</p>
     </div>
   </section>
 
@@ -177,15 +287,19 @@
       <h2 class="phase-title">Backlog</h2>
       <span class="phase-sub">not scheduled</span>
     </div>
-    <div class="track">
-      <ul>
-        <li><b>Browse abandonment</b> &mdash; product viewed repeatedly, no cart action in X hours &rarr; that buyer.</li>
-        <li><b>Post-delivery review reminder</b> &mdash; N days after delivery &rarr; that buyer.</li>
-        <li><b>Inactive-buyer re-engagement</b> &mdash; no app activity in N days &rarr; inactive segment.</li>
-        <li>Web push (mobile app push covers Phase 1&ndash;2; web is additive).</li>
-        <li>A/B testing of notification content.</li>
-        <li>AI/ML-driven send-time optimization or personalized copy.</li>
-      </ul>
+    <div class="block">
+      <h4>Browse abandonment</h4>
+      <p>If a buyer looks at the same product more than once but never adds it to their cart, after a set number of hours they get a "still interested?" nudge about it.</p>
+      <h4>Post-delivery review reminder</h4>
+      <p>A set number of days after an order is marked delivered, the buyer is asked to leave a review for what they bought.</p>
+      <h4>Inactive-buyer re-engagement</h4>
+      <p>If a buyer hasn't opened the app or done anything on it in a set number of days, they get a "here's what's new" message to try to bring them back.</p>
+      <h4>Web push</h4>
+      <p>Everything above is mobile-app push only for now; sending the same notifications to a buyer's browser is additive work for later, not required for Phase 1&ndash;2.</p>
+      <h4>A/B testing of notification content</h4>
+      <p>Sending two different versions of the same message to different buyers to see which performs better &mdash; not needed until there's enough volume for it to be worth measuring.</p>
+      <h4>AI/ML-driven send-time optimization or personalized copy</h4>
+      <p>Automatically choosing the best time to send to each individual buyer, or writing personalized message copy per buyer, using a model rather than the fixed rules above &mdash; a later refinement once the basic system is working and there's data to learn from.</p>
     </div>
   </section>
 
@@ -193,8 +307,8 @@
     <table>
       <thead><tr><th>Phase</th><th>Scope</th></tr></thead>
       <tbody>
-        <tr><td>1 &mdash; This sprint</td><td>Manual compose + 4 core automated triggers (order status, abandoned cart, wishlist-to-cart, back-in-stock)</td></tr>
-        <tr><td>2 &mdash; Fast follow</td><td>Price drop, payment failed, low-stock urgency; delivery analytics</td></tr>
+        <tr><td>1 &mdash; This sprint</td><td>Manual compose + 4 core automated triggers, with a shared control screen, one combined log, and one shared daily limit</td></tr>
+        <tr><td>2 &mdash; Fast follow</td><td>Price drop, payment failed, low-stock urgency triggers; open/click tracking on the log</td></tr>
         <tr><td>3 &mdash; Backlog</td><td>Browse abandonment, review reminder, re-engagement, web push, A/B testing, send-time AI</td></tr>
       </tbody>
     </table>
