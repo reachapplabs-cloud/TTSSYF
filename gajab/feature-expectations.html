@@ -1,0 +1,342 @@
+<title>Gajab — Feature Expectations</title>
+<style>
+  :root{
+    --bg: #F6F4EF;
+    --paper: #FFFFFF;
+    --ink: #211F1B;
+    --ink-soft: #5B564C;
+    --line: #E4DFD3;
+    --accent: #285C56;
+    --accent-soft: #DCE9E6;
+    --flag-high: #A8501E;
+    --flag-high-soft: #F4E3D6;
+    --mono-ink: #4A463D;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg: #16181A;
+      --paper: #1D2022;
+      --ink: #ECE8DF;
+      --ink-soft: #A9A395;
+      --line: #34383A;
+      --accent: #7FBDB2;
+      --accent-soft: #223634;
+      --flag-high: #E08A54;
+      --flag-high-soft: #35271D;
+      --mono-ink: #B9B3A4;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg: #16181A; --paper: #1D2022; --ink: #ECE8DF; --ink-soft: #A9A395;
+    --line: #34383A; --accent: #7FBDB2; --accent-soft: #223634;
+    --flag-high: #E08A54; --flag-high-soft: #35271D; --mono-ink: #B9B3A4;
+  }
+  :root[data-theme="light"]{
+    --bg: #F6F4EF; --paper: #FFFFFF; --ink: #211F1B; --ink-soft: #5B564C;
+    --line: #E4DFD3; --accent: #285C56; --accent-soft: #DCE9E6;
+    --flag-high: #A8501E; --flag-high-soft: #F4E3D6; --mono-ink: #4A463D;
+  }
+
+  *{ box-sizing: border-box; }
+  body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Charter, "Iowan Old Style", "Georgia", ui-serif, serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page{
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  .label{
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--mono-ink);
+  }
+  header.doc-head{
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 28px;
+    margin-bottom: 40px;
+  }
+  header.doc-head .label{ color: var(--accent); margin-bottom: 10px; }
+  h1{
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 18px;
+    text-wrap: balance;
+  }
+  .meta-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  .meta-row span b{ color: var(--ink); font-weight: 600; }
+
+  .intro{
+    font-size: 16px;
+    color: var(--ink-soft);
+    margin-bottom: 48px;
+    max-width: 62ch;
+  }
+
+  section.item{
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 32px clamp(20px, 4vw, 40px);
+    margin-bottom: 32px;
+    position: relative;
+  }
+  section.item::before{
+    content: "";
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: var(--accent);
+    border-radius: 10px 0 0 10px;
+  }
+  .item-head{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    margin-bottom: 6px;
+  }
+  h2{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -0.005em;
+  }
+  .chip{
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 9px;
+    border-radius: 100px;
+    background: var(--flag-high-soft);
+    color: var(--flag-high);
+    white-space: nowrap;
+  }
+  .context{
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin: 4px 0 26px;
+    max-width: 60ch;
+  }
+
+  h3{
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 26px 0 10px;
+  }
+  section.item > h3:first-of-type{ margin-top: 0; }
+
+  p, li{
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  ul{ margin: 0; padding-left: 22px; }
+  li{ margin-bottom: 7px; }
+  li:last-child{ margin-bottom: 0; }
+  li::marker{ color: var(--ink-soft); }
+
+  .questions{ list-style: none; padding-left: 0; counter-reset: q; }
+  .questions li{
+    counter-increment: q;
+    padding-left: 30px;
+    position: relative;
+  }
+  .questions li::before{
+    content: counter(q);
+    position: absolute;
+    left: 0; top: 0.5px;
+    width: 19px; height: 19px;
+    border: 1.5px solid var(--accent);
+    color: var(--accent);
+    border-radius: 5px;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub-label{
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 18px 0 6px;
+  }
+
+  footer.doc-foot{
+    margin-top: 44px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 14px;
+    color: var(--ink-soft);
+    max-width: 62ch;
+  }
+
+  @media (max-width: 520px){
+    .page{ padding: 40px 16px 72px; }
+    section.item{ padding: 26px 18px; }
+  }
+</style>
+
+<div class="page">
+
+  <header class="doc-head">
+    <div class="label">Gajab &middot; internal brief</div>
+    <h1>Feature Expectations</h1>
+    <div class="meta-row">
+      <span>From <b>Zo</b></span>
+      <span>To <b>Vanitha</b> &middot; Gajab Dev</span>
+      <span><b>27 Jul 2026</b></span>
+    </div>
+  </header>
+
+  <p class="intro">
+    High-level expectations for two active items, written so the dev team can
+    elaborate each into a frozen technical scope. Implementation detail
+    &mdash; data model, API shape, infra &mdash; is deliberately left open for
+    Vanitha's team to define.
+  </p>
+
+  <section class="item">
+    <div class="item-head">
+      <h2>1&#8202;&middot;&#8202;Push Notifications, Admin&nbsp;&rarr;&nbsp;Buyer</h2>
+      <span class="chip">Scope&#8209;freeze needed</span>
+    </div>
+    <p class="context">
+      Custom notification sent by admin to a selected buyer segment &mdash;
+      not a blast to everyone, not an automated trigger.
+    </p>
+
+    <h3>Who triggers it</h3>
+    <ul>
+      <li>Manual only for v1: admin composes and sends/schedules from the admin panel.</li>
+      <li>No automated or event-based triggers (abandoned cart, back-in-stock, price drop) this phase &mdash; call it out as out-of-scope now so it doesn't creep into the estimate.</li>
+    </ul>
+
+    <h3>Audience targeting</h3>
+    <p style="margin: 0 0 10px; color: var(--ink-soft); font-family: ui-sans-serif, system-ui, sans-serif;">
+      This decides the mechanism, so it needs pinning down first. Proposed v1
+      segments &mdash; confirm or trim before scoping:
+    </p>
+    <ul>
+      <li>All buyers</li>
+      <li>Buyers in a location / city / region</li>
+      <li>Buyers who've purchased from a given seller or category before</li>
+      <li>Buyers with items in cart or wishlist, no recent purchase</li>
+      <li>New signups in the last <em>N</em> days</li>
+      <li>Inactive buyers (no activity in last <em>N</em> days)</li>
+    </ul>
+    <p style="color: var(--ink-soft); font-family: ui-sans-serif, system-ui, sans-serif; margin-top: 10px;">
+      Ship a usable subset (e.g. location + category/seller + all-buyers) rather than blocking v1 on every segment being possible.
+    </p>
+
+    <h3>Message content</h3>
+    <ul>
+      <li>Title + body text, optional image</li>
+      <li>Optional deep link &mdash; to a product, category, seller, or in-app screen</li>
+      <li>Send now, or schedule for later</li>
+    </ul>
+
+    <h3>Guardrails</h3>
+    <ul>
+      <li>Daily send cap per buyer, to avoid spam complaints</li>
+      <li>Respect existing opt-out / notification preferences</li>
+      <li>No sends outside a reasonable local time window</li>
+    </ul>
+
+    <h3>Admin-side deliverable</h3>
+    <ul>
+      <li>Compose screen: message, image, audience selector, deep link, schedule</li>
+      <li>Send history/log: what was sent, to how many, when</li>
+      <li>Delivery stats &mdash; sent, opened, clicked (nice-to-have; can slip to v1.1 if it threatens the freeze deadline)</li>
+    </ul>
+
+    <h3>Out of scope for v1</h3>
+    <ul>
+      <li>Automated / triggered notifications</li>
+      <li>Web push (mobile app push only, unless trivial given existing infra)</li>
+      <li>A/B testing of notification content</li>
+    </ul>
+
+    <div class="sub-label">Open questions for Vanitha</div>
+    <ol class="questions">
+      <li>Which audience segments above are realistic given the user data we actually capture today?</li>
+      <li>Push infra already in place (FCM/APNs or similar) &mdash; confirm nothing new needs provisioning.</li>
+      <li>Any existing opt-out/preference setting to respect, or does that need building too?</li>
+      <li>Estimate and earliest developer slot, given this competes with the widget/performance work below.</li>
+    </ol>
+  </section>
+
+  <section class="item">
+    <div class="item-head">
+      <h2>2&#8202;&middot;&#8202;Widget Bulk Import &mdash; Home Screen Performance</h2>
+      <span class="chip">Blocking Monday deploy</span>
+    </div>
+    <p class="context">Needed for Kavish.</p>
+
+    <h3>Context</h3>
+    <ul>
+      <li>Original scope assumed 20&ndash;25 products per widget.</li>
+      <li>Seller team is now planning 100+ products per widget.</li>
+      <li>Bulk import itself is built and ready.</li>
+      <li>Gap: rendering that volume back on the home screen &mdash; Website and mobile &mdash; hasn't been performance-checked or optimized.</li>
+    </ul>
+
+    <h3>What's needed</h3>
+    <ul>
+      <li>Performance test the home screen with widgets carrying 100+ products each, on both Website and mobile.</li>
+      <li>Optimize rendering &mdash; candidates to evaluate: pagination/"load more", infinite scroll, or virtualized rendering of the widget's product list; image lazy-loading; response caching.</li>
+      <li>Confirm this covers <em>multiple</em> large widgets stacked on one home screen, not just one widget in isolation.</li>
+    </ul>
+
+    <h3>Expectation on Monday's deploy</h3>
+    <p style="color: var(--ink-soft); font-family: ui-sans-serif, system-ui, sans-serif;">Confirm explicitly whether this is:</p>
+    <ul>
+      <li>(a) part of Monday's deploy &mdash; i.e. Monday slips &mdash; or</li>
+      <li>(b) shipped Monday for the 20&ndash;25 case as originally scoped, with the 100+ optimization as a fast-follow.</li>
+    </ul>
+    <p style="color: var(--ink-soft); font-family: ui-sans-serif, system-ui, sans-serif; margin-top: 10px;">
+      Whichever it is, say so directly &mdash; Kavish needs a real date, not an implied one.
+    </p>
+
+    <div class="sub-label">Open questions for Vanitha</div>
+    <ol class="questions">
+      <li>What's the realistic ceiling to design for &mdash; ~100&ndash;150, or could sellers push further? Designing for the wrong ceiling wastes effort either way.</li>
+      <li>Does this affect only the home screen, or do category/search listings pull from the same widget data and need the same fix?</li>
+      <li>Is this a rendering fix only, or does the bulk-import &rarr; home-screen data pipeline itself need changes to support the volume?</li>
+    </ol>
+  </section>
+
+  <footer class="doc-foot">
+    Both sections are expectations to elaborate from, not final specs.
+    Vanitha &mdash; please turn each into a scoped requirements doc, or flag
+    back here if something above is unrealistic, so we can freeze and assign.
+  </footer>
+
+</div>
