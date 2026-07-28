@@ -82,6 +82,10 @@ problem you're actually trying to solve before evaluating GoKwik further.
   margins than Amazon/Flipkart on comparable SKUs — but that's *before*
   RTO losses on COD are baked in, which is the platform's real profit
   killer for sellers, not the sticker fee.
+- Worth noting: 0% commission doesn't mean Meesho is giving up revenue —
+  it monetizes instead through logistics margins (it marks up courier
+  rates), ads, and financial services, so the "free commission" framing
+  undersells what sellers actually pay in aggregate.
 
 ## 4. Flipkart — COD fee structure
 
@@ -249,10 +253,39 @@ same as GoKwik's number.
 
 ## 9. Video references
 
-A general web search doesn't have a transcript-reading tool for YouTube in
-this session — titles/descriptions below are from search metadata, not
-watched end-to-end. Worth a manual watch before citing specifics from
-them:
+I installed `yt-dlp` (pulled fresh from its GitHub source, `pip install
+git+https://github.com/yt-dlp/yt-dlp.git`) specifically to pull real
+transcripts instead of relying on search-snippet titles. It's confirmed
+working (`yt_dlp` v2026.07.04). But this session's outbound network
+policy explicitly blocks `youtube.com` at the proxy level — every request
+came back `gateway answered 403 to CONNECT ... policy denial`, logged
+under `/__agentproxy/status`. Per this environment's own proxy docs, a
+403 policy denial is something to report, not route around, so I didn't
+try mirrors/alternate hosts to bypass it. Net effect: the tool is in
+place, but this cloud container genuinely cannot reach YouTube to pull a
+transcript. Titles/descriptions below are still search-metadata only,
+not watched/read end-to-end.
+
+**If you want real transcript text**, the fastest path is running this
+on your own device (has YouTube access) and pasting the output back to
+me:
+
+```
+pip install "git+https://github.com/yt-dlp/yt-dlp.git"
+yt-dlp --skip-download --write-auto-sub --sub-lang en --sub-format vtt \
+  -o "%(id)s.%(ext)s" "https://www.youtube.com/watch?v=aV8lZ21g6EM"
+```
+
+Swap in any of the video URLs below. VTT output is plain text with
+timestamps — good enough to paste directly.
+
+**Podcast-length sources (better signal than product-demo videos, still
+not transcript-verified):**
+- [Z47 (formerly Matrix Partners India) podcast — "Democratizing the e-shopping experience with GoKwik"](https://z47.com/podcast/democratizing-the-e-shopping-experience-with-gokwik) — GoKwik co-founder Chirag Taneja on the founding thesis and RTO/COD problem framing.
+- [YourStory — Matrix Moments: How GoKwik is democratising online shopping for D2C brands](https://yourstory.com/2021/10/matrix-moments-ecommerce-startup-gokwik-online-d2c-brands)
+- [YourStory — How Razorpay's Magic Checkout is unlocking growth for D2C businesses](https://yourstory.com/2022/02/razorpays-magic-checkout-unlocking-growth-d2c-businesses)
+
+**Product-demo / setup videos:**
 
 - ["Industry's First Partial COD — Reduces RTOs by over 55%" (GoKwik)](https://www.youtube.com/watch?v=aV8lZ21g6EM)
   — GoKwik's own explainer on its Partial COD feature.
@@ -302,3 +335,7 @@ evidence for RTO-reduction claims.
 - [arulmjoseph — Shiprocket Checkout vs Razorpay Magic Checkout vs GoKwik (2026)](https://arulmjoseph.com/shiprocket-checkout-vs-razorpay-magic-checkout-vs-gokwik)
 - [thebusinessrule — GoKwik vs Razorpay: Which is Better for Your Business in 2026?](https://thebusinessrule.com/gokwik-vs-razorpay-which-is-better-for-your-business/)
 - [binaryic — D2C Checkout Flow Comparison: Razorpay, GoKwik & Shiprocket](https://binaryic.com/d2c-checkout-flow-comparison-razorpay-gokwik-shiprocket/)
+- [Z47 (Matrix Partners India) — Democratizing the e-shopping experience with GoKwik (podcast)](https://z47.com/podcast/democratizing-the-e-shopping-experience-with-gokwik)
+- [YourStory — Matrix Moments: How GoKwik is democratising online shopping for D2C brands](https://yourstory.com/2021/10/matrix-moments-ecommerce-startup-gokwik-online-d2c-brands)
+- [YourStory — How Razorpay's Magic Checkout is unlocking growth for D2C businesses](https://yourstory.com/2022/02/razorpays-magic-checkout-unlocking-growth-d2c-businesses)
+- [betatoalpha (Substack) — Meesho charges sellers zero commission. So where's the ₹1,000 crore in cash coming from?](https://betatoalpha.substack.com/p/meesho-charges-sellers-zero-commission)
