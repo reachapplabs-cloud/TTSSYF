@@ -173,7 +173,58 @@ ClickPost (AI-driven NDR/reattempt agent, claims up to 54% RTO resolution,
 positions as an overlay on top of your existing negotiated courier rates
 rather than a checkout replacement).
 
-## 7. Bottom line / what I'd actually do next
+## 7. Razorpay Magic Checkout — the other name in this category
+
+**Category:** same as GoKwik — a D2C checkout layer with COD intelligence,
+except Razorpay is coming at it from its position as India's largest
+payment gateway rather than as a checkout-first specialist. Ships as part
+of a broader "D2C Suite" (7 products) Razorpay launched to bundle
+payments, checkout, and post-payment tooling for direct-to-consumer
+brands.
+
+**Mechanism (same shape as GoKwik, different branding):**
+- **COD Intelligence** analyzes shopper history and address quality to
+  risk-score COD orders in real time.
+- High-risk shoppers → COD blocked outright; medium-risk → nudged to
+  prepay or charged a differential COD fee; users with a history of
+  failed/refused deliveries → COD disabled for them specifically.
+- Configurable **allowlist/blocklist** for COD by shopper/pincode/order
+  attributes (Razorpay's official docs cover this directly under
+  Magic Checkout → RTO Reduction).
+- Also functions as a one-click checkout (auto-filled address/payment
+  from Razorpay's own stored-shopper network — claimed 100M+ profiles,
+  smaller than GoKwik's claimed 200M+).
+
+**Reported results:**
+- **Borosil:** RTO cut by 36.36%, prepaid order share up 70% — Razorpay's
+  own published case study, comparable in shape to GoKwik's individual
+  case studies (i.e., a best-case vendor number, not a platform average).
+- No independent platform-wide average (like GoKwik's ~18%) was found in
+  public sources — Razorpay's public results are single-brand case
+  studies only, which makes them harder to generalize from.
+
+**Pricing:** not published for Magic Checkout specifically. Razorpay's
+standard payment-gateway pricing is ~2% per transaction; Magic Checkout
+appears to ride on top of that same transaction-fee model rather than
+having a separate published rate — but this needs direct confirmation,
+same as GoKwik's number.
+
+**GoKwik vs. Razorpay Magic Checkout, practically:**
+- If you already process payments through Razorpay and want COD/RTO
+  tooling as one more line item on an existing vendor relationship (fewer
+  contracts, one dashboard), Razorpay is the lower-friction add-on.
+- If checkout conversion and COD/RTO management specifically are the
+  primary problem (not just a nice-to-have on top of payments), GoKwik is
+  the more specialized tool, with a larger claimed shopper network for
+  address auto-fill and a slightly more mature RTO feature set (partial
+  COD, captcha-based COD verification) based on what's publicly
+  documented.
+- Neither company publishes a directly comparable RTO-reduction average
+  — the case studies from both are vendor-selected, so a short pilot on
+  your own traffic is the only way to actually compare them for your
+  catalog/geography mix.
+
+## 8. Bottom line / what I'd actually do next
 
 1. **If the goal is lowering Amazon/Meesho/Flipkart seller fees**, GoKwik
    is the wrong tool — that's a marketplace policy lever (seller tier,
@@ -181,11 +232,12 @@ rather than a checkout replacement).
    or Amazon/Flipkart's own opt-in "COD convenience fee to buyer" features
    where available), not something a third-party checkout can touch.
 2. **If the goal is your own D2C site's COD economics**, GoKwik's category
-   fit is right, but the 2.5%-of-prepaid + free-COD-tier figure and the
-   RTO-reduction case studies both need direct confirmation from GoKwik's
-   sales team against your actual GMV and category (fashion/beauty is
-   their strongest proof-point vertical; results elsewhere may differ).
-   Get a pilot/POC with your own data before signing an annual commitment.
+   fit is right, and Razorpay Magic Checkout is the direct alternative
+   worth quoting side by side — especially if you already run payments
+   through Razorpay. Get the 2.5%-of-prepaid + free-COD-tier figure (or
+   Razorpay's equivalent) confirmed directly from sales against your
+   actual GMV and category, and run a pilot/POC with your own traffic
+   before signing an annual commitment on either.
 3. **Either way, RTO — not the line-item COD fee — is the number to
    instrument.** Pull actual RTO % and reverse-logistics cost per platform
    (Amazon Easy Ship vs Meesho vs Flipkart vs your own D2C site) before
@@ -194,6 +246,33 @@ rather than a checkout replacement).
    is actually leaking.
 
 ---
+
+## 9. Video references
+
+A general web search doesn't have a transcript-reading tool for YouTube in
+this session — titles/descriptions below are from search metadata, not
+watched end-to-end. Worth a manual watch before citing specifics from
+them:
+
+- ["Industry's First Partial COD — Reduces RTOs by over 55%" (GoKwik)](https://www.youtube.com/watch?v=aV8lZ21g6EM)
+  — GoKwik's own explainer on its Partial COD feature.
+- ["GoKwik's Checkout Solution | Helping eCommerce Brands Unlock Growth"](https://www.youtube.com/watch?v=H_FWyeexv3k)
+- ["GoKwik Streamlines Checkout and Detects Fraud with AI on AWS" (AWS channel)](https://www.youtube.com/watch?v=ssO4kWYBs2g)
+  — third-party (AWS) framing of the same product, likely more technical/architecture-focused than GoKwik's own marketing.
+- ["How to Integrate GoKwik in Shopify (Easy 2025 Guide)"](https://www.youtube.com/watch?v=LlpFqg98erg) —
+  practical setup walkthrough if you're evaluating implementation effort.
+- ["Introducing Razorpay Magic Checkout | Improve Conversions for your business"](https://www.youtube.com/watch?v=TdZa73eheww)
+- ["Watch how Magic Checkout Works | Razorpay Magic Checkout"](https://www.youtube.com/watch?v=JoWsLfety5s)
+- ["Integrate Razorpay Magic Checkout with Shopify Website"](https://www.youtube.com/watch?v=Cr9IdCU5o8Q)
+  — setup walkthrough, comparable use to the GoKwik Shopify guide above.
+
+No independent (non-vendor) YouTube video comparing GoKwik vs. Razorpay
+Magic Checkout head-to-head turned up in search — the written comparisons
+in the Sources list below (thebusinessrule, arulmjoseph, binaryic) are the
+closest thing to a neutral side-by-side currently available online, and
+even those read as SEO/affiliate content rather than independent
+benchmarking. I'd weight vendor demo videos as "how the UI looks," not as
+evidence for RTO-reduction claims.
 
 ## Sources
 
@@ -215,3 +294,11 @@ rather than a checkout replacement).
 - [Techjockey — GoKwik Pricing & Reviews 2026](https://www.techjockey.com/detail/gokwik)
 - [Unicommerce — India D2C Report 2026: Operations, RTO & Growth Data](https://unicommerce.com/india-d2c-report-2026-april/)
 - [TrackVid — RTO in Ecommerce: Why Indian Sellers Lose ₹8,000 Crore a Year](https://trackvid.in/blogs/rto-in-ecommerce-india.html)
+- [Razorpay — Magic Checkout to Boost Conversions and Reduce RTOs](https://razorpay.com/magic/)
+- [Razorpay — Magic Checkout Case Study: Borosil Cuts RTO by 36.36%](https://razorpay.com/blog/magic-checkout-case-study-borosil/)
+- [Razorpay Docs — Block or Allow COD Orders (Magic Checkout RTO Reduction)](https://razorpay.com/docs/payments/magic-checkout/rto-reduction/allowlist-blocklist/)
+- [Razorpay Docs — Magic Checkout Features](https://razorpay.com/docs/payments/magic-checkout/features/)
+- [Razorpay Newsroom — Razorpay Unveils D2C Suite, Launches 7 Products](https://razorpay.com/newsroom/razorpay-unveils-d2c-suite-launches-7-products-set-to-increase-revenue-for-businesses-by-50/)
+- [arulmjoseph — Shiprocket Checkout vs Razorpay Magic Checkout vs GoKwik (2026)](https://arulmjoseph.com/shiprocket-checkout-vs-razorpay-magic-checkout-vs-gokwik)
+- [thebusinessrule — GoKwik vs Razorpay: Which is Better for Your Business in 2026?](https://thebusinessrule.com/gokwik-vs-razorpay-which-is-better-for-your-business/)
+- [binaryic — D2C Checkout Flow Comparison: Razorpay, GoKwik & Shiprocket](https://binaryic.com/d2c-checkout-flow-comparison-razorpay-gokwik-shiprocket/)
