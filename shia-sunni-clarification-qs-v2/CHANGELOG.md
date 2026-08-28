@@ -15,6 +15,52 @@ here can be diffed against.
 
 ---
 
+## 2026-08-28 — Answered §2.1 and §3.2 (the two Abu Hurairah methodology proof-cases)
+
+**What:** Both P0 dossiers moved from ⬜ Not Started to ✅ Answered, using
+Firecrawl search and WebSearch to verify the claims:
+
+- **§2.1** — confirmed the creation-in-seven-days hadith is Sahih Muslim
+  2789 (narrated by Abu Hurairah), and confirmed Bukhari's own *Tarikh
+  al-Kabir* (1:413) attributes its wording to Ka'b al-Ahbar rather than
+  the Prophet ﷺ, corroborated by Yahya ibn Ma'in and by Ibn Kathir's
+  verdict that it is "among the *gharaib* of Sahih Muslim." A second,
+  independent chain defect (a narrator, Ibrahim ibn Abi Yahya, separately
+  accused of forging narrations) was also found.
+- **§3.2** — confirmed Abu Hurairah's "a woman, a donkey, and a dog cut
+  off the prayer" is Sahih Muslim 511, and that Aisha's rebuke is not a
+  single report but appears **three separate times** in Sahih al-Bukhari
+  itself (511, 514, 519) — stronger corroboration than the original claim
+  stated.
+
+**Why:** these were the two proof-cases for `METHODOLOGY.md` Principle 2
+(no narrator is exempt from scrutiny by fame) and the two items the
+project owner raised directly — getting them right, with real citations
+instead of "widely known" hand-waving, mattered most.
+
+**Verification / honesty note:** this session's network access blocked
+direct fetches of `sunnah.com`, `al-islam.org`, and `islamqa.info` (the
+egress proxy denied the domains outright; only WebSearch and Firecrawl
+search — which return snippets, not full pages — worked). Every citation
+in both dossiers is triangulated across multiple independent search
+results that agreed with each other, not independently read by this
+project from the primary page. Both dossiers are marked ✅ Answered, not
+✅✅ Verified, and each states plainly in its own "What would move this to
+Verified" section what a follow-up pass with working page access should
+check. One genuine open discrepancy was flagged rather than resolved:
+some secondary sources cite Aisha's rebuke as also appearing in Sahih
+Muslim itself (not only Bukhari) — this needs a direct check.
+
+**Sync:** Status updated in all four places per `RESEARCHER-PROTOCOL.md`
+(now five, since v2 added `MASTER-TABLE.md`/`.csv`): the answer dossier,
+the question's block in its chapter file, the chapter's progress table,
+`TRACKER.md`, and `MASTER-TABLE.md`/`MASTER-TABLE.csv` (the latter two
+also got their "Reference Sources & Links" cells hand-updated with the
+key findings, marked "+ more in dossier" per the exception now documented
+in `MASTER-TABLE.md`'s own column description).
+
+---
+
 ## 2026-08-28 — v2 fork created
 
 **What:** v2 was seeded as a complete, unmodified copy of v1

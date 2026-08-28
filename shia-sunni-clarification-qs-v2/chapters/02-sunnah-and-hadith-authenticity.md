@@ -11,7 +11,7 @@ transcript.
 
 | # | Question | Priority | Status | Answer & Documentation |
 |---|---|---|---|---|
-| 2.1 | The creation-in-seven-days hadith: Ka'b al-Ahbar, Abu Hurairah, and the Qur'an | P0 | ⬜ Not Started | [`answers/02-sunnah-and-hadith-authenticity/2.1.md`](../answers/02-sunnah-and-hadith-authenticity/2.1.md) |
+| 2.1 | The creation-in-seven-days hadith: Ka'b al-Ahbar, Abu Hurairah, and the Qur'an | P0 | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.1.md`](../answers/02-sunnah-and-hadith-authenticity/2.1.md) |
 | 2.2 | Where are Imam Ja'far's ahadith, and why aren't they taught? | P1 | ⬜ Not Started | [`answers/02-sunnah-and-hadith-authenticity/2.2.md`](../answers/02-sunnah-and-hadith-authenticity/2.2.md) |
 | 2.3 | Cross-reference index (not a standalone question) | — | N/A | — |
 
@@ -22,7 +22,7 @@ transcript.
 ## 2.1 — If a hadith's own chain is disputed by senior Sunni scholars, why does it still stand — and does it contradict the Qur'an?
 
 **Priority:** P0 — Proof-case for Methodology Principle 2 (fame is not a shield)
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered — see the dossier for the full sourced answer, including an honest flag on what would move it to ✅✅ Verified
 **Answer & documentation:** [`answers/02-sunnah-and-hadith-authenticity/2.1.md`](../answers/02-sunnah-and-hadith-authenticity/2.1.md)
 
 This concerns a hadith about the days of creation, where Bukhari himself

@@ -11,7 +11,7 @@ reproduced verbatim from the source transcript.
 | # | Question | Priority | Status | Answer & Documentation |
 |---|---|---|---|---|
 | 3.1 | Is the modern Salawat ("and his companions") a bid'ah? | P1 | ⬜ Not Started | [`answers/03-salah-and-worship-practices/3.1.md`](../answers/03-salah-and-worship-practices/3.1.md) |
-| 3.2 | Abu Hurairah's dog/donkey/woman hadith, and Aisha's reported rebuke | P0 | ⬜ Not Started | [`answers/03-salah-and-worship-practices/3.2.md`](../answers/03-salah-and-worship-practices/3.2.md) |
+| 3.2 | Abu Hurairah's dog/donkey/woman hadith, and Aisha's reported rebuke | P0 | ✅ Answered | [`answers/03-salah-and-worship-practices/3.2.md`](../answers/03-salah-and-worship-practices/3.2.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
 
@@ -90,7 +90,7 @@ reproduced verbatim from the source transcript.
 ## 3.2 — Abu Hurairah narrated that Salah is invalidated by a dog, donkey, or woman passing in front — and Aisha (RA) is reported to have directly rebuked this. Which account should stand, and on what basis?
 
 **Priority:** P0 — Proof-case for Methodology Principle 2 (Abu Hurairah)
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered — see the dossier for the full sourced answer, including an honest flag on what would move it to ✅✅ Verified
 **Answer & documentation:** [`answers/03-salah-and-worship-practices/3.2.md`](../answers/03-salah-and-worship-practices/3.2.md)
 
 **Claim, as given by the project owner (verbatim as stated in conversation
