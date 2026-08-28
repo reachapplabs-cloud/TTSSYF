@@ -83,10 +83,42 @@ evidence worth recording, independent of whatever the missing content
 turns out to be. This applies across the whole project, to every
 collection studied, not to Bukhari alone.
 
-No instance of this pattern has been logged yet in this repo's existing
-chapters (none of the source material processed so far happened to
-contain one) — it is recorded here as a standing rule so that any future
-research that encounters it flags it rather than silently normalizing it.
+**First logged instance (added 2026-08-28, from the second source batch,
+`source/raw-transcript-2-zo.md`):** Sahih al-Bukhari, Volume 8, Book 82,
+Hadith 817, in the narrative of how the caliphate came to be, refers to
+one of the parties only as *fulan* rather than by name. The claim from
+the source material is that context and parallel narrations/exegesis
+identify the unnamed party as Ali ibn Abi Talib. This project has not yet
+independently verified that identification — it is logged here as the
+first real test case for this principle, not as a settled fact — see
+[`chapters/06-imamate-khilafah-and-ghadeer-khumm.md`, §6.6](chapters/06-imamate-khilafah-and-ghadeer-khumm.md)
+for the full treatment and open item #7 below.
+
+## Principle 4 — Everything forwarded in the source material is context, not fact, including the forwarders' own commentary
+
+Added 2026-08-28, stated directly by the project owner: **all of the raw
+material this project is built from — from either contributor, Arif Bhai
+or Zo, and including their own reflections, interpretations, theories,
+and back-and-forth discussion, not only the classical hadith/tafsir
+material they forward — is itself unverified context, not settled fact,
+until this project's own research confirms or disconfirms it.**
+
+This closes a gap the first three principles didn't explicitly cover:
+Principles 1–3 govern how to weigh *classical* sources (rijal grading,
+narrator fame, textual concealment). Principle 4 makes explicit that the
+*modern* source material — a contributor's theory that a particular
+person was "behind the first fitnah," a claim about what a name
+etymologically means, a inference drawn from a video, a reflection on
+what a pattern of events "reads as" — carries no more automatic
+authority than the classical material it discusses. It should be
+represented faithfully (this project does not put words in a
+contributor's mouth or silently drop their reasoning), but it is treated
+as a claim to research, exactly like a rijal verdict or a hadith's
+authenticity — never assumed true because it was asserted, and never
+assumed false either. Chapters that reproduce a contributor's argument or
+theory verbatim (as several already do, and more will as
+`source/raw-transcript-2-zo.md` is integrated) are compiling the
+*question*, not certifying the *answer*.
 
 ## How these guardrails apply to this repo
 
@@ -114,23 +146,60 @@ The project owner indicated a follow-up phase is wanted: quoting,
 referencing, and linking sources without bias to reach a better-grounded
 consensus on the points above. Tracked here so it isn't lost:
 
-1. Verify the exact isnad and citation for the Abu Hurairah "creation in
-   seven days" hadith in Sahih Muslim, and cross-check it against
-   Bukhari's *Tarikh al-Kabir* attribution of the wording to Ka'b
-   al-Ahbar (already partly documented at Chapter 2, §2.1, via the Ibn
-   Taymiyyah/Al-Mu'allimi/Al-Albani debate).
-2. Verify the exact citation for Aisha's rebuke of Abu Hurairah on the
-   dog/donkey/woman prayer-invalidation hadith (candidates to check:
-   Sahih Muslim, Sunan Abu Dawud, Musnad Ahmad).
+1. ~~Verify the exact isnad and citation for the Abu Hurairah "creation in
+   seven days" hadith...~~ **Answered 2026-08-28** — see
+   [`answers/02-sunnah-and-hadith-authenticity/2.1.md`](answers/02-sunnah-and-hadith-authenticity/2.1.md).
+   Confirmed as Sahih Muslim 2789; confirmed Bukhari's *Tarikh al-Kabir*
+   (1:413) attribution to Ka'b al-Ahbar. Marked Answered, not Verified —
+   sourced via search-result triangulation, not a directly-read primary
+   page (this session's network access could not open `sunnah.com`).
+2. ~~Verify the exact citation for Aisha's rebuke of Abu Hurairah...~~
+   **Answered 2026-08-28** — see
+   [`answers/03-salah-and-worship-practices/3.2.md`](answers/03-salah-and-worship-practices/3.2.md).
+   Confirmed as Sahih Muslim 511 (Abu Hurairah) and Sahih al-Bukhari
+   511/514/519 (Aisha's rebuke, three separate narrations). Same
+   Answered-not-Verified caveat as #1.
 3. Build a logged inventory — across Bukhari and other collections
    relevant to this research — of instances using *fulan*, *kalima*,
    *kadha wa kaza*, or other truncation, with hadith numbers, as they are
-   found.
+   found. **One instance now logged** (Principle 3, above — Sahih
+   al-Bukhari, Vol. 8, Book 82, Hadith 817); still open as an ongoing
+   inventory, not a closed item.
 4. Case-by-case review of specific rijal-criticism entries (e.g. a
    narrator called *matruk*, *kadhib*, or *sayyi' al-hifz*) to assess
    whether the criticism itself traces to a scholar or period with a
    plausible political motive, rather than accepting the grading as
    neutral.
+5. **New, 2026-08-28 — YouTube video transcription is blocked in this
+   session.** A second source batch
+   (`source/raw-transcript-2-zo.md`) explicitly asks that every message
+   containing a YouTube link have its video transcribed and its cited
+   reference material documented. This session's `WebFetch` tool is
+   denied by the network egress proxy for every domain tested, including
+   YouTube and even plain Wikipedia — there is no working path to fetch
+   a video page or transcript from here, and a targeted WebSearch for two
+   of the video IDs (`KizDH4o1Ljk`, `or6kWCF1rS8`) found no third-party
+   transcript either. This is logged as blocked, not silently skipped —
+   it needs either a session with different network access, or the
+   videos' transcripts/summaries supplied directly.
+6. Independently verify the "Comprehensive Historical Analysis of Talhah
+   ibn Ubaydullah" document (received as a PDF, 2026-08-28, integrated at
+   [`chapters/04-sahaba-companions-and-disputes.md`, §4.7](chapters/04-sahaba-companions-and-disputes.md)) —
+   it is extensively cited (Ibn Sa'd, al-Tabari's history and tafsir,
+   al-Suyuti, al-Qurtubi, al-Baydawi, al-Zamakhshari, Abu Hayyan,
+   al-Baladhuri, Ibn al-Athir, Ibn Qutaybah, al-Mas'udi, Sheikh al-Mufid,
+   Ibn Kathir, Ibn Abd al-Barr, Nahj al-Balagha) but none of those
+   citations have been independently traced to a primary edition by this
+   project — the document itself is a secondary synthesis, not a primary
+   source, and per Principle 4 its claims (including the specific quoted
+   dialogue attributed to Ali, Talhah, and al-Zubayr on the battlefield)
+   are context to verify, not fact to repeat.
+7. Verify the claim that Sahih al-Bukhari, Volume 8, Book 82, Hadith 817
+   uses *fulan* to obscure Ali ibn Abi Talib specifically (Principle 3's
+   first logged instance, above) — confirm the primary hadith text
+   directly and check the "similar Ahadith and exegesis" the source
+   material says identify the unnamed party, rather than accepting the
+   identification as already established.
 
 This list should grow as research continues — it is a starting point, not
 a fixed scope.

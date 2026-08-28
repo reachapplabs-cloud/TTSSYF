@@ -14,6 +14,8 @@ wording is reproduced verbatim from the source transcript.
 | 5.3 | Fadak: comparing a Sunni sheikh's account against Fatima's own sermon | P1 | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.3.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.3.md) |
 | 5.4 | Imam Ali's sermon at Fatima's grave: authenticity | P2 | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.4.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.4.md) |
 | 5.5 | The book accusing Umar of Fatima's death, narrated via a transmitter Sahih Muslim calls a liar | P2 | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.5.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.5.md) |
+| 5.6 | What is the "Attacking the House of Fatimah" incident, distinct from Fadak? | P1 | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.6.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.6.md) |
+| 5.7 | If Fadak was stolen, does the companions-justice defense still apply to those who justified it? | P1 | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.7.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.7.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
 
@@ -174,3 +176,64 @@ essay in Chapter 1, §1.1, before the AI-mode Haud al-Kawthar material in
 **Source:** `raw-transcript.md`, untimestamped line immediately following the
 message timestamped **25/08/2026, 12:13:37 AM** (see
 [Chapter 1, §1.1](01-quran.md)).
+
+---
+
+## 5.6 — What is the "Attacking the House of Fatimah (sa)" incident, distinct from the Fadak inheritance dispute?
+
+**Priority:** P1 — Distinct from §5.2's inheritance dispute; a separate,
+serious allegation about physical treatment of Fatima's household
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/05-ahlul-bayt-fatima-and-fadak/5.6.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.6.md)
+
+**Reference (verbatim):**
+
+> Attacking the House of Fatimah (sa) | Encyclopedia |
+> https://share.google/GNigIXxuaCwJL6wtN
+
+**Note:** the source message is only a link with a title — no further
+text framing the question was given. It is included here as a distinct
+open item from §5.2 (which concerns the Fadak land/inheritance dispute)
+because "attacking the house" is, in the broader Shia historical
+narrative, a separate and more serious claim (concerning the manner in
+which Abu Bakr's allegiance was obtained from the household, and Fatima's
+alleged injuries) — this project has not yet researched or verified the
+content behind this link, per `METHODOLOGY.md` Principle 4.
+
+**Source:** `source/raw-transcript-2-zo.md`, message timestamped **28/08, 04:12**.
+
+---
+
+## 5.7 — If the Bukhari 6787 inheritance-restriction hadith is genuine and Fadak really was withheld unjustly, does the "don't judge the companions" defense still apply to everyone who justified it?
+
+**Priority:** P1 — A conditional logical argument connecting an existing
+citation (§4.8's Bukhari 6787) to a new one, capped with a Qur'anic verse
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/05-ahlul-bayt-fatima-and-fadak/5.7.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.7.md)
+
+**Question and argument (verbatim):**
+
+> Assuming this hadith is true,
+> 1. https://share.google/jhJvdtdpckUs17bw7
+> 2. https://sunnah.com/muslim:1978a
+>
+> And fadak was infact stolen. Then this rule applies to everyone
+> involved in asserting / justifying the actions of the oppressors
+
+> Ending with this
+> Surah Ash-Shuraa Ayah 40 - Read, Listen, Translation, Tafsir -
+> Quran.com https://share.google/5OeEub8F5WapIZC5U
+
+**Note:** link 1 (`share.google/jhJvdtdpckUs17bw7`) is the same Sahih
+al-Bukhari 6787 (Hudood) link already discussed at
+[Chapter 4, §4.8](04-sahaba-companions-and-disputes.md) and §4.5; link 2
+(`sunnah.com/muslim:1978a`) is a new citation not previously in either
+chapter. Surah Ash-Shura 42:40 concerns recompense for a wrong being
+proportionate, with forgiveness and reform preferred — the argument as
+given is explicitly conditional ("assuming this hadith is true... and
+Fadak was in fact stolen"), which this project preserves as stated rather
+than resolving — whether the premises hold is exactly what §5.2/§5.3
+research needs to establish first.
+
+**Source:** `source/raw-transcript-2-zo.md`, messages timestamped
+**26/08, 22:22** and **22:25**.

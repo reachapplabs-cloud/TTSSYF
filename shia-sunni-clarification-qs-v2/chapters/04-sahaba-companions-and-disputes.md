@@ -15,10 +15,12 @@ them. All wording is reproduced verbatim from the source transcript.
 | 4.4 | Who narrated the ashara mubashara/Talha "walking martyr" hadith, and why the omission? | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.4.md`](../answers/04-sahaba-companions-and-disputes/4.4.md) |
 | 4.5 | The Haud al-Kawthar "ashabi" hadith and differentiated companion status | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.5.md`](../answers/04-sahaba-companions-and-disputes/4.5.md) |
 | 4.6 | Was Aisha a pawn behind the first fitnah? | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.6.md`](../answers/04-sahaba-companions-and-disputes/4.6.md) |
-| 4.7 | Which companion was "already planning" after the Prophet's ﷺ death? | P3 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.7.md`](../answers/04-sahaba-companions-and-disputes/4.7.md) |
+| 4.7 | Which companion (identified: Talhah ibn Ubaydullah) was "already planning" after the Prophet's ﷺ death? | P0 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.7.md`](../answers/04-sahaba-companions-and-disputes/4.7.md) |
 | 4.8 | Does Qur'an 9:100 really grant blanket approval to all companions? | P0 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.8.md`](../answers/04-sahaba-companions-and-disputes/4.8.md) |
 | 4.9 | Marwan: a case study in uneven justice for companions | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.9.md`](../answers/04-sahaba-companions-and-disputes/4.9.md) |
 | 4.10 | Was Abu Bakr really first to accept Islam after Khadija? | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.10.md`](../answers/04-sahaba-companions-and-disputes/4.10.md) |
+| 4.11 | What do the names "Muawiya" and "Yazid" mean, and why were they given? | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.11.md`](../answers/04-sahaba-companions-and-disputes/4.11.md) |
+| 4.12 | Was Abu Sufyan the originator, and what is the Hind→Muawiya→Yazid→Sufyani lineage theory? | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.12.md`](../answers/04-sahaba-companions-and-disputes/4.12.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
 
@@ -81,6 +83,11 @@ this is filed as a hadith-methodology question too.*
 > brought as required by the prophet.
 
 **Source:** `raw-transcript.md`, message timestamped **25/08/2026, 6:01:15 AM**.
+
+*See also: [Chapter 8](08-the-prophets-final-days.md), which substantially
+elaborates this incident — the deathbed sequence, a specific citation
+(Sahih al-Bukhari 7280), and the surrounding argument — from the second
+source batch.*
 
 ---
 
@@ -234,13 +241,18 @@ Full text and supporting image at §4.4 above.
 
 ## 4.7 — Which companion was "already planning his actions" following the Prophet's ﷺ death, and is it true he betrayed Uthman and then waged war claiming to avenge him?
 
-**Priority:** P3 — Companion not even named in source — needs identification first
-**Status:** ⬜ Not Started
+**Priority:** P0 — *(upgraded from P3)* now fully identified and heavily
+sourced; directly bears on the Ashara Mubashara ("ten promised Paradise")
+shield discussed at §4.4/§4.8
+**Status:** ✅ Answered *(identification and sourcing per the PDF below; not
+yet ✅✅ Verified — none of the PDF's own citations have been independently
+traced to a primary edition by this project — see `METHODOLOGY.md`, open
+item #6)*
 **Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.7.md`](../answers/04-sahaba-companions-and-disputes/4.7.md)
 
-**Question and notes (verbatim — the source does not further name the
-companion beyond this description; nothing has been added or inferred
-here):**
+**Question and notes as originally posed (verbatim — the source did not
+name the companion beyond this description; nothing was added or
+inferred at the time):**
 
 > Riyad as-Salihin 664 - The Book of Miscellany - كتاب المقدمات -
 > Sunnah.com - Sayings and Teachings of Prophet Muhammad (ﷺ)
@@ -259,7 +271,103 @@ here):**
 > https://sunnah.com/abudawud:4646
 
 **Source:** `raw-transcript.md`, messages timestamped **26/08/2026, 2:58:07 PM**
-and **2:58:08 PM**.
+and **2:58:08 PM**. The same question was also raised, with the same
+Riyad as-Salihin 664 and aimode links plus an additional
+`https://sunnah.com/abudawud:4646` reference, in the second source batch
+— see `source/raw-transcript-2-zo.md`, messages timestamped **26/08,
+13:00–13:11**, which also noted **"More details in the pdf."**
+
+### The identification (added 2026-08-28, from a supplied PDF — not from either raw transcript)
+
+A document titled *"Comprehensive Historical Analysis of Talhah ibn
+Ubaydullah — A Chronological Sequence of Events with Critical Academic
+and Sectarian Textual Proofs"* was supplied directly (PDF,
+`DOC20260826WA0000.pdf`, 7 pages) as "the pdf" referenced above. It
+identifies the companion as **Talhah ibn Ubaydullah** — one of the ten
+companions named in the Ashara Mubashara hadith (see §4.4). Per
+[`METHODOLOGY.md`, Principle 4](../METHODOLOGY.md), this document is
+itself context to research, not fact to repeat — it is a secondary
+synthesis with extensive citations that this project has not yet
+independently traced to primary editions (tracked as open item #6 in
+`METHODOLOGY.md`). It is reproduced in full below because omitting it
+would violate the no-omission rule, not because its claims are certified.
+
+**The document's claims, summarized with its own cited sources (full
+citations preserved, quoted dialogue kept verbatim as the document gives
+it):**
+
+1. **The marriage intent (c. 5 AH).** The document states that Talhah
+   said, during the Prophet's ﷺ lifetime, that he would marry Aisha if
+   the Prophet passed away — and that Qur'an 33:53's closing ban on
+   marrying the Prophet's wives after him was revealed in direct response.
+   Cited: *Kitab al-Tabaqat al-Kubra* (Ibn Sa'd, vol. 8, Biography of
+   Aisha — quoting Abu Bakr ibn Muhammad ibn 'Amr ibn Hazm's transmission
+   verbatim: *"The verse was revealed concerning Talhah ibn 'Ubaidullah
+   because he said: 'If the Messenger of Allah passes away, I will marry
+   'Aisha.'"*); *Tafsir al-Tabari* (on 33:53); *Tafsir al-Durr al-Manthur*
+   (al-Suyuti, on 33:53); *Tafsir al-Qurtubi* (*Al-Jami' li-Ahkam
+   al-Qur'an*, on 33:53); *Anwar al-Tanzil wa-Asrar al-Ta'wil*
+   (al-Baydawi, on 33:53); *Tafsir al-Kashshaf* (al-Zamakhshari, on
+   33:53); *Al-Bahr al-Muhit* (Abu Hayyan al-Gharnati, vol. 7).
+2. **The anti-Uthman letters and siege (35 AH).** The document states
+   Talhah sent inflammatory letters to Egypt and Kufa inciting rebels to
+   march on Medina, took control of the treasury keys, and — when a
+   starving Uthman pleaded from his window for water to be let through —
+   refused, until Ali intervened. Cited: *Tarikh al-Rusul wa-al-Muluk*
+   (al-Tabari, Events of 35 AH); *Ansab al-Ashraf* (al-Baladhuri, vol. 5,
+   Biography of Uthman); *Al-Kamil fi al-Tarikh* (Ibn al-Athir, Year 35
+   AH).
+3. **The Jamal War alliance (36 AH).** The document states Talhah and
+   Al-Zubayr broke their oath of allegiance (bay'ah) to the newly elected
+   Caliph Ali, went to Mecca to align with Aisha, and financed an army
+   under the banner of avenging Uthman — the same Uthman Talhah had
+   worked against. Cited (Sunni): *Tarikh al-Tabari* (Events of 36 AH);
+   *Al-Imama wa-al-Siyasa* (attrib. Ibn Qutaybah); *Muruj al-Dhahab*
+   (al-Mas'udi, Caliphate of Ali). Cited (Shia): *Kitab al-Irshad* (Sheikh
+   al-Mufid), which the document says refers to Talhah and Al-Zubayr as
+   the *Nakithun* ("Oath-Breakers").
+4. **Assassination by his own side (36 AH).** The document states Marwan
+   ibn al-Hakam — nominally on the same side as Talhah — shot him during
+   the battle, viewing his "avenge Uthman" campaign as hypocrisy, and
+   quotes him telling Uthman's son Aban: *"I have spared you from one of
+   your father's murderers."* Cited: *Al-Bidayah wa-al-Nihayah* (Ibn
+   Kathir, vol. 7); *Al-Isti'ab fi Ma'rifat al-Ashab* (Ibn Abd al-Barr,
+   Biography of Talhah — quoting Marwan: *"By Allah, I will not seek my
+   revenge for Uthman after today!"*); *Muruj al-Dhahab* (al-Mas'udi);
+   *Kitab al-Tabaqat al-Kubra* (Ibn Sa'd, vol. 3, Biography of Talhah).
+5. **The document's own theological framing.** It states that mainstream
+   Sunni orthodoxy shields this narrative through the Ashara Mubashara
+   hadith (see §4.4) and the doctrine of *Al-'Adalah* (presumed
+   uprightness of all companions), classifying the marriage-intent chains
+   as weak/fabricated and the anti-Uthman/anti-Ali actions as forgivable
+   ijtihad — and argues that *if* that hadith is treated as weak or void,
+   as the document says Shia theologians maintain, the same events read
+   instead as a documented pattern of disloyalty rather than isolated
+   misjudgments. This framing section is the document's own argument, not
+   a citation to a classical source — flagged here as such per Principle 4.
+6. **Ali's confrontation before the battle.** The document quotes an
+   exchange of letters between Ali and Talhah/Al-Zubayr (Ali: *"...Fear
+   Allah, and do not tear apart the unity of the Muslims..."*; the reply
+   shifting blame onto Ali for sheltering Uthman's killers), then a
+   face-to-face battlefield exchange: Ali asking Talhah why he brought
+   Aisha to the field while keeping his own wife home, and accusing him
+   directly of Uthman's blood; and Ali reminding Al-Zubayr of a hadith in
+   which the Prophet ﷺ reportedly told him he would one day fight Ali "and
+   you will be the oppressor (*Zalim*) in that fight" — after which
+   Al-Zubayr reportedly withdrew from the battle. Cited: *Tarikh al-Tabari*
+   and *Nahj al-Balagha* for the letters; Ibn Kathir's *Al-Bidayah
+   wa-al-Nihayah* and Sheikh al-Mufid's *Kitab al-Irshad* for the
+   battlefield exchange (the document states both a Sunni and a Shia
+   source record it, though it does not quote either source's wording
+   independently — the dialogue as given is the document's own rendering).
+7. **The two men's differing fates.** The document states Al-Zubayr
+   retreated after Ali's reminder but was killed in his sleep at Wadi
+   al-Siba' by Amr ibn Jarmuz, while Talhah stayed on the field and was
+   shot by Marwan — reading this as "poetic justice" in its own framing
+   (again, the document's interpretation, not a classical citation).
+
+**Source:** PDF `DOC20260826WA0000.pdf`, supplied directly, 2026-08-28 —
+not part of either raw transcript.
 
 ---
 
@@ -419,4 +527,96 @@ with images `image9.png` and `image8.png`.
 (Immediately preceded by an edited note: "To check authenticity. (Quoted
 from Najh al balagha) `<This message was edited>`" — timestamped 9:01:45 PM,
 which relates to the Fatima's-grave sermon in
-[Chapter 5, §5.4](05-ahlul-bayt-fatima-and-fadak.md).)
+[Chapter 5, §5.4](05-ahlul-bayt-fatima-and-fadak.md).) The identical
+question was independently restated in the second source batch —
+`source/raw-transcript-2-zo.md`, message timestamped **26/08, 20:02**.
+
+---
+
+## 4.11 — What do the names "Muawiya" and "Yazid" mean, and why were they given these names?
+
+**Priority:** P2 — Etymology/naming question, narrower scope but tied to
+the Muawiyah-narration case study at §4.1
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.11.md`](../answers/04-sahaba-companions-and-disputes/4.11.md)
+
+**Question and commentary (verbatim, from the second source batch):**
+
+> The main to check is meaning of muawaiya as a name. Why he was named
+> that and the 50 references here :
+>
+> https://shiapen.com/deception/distortion-in-books-by-sunni-scholars/1-distortion-of-al-haythami-in-a-narration-whee-it-is-mentioned-that-mu-waiyah-took-a-forbidden-drink/
+>
+> Full video for this
+> https://youtu.be/or6kWCF1rS8?si=DQ1exf6tjET62GHK
+
+> Followed by his son
+> Muawiya Howling fox/dog
+>
+> Succeeded by his appointed Yazid
+> "An increase" in the propagation of his ancestors
+
+**Note:** the shiapen.com link here is the same one already discussed at
+[§4.1](#41--is-a-narration-graded-sahih-by-chain-still-reliable-if-its-content-looks-false-the-muawiyah-forbidden-drink-narration)
+(the forbidden-drink narration) — this message adds a distinct new claim
+on top of it (a naming/etymology argument and a reference to "50
+references" on that same page) rather than repeating the original point.
+The claimed meanings ("howling fox/dog" for Muawiya, "an increase" for
+Yazid) are given exactly as stated, with no independent verification yet
+— per `METHODOLOGY.md` Principle 4, this is the contributor's own
+etymological claim, not a cited classical source, and should be treated
+as an open research item, not a settled translation.
+
+**Source:** `source/raw-transcript-2-zo.md`, messages timestamped
+**26/08, 08:45** (×2) and **26/08, 09:11**, and **26/08, 21:43** (×2).
+
+---
+
+## 4.12 — Was Abu Sufyan ibn Harb "the man who instigated all the wars," and what is the significance of the Hind→Muawiya→Yazid line, including the end-times "Sufyani" figure said to come from the same lineage?
+
+**Priority:** P2 — Dynastic-lineage theory, tied to §4.1/§4.11 but a
+distinct claim
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.12.md`](../answers/04-sahaba-companions-and-disputes/4.12.md)
+
+**Question and commentary (verbatim):**
+
+> The truth about abu sufyan ibn harb. The man who instigated all the
+> wars. Whose dynasty is hind muawiya yazid
+>
+> https://share.google/aimode/cRDs8KYgIwKi2dNRw
+
+> Another sign of coming times
+>
+> https://share.google/aimode/vAfb5Es0LqQ8fi3BZ
+>
+> When he arrives I wonder on whose side our scholars wil be on
+
+> The coming of Al sufyani from the same tree.
+>
+> All these are sunni narrations. So when we have so many open
+> contradictions in our own books and early records.
+>
+> Now if we were to look at all this from the lens/perspective of ahl
+> bayt. Can we identify even one incident in which they were wrong. Or
+> committed wrongdoings against others.
+>
+> Our primary purpose,
+> Seeking Allah's rida
+> To propagate the true message
+>
+> Till last breath of a person we know they are accountable to heaven and
+> hell. If we apply the same for even those who we claim to have His
+> Ridaa. It doesn't exclude their final actions
+
+**Note:** this is presented across three messages as one connected
+theory — Abu Sufyan as originator, his lineage (Hind, then Muawiya, then
+Yazid) as its continuation, and an end-times figure "Al-Sufyani" as a
+prophesied continuation of the same line. As with §4.11, this is the
+contributor's own framing per `METHODOLOGY.md` Principle 4 — presented in
+full because omitting it would violate the no-omission rule, not because
+the lineage claim or the eschatological reading has been independently
+verified.
+
+**Source:** `source/raw-transcript-2-zo.md`, messages timestamped
+**26/08, 21:16**, **21:18**, and **21:52**.

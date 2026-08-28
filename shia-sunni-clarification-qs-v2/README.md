@@ -89,9 +89,11 @@ shia-sunni-clarification-qs-v2/
 │                             source message, link, and image mapped to
 │                             where it landed
 ├── source/
-│   ├── raw-transcript.md   — the ENTIRE original document, verbatim,
-│   │                         unedited, in original order — the ground
-│   │                         truth to check anything against
+│   ├── raw-transcript.md   — the ENTIRE original v1 document, verbatim,
+│   │                         unedited, in original order
+│   ├── raw-transcript-2-zo.md — a second source batch (v2 only, added
+│   │                         2026-08-28), same verbatim-ground-truth
+│   │                         treatment
 │   └── images/             — all 9 original images, full resolution
 ├── chapters/
 │   ├── 01-quran.md
@@ -99,6 +101,7 @@ shia-sunni-clarification-qs-v2/
 │   ├── 03-salah-and-worship-practices.md
 │   ├── 04-sahaba-companions-and-disputes.md
 │   ├── 05-ahlul-bayt-fatima-and-fadak.md
+│   ├── 08-the-prophets-final-days.md (new in v2)
 │   ├── 06-imamate-khilafah-and-ghadeer-khumm.md
 │   └── 07-general-resources.md
 └── answers/                — one dossier per question: Answer, Supporting
@@ -124,7 +127,8 @@ traceable from the original `.docx` all the way to its current form here.
 
 ## Tracking, priority, and answers
 
-Every question in Chapters 1–6 (25 in total) now carries:
+Every question in Chapters 1–6 and 8 (34 in total, as of 2026-08-28)
+now carries:
 
 - A **priority** (P0 = foundational, down to P3 = not yet researchable —
   see [`TRACKER.md`](TRACKER.md) for the full ranking and the reasoning
@@ -161,16 +165,24 @@ are the next phase of work.
 4. **[Sahaba & Disputes Between Companions](chapters/04-sahaba-companions-and-disputes.md)**
    — the Muawiyah narration, the Qirtas incident, cursing Ali from the
    pulpit, the Haud al-Kawthar "ashabi" hadith, the Battle of the
-   Camel/first fitnah, Marwan's record, and who was first to accept
-   Islam.
+   Camel/first fitnah (including Talhah ibn Ubaydullah, identified via a
+   supplied PDF), Marwan's record, who was first to accept Islam, and the
+   Muawiya/Yazid/Abu Sufyan naming and dynasty theory.
 5. **[Ahlul Bayt, Fatima & Fadak](chapters/05-ahlul-bayt-fatima-and-fadak.md)**
-   — who counts as Ahl al-Bayt, the Fadak inheritance dispute, Fatima's
-   grievance, and Ali's sermon at her grave.
+   — who counts as Ahl al-Bayt, the Fadak inheritance dispute, the
+   "Attacking the House of Fatimah" incident, Fatima's grievance, and
+   Ali's sermon at her grave.
 6. **[Imamate, Khilafah & Ghadeer Khumm](chapters/06-imamate-khilafah-and-ghadeer-khumm.md)**
-   — Khutbah ash-Shiqshiqiyyah, the khalifa dispute, and the nine-source
-   Ghadeer Khumm reference bundle.
+   — Khutbah ash-Shiqshiqiyyah and Sermon 193, the khalifa dispute, the
+   nine-source Ghadeer Khumm reference bundle, the "fulan" concealment
+   case study (Bukhari Vol.8 Book 82 Hadith 817), and Umar's claim of
+   divine sanction.
 7. **[General Resources](chapters/07-general-resources.md)** — reference
    links not tied to one specific question.
+8. **[The Prophet's ﷺ Final Days](chapters/08-the-prophets-final-days.md)**
+   *(new in v2)* — the poisoning/martyrdom theory, and companions'
+   conduct at the deathbed including the Qirtas request and Sahih
+   al-Bukhari 7280.
 
 ## Editorial rules followed in v2
 

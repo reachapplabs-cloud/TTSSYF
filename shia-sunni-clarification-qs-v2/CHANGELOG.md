@@ -15,6 +15,72 @@ here can be diffed against.
 
 ---
 
+## 2026-08-28 — Second source batch ingested: 9 new questions, a new chapter, Principle 4, and one major upgrade
+
+**What:** A second WhatsApp-style message log (34 messages, from a
+contributor labelled "💎 Zo," spanning 18/08–28/08) and a supplied PDF
+("Comprehensive Historical Analysis of Talhah ibn Ubaydullah," 7 pages)
+were added and integrated, following the same rigor as the original
+ingestion:
+
+- Saved verbatim as [`source/raw-transcript-2-zo.md`](source/raw-transcript-2-zo.md)
+  (ground truth, unedited) — the PDF is not re-hosted (it was supplied
+  directly, not linked) but its content is fully summarized with citations
+  preserved at Chapter 4, §4.7.
+- Full completeness trace added at [`QA-CHECKLIST.md`](QA-CHECKLIST.md),
+  Part 2 — every message mapped to where it landed, including which ones
+  were duplicates of existing v1 content (cross-referenced, not
+  re-entered) versus genuinely new.
+- **9 new trackable questions added:** §4.11, §4.12 (Chapter 4);
+  §5.6, §5.7 (Chapter 5); §6.5, §6.6, §6.7 (Chapter 6); §8.1, §8.2 (new
+  Chapter 8, "The Prophet's ﷺ Final Days" — did not exist before this
+  pass).
+- **§4.7 substantially upgraded** (P3 → P0, ⬜ → ✅ Answered): the
+  companion the original question left unnamed is identified as
+  **Talhah ibn Ubaydullah** per the supplied PDF, which is extensively
+  cited (Ibn Sa'd, al-Tabari, al-Suyuti, al-Qurtubi, al-Baydawi,
+  al-Zamakhshari, Abu Hayyan, al-Baladhuri, Ibn al-Athir, Ibn Qutaybah,
+  al-Mas'udi, Sheikh al-Mufid, Ibn Kathir, Ibn Abd al-Barr, Nahj
+  al-Balagha) and summarized in full at Chapter 4, §4.7. Marked ✅
+  Answered, not ✅✅ Verified — none of the PDF's own citations have been
+  independently traced to a primary edition yet.
+- **§6.6 is the first concrete, sourced test case for `METHODOLOGY.md`
+  Principle 3** (concealment via *fulan*): Sahih al-Bukhari, Vol. 8,
+  Book 82, Hadith 817, said to obscure Ali ibn Abi Talib's name in the
+  origin-of-the-caliphate narrative. Logged in both the chapter and back
+  into `METHODOLOGY.md` itself, since the principle previously had no
+  real-world instance attached to it.
+- **`METHODOLOGY.md` gained a fourth principle**, stated directly by the
+  project owner: everything either contributor (Arif Bhai or Zo)
+  forwards or writes — including their own reflections and theories, not
+  only the classical material they cite — is context to research, not
+  fact to repeat. This closes a gap the first three principles (which
+  govern classical rijal/hadith material specifically) didn't cover.
+- `TRACKER.md` and `MASTER-TABLE.md`/`.csv` fully regenerated to cover
+  all 34 questions across 8 chapters, ranks recomputed, evidence columns
+  re-extracted mechanically from the current chapter text (plus the
+  §2.1/§3.2 research findings and 4.7's citation list folded in by hand,
+  per the documented exception).
+
+**Known, explicitly logged limitation:** the second batch asked that
+every YouTube-linked message have its video transcribed and referenced
+material documented. This session's `WebFetch` tool is blocked by the
+network egress proxy for every domain tested, including YouTube itself
+and plain Wikipedia — there is no working path to fetch a video page or
+transcript from here. A targeted search for two of the seven video IDs in
+this batch found no third-party transcript either. This is recorded as
+open item #5 in `METHODOLOGY.md`, not silently skipped.
+
+**Verification:** every new chapter section quotes its source verbatim
+with a `Source:` line; nothing from the original messages or the PDF was
+paraphrased away — summaries of the PDF's six sections retain each
+section's own citation list rather than compressing them out. Three short
+standalone remarks with no attached citation or question were not turned
+into numbered chapter entries but are logged in the QA-CHECKLIST Part 2
+table so they're still findable, not silently dropped.
+
+---
+
 ## 2026-08-28 — Answered §2.1 and §3.2 (the two Abu Hurairah methodology proof-cases)
 
 **What:** Both P0 dossiers moved from ⬜ Not Started to ✅ Answered, using

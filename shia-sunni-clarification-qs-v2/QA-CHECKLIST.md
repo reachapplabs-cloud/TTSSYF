@@ -151,3 +151,83 @@ document that isn't reflected in `chapters/`, that is a real gap — please
 flag it. The design of this repo (raw transcript kept verbatim + this
 trace table) is meant to make such gaps checkable by anyone, not just
 assumed away.
+
+---
+
+# Part 2 (v2 only) — Second Source Batch
+
+Added 2026-08-28. This part traces
+[`source/raw-transcript-2-zo.md`](source/raw-transcript-2-zo.md) (a
+second WhatsApp-style log, from a contributor labelled "💎 Zo") and the
+supplied PDF `DOC20260826WA0000.pdf` ("Comprehensive Historical Analysis
+of Talhah ibn Ubaydullah") to where each landed. Neither is part of v1 or
+the original `.docx` — this part exists only in v2. Per
+[`METHODOLOGY.md`](METHODOLOGY.md) Principle 4, everything traced below
+is context supplied to this project, not fact certified by it.
+
+## Message-by-message trace (raw-transcript-2-zo.md)
+
+| Timestamp | Content | Placed in |
+|---|---|---|
+| 18/08, 03:58 | youtu.be/hySeAufRLMM + "if kuliyah answers this it suffices" + nasai:3006 | Ch.7 §7.3 |
+| 18/08, 04:04 | acrobat.adobe.com PDF link (undescribed) | Ch.7 §7.4 |
+| 18/08, 04:06 | Discord invite | Ch.7 §7.5 |
+| 18/08, 14:06 & 15:07 | "All about hadith explanation" video + "5 mins is good" note | Ch.7 §7.6 |
+| 19/08, 01:46 | "To check if this is true" + YouTube short | Ch.7 §7.7 |
+| 20/08, 12:03 | Sahih al-Bukhari 6830 (Hudood), "came across at random" | Ch.7 §7.8 |
+| 26/08, 04:53 | "New evidence" / Aisha-pawn-in-first-fitnah theory | **Duplicate** of Ch.4 §4.4/§4.6 (near-identical wording to `raw-transcript.md`, 26/08/2026 6:57:23–24 AM) — not re-entered as new content |
+| 26/08, 08:45 (×2) | "Meaning of muawaiya as a name... 50 references" + shiapen.com link | Ch.4 §4.11 (shiapen link is a duplicate of §4.1's; the naming claim is new) |
+| 26/08, 09:11 | "Full video for this" (or6kWCF1rS8) | Ch.4 §4.11 |
+| 26/08, 12:05 | "Ali emulates our Prophet..." | Not placed in a chapter — a short standalone devotional remark with no linked question or citation; logged here rather than dropped. |
+| 26/08, 13:00–13:11 | Riyad as-Salihin 664 + companion-planning note + "More details in the pdf" + aimode link + abudawud:4646 | Ch.4 §4.7 (same content as `raw-transcript.md` 26/08/2026 2:58:07–08 PM; the "More details in the pdf" line is new and is what the Talhah PDF answers) |
+| 26/08, 13:32–13:35 | "Hasten to defense of companions" + Bukhari 6582/6787 + "not a blanket rule" | **Duplicate** of Ch.4 §4.5/§4.8 and Ch.4 §4.9's framing (near-identical wording to `raw-transcript.md`, 26/08/2026 2:58:08–10 PM) — not re-entered as new content |
+| 26/08, 20:02 | "Abu Bakr first to accept Islam" question | **Duplicate** of Ch.4 §4.10 (identical wording to `raw-transcript.md`, 26/08/2026 9:03:18 PM) — cross-referenced there |
+| 26/08, 21:16 | Abu Sufyan/dynasty theory + aimode link | Ch.4 §4.12 |
+| 26/08, 21:18 | "Another sign of coming times" + aimode link | Ch.4 §4.12 |
+| 26/08, 21:28–21:29 | Nahjul Balagha Sermon 3 link + reflection | Ch.6 §6.5 |
+| 26/08, 21:37 | Nahjul Balagha Sermon 193 link | Ch.6 §6.5 |
+| 26/08, 21:43 (×2) | "Muawiya = howling fox/dog", "Yazid = an increase" | Ch.4 §4.11 |
+| 26/08, 21:52 | "Al-Sufyani from the same tree" + extended reflection on ahl al-bayt/accountability | Ch.4 §4.12 |
+| 26/08, 22:07 | "We don't owe it to anyone to justify their actions..." | Not placed in a chapter — general reflection, no linked citation; logged here. |
+| 26/08, 22:09 | "If we ask anyone who has wronged us..." | Not placed in a chapter — general reflection, no linked citation; logged here. |
+| 26/08, 22:22 | "Assuming this hadith is true..." + Bukhari 6787 link + Muslim 1978a | Ch.5 §5.7 |
+| 26/08, 22:25 | Surah Ash-Shura 40 | Ch.5 §5.7 |
+| 27/08, 01:50 | marefateahlebait.com link | Ch.7 §7.10 |
+| 27/08, 02:40–03:13 | Poisoning/martyrdom theory + 5 aimode links | Ch.8 §8.1 |
+| 27/08, 03:17–03:57 | Extended deathbed-conduct passage (9 messages) + Bukhari 7280 | Ch.8 §8.2 |
+| 27/08, 17:03 | "Video about bukhari. Clear contradictions" | Ch.7 §7.9 |
+| 28/08, 04:12 | "Attacking the House of Fatimah" link | Ch.5 §5.6 |
+| 28/08, 04:23 | Bukhari Vol.8 Book 82 Hadith 817, "fulan" argument | Ch.6 §6.6 |
+| 28/08, 04:31 | Umar's "Allah has written for me to say" claim | Ch.6 §6.7 |
+
+**Three short standalone remarks** (26/08 12:05; 26/08 22:07; 26/08
+22:09) had no attached citation or distinct question and were not made
+into chapter entries — they are logged in the table above, and their
+full text remains verbatim and findable in
+`source/raw-transcript-2-zo.md`, so they are not lost, only not given
+their own numbered question.
+
+## PDF trace (`DOC20260826WA0000.pdf`)
+
+The entire 7-page document ("Comprehensive Historical Analysis of Talhah
+ibn Ubaydullah") was read in full. Every section of it (marriage intent,
+anti-Uthman letters, Jamal War alliance, assassination by Marwan, the
+Sunni/Shia theological framing, the pre-battle letters, the battlefield
+confrontation, and the two men's differing fates) is summarized with its
+full citation list at
+[Chapter 4, §4.7](chapters/04-sahaba-companions-and-disputes.md). No
+section of the PDF was omitted.
+
+## Totals for Part 2
+
+- **34 timestamped messages** in `raw-transcript-2-zo.md`, all traced
+  above.
+- **7 PDF pages**, fully summarized with citations preserved, at §4.7.
+- **9 new trackable questions** added (§4.11, §4.12, §5.6, §5.7, §6.5,
+  §6.6, §6.7, §8.1, §8.2) plus **one upgraded** (§4.7, P3→P0).
+- **8 general-resource items** added to Chapter 7 (§7.3–§7.10).
+- **5 YouTube video links** in this batch (plus 2 already known from v1)
+  could not be transcribed — see `METHODOLOGY.md`, open item #5.
+- Combined with Part 1, this repo now tracks **34 research questions**
+  across **8 chapters** — see [`TRACKER.md`](TRACKER.md) and
+  [`MASTER-TABLE.md`](MASTER-TABLE.md) for the current full board.

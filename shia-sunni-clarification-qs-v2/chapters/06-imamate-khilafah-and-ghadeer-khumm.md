@@ -13,6 +13,9 @@ Khumm. All wording is reproduced verbatim from the source transcript.
 | 6.2 | Video links (supporting media, not a standalone question) | — | N/A | — |
 | 6.3 | Cross-reference to §4.5 (not a standalone question) | — | N/A | — |
 | 6.4 | Verifying the nine-source Ghadeer Khumm reference bundle | P0 | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md) |
+| 6.5 | What do Nahjul Balagha Sermons 3 and 193 say about the succession? | P1 | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md) |
+| 6.6 | Does Bukhari Vol.8 Book 82 Hadith 817 obscure Ali's name with fulan? | P0 | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md) |
+| 6.7 | Did Umar claim divine sanction despite no divine appointment? | P1 | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
 
@@ -171,3 +174,129 @@ source):
 **Source:** `raw-transcript.md`, references block headed "------------
 References ------------" immediately following the videos in §6.2 (same
 message timestamp context, **25/08/2026, 6:00:30 AM** onward).
+
+**Note (added 2026-08-28):** this exact nine-item reference list was
+re-sent verbatim on 2026-08-28 alongside video link
+`https://youtu.be/KizDH4o1Ljk` (the same video already noted at §6.2),
+confirming that video is the source this reference bundle is drawn from.
+Per the request that video-linked messages get transcribed and their
+cited material documented: **this session cannot fetch YouTube video
+pages or transcripts at all** (network egress blocked — see
+`METHODOLOGY.md`, open item #5) — the transcript could not be produced.
+The reference bundle's text itself (which is what would need
+verification regardless of the video) is unchanged from the original
+listing above.
+
+---
+
+## 6.5 — What do Nahjul Balagha's Sermon 3 ("By Allah, the son of Abu Quhafah...") and Sermon 193 say about the succession, and what should be made of them?
+
+**Priority:** P1 — Primary Shia source material on Ali's own view of the
+succession, parallels the Khutbah ash-Shiqshiqiyyah material at §6.1
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md)
+
+**References and commentary (verbatim):**
+
+> Sermon 3: By Allah, the son of Abu Quhafah…. | Nahjul Balagha Part 1 -
+> The Sermons | Al-Islam.org https://share.google/YvUVAc6oMflfwnHE7
+>
+> This one reminds me of what we had to endure after the cheat swayed
+> power at the station
+>
+> One can ask. Maybe we were being taught a lesson. To reflect from our
+> own lives, and have empathy towards this over our own will and desire
+> for this to be untrue
+
+> Some of his more eloquent words penned here. Beautiful read (even more
+> so in arabic)
+>
+> Sermon 193: Now then, Allah the Glorified, the Sublime, created… |
+> Nahjul Balagha Part 1 - The Sermons | Al-Islam.org
+> https://share.google/6W8X7vStTUtUzzJqO
+
+**Note:** Sermon 3 (widely known as *Khutbah ash-Shiqshiqiyyah*, "the
+sermon of the she-camel's froth") is the same sermon already referenced
+at [§6.1](#61--what-does-khutbah-ash-shiqshiqiyyah-and-alis-remarks-on-umars-proposed-expedition-reveal-about-the-shiasunni-disagreement-over-the-khalifa-linked-to-surah-2455)
+— this entry adds the direct Al-Islam.org link and Sermon 193 as a
+second, distinct sermon not previously cited, plus the contributor's own
+reflection (preserved verbatim per `METHODOLOGY.md` Principle 4 — a
+personal reflection, not a citation, and not independently verified).
+
+**Source:** `source/raw-transcript-2-zo.md`, messages timestamped
+**26/08, 21:28**, **21:29**, and **21:37**.
+
+---
+
+## 6.6 — Sahih al-Bukhari, Vol. 8, Book 82, Hadith 817: does Bukhari obscure Ali's name with "fulan" in the origin-of-the-caliphate narrative?
+
+**Priority:** P0 — The first concrete, sourced test case for `METHODOLOGY.md` Principle 3 (concealment patterns)
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md)
+
+**Question and argument (verbatim):**
+
+> Origin of the caliphate
+> (The story how it came into being)
+> Sahih Bukhari Volume 8, Book 82, Hadith Number 817. - Hadith Collection
+> https://share.google/gBNPLeNaEf8p5Ifr3
+>
+> Again Imam bukhari hiding Alis name by saying Fulan (so and so). Proof
+> of it being Ali can be found in similar Ahadith and exegis of who the
+> person is
+>
+> 1. They set conditions to Ali to become caliph only if he were to
+>    follow by ruling of Abu bakar and Umar which he outrightly rejected
+> 2. Uthman accepted and was appointed
+> 3. Upon Uthman assassination, the people immediately chose/appointed
+>    Ali
+> 4. Then again those who didn't want him as a caliph revolted against.
+>
+> This is wadih
+
+**Why this matters beyond this one hadith:** `METHODOLOGY.md` Principle 3
+states that a collector's use of *fulan* ("so-and-so") in place of a name
+is treated as worth flagging explicitly rather than passed over — until
+this message, no concrete instance had been logged anywhere in this
+project. This is now that instance, logged in `METHODOLOGY.md` itself as
+well as here. The claim that the unnamed party is specifically Ali is the
+contributor's own inference from "similar Ahadith and exegesis" — not
+something this project has independently traced yet (see
+`METHODOLOGY.md`, open item #7). The four-point numbered sequence (Ali
+rejected conditional succession → Uthman accepted and was appointed →
+Ali chosen after Uthman's assassination → revolt followed) is presented
+as the contributor's own reconstructed timeline, not a direct quotation
+from the hadith.
+
+**Source:** `source/raw-transcript-2-zo.md`, message timestamped
+**28/08, 04:23**.
+
+---
+
+## 6.7 — Did Umar claim divine sanction ("Allah has written for me to say...") despite not having a divine appointment as Caliph?
+
+**Priority:** P1 — Direct claim about a specific Caliph's own words,
+bears on the "Khulafa Rashidun by divine decree" framing discussed
+across this chapter
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md)
+
+**Question (verbatim):**
+
+> One more concerning thing is Umar says Allah has written for me to say
+> (claiming to be a khulafa rashideen? but we know he was not given
+> divine apointment)
+>
+> So many contradictions.
+>
+> (more Qs)
+
+**Note:** no citation (book, hadith number, or link) was given for the
+"Allah has written for me to say" quote — this is flagged as an open item
+needing a primary source before it can be researched further, not
+something this project can currently verify or attribute. The message
+ends with "(more Qs)," signalling further material was expected to
+follow.
+
+**Source:** `source/raw-transcript-2-zo.md`, message timestamped
+**28/08, 04:31** — the final message in that batch.
