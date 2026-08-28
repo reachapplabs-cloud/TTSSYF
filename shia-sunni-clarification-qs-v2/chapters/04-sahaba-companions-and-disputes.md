@@ -10,7 +10,7 @@ them. All wording is reproduced verbatim from the source transcript.
 | # | Question | Priority | Status | Answer & Documentation |
 |---|---|---|---|---|
 | 4.1 | The Muawiyah forbidden-drink narration: sahih chain, false content? | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.1.md`](../answers/04-sahaba-companions-and-disputes/4.1.md) |
-| 4.2 | Why did Umar block paper and pen from the Prophet ﷺ? (Hadith of Qirtas) | P0 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.2.md`](../answers/04-sahaba-companions-and-disputes/4.2.md) |
+| 4.2 | Why did Umar block paper and pen from the Prophet ﷺ? (Hadith of Qirtas) | P0 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.2.md`](../answers/04-sahaba-companions-and-disputes/4.2.md) |
 | 4.3 | Why did Muawiyah order Ali cursed from the pulpit? | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.3.md`](../answers/04-sahaba-companions-and-disputes/4.3.md) |
 | 4.4 | Who narrated the ashara mubashara/Talha "walking martyr" hadith, and why the omission? | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.4.md`](../answers/04-sahaba-companions-and-disputes/4.4.md) |
 | 4.5 | The Haud al-Kawthar "ashabi" hadith and differentiated companion status | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.5.md`](../answers/04-sahaba-companions-and-disputes/4.5.md) |
@@ -75,7 +75,7 @@ this is filed as a hadith-methodology question too.*
 ## 4.2 — Why did Umar not allow paper and pen to be brought to the Prophet ﷺ as he requested? (Hadith of Qirtas)
 
 **Priority:** P0 — Central to the Shia narrative on the Prophet's final wishes
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.2.md`](../answers/04-sahaba-companions-and-disputes/4.2.md)
 
 **Question (verbatim, from a combined message list — see also §4.3, §2.2, and §5.1–§5.2 for the other items in the same list):**

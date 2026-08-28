@@ -14,7 +14,7 @@ All wording is reproduced verbatim from the source transcript.
 | # | Question | Priority | Status | Answer & Documentation |
 |---|---|---|---|---|
 | 8.1 | Was the Prophet ﷺ martyred by a reactivated poison? | P1 | ⬜ Not Started | [`answers/08-the-prophets-final-days/8.1.md`](../answers/08-the-prophets-final-days/8.1.md) |
-| 8.2 | Deathbed conduct: rejecting the Qirtas request, "is he even our prophet," Bukhari 7280 | P0 | ⬜ Not Started | [`answers/08-the-prophets-final-days/8.2.md`](../answers/08-the-prophets-final-days/8.2.md) |
+| 8.2 | Deathbed conduct: rejecting the Qirtas request, "is he even our prophet," Bukhari 7280 | P0 | ✅ Answered | [`answers/08-the-prophets-final-days/8.2.md`](../answers/08-the-prophets-final-days/8.2.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
 
@@ -67,7 +67,7 @@ opened any of the five aimode links to see what case they make.
 
 **Priority:** P0 — Substantially elaborates the Qirtas incident
 (Chapter 4, §4.2) with a specific new citation and extensive argument
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/08-the-prophets-final-days/8.2.md`](../answers/08-the-prophets-final-days/8.2.md)
 
 **Full passage (verbatim, preserved as a single connected argument since
