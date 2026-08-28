@@ -4,7 +4,7 @@ A single cross-chapter view of every research question in this project, ranked b
 
 **Status legend:** ⬜ Not Started · 🟨 In Progress · ✅ Answered (documented, not yet independently checked) · ✅✅ Verified (a second pass has checked the sourcing) — see [`RESEARCHER-PROTOCOL.md`](RESEARCHER-PROTOCOL.md) for what moves a question between these states.
 
-**34 tracked research questions across 8 chapters** (Chapter 7 is reference links only, not tracked as questions; Chapter 8 is new in v2).
+**35 tracked research questions across 8 chapters** (Chapter 7 is reference links only, not tracked as questions; Chapter 8 is new in v2).
 
 ---
 
@@ -26,7 +26,7 @@ A single cross-chapter view of every research question in this project, ranked b
 | 6.6 | Imamate, Khilafah & Ghadeer Khumm | Does Sahih al-Bukhari Vol.8 Book 82 Hadith 817 obscure Ali's name with fulan? — *First concrete test case for Methodology Principle 3* | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md`](answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md) |
 | 8.2 | The Prophet's Final Days | Deathbed conduct: rejecting the Qirtas request, "is he even our prophet", Bukhari 7280 — *Substantially elaborates §4.2 with a new citation and extensive argument* | ⬜ Not Started | [`answers/08-the-prophets-final-days/8.2.md`](answers/08-the-prophets-final-days/8.2.md) |
 
-## P1 — High (major supporting pillar of the overall argument) — 14 questions
+## P1 — High (major supporting pillar of the overall argument) — 15 questions
 
 | ID | Chapter | Question | Status | Answer & Documentation |
 |---|---|---|---|---|
@@ -44,6 +44,7 @@ A single cross-chapter view of every research question in this project, ranked b
 | 6.5 | Imamate, Khilafah & Ghadeer Khumm | What do Nahjul Balagha Sermons 3 and 193 say about the succession? — *Primary Shia source material, parallels §6.1* | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md`](answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md) |
 | 6.7 | Imamate, Khilafah & Ghadeer Khumm | Did Umar claim divine sanction ("Allah has written for me to say") despite no divine appointment? — *Direct claim about a specific Caliph's own words* | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md`](answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md) |
 | 8.1 | The Prophet's Final Days | Was the Prophet ﷛ martyred by a reactivated poison from Khaybar? — *Specific historical/medical claim requiring primary sourcing* | ⬜ Not Started | [`answers/08-the-prophets-final-days/8.1.md`](answers/08-the-prophets-final-days/8.1.md) |
+| 2.4 | Sunnah & Hadith Authenticity | Is everything in Bukhari a hadith of the Prophet? How was ~600,000 narrowed to ~7,500? — *Foundational literacy for weighing every Bukhari citation in this project* | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.4.md`](answers/02-sunnah-and-hadith-authenticity/2.4.md) |
 
 ## P2 — Medium (specific case study / illustrative narration) — 7 questions
 
@@ -81,4 +82,4 @@ Priority is not a claim about which question matters more spiritually — it is 
 
 ---
 
-See also: [`README.md`](README.md) for how this repo is organized, [`METHODOLOGY.md`](METHODOLOGY.md) for the guardrail principles every answer must apply, [`RESEARCHER-PROTOCOL.md`](RESEARCHER-PROTOCOL.md) for the required process to move a question from ⬜ to ✅✅, [`QA-CHECKLIST.md`](QA-CHECKLIST.md) for the completeness audit of the original source material, and [`MASTER-TABLE.md`](MASTER-TABLE.md) for the same 34 questions as one flat, sortable table.
+See also: [`README.md`](README.md) for how this repo is organized, [`METHODOLOGY.md`](METHODOLOGY.md) for the guardrail principles every answer must apply, [`RESEARCHER-PROTOCOL.md`](RESEARCHER-PROTOCOL.md) for the required process to move a question from ⬜ to ✅✅, [`QA-CHECKLIST.md`](QA-CHECKLIST.md) for the completeness audit of the original source material, and [`MASTER-TABLE.md`](MASTER-TABLE.md) for the same 35 questions as one flat, sortable table.

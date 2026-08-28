@@ -228,6 +228,11 @@ section of the PDF was omitted.
 - **8 general-resource items** added to Chapter 7 (§7.3–§7.10).
 - **5 YouTube video links** in this batch (plus 2 already known from v1)
   could not be transcribed — see `METHODOLOGY.md`, open item #5.
-- Combined with Part 1, this repo now tracks **34 research questions**
-  across **8 chapters** — see [`TRACKER.md`](TRACKER.md) and
-  [`MASTER-TABLE.md`](MASTER-TABLE.md) for the current full board.
+- Combined with Part 1, this repo tracked **34 research questions**
+  across **8 chapters** as of this Part 2 pass — see
+  [`TRACKER.md`](TRACKER.md) and [`MASTER-TABLE.md`](MASTER-TABLE.md) for
+  the current full board. **Update, same day:** a 35th question (§2.4,
+  on Bukhari's contents and compilation numbers) was added directly from
+  a question the project owner asked in conversation — see
+  [`CHANGELOG.md`](CHANGELOG.md) for that entry; it isn't traced here
+  since it didn't come from either raw transcript.

@@ -15,6 +15,45 @@ here can be diffed against.
 
 ---
 
+## 2026-08-28 — Investigated video-transcription blocker; answered a direct question on Bukhari's contents (new §2.4)
+
+**What (tooling investigation):** The project owner asked whether this
+session could connect to their system or use a GitHub-hosted skill to
+transcribe the YouTube videos flagged as blocked (`METHODOLOGY.md`, open
+item #5), and pushed for a non-obvious workaround rather than a repeated
+"blocked" report. Root-caused properly this time: the proxy's own status
+endpoint logs `recentRelayFailures` showing `www.youtube.com:443` and
+`www.google.com:443` both rejected with "gateway answered 403 to CONNECT
+(policy denial)" — confirmed identical for Bash-level `curl`, not just
+`WebFetch`, and confirmed as an intentional, documented org-level egress
+policy (`/root/.ccr/README.md`: "Do not retry or route around it —
+report the blocked host") rather than a fixable tool problem. Checked the
+GitHub account (`list_repos`, unfiltered) for a prior transcription skill
+— only `TTSSYF` is visible — and checked the plugin catalog
+(`SearchPlugins`) — nothing found. Conclusion relayed to the project
+owner: the two real paths are (1) they supply transcripts directly, or
+(2) `youtube.com`/`google.com` get allowlisted for this session's egress
+policy by whoever administers it.
+
+**What (new content):** The project owner asked directly, in
+conversation, whether Sahih al-Bukhari's text consists only of hadith
+attributed to the Prophet ﷺ or also contains *athar*/*qawl* material, and
+how ~600,000–700,000 available narrations were narrowed to the ~2,000-odd
+kept. Researched via WebSearch (multiple independently-agreeing results)
+and added as **[Chapter 2, §2.4](chapters/02-sunnah-and-hadith-authenticity.md)**
+— covers the marfu'/mawquf/maqtu'/mu'allaq/athar category breakdown
+(including the 1,341/160 mu'allaq figures from Ibn Hajar's *Taghliq
+al-Ta'liq*), the ~600,000-examined vs. ~7,563-with-repetition/~2,602-
+unique numbers, and an explicit flag that the "narrowing" gap is not
+evidence nearly everything excluded was judged fabricated — Bukhari's own
+stated criterion included brevity and redundancy, not only authenticity.
+Marked ✅ Answered (not ✅✅ Verified) for the same reason as §2.1/§3.2:
+sourced via search triangulation, not a directly-read primary page.
+`TRACKER.md` and `MASTER-TABLE.md`/`.csv` regenerated for all 35
+questions.
+
+---
+
 ## 2026-08-28 — Second source batch ingested: 9 new questions, a new chapter, Principle 4, and one major upgrade
 
 **What:** A second WhatsApp-style message log (34 messages, from a

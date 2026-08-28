@@ -14,6 +14,7 @@ transcript.
 | 2.1 | The creation-in-seven-days hadith: Ka'b al-Ahbar, Abu Hurairah, and the Qur'an | P0 | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.1.md`](../answers/02-sunnah-and-hadith-authenticity/2.1.md) |
 | 2.2 | Where are Imam Ja'far's ahadith, and why aren't they taught? | P1 | ⬜ Not Started | [`answers/02-sunnah-and-hadith-authenticity/2.2.md`](../answers/02-sunnah-and-hadith-authenticity/2.2.md) |
 | 2.3 | Cross-reference index (not a standalone question) | — | N/A | — |
+| 2.4 | Is everything in Bukhari a hadith of the Prophet? How was ~600,000 narrations narrowed to ~7,500? | P1 | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.4.md`](../answers/02-sunnah-and-hadith-authenticity/2.4.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
 
@@ -152,3 +153,59 @@ primary topic to avoid duplicating full text:
   filed in full at
   [Chapter 5, §5.5](05-ahlul-bayt-fatima-and-fadak.md) ("A book accusing
   Umar of Fatima's death...").
+
+---
+
+## 2.4 — Is everything in Sahih al-Bukhari actually a hadith of the Prophet ﷺ, and how was ~600,000 narrations narrowed to the ~7,500 the book contains?
+
+**Priority:** P1 — Foundational literacy for weighing every "recorded in
+Bukhari" citation used elsewhere in this project
+**Status:** ✅ Answered
+**Answer & documentation:** [`answers/02-sunnah-and-hadith-authenticity/2.4.md`](../answers/02-sunnah-and-hadith-authenticity/2.4.md)
+
+**Question, as posed directly by the project owner in conversation
+(paraphrased from their own words, 2026-08-28):** is the text of Bukhari
+only hadith, or does it also contain *athar* and *qawl* — things not
+attributed to the Prophet ﷺ? And why, when ~700,000 hadith were reportedly
+available, were only ~2,000-odd kept — and how much of that larger pool
+falls into which category?
+
+**Answer:** Sahih al-Bukhari contains more than Prophetic hadith
+(*marfu'*). It also contains: **mawquf** narrations (a Companion's own
+words/actions, not attributed to the Prophet), **maqtu'** narrations
+(attributed only to a Tabi'i/Successor), and **mu'allaq** narrations
+(chains missing one or more narrators at the start — 1,341 of these in
+total, though most are backed by a full chain elsewhere in the same
+book; Ibn Hajar al-'Asqalani catalogued the 160 that are *not* backed
+elsewhere, in his dedicated work *Taghliq al-Ta'liq*, specifically to
+locate or assess outside chains for them). *Athar* is the broader term
+often used for the mawquf/maqtu' material collectively. Bukhari's chapter
+headings (*tarajim*) are also a distinctive structural feature — they
+frequently embed his own juristic reasoning, Qur'an verses, and Companion
+statements, meaning a meaningful part of his scholarly position is
+expressed through how chapters are titled and organized, not only through
+the hadith text under them.
+
+On the numbers: Bukhari is widely reported to have examined roughly
+**600,000 narrations** over about sixteen years (the questioner's "700,000
+odd" figure is in the same range commonly cited across sources, which
+vary). What made it into the book is usually put at **~7,563 hadith
+counting repetition** (the same report counted again each time it
+supports a different chapter) — recounted variously as ~7,275 or, in a
+modern recount by Khaldun al-Ahdab, 7,208 — and **~2,602 unique
+narrations without repetition** (some counts give ~4,000 depending on how
+near-identical wording variants are merged). Bukhari's own stated
+criterion, widely quoted: *"I only included in my book those that were
+authentic, and I left out many more authentic traditions than this to
+avoid unnecessary length."* That matters for how this project should read
+the "~600,000 to ~7,500" gap: it is **not** evidence that ~590,000+
+reports were judged fabricated. The gap includes reports Bukhari
+considered weak or false, but also a substantial number he considered
+authentic and simply excluded for redundancy, brevity, or scope — a
+nuance that overstates the case in both directions if flattened out (an
+apologist reading it as "so everything left in must be flawless," or a
+critic reading it as "so almost everything was rejected as fake").
+
+**Source:** Researched directly in response to a question the project
+owner asked in conversation, 2026-08-28 — not from either raw transcript.
+
