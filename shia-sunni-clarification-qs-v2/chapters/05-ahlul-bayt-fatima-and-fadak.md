@@ -9,8 +9,8 @@ wording is reproduced verbatim from the source transcript.
 
 | # | Question | Priority | Status | Answer & Documentation |
 |---|---|---|---|---|
-| 5.1 | Does Sahih Muslim 2424 try to exclude the Prophet's wives from Ahl al-Bayt? | P0 | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.1.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.1.md) |
-| 5.2 | Was Fatima denied inheritance, and did she stay angry at Abu Bakr? | P0 | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.2.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.2.md) |
+| 5.1 | Does Sahih Muslim 2424 try to exclude the Prophet's wives from Ahl al-Bayt? | P0 | ✅ Answered | [`answers/05-ahlul-bayt-fatima-and-fadak/5.1.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.1.md) |
+| 5.2 | Was Fatima denied inheritance, and did she stay angry at Abu Bakr? | P0 | ✅ Answered | [`answers/05-ahlul-bayt-fatima-and-fadak/5.2.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.2.md) |
 | 5.3 | Fadak: comparing a Sunni sheikh's account against Fatima's own sermon | P1 | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.3.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.3.md) |
 | 5.4 | Imam Ali's sermon at Fatima's grave: authenticity | P2 | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.4.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.4.md) |
 | 5.5 | The book accusing Umar of Fatima's death, narrated via a transmitter Sahih Muslim calls a liar | P2 | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.5.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.5.md) |
@@ -24,7 +24,7 @@ wording is reproduced verbatim from the source transcript.
 ## 5.1 — Does Sahih Muslim 2424 (on Umm Salamah) attempt to exclude the Prophet's wives from Ahl al-Bayt — and what does that imply about who "Ahl al-Bayt" refers to?
 
 **Priority:** P0 — Defines who Ahl al-Bayt even is — foundational
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/05-ahlul-bayt-fatima-and-fadak/5.1.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.1.md)
 
 **Question (verbatim, from a combined message list — see also §5.2, §4.2,
@@ -40,7 +40,7 @@ wording is reproduced verbatim from the source transcript.
 ## 5.2 — Was inheritance denied to Fatima (RA), and did she remain angry at Abu Bakr until she passed away — in light of the hadith that whoever angers Fatima angers the Prophet ﷺ?
 
 **Priority:** P0 — Central grievance underlying the whole Shia-Sunni split
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/05-ahlul-bayt-fatima-and-fadak/5.2.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.2.md)
 
 **Question (verbatim, from the same combined message list as §5.1):**
