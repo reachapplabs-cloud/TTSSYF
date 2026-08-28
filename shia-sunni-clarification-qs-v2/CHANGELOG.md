@@ -15,6 +15,25 @@ here can be diffed against.
 
 ---
 
+## 2026-08-28: Mr. Arif edition, no em dashes, and one more internal reference removed
+
+**What:** Two more fixes to the Mr. Arif edition, on top of the neutral
+framing fix logged just below. First, every em dash in the document was
+removed and rewritten with plainer punctuation (a comma, a period, a
+semicolon, or a colon, whichever fit the sentence) across all 7 chapters:
+this covers the chapter and question heading separators ("Chapter 1, The
+Qur'an" style numbering), image captions, cross reference notes, and the
+small editorial asides. Second, a further sweep turned up one more
+internal reference that had slipped through both earlier cleanup passes,
+a mention of `../QA-CHECKLIST.md` inside a source-completeness note in
+Chapter 5. Removed, with the substance of the note kept.
+
+**What did not change:** no question or quote's actual wording, only
+punctuation and, in that one Chapter 5 note, the removal of a file
+reference that had no place in a document Mr. Arif is reading on its own.
+
+---
+
 ## 2026-08-28 — Mr. Arif edition: neutral framing, and a leftover internal reference fixed
 
 **What:** Two fixes to the "clean reader edition" logged just below, after
