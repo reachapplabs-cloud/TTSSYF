@@ -15,6 +15,63 @@ here can be diffed against.
 
 ---
 
+## 2026-08-28 — Third source batch ingested (chronologically earliest): Principle 5, Surah 'Abasa, and 3 new questions
+
+**What:** A third WhatsApp-style message log (34 messages, contributor
+"Zo" and a second participant "Home," spanning **17/08–24/08**) was
+supplied. It is chronologically the *earliest* material in this entire
+project — it predates v1's own opening message, and in fact **contains
+that exact opening message** (23/08 02:44, word-for-word identical to
+`raw-transcript.md`'s first entry, there dated 24/08 23:59 and
+attributed to "Arif Bhai"), showing it originated in this Zo/Home
+exchange a day earlier before being forwarded into the group v1 was
+built from. Saved verbatim as
+[`source/raw-transcript-3-zo-early.md`](source/raw-transcript-3-zo-early.md),
+with a full completeness trace at [`QA-CHECKLIST.md`](QA-CHECKLIST.md),
+Part 3.
+
+- **`METHODOLOGY.md` gains Principle 5 — follow the money and power
+  trail**, in the project owner's own words: a sudden appointment to
+  power or position, a reversal from exile, or leniency for a grave
+  offense is a red flag worth investigating for incentive, not a neutral
+  biographical footnote. Distinct from Principles 1–4 (which govern
+  reliability/completeness of a narration) — this one asks about motive.
+- **Principle 3 provenance correction:** the *fulan*/*kalima*/*kadha wa
+  kaza*/omission pattern, previously written up in this document's own
+  words, turns out to trace directly to the project owner's own original
+  articulation (23/08, 03:08), now quoted verbatim in `METHODOLOGY.md`.
+- **3 new questions:** [Chapter 1, §1.5](chapters/01-quran.md) — the
+  Surah 'Abasa (80) "he frowned" exegesis dispute, contrasting the
+  traditional Sunni reading (the Prophet ﷺ is the subject) against an
+  argument that the "-ka" address in verse 3 doesn't bind to the Prophet
+  and a different, unnamed party is meant — presented without inserting
+  a name the source material didn't supply. [Chapter 2, §2.6](chapters/02-sunnah-and-hadith-authenticity.md)
+  — the claim that Shiat-al-Ali were the first muhaddithin with written
+  narrations and that "Ahl-e-Hadith" is a Qur'anic term (no source given
+  for either half, logged as unconfirmed). [Chapter 4, §4.13](chapters/04-sahaba-companions-and-disputes.md)
+  — Principle 5 applied to pro-Umar narration chains and to the
+  contributor's own "lens" that classical muhaddithin were paid to
+  whitewash hadith, handled explicitly as an unverified interpretive
+  claim, not fact, given its seriousness as an allegation about named
+  scholars' integrity.
+- **§2.1 (Ka'b al-Ahbar/Abu Hurairah) extended** with sharper follow-up
+  questions from this batch: why quote Ka'b instead of the Prophet
+  directly, whether Ka'b ever claimed direct access to the Prophet, and
+  whether Ka'b received "special treatment or position" — a direct
+  Principle-5 application to the same case study.
+- **4 general resources added** to Chapter 7 (§7.11–§7.14): two more
+  videos and two YouTube channels, none transcribable this session (see
+  `METHODOLOGY.md`, open item #5).
+- Two duplicate message groups identified and cross-referenced rather
+  than re-entered (the shiapen/reddit/abudawud:4646 material, already
+  fully captured via v1's `raw-transcript.md`).
+
+`TRACKER.md` and `MASTER-TABLE.md`/`.csv` regenerated for all 39
+questions across 8 chapters. `README.md` updated to describe all five
+methodology principles and the third source file.
+
+---
+
 ## 2026-08-28 — Answered §2.2: where are Imam Ja'far's ahadith, and why aren't they taught?
 
 **What:** Researched the project owner's request to start on §2.2.

@@ -16,6 +16,7 @@ transcript.
 | 2.3 | Cross-reference index (not a standalone question) | — | N/A | — |
 | 2.4 | Is everything in Bukhari a hadith of the Prophet? How was ~600,000 narrations narrowed to ~7,500? | P1 | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.4.md`](../answers/02-sunnah-and-hadith-authenticity/2.4.md) |
 | 2.5 | "The righteous lie more in hadith than in anything else" — Muslim's own introduction on pious-narrator unreliability | P0 | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.5.md`](../answers/02-sunnah-and-hadith-authenticity/2.5.md) |
+| 2.6 | Were the "Shiat-al-Ali" the first muhaddithin, and is "Ahl-e-Hadith" a Qur'anic term? | P2 | ⬜ Not Started | [`answers/02-sunnah-and-hadith-authenticity/2.6.md`](../answers/02-sunnah-and-hadith-authenticity/2.6.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
 
@@ -111,6 +112,43 @@ contradicts the Qur'an's account of a six-day creation.
 > flags the underlying methodological question it raises. Exact citation
 > for the Abu Hurairah isnad is an open item — see
 > `../METHODOLOGY.md`, "Open research items," #1.
+
+**Follow-up questions sharpening this case study (added 2026-08-28, from
+the third source batch — verbatim):**
+
+> Abu huraira is said to have attributed directly from Prophet Muhammad
+> saw directly on the matter of the donkeys dogs and women as well
+> (which turned out to be false)
+>
+> And if he said an abu hurayra an kaab
+> 1/ why would he quote from the jew when he had direct access
+> 2/ did kaab have access to prophet pbuh? If no why would abu hurayra
+> even quote from him
+> 3/ did kaab say he heard from nabi or is it from his jewish books
+>
+> Also did kaab get any special treatment or position
+
+> Kaab is said to be problematic and the close jewish friend that I
+> mentioned about earlier.
+
+> JazakAllahu khairan to you and shakir bhai for probing, with utmost
+> honesty.
+>
+> Did sheikh noor point this shaz hadith out during his curriculum?
+
+**Note:** the "donkeys dogs and women" reference here is the same
+Abu Hurairah narration already treated in full at
+[Chapter 3, §3.2](03-salah-and-worship-practices.md) — this message
+connects it to the same Ka'b al-Ahbar case study as §2.1 above, treating
+both as examples of Abu Hurairah narrations that don't hold up under
+scrutiny. The "did kaab get any special treatment or position" question
+is a direct application of `METHODOLOGY.md` Principle 5 (follow the
+money/power trail) to this specific case — not yet researched. The
+"sheikh noor" curriculum question names a specific teacher/curriculum
+this project has no further information about and has not investigated.
+
+**Source:** `source/raw-transcript-3-zo-early.md`, messages timestamped
+**20/08, 04:56** through **20/08, 05:09**.
 
 ---
 
@@ -352,4 +390,34 @@ introduction, as the reason his methodology exists.
 
 **Source:** Researched directly in response to a question the project
 owner asked in conversation, 2026-08-28 — not from either raw transcript.
+
+---
+
+## 2.6 — Were the "Shiat-al-Ali" the first muhaddithin with written narrations, and does the term "Ahl-e-Hadith" originate from Qur'anic text rather than being man-made like "Ahl as-Sunnah"?
+
+**Priority:** P2 — A specific etymological/historical claim, narrower scope, no source given for either half
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/02-sunnah-and-hadith-authenticity/2.6.md`](../answers/02-sunnah-and-hadith-authenticity/2.6.md)
+
+**Claim (verbatim):**
+
+> The take from their side is that the shiat-al-ali were the first of
+> the authentic muhaddithin with written narrations. I.e. the original,
+> what we refer to as ahl-e-hadith
+>
+> Origin of the word being from Quranic text. Not a man made term like
+> ahl as sunnah
+
+**Note:** presented, per its own wording, as "the take from their side"
+— i.e. the contributor is relaying a claim encountered elsewhere, not
+asserting personal certainty. No source (book, scholar, or link) was
+given for either half of this claim: (a) that Shiat-al-Ali were the
+first muhaddithin to produce written narrations, or (b) that the term
+"Ahl-e-Hadith" traces to a specific Qur'anic origin while "Ahl as-Sunnah"
+is comparatively man-made. Both halves need a primary source before
+they can be evaluated — logged here as an open research item rather
+than accepted or dismissed, per `METHODOLOGY.md` Principle 4.
+
+**Source:** `source/raw-transcript-3-zo-early.md`, messages timestamped
+**24/08, 06:28** and **24/08, 06:31**.
 

@@ -4,11 +4,11 @@ A single cross-chapter view of every research question in this project, ranked b
 
 **Status legend:** ⬜ Not Started · 🟨 In Progress · ✅ Answered (documented, not yet independently checked) · ✅✅ Verified (a second pass has checked the sourcing) — see [`RESEARCHER-PROTOCOL.md`](RESEARCHER-PROTOCOL.md) for what moves a question between these states.
 
-**36 tracked research questions across 8 chapters** (Chapter 7 is reference links only, not tracked as questions; Chapter 8 is new in v2).
+**39 tracked research questions across 8 chapters** (Chapter 7 is reference links only, not tracked as questions; Chapter 8 is new in v2).
 
 ---
 
-## P0 — Foundational (highest value; conditions how everything else is read) — 14 questions
+## P0 — Foundational (highest value; conditions how everything else is read) — 15 questions
 
 | ID | Chapter | Question | Status | Answer & Documentation |
 |---|---|---|---|---|
@@ -26,8 +26,9 @@ A single cross-chapter view of every research question in this project, ranked b
 | 6.6 | Imamate, Khilafah & Ghadeer Khumm | Does Sahih al-Bukhari Vol.8 Book 82 Hadith 817 obscure Ali's name with fulan? — *First concrete test case for Methodology Principle 3* | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md`](answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md) |
 | 8.2 | The Prophet's Final Days | Deathbed conduct: rejecting the Qirtas request, "is he even our prophet", Bukhari 7280 — *Substantially elaborates §4.2 with a new citation and extensive argument* | ⬜ Not Started | [`answers/08-the-prophets-final-days/8.2.md`](answers/08-the-prophets-final-days/8.2.md) |
 | 2.5 | Sunnah & Hadith Authenticity | "The righteous lie more in hadith than in anything else" -- Muslim's own introduction on pious-narrator unreliability — *Primary-source support, from inside the Sunni tradition, for Methodology Principles 1 and 2* | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.5.md`](answers/02-sunnah-and-hadith-authenticity/2.5.md) |
+| 1.5 | The Qur'an | Surah 'Abasa (80) -- who "frowned"? Does the traditional Sunni reading conflict with the Prophet's own Qur'anic character reference? — *A live classical exegesis dispute directly bearing on how the Prophet's character is read from the Qur'an itself* | ⬜ Not Started | [`answers/01-quran/1.5.md`](answers/01-quran/1.5.md) |
 
-## P1 — High (major supporting pillar of the overall argument) — 15 questions
+## P1 — High (major supporting pillar of the overall argument) — 16 questions
 
 | ID | Chapter | Question | Status | Answer & Documentation |
 |---|---|---|---|---|
@@ -46,8 +47,9 @@ A single cross-chapter view of every research question in this project, ranked b
 | 6.7 | Imamate, Khilafah & Ghadeer Khumm | Did Umar claim divine sanction ("Allah has written for me to say") despite no divine appointment? — *Direct claim about a specific Caliph's own words* | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md`](answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md) |
 | 8.1 | The Prophet's Final Days | Was the Prophet ﷛ martyred by a reactivated poison from Khaybar? — *Specific historical/medical claim requiring primary sourcing* | ⬜ Not Started | [`answers/08-the-prophets-final-days/8.1.md`](answers/08-the-prophets-final-days/8.1.md) |
 | 2.4 | Sunnah & Hadith Authenticity | Is everything in Bukhari a hadith of the Prophet? How was ~600,000 narrowed to ~7,500? — *Foundational literacy for weighing every Bukhari citation in this project* | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.4.md`](answers/02-sunnah-and-hadith-authenticity/2.4.md) |
+| 4.13 | Sahaba & Disputes Between Companions | Applying the money/power-trail heuristic: do pro-Umar chains trace to his family/appointees, and were muhaddithin incentivized? — *Direct application of Methodology Principle 5; a serious claim needing careful, non-uncritical treatment* | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.13.md`](answers/04-sahaba-companions-and-disputes/4.13.md) |
 
-## P2 — Medium (specific case study / illustrative narration) — 7 questions
+## P2 — Medium (specific case study / illustrative narration) — 8 questions
 
 | ID | Chapter | Question | Status | Answer & Documentation |
 |---|---|---|---|---|
@@ -58,6 +60,7 @@ A single cross-chapter view of every research question in this project, ranked b
 | 5.5 | Ahlul Bayt, Fatima & Fadak | The book accusing Umar of Fatima's death, narrated via a transmitter Sahih Muslim calls a liar — *Narrow source-criticism question* | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.5.md`](answers/05-ahlul-bayt-fatima-and-fadak/5.5.md) |
 | 4.11 | Sahaba & Disputes Between Companions | What do the names "Muawiya" and "Yazid" mean, and why were they given? — *Etymology tied to the §4.1 case study, narrower scope* | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.11.md`](answers/04-sahaba-companions-and-disputes/4.11.md) |
 | 4.12 | Sahaba & Disputes Between Companions | Was Abu Sufyan the originator, and what is the Hind→Muawiya→Yazid→Sufyani lineage theory? — *Dynastic-lineage/eschatological theory* | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.12.md`](answers/04-sahaba-companions-and-disputes/4.12.md) |
+| 2.6 | Sunnah & Hadith Authenticity | Were the "Shiat-al-Ali" the first muhaddithin, and is "Ahl-e-Hadith" a Qur'anic term? — *A specific etymological/historical claim, narrower scope, no source given for either half* | ⬜ Not Started | [`answers/02-sunnah-and-hadith-authenticity/2.6.md`](answers/02-sunnah-and-hadith-authenticity/2.6.md) |
 
 ## P3 — Lower / supplementary (needs more identification before it's even researchable) — 0 questions
 
@@ -83,4 +86,4 @@ Priority is not a claim about which question matters more spiritually — it is 
 
 ---
 
-See also: [`README.md`](README.md) for how this repo is organized, [`METHODOLOGY.md`](METHODOLOGY.md) for the guardrail principles every answer must apply, [`RESEARCHER-PROTOCOL.md`](RESEARCHER-PROTOCOL.md) for the required process to move a question from ⬜ to ✅✅, [`QA-CHECKLIST.md`](QA-CHECKLIST.md) for the completeness audit of the original source material, and [`MASTER-TABLE.md`](MASTER-TABLE.md) for the same 34 questions as one flat, sortable table.
+See also: [`README.md`](README.md) for how this repo is organized, [`METHODOLOGY.md`](METHODOLOGY.md) for the guardrail principles every answer must apply, [`RESEARCHER-PROTOCOL.md`](RESEARCHER-PROTOCOL.md) for the required process to move a question from ⬜ to ✅✅, [`QA-CHECKLIST.md`](QA-CHECKLIST.md) for the completeness audit of the original source material, and [`MASTER-TABLE.md`](MASTER-TABLE.md) for the same 39 questions as one flat, sortable table.

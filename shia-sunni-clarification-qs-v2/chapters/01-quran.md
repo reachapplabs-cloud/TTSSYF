@@ -16,6 +16,7 @@ against [`../source/raw-transcript.md`](../source/raw-transcript.md).
 | 1.2 | Where is the hadith declaring the Qur'an complete? What of the missing 6 ahruf? | P0 | ⬜ Not Started | [`answers/01-quran/1.2.md`](../answers/01-quran/1.2.md) |
 | 1.3 | Could Qur'an 5:3 have been revealed at Arafah before Hajj rites were complete? | P1 | ⬜ Not Started | [`answers/01-quran/1.3.md`](../answers/01-quran/1.3.md) |
 | 1.4 | Why Iqra not Qul — what evidentiary standard should apply to oral hadith? | P1 | ⬜ Not Started | [`answers/01-quran/1.4.md`](../answers/01-quran/1.4.md) |
+| 1.5 | Surah 'Abasa (80) — who "frowned"? Does the traditional Sunni reading conflict with the Prophet's ﷺ own Qur'anic character reference? | P0 | ⬜ Not Started | [`answers/01-quran/1.5.md`](../answers/01-quran/1.5.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
 
@@ -432,3 +433,98 @@ rejects it?
 > Why was it Iqra and not Qul
 
 **Source:** `raw-transcript.md`, message timestamped **27/08/2026, 10:44:40 AM**.
+
+---
+
+## 1.5 — Surah 'Abasa (80): who "frowned"? Does the traditional Sunni reading conflict with the Prophet's ﷺ own Qur'anic character reference?
+
+**Priority:** P0 — A live classical exegesis dispute directly bearing on how the Prophet's ﷺ character is read from the Qur'an itself
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/01-quran/1.5.md`](../answers/01-quran/1.5.md)
+
+**Question and argument (verbatim):**
+
+> If they can answer this contradiction (Allah says you are of excellent
+> character, but the tafseer protects a sahaba and shows our Nabi in a
+> negative light)
+
+> Surah 'Abasa: Read, Listen and Study the Full Chapter - Quran.com
+> https://share.google/DwDqdGW56vlmnhA6x
+>
+> Can you click on the tafsir button under the verse
+>
+> I don't want anyone to say I sent a fake screenshot. Can directly see
+> this proof on Quran.com or any top translations ex.
+>
+> Surah Abasa [80] - Translation and Transliteration
+> https://share.google/BLb1Cd5gqAPPTnxzc
+>
+> Which is such a beautiful and soul/heart purifying take defending our
+> Nabi
+>
+> Surat Abasa 80 : 1 | Al-Islam.org https://share.google/2pk82DSJFZKdvLVYT
+>
+> The explanation of which is here
+> Surah 'Abasa (No. 80: 'He Frowned') | The Illuminating Lantern: An
+> Exposition Of Subtleties From The Qur'an Part Thirty | Al-Islam.org
+> https://share.google/bu37IS3M5LJmb1VWW
+>
+> I would never imagine that the ones known to curse, would come to the
+> defense. Even if the whole world thinks otherwise
+>
+> Surah Abasa - He Frowned | The Holy Qur'an -The Final Testament – Juz
+> 30 | Al-Islam.org https://share.google/emxa9r92xN4n3zrxz
+>
+> Surah Abasa - He Frowned | The Holy Qur'an -The Final Testament – Juz
+> 30 | Al-Islam.org https://share.google/cD17DoPiAliyCdVQe
+
+**Summary of the two readings (verbatim):**
+
+> To summarise,
+> Sunni: https://share.google/BLb1Cd5gqAPPTnxzc
+> Shi'ei: https://share.google/bu37IS3M5LJmb1VWW
+
+> The anchor is someone "frowning, turning away, and preferring a
+> wealthy man over a poor, blind seeker." Because these actions run
+> completely contrary to the Prophet's character, scholars derive that
+> the "-ka" pronoun in Wa ma yudrika has nothing holding it to the
+> Prophet, and specific to a direct address for the arrogant third party
+> instead.
+
+> The base is:
+> Do we believe that the companions have infallibility (we know it's not
+> true, because they've been known to err)
+>
+> Qur'an in itself is the proof of our nabis character. And his seerah
+
+**Context, for readers unfamiliar with the passage (background, not part
+of the verbatim source):** Surah 'Abasa opens "He frowned and turned
+away, because there came to him the blind man" (80:1–2), followed by
+"But what would make you (*yudrika*) perceive that perhaps he might be
+purified..." (80:3), addressed to "you" in the second person. The
+mainstream classical Sunni tafsir tradition (al-Tabari, Ibn Kathir, and
+others) identifies the Prophet ﷺ as the one who frowned — while
+occupied with prominent Quraysh figures he hoped to bring toward Islam,
+he turned away from the blind companion 'Abdullah ibn Umm Maktum, who
+had interrupted seeking Qur'an recitation — and reads the passage as a
+gentle divine correction, not a sin (compatible with the doctrine that
+prophets are protected from major sin but not from an occasional
+"other than the best" choice). The argument summarized above proposes
+instead that the third-person "he frowned" (80:1) and the second-person
+address "you" (80:3, warning the addressee about how to *regard* what
+happened) are grammatically distinct, and that a third, unnamed party —
+not the Prophet — is the one being described as frowning, with the
+Prophet being addressed only as the one being informed/corrected about
+someone else's conduct. **The source material does not name who that
+third party is claimed to be** — this project has not added a name, and
+flags this as an open question rather than guessing.
+
+**Note on the framing that motivated this being raised:** per the
+argument as given, the traditional reading is characterized as one that
+"protects a sahaba" — the logic being that reading the frowning as the
+Prophet's own avoids the need to name and implicate a specific companion,
+at the cost of putting the Prophet's conduct in an unflattering light
+relative to Qur'an 68:4 ("indeed, you are of a great moral character").
+
+**Source:** `source/raw-transcript-3-zo-early.md`, messages timestamped
+**20/08, 05:15** through **20/08, 06:48**.

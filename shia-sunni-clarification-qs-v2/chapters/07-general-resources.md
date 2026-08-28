@@ -11,6 +11,7 @@ question. Reproduced verbatim.
 | 7.1 | General resource link (not a standalone question) | — | N/A | — |
 | 7.2 | General resource link (not a standalone question) | — | N/A | — |
 | 7.3–7.10 | General resource links from second source batch (not standalone questions) | — | N/A | — |
+| 7.11–7.14 | General resource links from third source batch (not standalone questions) | — | N/A | — |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
 
@@ -163,3 +164,84 @@ to research") is preserved verbatim per `METHODOLOGY.md` Principle 4 —
 noted as their view, not yet independently assessed by this project.
 
 **Source:** `source/raw-transcript-2-zo.md`, message timestamped **27/08, 01:50**.
+
+---
+
+## 7.11 — "Here's the reference" video (money-trail context)
+
+**Text (verbatim):**
+
+> Here's the reference
+> https://youtu.be/2sez-8nPtSc?si=wXNdTX7MqQXMuxI-
+
+**Note:** shared as "the reference" for the pro-Umar sanad claim at
+[Chapter 4, §4.13](04-sahaba-companions-and-disputes.md), and shared
+again later ("Pls can you share this") on 20/08, 06:03. Video transcript
+not obtainable this session (see `METHODOLOGY.md`, open item #5).
+
+**Source:** `source/raw-transcript-3-zo-early.md`, messages timestamped
+**18/08, 01:42** and **20/08, 06:03**.
+
+---
+
+## 7.12 — "Another reference from the other side" video, with a specific timestamp marked "Proof"
+
+**Text (verbatim):**
+
+> Another reference from the other side (very clear narrations, we just
+> need to authenticate them now)
+> https://youtu.be/YJoKIEshBMg?si=PFVh76GfdLSaHhLX
+
+> https://youtu.be/YJoKIEshBMg?t=2441&si=IEMEirEiR4-4ZgEy
+> Proof
+
+**Note:** the contributor's own framing — "very clear narrations, we
+just need to authenticate them now" — is preserved verbatim; it
+explicitly flags this as needing authentication, not as already
+authenticated. The `t=2441` timestamp (40:41 into the video) is marked
+as the specific "Proof" point. Video transcript not obtainable this
+session.
+
+**Source:** `source/raw-transcript-3-zo-early.md`, messages timestamped
+**18/08, 02:11** and **18/08, 02:44**.
+
+---
+
+## 7.13 — "Pls watch this full video"
+
+**Text (verbatim):**
+
+> Pls watch this full video
+> https://youtu.be/yXCMU72z0Ms?si=ggmJ2qYym-0ozcAe
+
+**Note:** shared immediately after the Surah 'Abasa discussion at
+[Chapter 1, §1.5](01-quran.md) — likely related to that topic, though
+the message itself gives no further description. Video transcript not
+obtainable this session.
+
+**Source:** `source/raw-transcript-3-zo-early.md`, message timestamped **20/08, 06:49**.
+
+---
+
+## 7.14 — Two YouTube channels flagged as containing disturbing claims
+
+**Text (verbatim):**
+
+> Maybe my purpose was to bring it to this level. All Qs that need to be
+> answered are in this channel
+>
+> https://youtube.com/@thebelievers112?si=o-RiNaW2xtUzP2bP
+>
+> https://youtube.com/@hassanallahyari?si=RIhVL_MiAyyw6SjH
+>
+> Can you have a look at these videos. Some of the facts they claim is
+> really disturbing
+
+**Note:** these are channel links, not specific videos — this project
+has not reviewed their content. The contributor's characterization
+("disturbing," "all Qs that need to be answered are in this channel")
+is preserved verbatim per `METHODOLOGY.md` Principle 4, as their own
+assessment, not an independent finding.
+
+**Source:** `source/raw-transcript-3-zo-early.md`, messages timestamped
+**21/08, 19:22** through **21/08, 20:24**.

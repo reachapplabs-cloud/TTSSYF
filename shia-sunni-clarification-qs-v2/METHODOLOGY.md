@@ -94,6 +94,23 @@ first real test case for this principle, not as a settled fact — see
 [`chapters/06-imamate-khilafah-and-ghadeer-khumm.md`, §6.6](chapters/06-imamate-khilafah-and-ghadeer-khumm.md)
 for the full treatment and open item #7 below.
 
+**Provenance correction (added 2026-08-28, from a third source batch,
+`source/raw-transcript-3-zo-early.md`):** this principle was originally
+written up in this document's own words, generalizing from the project
+owner's guidance. A third, chronologically *earlier* source batch (dated
+17/08–24/08, predating both the original v1 document and the second
+batch) has since surfaced the project owner's own original articulation
+of it, message timestamped **23/08, 03:08**, worth recording verbatim for
+the record:
+
+> What you will immediately notice is all the major books and scholars
+> even bukhari, the words changed here are primarily
+> * "fulan" instead of saying who the person is, and
+> * "kadha/kaza" or "kalimat" in place of the actual words spoken
+> * Or complete omission of the lines in between (...)
+>
+> Quite deceiving infact.
+
 ## Principle 4 — Everything forwarded in the source material is context, not fact, including the forwarders' own commentary
 
 Added 2026-08-28, stated directly by the project owner: **all of the raw
@@ -119,6 +136,47 @@ assumed false either. Chapters that reproduce a contributor's argument or
 theory verbatim (as several already do, and more will as
 `source/raw-transcript-2-zo.md` is integrated) are compiling the
 *question*, not certifying the *answer*.
+
+## Principle 5 — Follow the money and power trail
+
+Added 2026-08-28, stated directly by the project owner in the third
+source batch, `source/raw-transcript-3-zo-early.md`: **a sudden
+appointment to power or position, a reversal from exile, or
+forgiveness/a reduced sentence for a grave offense are treated as red
+flags worth investigating for incentive — not as neutral biographical
+footnotes.** On narrator chains specifically (message timestamped
+**17/08, 00:41**):
+
+> When you start looking at the chains, you'll notice that all the
+> pro-umar narratives have sanads that are quoted from his family and
+> appointed leaders.
+
+And on the broader research approach (message timestamped **23/08,
+02:47**):
+
+> Also it will be good to pen down the "position" allocated to each of
+> the accused (in terms of governance, wealth and power) to see if there
+> is a pattern uncovered.
+
+This is a distinct investigative tool from Principles 1–4: where those
+principles govern how to weigh a narrator's *reliability grading* or a
+*text's* completeness, Principle 5 asks a different question about
+*motive* — does the person a favorable report benefits, or the person
+transmitting it, show a documented pattern of receiving power, position,
+wealth, or leniency around the same time as, or as a consequence of, that
+report circulating? A report is not automatically false because its
+chain runs through a beneficiary's family or appointees — but that
+pattern is treated as worth flagging and checking, not waved past as
+coincidence. This applies symmetrically: a report that happens to benefit
+a Shia-favored figure and traces through that figure's own circle gets
+exactly the same scrutiny.
+
+**Status:** this is a heuristic for where to look, not a verdict-generating
+rule on its own — a chain running through a beneficiary's circle is a
+prompt for deeper isnad and historical investigation, not by itself proof
+of fabrication. No case study has been fully worked through this
+heuristic to a conclusion yet in this project; see the new Chapter 4
+item this principle motivated, §4.13, and open item #8 below.
 
 ## How these guardrails apply to this repo
 
@@ -200,6 +258,28 @@ consensus on the points above. Tracked here so it isn't lost:
    directly and check the "similar Ahadith and exegesis" the source
    material says identify the unnamed party, rather than accepting the
    identification as already established.
+8. Apply Principle 5 (the money/power trail) as a worked case study, not
+   just a stated heuristic: systematically list, for each companion or
+   figure whose narrations feature prominently in this project (Ka'b
+   al-Ahbar, Abu Hurairah, Marwan, and others), what position, wealth, or
+   leniency they received and when, relative to when their favorable
+   narrations began circulating — see
+   [Chapter 4, §4.13](chapters/04-sahaba-companions-and-disputes.md) for
+   the starting point.
+9. Independently verify the claim (`source/raw-transcript-3-zo-early.md`,
+   24/08 06:28–06:31) that the term "Ahl-e-Hadith" originates from
+   Qur'anic text and that the "Shiat-al-Ali" were the first muhaddithin
+   with written narrations, as opposed to "Ahl as-Sunnah" being a
+   man-made term — see [Chapter 2, §2.6](chapters/02-sunnah-and-hadith-authenticity.md).
+   No source for this specific etymological claim was supplied, and none
+   has been independently found yet.
+10. Independently verify the Surah 'Abasa (80) exegesis question at
+    [Chapter 1](chapters/01-quran.md) — read al-Tabari's and Ibn Kathir's
+    tafsir directly (traditional Sunni reading: the Prophet ﷺ is the
+    subject of "he frowned") against the tafsir the source material cites
+    from Al-Islam.org (reading: the "-ka" address in "wa ma yudrika" does
+    not bind to the Prophet, and the frowning party is someone else) —
+    neither side of this has been independently read this session.
 
 This list should grow as research continues — it is a starting point, not
 a fixed scope.

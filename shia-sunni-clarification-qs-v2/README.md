@@ -52,7 +52,7 @@ verbatim regardless, because the source included it.
 
 ## Read this first: [`METHODOLOGY.md`](METHODOLOGY.md)
 
-This project runs under three non-negotiable guardrail principles set by
+This project runs under five non-negotiable guardrail principles set by
 the project owner: (1) *rijal* (narrator) grading — including "Sahihain"
 status itself — is never taken as automatically true, in either direction
 (a narrator called reliable, or one called a liar/forgetful, both get
@@ -60,11 +60,16 @@ scrutinized rather than deferred to, since either verdict can be
 politically motivated); (2) no narrator is exempt from scrutiny on the
 strength of fame, Abu Hurairah included; (3) Bukhari's (or any
 collector's) use of *fulan*, *kalima*, *kadha wa kaza*, or silent
-truncation is flagged as a possible sign of concealment, not passed over.
-Full detail, including two concrete worked examples and the running list
-of open research items, is in [`METHODOLOGY.md`](METHODOLOGY.md) — read
-it before treating anything in `chapters/` as a settled conclusion rather
-than a compiled question.
+truncation is flagged as a possible sign of concealment, not passed over;
+(4) everything either contributor forwards or writes — including their
+own reflections and theories, not only the classical material they cite
+— is context to research, not fact to repeat; (5) a sudden appointment to
+power or position, a reversal from exile, or leniency for a grave offense
+is treated as a red flag worth investigating for incentive, not a neutral
+biographical footnote. Full detail, including worked examples for each
+and the running list of open research items, is in
+[`METHODOLOGY.md`](METHODOLOGY.md) — read it before treating anything in
+`chapters/` as a settled conclusion rather than a compiled question.
 
 ## How this repo is organized
 
@@ -94,6 +99,10 @@ shia-sunni-clarification-qs-v2/
 │   ├── raw-transcript-2-zo.md — a second source batch (v2 only, added
 │   │                         2026-08-28), same verbatim-ground-truth
 │   │                         treatment
+│   ├── raw-transcript-3-zo-early.md — a third source batch (v2 only,
+│   │                         added 2026-08-28) — chronologically the
+│   │                         earliest material in the project, 17/08-
+│   │                         24/08, predating v1's own opening message
 │   └── images/             — all 9 original images, full resolution
 ├── chapters/
 │   ├── 01-quran.md
@@ -127,7 +136,7 @@ traceable from the original `.docx` all the way to its current form here.
 
 ## Tracking, priority, and answers
 
-Every question in Chapters 1–6 and 8 (36 in total, as of 2026-08-28)
+Every question in Chapters 1–6 and 8 (39 in total, as of 2026-08-28)
 now carries:
 
 - A **priority** (P0 = foundational, down to P3 = not yet researchable —

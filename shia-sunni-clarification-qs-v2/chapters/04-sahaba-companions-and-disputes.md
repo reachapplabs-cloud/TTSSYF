@@ -21,6 +21,7 @@ them. All wording is reproduced verbatim from the source transcript.
 | 4.10 | Was Abu Bakr really first to accept Islam after Khadija? | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.10.md`](../answers/04-sahaba-companions-and-disputes/4.10.md) |
 | 4.11 | What do the names "Muawiya" and "Yazid" mean, and why were they given? | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.11.md`](../answers/04-sahaba-companions-and-disputes/4.11.md) |
 | 4.12 | Was Abu Sufyan the originator, and what is the Hind→Muawiya→Yazid→Sufyani lineage theory? | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.12.md`](../answers/04-sahaba-companions-and-disputes/4.12.md) |
+| 4.13 | Applying the money/power-trail heuristic: do pro-Umar narration chains trace to his family and appointees, and were classical muhaddithin incentivized? | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.13.md`](../answers/04-sahaba-companions-and-disputes/4.13.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
 
@@ -620,3 +621,55 @@ verified.
 
 **Source:** `source/raw-transcript-2-zo.md`, messages timestamped
 **26/08, 21:16**, **21:18**, and **21:52**.
+
+---
+
+## 4.13 — Applying the money/power-trail heuristic: do pro-Umar narration chains trace to his family and appointees, and were classical muhaddithin financially incentivized to "whitewash" hadith?
+
+**Priority:** P1 — Direct application of `METHODOLOGY.md` Principle 5; a serious claim that needs careful, non-uncritical treatment
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.13.md`](../answers/04-sahaba-companions-and-disputes/4.13.md)
+
+**Claims (verbatim, from three separate messages, presented together
+since they build one argument):**
+
+> When you start looking at the chains, you'll notice that all the
+> pro-umar narratives have sanads that are quoted from his family and
+> appointed leaders
+
+> The claim is that adultery, alcohol, mischief and worldly pleasures
+> were still widespread after and hence they didn't want a righteous
+> leader
+
+> So when majority is saying one thing. Who introduced the other words
+> while using the same sanad
+
+> If you look at it from the lens of these imams were paid to whitewash
+> the ahadith, and then label them as pious muhaddithin with a sahih
+> book, all just to protect a group. It all makes sense
+
+**Handle with care, explicitly:** the last claim above — that major
+hadith compilers were financially paid to whitewash narrations — is a
+serious allegation about the integrity of specific named individuals
+(implicitly, Bukhari, Muslim, and other compilers) and is presented here
+exactly as given, per the no-omission rule, but **not adopted or implied
+as established** by this project. Per `METHODOLOGY.md` Principle 4, this
+is a contributor's own interpretive "lens" ("if you look at it from the
+lens of...") — explicitly framed as a way of viewing the pattern, not a
+sourced historical claim with named evidence. Principle 5 is the
+appropriate tool for *testing* this claim (did specific muhaddithin
+receive documented patronage, position, or wealth traceable to specific
+rulings or omissions?) — that testing has not been done. Treating the
+claim as already-established would be exactly the "take it at face
+value" failure this project exists to avoid, in the direction the
+project's own sympathies might make easiest to miss.
+
+**What would make this a researchable case study rather than a general
+suspicion:** specific, named instances — which pro-Umar hadith, which
+narrator in the chain, what position or wealth that narrator or their
+family is documented to have received, and when relative to the report's
+circulation. None of that specificity has been supplied yet; this entry
+exists to hold the claim and the heuristic together until it is.
+
+**Source:** `source/raw-transcript-3-zo-early.md`, messages timestamped
+**17/08, 00:41**; **23/08, 03:00**; **23/08, 03:01**; and **23/08, 03:25**.

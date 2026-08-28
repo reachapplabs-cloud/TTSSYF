@@ -237,3 +237,71 @@ section of the PDF was omitted.
   directly from questions the project owner asked in conversation — see
   [`CHANGELOG.md`](CHANGELOG.md) for those entries; neither is traced
   here since neither came from either raw transcript.
+
+---
+
+# Part 3 (v2 only) — Third Source Batch (chronologically earliest)
+
+Added 2026-08-28. This part traces
+[`source/raw-transcript-3-zo-early.md`](source/raw-transcript-3-zo-early.md)
+— a third WhatsApp-style log, from "💎 Zo" and a second participant
+"Home," spanning **17/08–24/08**, chronologically the *earliest*
+material in this project (predating both v1's `raw-transcript.md`,
+which starts 24/08 23:59, and the second batch). Not part of v1 or the
+original `.docx`. Per `METHODOLOGY.md` Principle 4, everything traced
+below is context, not fact.
+
+**Notable provenance finding:** the message at 23/08 02:44 in this batch
+is word-for-word the opening message of v1's `raw-transcript.md` (there
+attributed to "Arif Bhai," dated 24/08 23:59). This batch shows Zo
+originated that message roughly a day earlier, in conversation with
+Home, before it was forwarded into the group v1 was built from.
+
+## Message-by-message trace
+
+| Timestamp | Content | Placed in |
+|---|---|---|
+| 17/08, 00:41 | Pro-Umar sanads trace to family/appointed leaders | Ch.4 §4.13; also the origin of `METHODOLOGY.md` Principle 5 |
+| 18/08, 01:42 & 20/08, 06:03 | "Here's the reference" video (2sez-8nPtSc) | Ch.7 §7.11 |
+| 18/08, 02:11 & 02:44 | "Reference from the other side" video + t=2441 "Proof" (YJoKIEshBMg) | Ch.7 §7.12 |
+| 20/08, 04:56–05:09 | Ka'b al-Ahbar/Abu Hurairah isnad-logic questions; "sheikh noor" curriculum question | Ch.2 §2.1 (appended as follow-up) |
+| 20/08, 05:15–06:48 | Surah 'Abasa "he frowned" exegesis dispute | Ch.1 §1.5 |
+| 20/08, 06:49 | "Pls watch this full video" (yXCMU72z0Ms) | Ch.7 §7.13 |
+| 21/08, 19:22–20:24 | Two YouTube channels (@thebelievers112, @hassanallahyari) | Ch.7 §7.14 |
+| 21/08, 20:25–23:48 | "Faith over proof" reflection (a friend's view on Qur'an-changed belief, relayed and expanded) | Not placed in a chapter — reflection with no citation or distinct question; logged here, full text remains in the raw transcript. |
+| 22/08, 00:09 | "I'll try to start compiling the references" | Organizational note, not placed in a chapter |
+| 23/08, 02:44 (×2) | Opening message (shiapen link, "It is alarming") + "enough homework for a month" | **Duplicate** of Ch.4 §4.1 (identical to `raw-transcript.md`'s opening message) — not re-entered; see provenance note above |
+| 23/08, 02:47 | "Pen down the position allocated to each of the accused" | Ch.4 §4.13; `METHODOLOGY.md` Principle 5 |
+| 23/08, 03:00–03:01 | "Widespread sin, didn't want a righteous leader" + "who introduced the other words using the same sanad" | Ch.4 §4.13 |
+| 23/08, 03:03 | "If you tap on the links... shows the pages of the hadith book" | Meta/navigation note, not placed in a chapter |
+| 23/08, 03:08 | The original articulation of the fulan/kadha-kaza/kalimat/omission pattern | `METHODOLOGY.md` Principle 3 (provenance correction added) |
+| 23/08, 03:25 | "Imams were paid to whitewash" claim | Ch.4 §4.13, explicitly flagged as an unverified interpretive lens, not fact |
+| 24/08, 06:27 | "Were you able to go through this link... reconcile via appointed researcher" | Organizational note, not placed in a chapter |
+| 24/08, 06:28 & 06:31 | Shiat-al-Ali as first muhaddithin; "Ahl-e-Hadith" Qur'anic-origin claim | Ch.2 §2.6 |
+| 24/08, 06:50–06:54 | Reddit link + abudawud:4646 + "not shaz, it's kazab" | **Duplicate** of Ch.4 §4.1 (identical to `raw-transcript.md`'s second/third messages) — not re-entered |
+| 24/08, 07:46–07:51 (Home) | Acknowledgment + "putting together a research team... list down all issues in sequence" | Organizational/context note, not placed in a chapter — quoted in full in `README.md`'s project-history context where relevant |
+
+**Five short organizational/meta remarks** (22/08 00:09; 23/08 03:03;
+24/08 06:27; 24/08 07:46; 24/08 07:51) and **one extended reflection**
+(21/08 20:25–23:48) had no attached citation or distinct research
+question and were not made into chapter entries — they remain fully
+findable, verbatim, in `source/raw-transcript-3-zo-early.md`, and are
+logged in the table above so they are not silently lost.
+
+## Totals for Part 3
+
+- **34 timestamped messages**, all traced above.
+- **1 new chapter** section added (Ch.1 §1.5); **1 case study** section
+  added (Ch.4 §4.13); **1 new item** (Ch.2 §2.6); **1 case study
+  expanded** (Ch.2 §2.1's Ka'b al-Ahbar follow-up); **4 general
+  resources** added (Ch.7 §7.11–§7.14).
+- **1 new methodology principle** (Principle 5, the money/power trail)
+  and **1 provenance correction** (Principle 3's original wording,
+  traced to this batch).
+- **2 duplicate message groups** identified and cross-referenced rather
+  than re-entered, including the notable finding that v1's opening
+  message originated in this earlier Zo/Home exchange.
+- Combined with Parts 1–2 and the two directly-researched additions
+  (§2.4, §2.5), this repo now tracks **39 research questions** across
+  **8 chapters** — see [`TRACKER.md`](TRACKER.md) and
+  [`MASTER-TABLE.md`](MASTER-TABLE.md) for the current full board.
