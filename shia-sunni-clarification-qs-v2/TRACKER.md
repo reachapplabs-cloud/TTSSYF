@@ -12,18 +12,18 @@ A single cross-chapter view of every research question in this project, ranked b
 
 | ID | Chapter | Question | Status | Answer & Documentation |
 |---|---|---|---|---|
-| 1.1 | The Qur'an | Is it fair to accuse Shias of believing the Qur'an is incomplete? — *Directly rebuts the core Qur'an-corruption accusation made against Shias* | ⬜ Not Started | [`answers/01-quran/1.1.md`](answers/01-quran/1.1.md) |
-| 1.2 | The Qur'an | Where is the hadith declaring the Qur'an complete? What of the missing 6 ahruf? — *Foundational textual-transmission question* | ⬜ Not Started | [`answers/01-quran/1.2.md`](answers/01-quran/1.2.md) |
+| 1.1 | The Qur'an | Is it fair to accuse Shias of believing the Qur'an is incomplete? — *Directly rebuts the core Qur'an-corruption accusation made against Shias* | ✅ Answered | [`answers/01-quran/1.1.md`](answers/01-quran/1.1.md) |
+| 1.2 | The Qur'an | Where is the hadith declaring the Qur'an complete? What of the missing 6 ahruf? — *Foundational textual-transmission question* | ✅ Answered | [`answers/01-quran/1.2.md`](answers/01-quran/1.2.md) |
 | 2.1 | Sunnah & Hadith Authenticity | The creation-in-seven-days hadith: Ka'b al-Ahbar, Abu Hurairah, and the Qur'an — *Proof-case for Methodology Principle 2 (fame is not a shield)* | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.1.md`](answers/02-sunnah-and-hadith-authenticity/2.1.md) |
 | 3.2 | Salah & Worship Practices | Abu Hurairah's dog/donkey/woman hadith, and Aisha's reported rebuke — *Proof-case for Methodology Principle 2 (Abu Hurairah)* | ✅ Answered | [`answers/03-salah-and-worship-practices/3.2.md`](answers/03-salah-and-worship-practices/3.2.md) |
 | 4.2 | Sahaba & Disputes Between Companions | Why did Umar block paper and pen from the Prophet ﷺ? (Hadith of Qirtas) — *Central to the Shia narrative on the Prophet's final wishes* | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.2.md`](answers/04-sahaba-companions-and-disputes/4.2.md) |
 | 4.7 | Sahaba & Disputes Between Companions | Which companion (identified: Talhah ibn Ubaydullah) was "already planning" after the Prophet's ﷺ death? — *Upgraded from P3: now fully identified and heavily sourced via supplied PDF* | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.7.md`](answers/04-sahaba-companions-and-disputes/4.7.md) |
 | 4.8 | Sahaba & Disputes Between Companions | Does Qur'an 9:100 really grant blanket approval to all companions? — *Foundational to the whole "blanket justice for companions" framework* | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.8.md`](answers/04-sahaba-companions-and-disputes/4.8.md) |
-| 5.1 | Ahlul Bayt, Fatima & Fadak | Does Sahih Muslim 2424 try to exclude the Prophet's wives from Ahl al-Bayt? — *Defines who Ahl al-Bayt even is — foundational* | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.1.md`](answers/05-ahlul-bayt-fatima-and-fadak/5.1.md) |
-| 5.2 | Ahlul Bayt, Fatima & Fadak | Was Fatima denied inheritance, and did she stay angry at Abu Bakr? — *Central grievance underlying the whole Shia-Sunni split* | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.2.md`](answers/05-ahlul-bayt-fatima-and-fadak/5.2.md) |
+| 5.1 | Ahlul Bayt, Fatima & Fadak | Does Sahih Muslim 2424 try to exclude the Prophet's wives from Ahl al-Bayt? — *Defines who Ahl al-Bayt even is — foundational* | ✅ Answered | [`answers/05-ahlul-bayt-fatima-and-fadak/5.1.md`](answers/05-ahlul-bayt-fatima-and-fadak/5.1.md) |
+| 5.2 | Ahlul Bayt, Fatima & Fadak | Was Fatima denied inheritance, and did she stay angry at Abu Bakr? — *Central grievance underlying the whole Shia-Sunni split* | ✅ Answered | [`answers/05-ahlul-bayt-fatima-and-fadak/5.2.md`](answers/05-ahlul-bayt-fatima-and-fadak/5.2.md) |
 | 6.1 | Imamate, Khilafah & Ghadeer Khumm | Khutbah ash-Shiqshiqiyyah, Surah 24:55, and the khalifa dispute — *Foundational to the Imamate claim itself* | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.1.md`](answers/06-imamate-khilafah-and-ghadeer-khumm/6.1.md) |
 | 6.4 | Imamate, Khilafah & Ghadeer Khumm | Verifying the nine-source Ghadeer Khumm reference bundle — *The single most-cited Shia proof-text bundle — verifying it properly is high value* | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md`](answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md) |
-| 6.6 | Imamate, Khilafah & Ghadeer Khumm | Does Sahih al-Bukhari Vol.8 Book 82 Hadith 817 obscure Ali's name with fulan? — *First concrete test case for Methodology Principle 3* | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md`](answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md) |
+| 6.6 | Imamate, Khilafah & Ghadeer Khumm | Does Sahih al-Bukhari Vol.8 Book 82 Hadith 817 obscure Ali's name with fulan? — *First concrete test case for Methodology Principle 3* | ✅ Answered | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md`](answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md) |
 | 8.2 | The Prophet's Final Days | Deathbed conduct: rejecting the Qirtas request, "is he even our prophet", Bukhari 7280 — *Substantially elaborates §4.2 with a new citation and extensive argument* | ⬜ Not Started | [`answers/08-the-prophets-final-days/8.2.md`](answers/08-the-prophets-final-days/8.2.md) |
 | 2.5 | Sunnah & Hadith Authenticity | "The righteous lie more in hadith than in anything else" -- Muslim's own introduction on pious-narrator unreliability — *Primary-source support, from inside the Sunni tradition, for Methodology Principles 1 and 2* | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.5.md`](answers/02-sunnah-and-hadith-authenticity/2.5.md) |
 | 1.5 | The Qur'an | Surah 'Abasa (80) -- who "frowned"? Does the traditional Sunni reading conflict with the Prophet's own Qur'anic character reference? — *A live classical exegesis dispute directly bearing on how the Prophet's character is read from the Qur'an itself* | ⬜ Not Started | [`answers/01-quran/1.5.md`](answers/01-quran/1.5.md) |
@@ -75,14 +75,13 @@ Priority is not a claim about which question matters more spiritually — it is 
 
 ## Recommended research order (P0, updated)
 
-1. **§2.1 and §3.2 — done.** See their dossiers; both Answered.
-2. **§6.6 — Bukhari Vol.8 Book 82 Hadith 817 ("fulan" for Ali).** The first concrete test case for Methodology Principle 3; high value to verify next for the same reason §2.1/§3.2 were prioritized.
-3. **§1.1, §1.2 — Qur'an integrity.**
-4. **§5.1, §5.2 — who is Ahl al-Bayt, and the Fadak/Fatima grievance.**
-5. **§4.2 / §8.2 — the Qirtas incident and the fuller deathbed-conduct treatment (Bukhari 7280).** Now much richer after the second source batch; read together.
-6. **§4.7 — done** (Talhah ibn Ubaydullah identification); a good candidate for the next ✅✅ Verified pass since it already has a dense citation list to check.
-7. **§6.1, §6.4, §6.5 — the Imamate/Ghadeer Khumm/Shiqshiqiyyah cluster,** now three related P0/P1 items.
-8. **§4.8 — the "blanket justice for companions" framework.**
+1. **§2.1, §3.2, §1.1, §1.2, §5.1, §5.2, §6.6 — done,** all rebuilt or newly answered in the three-voice format (reconciling analysis / Shia position / Sunni position) agreed with the project owner 2026-08-28. See each dossier.
+2. **§4.2 / §8.2 — the Qirtas incident and the fuller deathbed-conduct treatment (Bukhari 7280).** Next up; read together.
+3. **§4.7 — redo in the three-voice format** (already Answered under the old single-answer format; Talhah ibn Ubaydullah identification, has a dense citation list from the supplied PDF).
+4. **§6.1, §6.4, §6.5 — the Imamate/Ghadeer Khumm/Shiqshiqiyyah cluster,** three related P0/P1 items.
+5. **§4.8 — the "blanket justice for companions" framework.**
+6. **§2.5 — redo in the three-voice format** (already Answered; Muslim's introduction on pious-narrator unreliability).
+7. **§1.5 — Surah 'Abasa (80) exegesis dispute.**
 
 ---
 
