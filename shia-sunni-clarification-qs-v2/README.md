@@ -127,7 +127,7 @@ traceable from the original `.docx` all the way to its current form here.
 
 ## Tracking, priority, and answers
 
-Every question in Chapters 1–6 and 8 (35 in total, as of 2026-08-28)
+Every question in Chapters 1–6 and 8 (36 in total, as of 2026-08-28)
 now carries:
 
 - A **priority** (P0 = foundational, down to P3 = not yet researchable —

@@ -4,11 +4,11 @@ A single cross-chapter view of every research question in this project, ranked b
 
 **Status legend:** ⬜ Not Started · 🟨 In Progress · ✅ Answered (documented, not yet independently checked) · ✅✅ Verified (a second pass has checked the sourcing) — see [`RESEARCHER-PROTOCOL.md`](RESEARCHER-PROTOCOL.md) for what moves a question between these states.
 
-**35 tracked research questions across 8 chapters** (Chapter 7 is reference links only, not tracked as questions; Chapter 8 is new in v2).
+**36 tracked research questions across 8 chapters** (Chapter 7 is reference links only, not tracked as questions; Chapter 8 is new in v2).
 
 ---
 
-## P0 — Foundational (highest value; conditions how everything else is read) — 13 questions
+## P0 — Foundational (highest value; conditions how everything else is read) — 14 questions
 
 | ID | Chapter | Question | Status | Answer & Documentation |
 |---|---|---|---|---|
@@ -25,6 +25,7 @@ A single cross-chapter view of every research question in this project, ranked b
 | 6.4 | Imamate, Khilafah & Ghadeer Khumm | Verifying the nine-source Ghadeer Khumm reference bundle — *The single most-cited Shia proof-text bundle — verifying it properly is high value* | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md`](answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md) |
 | 6.6 | Imamate, Khilafah & Ghadeer Khumm | Does Sahih al-Bukhari Vol.8 Book 82 Hadith 817 obscure Ali's name with fulan? — *First concrete test case for Methodology Principle 3* | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md`](answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md) |
 | 8.2 | The Prophet's Final Days | Deathbed conduct: rejecting the Qirtas request, "is he even our prophet", Bukhari 7280 — *Substantially elaborates §4.2 with a new citation and extensive argument* | ⬜ Not Started | [`answers/08-the-prophets-final-days/8.2.md`](answers/08-the-prophets-final-days/8.2.md) |
+| 2.5 | Sunnah & Hadith Authenticity | "The righteous lie more in hadith than in anything else" -- Muslim's own introduction on pious-narrator unreliability — *Primary-source support, from inside the Sunni tradition, for Methodology Principles 1 and 2* | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.5.md`](answers/02-sunnah-and-hadith-authenticity/2.5.md) |
 
 ## P1 — High (major supporting pillar of the overall argument) — 15 questions
 
@@ -82,4 +83,4 @@ Priority is not a claim about which question matters more spiritually — it is 
 
 ---
 
-See also: [`README.md`](README.md) for how this repo is organized, [`METHODOLOGY.md`](METHODOLOGY.md) for the guardrail principles every answer must apply, [`RESEARCHER-PROTOCOL.md`](RESEARCHER-PROTOCOL.md) for the required process to move a question from ⬜ to ✅✅, [`QA-CHECKLIST.md`](QA-CHECKLIST.md) for the completeness audit of the original source material, and [`MASTER-TABLE.md`](MASTER-TABLE.md) for the same 35 questions as one flat, sortable table.
+See also: [`README.md`](README.md) for how this repo is organized, [`METHODOLOGY.md`](METHODOLOGY.md) for the guardrail principles every answer must apply, [`RESEARCHER-PROTOCOL.md`](RESEARCHER-PROTOCOL.md) for the required process to move a question from ⬜ to ✅✅, [`QA-CHECKLIST.md`](QA-CHECKLIST.md) for the completeness audit of the original source material, and [`MASTER-TABLE.md`](MASTER-TABLE.md) for the same 36 questions as one flat, sortable table.

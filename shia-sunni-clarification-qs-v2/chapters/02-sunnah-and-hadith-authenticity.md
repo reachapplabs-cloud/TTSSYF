@@ -15,6 +15,7 @@ transcript.
 | 2.2 | Where are Imam Ja'far's ahadith, and why aren't they taught? | P1 | ⬜ Not Started | [`answers/02-sunnah-and-hadith-authenticity/2.2.md`](../answers/02-sunnah-and-hadith-authenticity/2.2.md) |
 | 2.3 | Cross-reference index (not a standalone question) | — | N/A | — |
 | 2.4 | Is everything in Bukhari a hadith of the Prophet? How was ~600,000 narrations narrowed to ~7,500? | P1 | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.4.md`](../answers/02-sunnah-and-hadith-authenticity/2.4.md) |
+| 2.5 | "The righteous lie more in hadith than in anything else" — Muslim's own introduction on pious-narrator unreliability | P0 | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.5.md`](../answers/02-sunnah-and-hadith-authenticity/2.5.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
 
@@ -205,6 +206,73 @@ authentic and simply excluded for redundancy, brevity, or scope — a
 nuance that overstates the case in both directions if flattened out (an
 apologist reading it as "so everything left in must be flawless," or a
 critic reading it as "so almost everything was rejected as fake").
+
+**Source:** Researched directly in response to a question the project
+owner asked in conversation, 2026-08-28 — not from either raw transcript.
+
+---
+
+## 2.5 — Muslim's own introduction says "the righteous lie more in hadith than in anything else." What does this mean, and does it undermine everything that follows in his book?
+
+**Priority:** P0 — Primary-source support, from inside the Sunni hadith
+tradition itself, for `METHODOLOGY.md` Principles 1 and 2
+**Status:** ✅ Answered
+**Answer & documentation:** [`answers/02-sunnah-and-hadith-authenticity/2.5.md`](../answers/02-sunnah-and-hadith-authenticity/2.5.md)
+
+**Question, as posed by the project owner in conversation (paraphrased
+from their own words, 2026-08-28):** Imam Muslim is quoted to have said
+in his preface/introduction that "all pious men are liars." What does
+this mean? Isn't it a self-defeating way to open a book, since it makes
+everything he says afterward also unreliable?
+
+**Answer:** The quote is more precise, and less self-refuting, than the
+paraphrase suggests. In his Muqaddimah (introduction) to Sahih Muslim,
+Muslim records — he does not originate — a saying attributed to the early
+hadith critic **Yahya ibn Sa'id al-Qattan**:
+
+> *"We do not see the righteous more false in anything than they are
+> regarding Hadith."*
+
+Muslim adds his own explanatory gloss on why this happens:
+
+> *"Falsehood flows upon their tongues although they do not intend to
+> lie."*
+
+This is not a claim that pious people are morally dishonest in general.
+It is a narrower, technical observation about a specific failure mode
+documented among ascetic/devout narrators in the early hadith
+transmission ecosystem: not deliberate deception, but a pattern of
+unintentional inaccuracy — prioritizing what they believed served a
+righteous purpose (moral encouragement, warning against sin) over
+literal precision, or in more extreme documented cases, outright
+fabricating a report they believed captured a true spiritual point even
+though the Prophet ﷺ never said those exact words (a phenomenon hadith
+scholars call *al-wad' fi al-targhib wa'l-tarhib* — fabrication for the
+sake of encouragement/warning).
+
+**Why this doesn't undermine Muslim's own project, on his own terms:**
+he is not applying this claim to himself, nor concluding "therefore trust
+nothing in this book." He uses it as his stated *justification* for why
+he subjects every narrator — including the outwardly pious — to isnad
+scrutiny rather than trusting reputation or apparent righteousness alone.
+The argument is internally consistent: "because even sincere people get
+this specific thing wrong, chains get verified rather than characters
+vouched for." That is the premise for his method, not an admission that
+collapses it.
+
+**The sharper, still-open question:** does isnad-criticism actually catch
+this failure mode well? A deliberate forger is relatively catchable by
+chain-of-custody methods (cross-referencing, tracking who transmitted
+from whom, known-liar exclusion lists). Someone who *sincerely and
+unconsciously* embellishes a hadith, believing every word of it, is much
+harder to catch that way — almost by construction, since the method is
+built to catch dishonesty, not honest error. This project has not
+resolved that question and is not aware of a settled answer in the
+tradition either; it is logged here as a live methodological question
+rather than resolved one way or the other. What is notable is that this
+tension is not an outside critique of the hadith sciences — it is stated
+by one of the two most authoritative Sunni hadith collectors, in his own
+introduction, as the reason his methodology exists.
 
 **Source:** Researched directly in response to a question the project
 owner asked in conversation, 2026-08-28 — not from either raw transcript.

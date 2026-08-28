@@ -232,7 +232,8 @@ section of the PDF was omitted.
   across **8 chapters** as of this Part 2 pass — see
   [`TRACKER.md`](TRACKER.md) and [`MASTER-TABLE.md`](MASTER-TABLE.md) for
   the current full board. **Update, same day:** a 35th question (§2.4,
-  on Bukhari's contents and compilation numbers) was added directly from
-  a question the project owner asked in conversation — see
-  [`CHANGELOG.md`](CHANGELOG.md) for that entry; it isn't traced here
-  since it didn't come from either raw transcript.
+  on Bukhari's contents and compilation numbers) and a 36th (§2.5, on
+  Muslim's "the righteous lie more in hadith" passage) were added
+  directly from questions the project owner asked in conversation — see
+  [`CHANGELOG.md`](CHANGELOG.md) for those entries; neither is traced
+  here since neither came from either raw transcript.

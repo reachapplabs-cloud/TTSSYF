@@ -15,6 +15,38 @@ here can be diffed against.
 
 ---
 
+## 2026-08-28 — Answered a second direct question: Muslim's "the righteous lie more in hadith" passage (new §2.5)
+
+**What:** The project owner asked, after seeing an unfamiliar/garbled
+version of the claim ("Imam Muslim said all pious men are liars"),
+whether this was true, what it meant, and whether it made Muslim's own
+book self-refuting. Researched via three independent WebSearch queries
+that converged on the same result: the quote is attributed to **Yahya
+ibn Sa'id al-Qattan**, recorded (not originated) by Muslim in his
+Muqaddimah — *"we do not see the righteous more false in anything than
+they are regarding Hadith"* — with Muslim's own gloss, *"falsehood flows
+upon their tongues although they do not intend to lie."* Corrected the
+paraphrase (this is a narrow, technical observation about unintentional
+inaccuracy among devout narrators, not a blanket claim that pious people
+are dishonest) and explained why it is not self-refuting on Muslim's own
+terms (it is his stated justification for applying isnad-criticism
+universally, not an admission that undermines the book that follows).
+
+Added as **[Chapter 2, §2.5](chapters/02-sunnah-and-hadith-authenticity.md)**
+after the project owner explicitly confirmed they wanted it added. Framed
+as primary-source support, from inside the Sunni tradition itself, for
+`METHODOLOGY.md` Principles 1–2, and closes with a genuinely open
+question this project has not resolved: whether isnad-criticism (built
+to catch deliberate liars) is well-suited to catching sincere,
+unintentional inaccuracy at all — logged as an open question, not
+resolved either direction, per Principle 4. Marked ✅ Answered, not ✅✅
+Verified, for the now-standard reason: sourced via search triangulation
+across three independent queries, not a directly-read primary page.
+`TRACKER.md` and `MASTER-TABLE.md`/`.csv` regenerated for all 36
+questions.
+
+---
+
 ## 2026-08-28 — Investigated video-transcription blocker; answered a direct question on Bukhari's contents (new §2.4)
 
 **What (tooling investigation):** The project owner asked whether this
