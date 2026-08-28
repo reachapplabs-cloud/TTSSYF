@@ -14,7 +14,7 @@ Khumm. All wording is reproduced verbatim from the source transcript.
 | 6.3 | Cross-reference to §4.5 (not a standalone question) | — | N/A | — |
 | 6.4 | Verifying the nine-source Ghadeer Khumm reference bundle | P0 | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md) |
 | 6.5 | What do Nahjul Balagha Sermons 3 and 193 say about the succession? | P1 | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md) |
-| 6.6 | Does Bukhari Vol.8 Book 82 Hadith 817 obscure Ali's name with fulan? | P0 | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md) |
+| 6.6 | Does Bukhari Vol.8 Book 82 Hadith 817 obscure Ali's name with fulan? | P0 | ✅ Answered | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md) |
 | 6.7 | Did Umar claim divine sanction despite no divine appointment? | P1 | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
@@ -231,7 +231,7 @@ personal reflection, not a citation, and not independently verified).
 ## 6.6 — Sahih al-Bukhari, Vol. 8, Book 82, Hadith 817: does Bukhari obscure Ali's name with "fulan" in the origin-of-the-caliphate narrative?
 
 **Priority:** P0 — The first concrete, sourced test case for `METHODOLOGY.md` Principle 3 (concealment patterns)
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered (not yet independently verified — the core *fulan* claim is flagged unconfirmed in the dossier)
 **Answer & documentation:** [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md)
 
 **Question and argument (verbatim):**

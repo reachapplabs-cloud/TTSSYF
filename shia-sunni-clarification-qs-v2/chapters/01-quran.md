@@ -12,8 +12,8 @@ against [`../source/raw-transcript.md`](../source/raw-transcript.md).
 
 | # | Question | Priority | Status | Answer & Documentation |
 |---|---|---|---|---|
-| 1.1 | Is it fair to accuse Shias of believing the Qur'an is incomplete? | P0 | ⬜ Not Started | [`answers/01-quran/1.1.md`](../answers/01-quran/1.1.md) |
-| 1.2 | Where is the hadith declaring the Qur'an complete? What of the missing 6 ahruf? | P0 | ⬜ Not Started | [`answers/01-quran/1.2.md`](../answers/01-quran/1.2.md) |
+| 1.1 | Is it fair to accuse Shias of believing the Qur'an is incomplete? | P0 | ✅ Answered | [`answers/01-quran/1.1.md`](../answers/01-quran/1.1.md) |
+| 1.2 | Where is the hadith declaring the Qur'an complete? What of the missing 6 ahruf? | P0 | ✅ Answered | [`answers/01-quran/1.2.md`](../answers/01-quran/1.2.md) |
 | 1.3 | Could Qur'an 5:3 have been revealed at Arafah before Hajj rites were complete? | P1 | ⬜ Not Started | [`answers/01-quran/1.3.md`](../answers/01-quran/1.3.md) |
 | 1.4 | Why Iqra not Qul — what evidentiary standard should apply to oral hadith? | P1 | ⬜ Not Started | [`answers/01-quran/1.4.md`](../answers/01-quran/1.4.md) |
 | 1.5 | Surah 'Abasa (80) — who "frowned"? Does the traditional Sunni reading conflict with the Prophet's ﷺ own Qur'anic character reference? | P0 | ⬜ Not Started | [`answers/01-quran/1.5.md`](../answers/01-quran/1.5.md) |
@@ -25,7 +25,7 @@ against [`../source/raw-transcript.md`](../source/raw-transcript.md).
 ## 1.1 — Is it fair to accuse Shias of believing the Qur'an is incomplete, when Sunni sources themselves report the same claim from companions?
 
 **Priority:** P0 — Directly rebuts the core Qur'an-corruption accusation made against Shias
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/01-quran/1.1.md`](../answers/01-quran/1.1.md)
 
 This item was forwarded as a single long piece (a rebuttal essay, reproduced
@@ -370,7 +370,7 @@ rejects it?
 ## 1.2 — Where is the clear hadith that the Prophet ﷺ himself declared the Qur'an complete? What happened to the other 6 of the 7 *ahruf*? Why were ahadith reportedly destroyed by companions, and why aren't Ahl al-Bayt narrations studied?
 
 **Priority:** P0 — Foundational textual-transmission question
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/01-quran/1.2.md`](../answers/01-quran/1.2.md)
 
 **Question (verbatim):**
