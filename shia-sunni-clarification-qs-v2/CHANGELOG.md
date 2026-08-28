@@ -15,6 +15,33 @@ here can be diffed against.
 
 ---
 
+## 2026-08-28 — v1 exported to DOCX/PDF for handoff; full system QA review added
+
+**What:** v1 was compiled into a single, formatted document — title page,
+table of contents, all 7 chapters, all 9 images in narrative order — and
+exported as both `.docx` and `.pdf` for handing back to Mr. Arif. Not
+checked into the repo (they're a rendering of `shia-sunni-clarification-qs/`,
+not a new source), but noted here since it's a substantive project output.
+Also added [`SYSTEM-QA-REVIEW.md`](SYSTEM-QA-REVIEW.md): a full self-audit
+of the project (flaws, misses, suggested process changes, and further-out
+ideas), requested by the project owner and written under the same
+no-omission, cite-everything standard as the rest of the project — including
+flaws in this project's own verification rigor to date (0 of 39 questions
+are yet ✅✅ Verified; research this session has been limited to search
+snippets rather than full primary sources, per the standing network
+restriction documented in `METHODOLOGY.md`/prior `CHANGELOG.md` entries).
+
+**Why:** Project owner asked for (1) a downloadable v1 doc/PDF and (2) a
+full QA pass covering flaws, misses, suggested additions, and new
+approaches — including scrutinizing this project's own sourcing rigor, not
+just the source material it compiles.
+
+**Nothing in `chapters/`, `answers/`, `source/`, `TRACKER.md`, or
+`MASTER-TABLE.md`/`.csv` was touched by this entry** — it only adds
+`SYSTEM-QA-REVIEW.md` and this note.
+
+---
+
 ## 2026-08-28 — Third source batch ingested (chronologically earliest): Principle 5, Surah 'Abasa, and 3 new questions
 
 **What:** A third WhatsApp-style message log (34 messages, contributor

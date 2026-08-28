@@ -134,6 +134,13 @@ audit, and [`CHANGELOG.md`](CHANGELOG.md) for everything that's changed
 since — between the two, every question, reference, and image should be
 traceable from the original `.docx` all the way to its current form here.
 
+**If you want an honest assessment of the project itself** — not the
+source questions, the project — see
+[`SYSTEM-QA-REVIEW.md`](SYSTEM-QA-REVIEW.md): flaws, gaps, suggested
+process changes, and further-out ideas, including a plain statement of how
+much of this compilation is actually verified yet (as of 2026-08-28: not
+much — 0 of 39 questions are ✅✅ Verified) and why.
+
 ## Tracking, priority, and answers
 
 Every question in Chapters 1–6 and 8 (39 in total, as of 2026-08-28)
