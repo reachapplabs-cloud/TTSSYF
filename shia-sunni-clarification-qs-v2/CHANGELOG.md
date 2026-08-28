@@ -15,6 +15,36 @@ here can be diffed against.
 
 ---
 
+## 2026-08-28 — Answered §2.2: where are Imam Ja'far's ahadith, and why aren't they taught?
+
+**What:** Researched the project owner's request to start on §2.2.
+Split the question into its two component claims rather than answering
+as one: (1) is Ja'far al-Sadiq broadly excluded as an unreliable
+narrator — no; he is cited in Muwatta Malik, Malik ibn Anas is on
+record calling him "al-thiqah Ja'far ibn Muhammad," and he is widely
+reported (not independently number-confirmed) in the Sunan collections.
+The one real, specific exclusion is Sahih al-Bukhari — but Bukhari
+included him in his separate *Al-Adab al-Mufrad*, which cuts against a
+simple "considered untrustworthy" reading; two competing explanations
+(a stated Sunni chain-length preference, applied to al-Shafi'i too, vs.
+a Shia-sourced political-caution claim) are both presented, unresolved.
+(2) The "Abu Hanifa and Malik studied under him" claim — real for
+Malik, more contested for Abu Hanifa (a Sunni source, IlmGate, pushes
+back on the "formal student" framing, presented alongside the stronger
+popular claim rather than picking one). (3) The likely real answer to
+"why isn't he taught from" is conceptual, not exclusionary: Sunni Islam
+cites him as a hadith transmitter but doesn't grant his own independent
+rulings authoritative-law status the way Twelver Shia jurisprudence
+does, because that rests on Imamate doctrine specifically.
+
+Added to [Chapter 2, §2.2](chapters/02-sunnah-and-hadith-authenticity.md).
+Marked ✅ Answered, not ✅✅ Verified — specific hadith counts for
+Ja'far al-Sadiq in Sahih Muslim and the Sunan collections were searched
+for but not found, and are left explicitly unconfirmed rather than
+guessed at. `TRACKER.md` and `MASTER-TABLE.md`/`.csv` updated.
+
+---
+
 ## 2026-08-28 — Answered a second direct question: Muslim's "the righteous lie more in hadith" passage (new §2.5)
 
 **What:** The project owner asked, after seeing an unfamiliar/garbled

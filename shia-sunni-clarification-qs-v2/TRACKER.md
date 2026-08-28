@@ -33,7 +33,7 @@ A single cross-chapter view of every research question in this project, ranked b
 |---|---|---|---|---|
 | 1.3 | The Qur'an | Could Qur'an 5:3 have been revealed at Arafah before Hajj rites were complete? — *Specific tafsir/timeline dispute* | ⬜ Not Started | [`answers/01-quran/1.3.md`](answers/01-quran/1.3.md) |
 | 1.4 | The Qur'an | Why Iqra not Qul — what evidentiary standard should apply to oral hadith? — *Sets the evidentiary standard used to weigh every other question here* | ⬜ Not Started | [`answers/01-quran/1.4.md`](answers/01-quran/1.4.md) |
-| 2.2 | Sunnah & Hadith Authenticity | Where are Imam Ja'far's ahadith, and why aren't they taught? — *Transmission-bias question* | ⬜ Not Started | [`answers/02-sunnah-and-hadith-authenticity/2.2.md`](answers/02-sunnah-and-hadith-authenticity/2.2.md) |
+| 2.2 | Sunnah & Hadith Authenticity | Where are Imam Ja'far's ahadith, and why aren't they taught? — *Transmission-bias question* | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.2.md`](answers/02-sunnah-and-hadith-authenticity/2.2.md) |
 | 3.1 | Salah & Worship Practices | Is the modern Salawat ("and his companions") a bid'ah? — *Ritual-practice bid'ah dispute* | ⬜ Not Started | [`answers/03-salah-and-worship-practices/3.1.md`](answers/03-salah-and-worship-practices/3.1.md) |
 | 4.1 | Sahaba & Disputes Between Companions | The Muawiyah forbidden-drink narration: sahih chain, false content? — *Hadith-grading-vs-content case study* | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.1.md`](answers/04-sahaba-companions-and-disputes/4.1.md) |
 | 4.3 | Sahaba & Disputes Between Companions | Why did Muawiyah order Ali cursed from the pulpit? — *Direct companion-conduct allegation* | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.3.md`](answers/04-sahaba-companions-and-disputes/4.3.md) |
@@ -83,4 +83,4 @@ Priority is not a claim about which question matters more spiritually — it is 
 
 ---
 
-See also: [`README.md`](README.md) for how this repo is organized, [`METHODOLOGY.md`](METHODOLOGY.md) for the guardrail principles every answer must apply, [`RESEARCHER-PROTOCOL.md`](RESEARCHER-PROTOCOL.md) for the required process to move a question from ⬜ to ✅✅, [`QA-CHECKLIST.md`](QA-CHECKLIST.md) for the completeness audit of the original source material, and [`MASTER-TABLE.md`](MASTER-TABLE.md) for the same 36 questions as one flat, sortable table.
+See also: [`README.md`](README.md) for how this repo is organized, [`METHODOLOGY.md`](METHODOLOGY.md) for the guardrail principles every answer must apply, [`RESEARCHER-PROTOCOL.md`](RESEARCHER-PROTOCOL.md) for the required process to move a question from ⬜ to ✅✅, [`QA-CHECKLIST.md`](QA-CHECKLIST.md) for the completeness audit of the original source material, and [`MASTER-TABLE.md`](MASTER-TABLE.md) for the same 34 questions as one flat, sortable table.

@@ -12,7 +12,7 @@ transcript.
 | # | Question | Priority | Status | Answer & Documentation |
 |---|---|---|---|---|
 | 2.1 | The creation-in-seven-days hadith: Ka'b al-Ahbar, Abu Hurairah, and the Qur'an | P0 | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.1.md`](../answers/02-sunnah-and-hadith-authenticity/2.1.md) |
-| 2.2 | Where are Imam Ja'far's ahadith, and why aren't they taught? | P1 | ⬜ Not Started | [`answers/02-sunnah-and-hadith-authenticity/2.2.md`](../answers/02-sunnah-and-hadith-authenticity/2.2.md) |
+| 2.2 | Where are Imam Ja'far's ahadith, and why aren't they taught? | P1 | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.2.md`](../answers/02-sunnah-and-hadith-authenticity/2.2.md) |
 | 2.3 | Cross-reference index (not a standalone question) | — | N/A | — |
 | 2.4 | Is everything in Bukhari a hadith of the Prophet? How was ~600,000 narrations narrowed to ~7,500? | P1 | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.4.md`](../answers/02-sunnah-and-hadith-authenticity/2.4.md) |
 | 2.5 | "The righteous lie more in hadith than in anything else" — Muslim's own introduction on pious-narrator unreliability | P0 | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.5.md`](../answers/02-sunnah-and-hadith-authenticity/2.5.md) |
@@ -117,7 +117,7 @@ contradicts the Qur'an's account of a six-day creation.
 ## 2.2 — Where are all the ahadith narrated by Imam Ja'far (al-Sadiq) from Ahl al-Bayt? Why don't Sunni Muslims teach from them?
 
 **Priority:** P1 — Transmission-bias question
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered — see the dossier for the full sourced answer, including an honest flag on what would move it to ✅✅ Verified
 **Answer & documentation:** [`answers/02-sunnah-and-hadith-authenticity/2.2.md`](../answers/02-sunnah-and-hadith-authenticity/2.2.md)
 
 **Question (verbatim, from a combined message list — see also §5.1 and §4.x for the other items in the same list):**
@@ -126,6 +126,82 @@ contradicts the Qur'an's account of a six-day creation.
 > Sunni muslims don't teach from them.
 
 **Source:** `raw-transcript.md`, message timestamped **25/08/2026, 6:01:15 AM**.
+
+### Research (added 2026-08-28)
+
+The premise splits into two different questions that need separating,
+because the honest answer differs for each — treating them as one
+question flattens the picture in whichever direction the reader already
+expects.
+
+**1. Is Ja'far al-Sadiq excluded as an unreliable narrator?** No — not
+broadly, though there is one specific, real exclusion worth being precise
+about. He is a recognized hadith transmitter across Sunni sources: he
+narrates in **Muwatta Malik**, and Malik ibn Anas is on record calling
+him, in a direct quote, **"al-thiqah Ja'far ibn Muhammad"** ("the
+trustworthy Ja'far ibn Muhammad") — a positive rijal verdict from one of
+the most authoritative Sunni narrator-critics there is, not a vague
+reputation claim. He is widely stated to be narrated from in the Sunan
+collections (Abu Dawud, al-Tirmidhi, Ibn Majah) as well, though this
+project has **not independently confirmed specific hadith numbers** in
+each and flags that as unresolved rather than asserting a count it
+doesn't have.
+
+The one specific, real exclusion: he does **not** appear as a narrator in
+**Sahih al-Bukhari**. But — and this is the detail that changes the
+picture — Bukhari **did** include narrations from him in his other,
+separate work, *Al-Adab al-Mufrad* (his collection on character and
+manners). That is hard to square with a simple "Bukhari considered him
+untrustworthy" reading, since Bukhari was willing to cite him elsewhere
+in his own body of work. Two competing explanations exist for the
+Sahih al-Bukhari exclusion specifically, and this project has not
+adjudicated between them:
+- **Sunni explanation:** al-Khatib al-Baghdadi's stated reasoning for why
+  Bukhari excluded *al-Shafi'i* from Sahih al-Bukhari too was that Bukhari
+  preferred shorter chains with fewer intermediaries where he had access
+  to them — a stated methodological preference applied to more than one
+  respected figure, not something uniquely aimed at Ja'far.
+- **Shia explanation:** some Shia sources (per search results, not
+  independently opened this session) attribute the exclusion to
+  religious/political caution about a Sunni-authored Sahih visibly
+  platforming a figure central to Shia Imamate claims.
+
+**2. Are Abu Hanifa and Malik really his students?** Real, but more
+contested in its precise framing than either side's popular version
+suggests. Malik's direct praise-quote (above) is solid evidence of a
+teacher-student-adjacent relationship at minimum. The stronger claim —
+that Abu Hanifa formally studied under him — is pushed back on by at
+least one Sunni source found in this research (IlmGate): it argues Abu
+Hanifa's actual teaching lineage runs through Hammad ibn Abi Sulayman →
+Ibrahim al-Nakha'i → Ibn Mas'ud, and that Abu Hanifa narrating *some*
+hadith from Ja'far reflects the ordinary practice of scholars citing
+respected contemporaries, not formal discipleship. This project presents
+both framings rather than picking one, per `METHODOLOGY.md` Principle 4.
+
+**3. So why doesn't Sunni teaching draw on him the way Shia jurisprudence
+does — this is probably the real question underneath the original
+wording.** The likely answer is conceptual, not exclusionary: there is a
+difference between being cited **as a link in a chain transmitting the
+Prophet's ﷺ words** (which does happen, per point 1) and having **one's
+own independent statements treated as an authoritative source of
+religious law in their own right** (which doesn't happen in Sunni Islam).
+The second kind of authority, in Twelver Shia Islam, rests on the
+doctrine of Imamate — the belief that the Imams possess a form of
+divinely-guided knowledge that makes their own rulings binding
+independent of a hadith chain back to the Prophet. That is precisely why
+the overwhelming majority of Twelver hadith collections trace to Ja'far
+al-Sadiq specifically — he functions as the central living legal
+authority of that tradition, not merely a transmitter within it. Sunni
+Islam, not accepting Imamate doctrine, has no equivalent category: it
+respects him as a narrator and a jurist among jurists, but doesn't (and
+structurally can't, without accepting Imamate) treat his personal
+rulings as an independent source of law the way a "Ja'fari madhab"
+would require. It's also worth noting, as a check against reading this
+as a targeted omission: several other contemporary jurist-traditions
+(al-Awza'i's, al-Thawri's, al-Zahiri's) also did not survive as living,
+institutionalized Sunni madhabs alongside the four that did — so the
+non-survival of an independent "Ja'fari fiqh" track within Sunni
+institutional structure is not unique to him either.
 
 ---
 
