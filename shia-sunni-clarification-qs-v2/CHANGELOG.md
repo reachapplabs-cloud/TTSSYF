@@ -15,6 +15,31 @@ here can be diffed against.
 
 ---
 
+## 2026-08-28 — Mr. Arif edition: neutral framing, and a leftover internal reference fixed
+
+**What:** Two fixes to the "clean reader edition" logged just below, after
+the project owner reviewed the published HTML: (1) the title page's "note
+on framing" asserted the questions were "posed to an Ahl-e-Hadith group as
+a challenge" from "the standpoint that the Shia position is correct" —
+reworded to state plainly that the questions are reproduced exactly as
+originally phrased (nothing in their wording changed) without this
+document itself taking a side on which tradition is correct; the document
+title was shortened to drop the "(for an Ahl-e-Hadith Group)" tag for the
+same reason. (2) Chapter 1's intro paragraph still had one sentence
+pointing at `../source/raw-transcript.md` and describing a `**Source**`
+line that no longer exists in this edition — missed by the first cleanup
+pass because it was prose, not one of the bold-labeled metadata lines the
+cleanup script targeted. Removed. A full sweep of all 7 chapters confirms
+no other internal file references remain anywhere in this edition.
+
+**What did not change:** no question, quote, or claim's actual wording —
+only wrapper text written by the compiler (the title page and this one
+chapter intro sentence) was touched, consistent with the "original
+questions stay intact, only formatting changes" instruction this edition
+was built under.
+
+---
+
 ## 2026-08-28 — Clean reader edition of v1 exported (DOCX/PDF/HTML) for Mr. Arif
 
 **What:** A second, separate export of v1 was built specifically for handing
