@@ -18,11 +18,29 @@ itself a rebuttal of an accusation commonly made against Shia Muslims,
 so it argues the opposite direction on that one point; it is included
 verbatim regardless, because the source included it.
 
+## Read this first: [`METHODOLOGY.md`](METHODOLOGY.md)
+
+This project runs under three non-negotiable guardrail principles set by
+the project owner: (1) *rijal* (narrator) grading — including "Sahihain"
+status itself — is never taken as automatically true, in either direction
+(a narrator called reliable, or one called a liar/forgetful, both get
+scrutinized rather than deferred to, since either verdict can be
+politically motivated); (2) no narrator is exempt from scrutiny on the
+strength of fame, Abu Hurairah included; (3) Bukhari's (or any
+collector's) use of *fulan*, *kalima*, *kadha wa kaza*, or silent
+truncation is flagged as a possible sign of concealment, not passed over.
+Full detail, including two concrete worked examples and the running list
+of open research items, is in [`METHODOLOGY.md`](METHODOLOGY.md) — read
+it before treating anything in `chapters/` as a settled conclusion rather
+than a compiled question.
+
 ## How this repo is organized
 
 ```
 shia-sunni-clarification-qs/
 ├── README.md              — this file
+├── METHODOLOGY.md          — read first: the guardrail principles this
+│                             whole project runs under
 ├── QA-CHECKLIST.md         — completeness audit: every source message,
 │                             link, and image mapped to where it landed
 ├── source/
@@ -75,7 +93,11 @@ it was placed in, plus the running totals that confirm nothing is missing.
 7. **[General Resources](chapters/07-general-resources.md)** — reference
    links not tied to one specific question.
 
-## Methodology / editorial rules followed while building this
+## Editorial rules followed while building this
+
+(For the research/source-critical guardrails — how narrators and hadith
+themselves should be weighed — see [`METHODOLOGY.md`](METHODOLOGY.md)
+instead; this section is only about how the compilation was assembled.)
 
 - **No question was reworded, and no reference or image was skipped.**
   Every quoted block in `chapters/` is copied verbatim from the source;

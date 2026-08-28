@@ -82,6 +82,19 @@ contradicts the Qur'an's account of a six-day creation.
 
 **Source:** `raw-transcript.md`, message timestamped **25/08/2026, 6:21:18 AM**.
 
+> **Editorial note added per [`../METHODOLOGY.md`](../METHODOLOGY.md),
+> Principle 2 (added by the project owner after this chapter was first
+> written — not from the original document):** the isnad for this hadith
+> runs through Abu Hurairah. This project does not extend Abu Hurairah,
+> or any narrator, a pass on the strength of his reputation as the most
+> prolific Sunni narrator — the report is weighed against the Qur'an's own
+> six-day creation account like any other. The debate quoted above (Ibn
+> Taymiyyah / Al-Mu'allimi / Al-Albani) is preserved verbatim as the
+> project owner forwarded it; this note does not alter that quote, it
+> flags the underlying methodological question it raises. Exact citation
+> for the Abu Hurairah isnad is an open item — see
+> `../METHODOLOGY.md`, "Open research items," #1.
+
 ---
 
 ## 2.2 — Where are all the ahadith narrated by Imam Ja'far (al-Sadiq) from Ahl al-Bayt? Why don't Sunni Muslims teach from them?

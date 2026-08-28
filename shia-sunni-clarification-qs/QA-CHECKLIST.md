@@ -100,6 +100,29 @@ file — flagged in that section rather than guessed at.
   wants to verify any chapter entry against the original wording directly,
   rather than relying on this table.
 
+## Addendum (28/08/2026) — methodology guardrails and two new items
+
+After the initial compilation, the project owner added three standing
+research-methodology principles (rijal grading is not self-authenticating;
+no narrator, Abu Hurairah included, is exempt from scrutiny by fame; watch
+for *fulan*/*kalima*/*kadha wa kaza*/truncation as possible concealment).
+These are **not** part of the original `.docx` — they are new guidance
+given directly in conversation, and are tracked separately from the
+source-message trace above so the provenance of every claim in this repo
+stays distinguishable at a glance:
+
+| Addition | Placed in | Status |
+|---|---|---|
+| The three guardrail principles themselves | `METHODOLOGY.md` (new file) | Standing rule, applies project-wide |
+| Editorial annotation on the Ka'b al-Ahbar/creation-in-seven-days hadith, identifying the isnad as running through Abu Hurairah | `chapters/02-sunnah-and-hadith-authenticity.md`, §2.1 (added as a note beside the existing verbatim quote, which was not altered) | Flagged NEEDS VERIFICATION — open item #1 in `METHODOLOGY.md` |
+| New question: Abu Hurairah's "Salah invalidated by dog/donkey/woman" narration and Aisha's (RA) reported rebuke | `chapters/03-salah-and-worship-practices.md`, §3.2 (new section) | Flagged NEEDS VERIFICATION — open item #2 in `METHODOLOGY.md` |
+
+Per `METHODOLOGY.md`'s own rule, both new claims are marked "NEEDS
+VERIFICATION" rather than given a specific hadith citation, since this
+project has not yet independently confirmed the exact references — that
+confirmation is tracked as open research items in `METHODOLOGY.md` for
+the "detailed research" phase the project owner indicated is wanted next.
+
 ## If you find something missing
 
 If you spot a sentence, link, reference, or image from the original

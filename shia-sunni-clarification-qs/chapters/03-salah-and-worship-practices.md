@@ -68,3 +68,29 @@ reproduced verbatim from the source transcript.
 **Source:** `raw-transcript.md`, message timestamped **27/08/2026, 10:30:31 AM**, with images
 `image4.png` and `image3.png` (see
 [`../source/images/`](../source/images/)).
+
+---
+
+## 3.2 — Abu Hurairah narrated that Salah is invalidated by a dog, donkey, or woman passing in front — and Aisha (RA) is reported to have directly rebuked this. Which account should stand, and on what basis?
+
+**Claim, as given by the project owner (verbatim as stated in conversation
+— NOT part of the original `.docx` source, added under
+[`../METHODOLOGY.md`](../METHODOLOGY.md), Principle 2):**
+
+> We have new knowledge that Abu Huraira has ... twice attributed
+> incorrectly to the prophet what he in fact did not say ... we also
+> have another [narration] where he was rebuked by Aisha herself when he
+> said salah is invalidated behind a dog, donkey, and woman.
+
+**Status: NEEDS VERIFICATION.** This project has not yet independently
+pinned the exact hadith numbers for (a) Abu Hurairah's narration that
+Salah is invalidated by a dog, donkey, or woman passing in front of the
+person praying, or (b) Aisha's (RA) reported rebuttal of it. Both are
+widely discussed in hadith literature (candidate sources to check first:
+Sahih Muslim's chapter on *Sutrat al-Musalli*, Sunan Abi Dawud, and Musnad
+Ahmad), but per this project's own rule against taking anything at face
+value, no specific citation is asserted here until verified. Tracked as
+open item #2 in [`../METHODOLOGY.md`](../METHODOLOGY.md).
+
+**Source:** Added by the project owner in conversation, 28/08/2026 — not
+present in `source/raw-transcript.md`.
