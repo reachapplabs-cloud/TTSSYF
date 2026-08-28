@@ -6,9 +6,24 @@ trusted despite documented flaws, and why Ahl al-Bayt narrations are said
 to be neglected. All wording is reproduced verbatim from the source
 transcript.
 
+
+## Chapter Progress
+
+| # | Question | Priority | Status | Answer & Documentation |
+|---|---|---|---|---|
+| 2.1 | The creation-in-seven-days hadith: Ka'b al-Ahbar, Abu Hurairah, and the Qur'an | P0 | ⬜ Not Started | [`answers/02-sunnah-and-hadith-authenticity/2.1.md`](../answers/02-sunnah-and-hadith-authenticity/2.1.md) |
+| 2.2 | Where are Imam Ja'far's ahadith, and why aren't they taught? | P1 | ⬜ Not Started | [`answers/02-sunnah-and-hadith-authenticity/2.2.md`](../answers/02-sunnah-and-hadith-authenticity/2.2.md) |
+| 2.3 | Cross-reference index (not a standalone question) | — | N/A | — |
+
+*Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
+
 ---
 
 ## 2.1 — If a hadith's own chain is disputed by senior Sunni scholars, why does it still stand — and does it contradict the Qur'an?
+
+**Priority:** P0 — Proof-case for Methodology Principle 2 (fame is not a shield)
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/02-sunnah-and-hadith-authenticity/2.1.md`](../answers/02-sunnah-and-hadith-authenticity/2.1.md)
 
 This concerns a hadith about the days of creation, where Bukhari himself
 attributed the wording to Ka'b al-Ahbar (a source of Isra'iliyyat/Jewish
@@ -98,6 +113,10 @@ contradicts the Qur'an's account of a six-day creation.
 ---
 
 ## 2.2 — Where are all the ahadith narrated by Imam Ja'far (al-Sadiq) from Ahl al-Bayt? Why don't Sunni Muslims teach from them?
+
+**Priority:** P1 — Transmission-bias question
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/02-sunnah-and-hadith-authenticity/2.2.md`](../answers/02-sunnah-and-hadith-authenticity/2.2.md)
 
 **Question (verbatim, from a combined message list — see also §5.1 and §4.x for the other items in the same list):**
 

@@ -123,6 +123,23 @@ project has not yet independently confirmed the exact references — that
 confirmation is tracked as open research items in `METHODOLOGY.md` for
 the "detailed research" phase the project owner indicated is wanted next.
 
+## Addendum (28/08/2026) — priority, status tracking, and answer dossiers
+
+Also added: a priority ranking (P0–P3) and status checklist (⬜/🟨/✅/✅✅)
+for each of the 25 trackable questions across Chapters 1–6, a per-chapter
+"Chapter Progress" table, a cross-chapter [`TRACKER.md`](TRACKER.md), a
+[`RESEARCHER-PROTOCOL.md`](RESEARCHER-PROTOCOL.md) mandating a full source
+log and explicit methodology citation for every answer, and an empty
+`answers/` dossier per question. None of this is source content — it is
+project tooling layered on top, generated consistently from a single data
+table so every question's priority/status/answer-link line matches across
+its chapter entry, its `TRACKER.md` row, and its dossier file. All 25
+dossiers currently start at ⬜ Not Started with every field empty; the
+25-question count matches Chapter 7's 2 items and the two cross-reference
+sections (§2.3, §6.3) plus the video-links section (§6.2) being marked
+N/A rather than tracked, since none of those five are themselves
+questions.
+
 ## If you find something missing
 
 If you spot a sentence, link, reference, or image from the original

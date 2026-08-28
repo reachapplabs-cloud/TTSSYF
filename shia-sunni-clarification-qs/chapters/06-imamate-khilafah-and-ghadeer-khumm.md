@@ -4,9 +4,25 @@ Questions and reference material concerning the succession to the Prophet
 ﷺ, the sermon of Khutbah ash-Shiqshiqiyyah, and the event of Ghadeer
 Khumm. All wording is reproduced verbatim from the source transcript.
 
+
+## Chapter Progress
+
+| # | Question | Priority | Status | Answer & Documentation |
+|---|---|---|---|---|
+| 6.1 | Khutbah ash-Shiqshiqiyyah, Surah 24:55, and the khalifa dispute | P0 | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.1.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.1.md) |
+| 6.2 | Video links (supporting media, not a standalone question) | — | N/A | — |
+| 6.3 | Cross-reference to §4.5 (not a standalone question) | — | N/A | — |
+| 6.4 | Verifying the nine-source Ghadeer Khumm reference bundle | P0 | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md) |
+
+*Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
+
 ---
 
 ## 6.1 — What does Khutbah ash-Shiqshiqiyyah, and Ali's remarks on Umar's proposed expedition, reveal about the Shia/Sunni disagreement over the khalifa (linked to Surah 24:55)?
+
+**Priority:** P0 — Foundational to the Imamate claim itself
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.1.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.1.md)
 
 **Text (verbatim):**
 
@@ -49,6 +65,10 @@ Shia arguments for Imamate.
 ---
 
 ## 6.4 — The Ghadeer Khumm reference bundle: nine numbered citations (Sunni and Shia sources) on the "Man kuntu mawlahu" declaration and the Hadith of the Twelve Successors
+
+**Priority:** P0 — The single most-cited Shia proof-text bundle — verifying it properly is high value
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md)
 
 This numbered list was shared as a single reference bundle immediately
 after the two videos in §6.2. It is reproduced here in full, in its

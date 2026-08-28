@@ -4,9 +4,31 @@ Questions about the conduct, status, and reliability as narrators of
 specific companions, and whether "justice" is applied evenly to all of
 them. All wording is reproduced verbatim from the source transcript.
 
+
+## Chapter Progress
+
+| # | Question | Priority | Status | Answer & Documentation |
+|---|---|---|---|---|
+| 4.1 | The Muawiyah forbidden-drink narration: sahih chain, false content? | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.1.md`](../answers/04-sahaba-companions-and-disputes/4.1.md) |
+| 4.2 | Why did Umar block paper and pen from the Prophet ﷺ? (Hadith of Qirtas) | P0 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.2.md`](../answers/04-sahaba-companions-and-disputes/4.2.md) |
+| 4.3 | Why did Muawiyah order Ali cursed from the pulpit? | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.3.md`](../answers/04-sahaba-companions-and-disputes/4.3.md) |
+| 4.4 | Who narrated the ashara mubashara/Talha "walking martyr" hadith, and why the omission? | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.4.md`](../answers/04-sahaba-companions-and-disputes/4.4.md) |
+| 4.5 | The Haud al-Kawthar "ashabi" hadith and differentiated companion status | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.5.md`](../answers/04-sahaba-companions-and-disputes/4.5.md) |
+| 4.6 | Was Aisha a pawn behind the first fitnah? | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.6.md`](../answers/04-sahaba-companions-and-disputes/4.6.md) |
+| 4.7 | Which companion was "already planning" after the Prophet's ﷺ death? | P3 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.7.md`](../answers/04-sahaba-companions-and-disputes/4.7.md) |
+| 4.8 | Does Qur'an 9:100 really grant blanket approval to all companions? | P0 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.8.md`](../answers/04-sahaba-companions-and-disputes/4.8.md) |
+| 4.9 | Marwan: a case study in uneven justice for companions | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.9.md`](../answers/04-sahaba-companions-and-disputes/4.9.md) |
+| 4.10 | Was Abu Bakr really first to accept Islam after Khadija? | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.10.md`](../answers/04-sahaba-companions-and-disputes/4.10.md) |
+
+*Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
+
 ---
 
 ## 4.1 — Is a narration graded *sahih* by chain still reliable if its content looks false? (The Muawiyah forbidden-drink narration)
+
+**Priority:** P1 — Hadith-grading-vs-content case study
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.1.md`](../answers/04-sahaba-companions-and-disputes/4.1.md)
 
 **Opening framing (verbatim):**
 
@@ -49,6 +71,10 @@ this is filed as a hadith-methodology question too.*
 
 ## 4.2 — Why did Umar not allow paper and pen to be brought to the Prophet ﷺ as he requested? (Hadith of Qirtas)
 
+**Priority:** P0 — Central to the Shia narrative on the Prophet's final wishes
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.2.md`](../answers/04-sahaba-companions-and-disputes/4.2.md)
+
 **Question (verbatim, from a combined message list — see also §4.3, §2.2, and §5.1–§5.2 for the other items in the same list):**
 
 > Hadith on qirthas..... Hazrat Omar not allowing the paper and pen to be
@@ -59,6 +85,10 @@ this is filed as a hadith-methodology question too.*
 ---
 
 ## 4.3 — Why did Muawiyah instruct governors/imams to curse Ali during Friday sermons?
+
+**Priority:** P1 — Direct companion-conduct allegation
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.3.md`](../answers/04-sahaba-companions-and-disputes/4.3.md)
 
 **Question (verbatim, from the same combined message list as §4.2):**
 
@@ -75,6 +105,10 @@ pulpit.*
 ---
 
 ## 4.4 — Who propagated the *ashara mubashara* hadith, and the one about Talha being a "walking martyr"? And why is it omitted from Bukhari and Muslim?
+
+**Priority:** P2 — Narrator-identification question, narrower scope
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.4.md`](../answers/04-sahaba-companions-and-disputes/4.4.md)
 
 **Question (verbatim):**
 
@@ -102,6 +136,10 @@ and **6:57:24 AM**, with image `image5.png`.
 ---
 
 ## 4.5 — Some of the Prophet's "*ashabi*" (companions) will be driven away at the Pool of Kawthar — how does this square with a blanket claim that all companions are just?
+
+**Priority:** P1 — Central eschatological argument on differentiated companion status
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.5.md`](../answers/04-sahaba-companions-and-disputes/4.5.md)
 
 **Question (verbatim):**
 
@@ -176,6 +214,10 @@ before the **25/08/2026, 6:00:30 AM** video messages), and the
 
 ## 4.6 — Was Aisha a pawn of someone else behind the first fitnah?
 
+**Priority:** P2 — Unproven theory as given; needs primary sourcing
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.6.md`](../answers/04-sahaba-companions-and-disputes/4.6.md)
+
 **Question (verbatim — reproduced in full at §4.4 above, since it was sent
 as a single message alongside the ashara mubashara/Talha question):**
 
@@ -190,6 +232,10 @@ Full text and supporting image at §4.4 above.
 ---
 
 ## 4.7 — Which companion was "already planning his actions" following the Prophet's ﷺ death, and is it true he betrayed Uthman and then waged war claiming to avenge him?
+
+**Priority:** P3 — Companion not even named in source — needs identification first
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.7.md`](../answers/04-sahaba-companions-and-disputes/4.7.md)
 
 **Question and notes (verbatim — the source does not further name the
 companion beyond this description; nothing has been added or inferred
@@ -217,6 +263,10 @@ and **2:58:08 PM**.
 ---
 
 ## 4.8 — If Qur'an 9:100 grants blanket approval to "the Companions," why do Sunni and Shia tafsir differ on who it actually covers — and does "justice" apply evenly to all companions regardless of wrongdoing?
+
+**Priority:** P0 — Foundational to the whole "blanket justice for companions" framework
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.8.md`](../answers/04-sahaba-companions-and-disputes/4.8.md)
 
 **Question (verbatim):**
 
@@ -282,6 +332,10 @@ and **2:58:09 PM**, with images `image7.png` and `image6.png`.
 
 ## 4.9 — Marwan: a case study in whether justice applies evenly to companions
 
+**Priority:** P2 — Single-companion case study
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.9.md`](../answers/04-sahaba-companions-and-disputes/4.9.md)
+
 **Framing statement (verbatim, immediately following the tafsir images
 above and the Bukhari 6582/6787 references in §4.5):**
 
@@ -343,6 +397,10 @@ with images `image9.png` and `image8.png`.
 ---
 
 ## 4.10 — Is there a reliable narrative that Abu Bakr was the first to accept Islam after Khadija? What proves this, given multiple reports say otherwise?
+
+**Priority:** P1 — Contested historical-precedence claim
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.10.md`](../answers/04-sahaba-companions-and-disputes/4.10.md)
 
 **Question (verbatim):**
 

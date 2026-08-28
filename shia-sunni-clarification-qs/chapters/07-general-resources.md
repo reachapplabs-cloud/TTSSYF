@@ -3,6 +3,16 @@
 General reference links shared without being tied to one specific
 question. Reproduced verbatim.
 
+
+## Chapter Progress
+
+| # | Question | Priority | Status | Answer & Documentation |
+|---|---|---|---|---|
+| 7.1 | General resource link (not a standalone question) | — | N/A | — |
+| 7.2 | General resource link (not a standalone question) | — | N/A | — |
+
+*Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
+
 ---
 
 ## 7.1 — Al-Islam.org

@@ -41,6 +41,11 @@ shia-sunni-clarification-qs/
 ├── README.md              — this file
 ├── METHODOLOGY.md          — read first: the guardrail principles this
 │                             whole project runs under
+├── RESEARCHER-PROTOCOL.md  — mandatory process for answering a question:
+│                             log every source, cite precisely, apply the
+│                             methodology explicitly
+├── TRACKER.md              — master board: every question, ranked by
+│                             priority, across all chapters
 ├── QA-CHECKLIST.md         — completeness audit: every source message,
 │                             link, and image mapped to where it landed
 ├── source/
@@ -48,14 +53,19 @@ shia-sunni-clarification-qs/
 │   │                         unedited, in original order — the ground
 │   │                         truth to check anything against
 │   └── images/             — all 9 original images, full resolution
-└── chapters/
-    ├── 01-quran.md
-    ├── 02-sunnah-and-hadith-authenticity.md
-    ├── 03-salah-and-worship-practices.md
-    ├── 04-sahaba-companions-and-disputes.md
-    ├── 05-ahlul-bayt-fatima-and-fadak.md
-    ├── 06-imamate-khilafah-and-ghadeer-khumm.md
-    └── 07-general-resources.md
+├── chapters/
+│   ├── 01-quran.md
+│   ├── 02-sunnah-and-hadith-authenticity.md
+│   ├── 03-salah-and-worship-practices.md
+│   ├── 04-sahaba-companions-and-disputes.md
+│   ├── 05-ahlul-bayt-fatima-and-fadak.md
+│   ├── 06-imamate-khilafah-and-ghadeer-khumm.md
+│   └── 07-general-resources.md
+└── answers/                — one dossier per question: Answer, Supporting
+    ├── TEMPLATE.md            Documentation & Proofs, full Source
+    ├── 01-quran/              Consultation Log, Methodology Applied,
+    ├── 02-sunnah-.../         Researcher & Date — mirrors chapters/ 1:1
+    ├── ... (one folder per chapter, one file per question)
 ```
 
 **Start with the chapter you need** — each question is reproduced
@@ -67,6 +77,31 @@ message in `source/raw-transcript.md`.
 [`QA-CHECKLIST.md`](QA-CHECKLIST.md) — it is a line-by-line trace of every
 message, link, and image in the original document to the chapter section
 it was placed in, plus the running totals that confirm nothing is missing.
+
+## Tracking, priority, and answers
+
+Every question in Chapters 1–6 (25 in total) now carries:
+
+- A **priority** (P0 = foundational, down to P3 = not yet researchable —
+  see [`TRACKER.md`](TRACKER.md) for the full ranking and the reasoning
+  behind it), shown right under the question heading in its chapter and
+  again in that chapter's **Chapter Progress** table at the top of the
+  file.
+- A **status checklist** (⬜ Not Started → 🟨 In Progress → ✅ Answered →
+  ✅✅ Verified), shown in the same three places: the question itself, the
+  chapter's progress table, and [`TRACKER.md`](TRACKER.md)'s master board.
+- A dedicated **answer dossier** under [`answers/`](answers/) (mirroring
+  `chapters/` folder-for-folder) with slots for the Answer, Supporting
+  Documentation & Proofs (precise citations — collection, volume, page or
+  hadith number, link), a full Source Consultation Log (every source
+  examined, including ones ruled out — not just the ones that ended up
+  cited), the Methodology Applied, and the Researcher & Date.
+
+**Start here:** [`TRACKER.md`](TRACKER.md) for the prioritized worklist,
+[`RESEARCHER-PROTOCOL.md`](RESEARCHER-PROTOCOL.md) for the required
+process before marking anything ✅ Answered. All dossiers currently start
+empty (⬜ Not Started) — the chapters compile the questions; the answers
+are the next phase of work.
 
 ## Chapters
 

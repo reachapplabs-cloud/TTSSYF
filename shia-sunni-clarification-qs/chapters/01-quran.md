@@ -7,9 +7,25 @@ the source transcript; nothing has been paraphrased. Each item's exact
 place in the source is given in its **Source** line so it can be checked
 against [`../source/raw-transcript.md`](../source/raw-transcript.md).
 
+
+## Chapter Progress
+
+| # | Question | Priority | Status | Answer & Documentation |
+|---|---|---|---|---|
+| 1.1 | Is it fair to accuse Shias of believing the Qur'an is incomplete? | P0 | ⬜ Not Started | [`answers/01-quran/1.1.md`](../answers/01-quran/1.1.md) |
+| 1.2 | Where is the hadith declaring the Qur'an complete? What of the missing 6 ahruf? | P0 | ⬜ Not Started | [`answers/01-quran/1.2.md`](../answers/01-quran/1.2.md) |
+| 1.3 | Could Qur'an 5:3 have been revealed at Arafah before Hajj rites were complete? | P1 | ⬜ Not Started | [`answers/01-quran/1.3.md`](../answers/01-quran/1.3.md) |
+| 1.4 | Why Iqra not Qul — what evidentiary standard should apply to oral hadith? | P1 | ⬜ Not Started | [`answers/01-quran/1.4.md`](../answers/01-quran/1.4.md) |
+
+*Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
+
 ---
 
 ## 1.1 — Is it fair to accuse Shias of believing the Qur'an is incomplete, when Sunni sources themselves report the same claim from companions?
+
+**Priority:** P0 — Directly rebuts the core Qur'an-corruption accusation made against Shias
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/01-quran/1.1.md`](../answers/01-quran/1.1.md)
 
 This item was forwarded as a single long piece (a rebuttal essay, reproduced
 here in full since it is the supporting proof for the underlying question):
@@ -352,6 +368,10 @@ rejects it?
 
 ## 1.2 — Where is the clear hadith that the Prophet ﷺ himself declared the Qur'an complete? What happened to the other 6 of the 7 *ahruf*? Why were ahadith reportedly destroyed by companions, and why aren't Ahl al-Bayt narrations studied?
 
+**Priority:** P0 — Foundational textual-transmission question
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/01-quran/1.2.md`](../answers/01-quran/1.2.md)
+
 **Question (verbatim):**
 
 > Another question and challenge being raised on the Qur'an is ... Show us
@@ -372,6 +392,10 @@ rejects it?
 
 ## 1.3 — How could Qur'an 5:3 ("today I have perfected your religion") have been revealed at Arafah, if Hajj rites were not yet complete?
 
+**Priority:** P1 — Specific tafsir/timeline dispute
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/01-quran/1.3.md`](../answers/01-quran/1.3.md)
+
 **Question (verbatim):**
 
 > Verse 5:3 (today I have perfected your religion..) could not have been
@@ -386,6 +410,10 @@ rejects it?
 ---
 
 ## 1.4 — Why *Iqra* and not *Qul*? And what standard of textual proof should apply, given oral hadith (even *sahih* by chain) can still be false?
+
+**Priority:** P1 — Sets the evidentiary standard used to weigh every other question here
+**Status:** ⬜ Not Started
+**Answer & documentation:** [`answers/01-quran/1.4.md`](../answers/01-quran/1.4.md)
 
 **Proof/reference (verbatim):**
 
