@@ -15,6 +15,29 @@ here can be diffed against.
 
 ---
 
+## 2026-08-28 — Clean reader edition of v1 exported (DOCX/PDF/HTML) for Mr. Arif
+
+**What:** A second, separate export of v1 was built specifically for handing
+back to Mr. Arif: same chapters, questions, references, and images as v1,
+with every piece of internal project scaffolding stripped out — no
+Priority/Status labels, no Chapter Progress tables, no "Answer &
+documentation" links, no `**Source:**` lines pointing at internal repo
+files, no mentions of "the project owner," and no links to any `.md` file
+he wouldn't have. Two small internal editorial notes (the Abu Hurairah
+isnad note in §2.1, the "needs verification" caveat on §3.2) were either
+reworded to drop the meta-references while keeping the substantive point,
+or dropped where the note was purely about this project's own tracking
+state. Exported as `.docx`, `.pdf`, and a styled `.html` reading edition.
+**Nothing was removed that changes what's being asked or what's being
+cited** — only the layer of tracking chrome that's meaningless outside this
+repo. Not checked into the repo (a rendering of v1, not new source content).
+
+**Why:** Project owner specified Mr. Arif will read this as a plain
+document, won't have access to this repo's other files, and shouldn't see
+internal project-tracking commentary in his copy.
+
+---
+
 ## 2026-08-28 — v1 exported to DOCX/PDF for handoff; full system QA review added
 
 **What:** v1 was compiled into a single, formatted document — title page,
