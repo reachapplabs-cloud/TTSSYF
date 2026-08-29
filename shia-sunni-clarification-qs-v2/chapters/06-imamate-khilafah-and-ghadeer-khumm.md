@@ -9,11 +9,11 @@ Khumm. All wording is reproduced verbatim from the source transcript.
 
 | # | Question | Priority | Status | Answer & Documentation |
 |---|---|---|---|---|
-| 6.1 | Khutbah ash-Shiqshiqiyyah, Surah 24:55, and the khalifa dispute | P0 | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.1.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.1.md) |
+| 6.1 | Khutbah ash-Shiqshiqiyyah, Surah 24:55, and the khalifa dispute | P0 | ✅ Answered | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.1.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.1.md) |
 | 6.2 | Video links (supporting media, not a standalone question) | — | N/A | — |
 | 6.3 | Cross-reference to §4.5 (not a standalone question) | — | N/A | — |
-| 6.4 | Verifying the nine-source Ghadeer Khumm reference bundle | P0 | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md) |
-| 6.5 | What do Nahjul Balagha Sermons 3 and 193 say about the succession? | P1 | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md) |
+| 6.4 | Verifying the nine-source Ghadeer Khumm reference bundle | P0 | ✅ Answered | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md) |
+| 6.5 | What do Nahjul Balagha Sermons 3 and 193 say about the succession? | P1 | ✅ Answered | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md) |
 | 6.6 | Does Bukhari Vol.8 Book 82 Hadith 817 obscure Ali's name with fulan? | P0 | ✅ Answered | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md) |
 | 6.7 | Did Umar claim divine sanction despite no divine appointment? | P1 | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md) |
 
@@ -24,7 +24,7 @@ Khumm. All wording is reproduced verbatim from the source transcript.
 ## 6.1 — What does Khutbah ash-Shiqshiqiyyah, and Ali's remarks on Umar's proposed expedition, reveal about the Shia/Sunni disagreement over the khalifa (linked to Surah 24:55)?
 
 **Priority:** P0 — Foundational to the Imamate claim itself
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.1.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.1.md)
 
 **Text (verbatim):**
@@ -70,7 +70,7 @@ Shia arguments for Imamate.
 ## 6.4 — The Ghadeer Khumm reference bundle: nine numbered citations (Sunni and Shia sources) on the "Man kuntu mawlahu" declaration and the Hadith of the Twelve Successors
 
 **Priority:** P0 — The single most-cited Shia proof-text bundle — verifying it properly is high value
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md)
 
 This numbered list was shared as a single reference bundle immediately
@@ -193,7 +193,7 @@ listing above.
 
 **Priority:** P1 — Primary Shia source material on Ali's own view of the
 succession, parallels the Khutbah ash-Shiqshiqiyyah material at §6.1
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md)
 
 **References and commentary (verbatim):**
