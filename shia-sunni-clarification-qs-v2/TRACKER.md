@@ -26,7 +26,7 @@ A single cross-chapter view of every research question in this project, ranked b
 | 6.6 | Imamate, Khilafah & Ghadeer Khumm | Does Sahih al-Bukhari Vol.8 Book 82 Hadith 817 obscure Ali's name with fulan? — *First concrete test case for Methodology Principle 3* | ✅ Answered | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md`](answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md) |
 | 8.2 | The Prophet's Final Days | Deathbed conduct: rejecting the Qirtas request, "is he even our prophet", Bukhari 7280 — *Substantially elaborates §4.2 with a new citation and extensive argument* | ✅ Answered | [`answers/08-the-prophets-final-days/8.2.md`](answers/08-the-prophets-final-days/8.2.md) |
 | 2.5 | Sunnah & Hadith Authenticity | "The righteous lie more in hadith than in anything else" -- Muslim's own introduction on pious-narrator unreliability — *Primary-source support, from inside the Sunni tradition, for Methodology Principles 1 and 2* | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.5.md`](answers/02-sunnah-and-hadith-authenticity/2.5.md) |
-| 1.5 | The Qur'an | Surah 'Abasa (80) -- who "frowned"? Does the traditional Sunni reading conflict with the Prophet's own Qur'anic character reference? — *A live classical exegesis dispute directly bearing on how the Prophet's character is read from the Qur'an itself* | ⬜ Not Started | [`answers/01-quran/1.5.md`](answers/01-quran/1.5.md) |
+| 1.5 | The Qur'an | Surah 'Abasa (80) -- who "frowned"? Does the traditional Sunni reading conflict with the Prophet's own Qur'anic character reference? — *A live classical exegesis dispute directly bearing on how the Prophet's character is read from the Qur'an itself* | ✅ Answered | [`answers/01-quran/1.5.md`](answers/01-quran/1.5.md) |
 
 ## P1 — High (major supporting pillar of the overall argument) — 16 questions
 
@@ -76,10 +76,8 @@ Priority is not a claim about which question matters more spiritually — it is 
 ## Recommended research order (P0, updated)
 
 1. **§2.1, §3.2, §1.1, §1.2, §5.1, §5.2, §6.6 — done,** all rebuilt or newly answered in the three-voice format (reconciling analysis / Shia position / Sunni position) agreed with the project owner 2026-08-28. See each dossier.
-2. **§4.2, §8.2, §4.7, §6.1, §6.4, §6.5, §4.8 — done,** all in the three-voice format. See each dossier.
-3. **§2.5 — redo in the three-voice format** (already Answered; Muslim's introduction on pious-narrator unreliability). Next up.
-4. **§1.5 — Surah 'Abasa (80) exegesis dispute.**
-5. **All P0 items then complete; P1/P2 continue from there** (16 P1, 8 P2 remaining across the full 39-question set).
+2. **§4.2, §8.2, §4.7, §6.1, §6.4, §6.5, §4.8, §2.5, §1.5 — done.** All 15 P0 items are now Answered in the three-voice format.
+3. **All P0 items complete as of 2026-08-29.** Continue with P1 (16 items), then P2 (8 items) in the same format. See the P1/P2 tables above for the full remaining list.
 
 ---
 
