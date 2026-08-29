@@ -15,6 +15,62 @@ here can be diffed against.
 
 ---
 
+## 2026-08-29: Confidence-grading rubric rewritten and every reference re-graded
+
+**What:** The project owner flagged an inconsistency in how confidence
+was graded (a reference tag rendering blue in the public document
+turned out to trace back to a real grading problem, not just a color
+bug) and asked whether the standing network restriction was real or
+self-imposed. Tested directly rather than re-asserted: `WebFetch`
+against `https://sunnah.com/bukhari:4704`, `https://sunnah.com/muslim:821a`,
+and `https://en.wikipedia.org/wiki/Sahih_al-Bukhari` all returned a
+structured `EGRESS_BLOCKED` error from the network proxy. Confirmed
+real, not assumed.
+
+`RESEARCHER-PROTOCOL.md` gained a new section, "What a confidence tag
+actually measures," replacing the old undifferentiated three-tier
+high/medium/low scale with four exact required phrasings: **High
+confidence** (directly verifiable, e.g. Qur'an text, or 2+ independent
+WebSearch queries converging on the same fact with no contradiction,
+upgraded from the old "medium" default since a primary-page read isn't
+available this session anyway), **Medium confidence** (single source,
+no contradiction), **Low confidence, citation not pinned** (claim is
+solid, exact hadith number/page/wording isn't pinned), and
+**Unverified, not independently checked** (not checked against any
+source this session at all, or the only source is contested). The
+public document colors the last two the same (red, "low or below" per
+the project owner's own color scheme: green = high, gold = medium, red
+= low and below) but now shows the exact label, not a generic "low
+confidence", when a reference tag is tapped.
+
+Every reference across all 39 dossiers (roughly 250 entries) was
+re-graded against this rubric in three parallel passes, each re-reading
+its own dossier's already-written Full Source Consultation Log as
+ground truth. Headline finding: several dossiers, mostly the earliest
+ones written (§1.5, §4.2, §4.7, §4.8, §5.1, §5.2, §6.1, §6.4, §6.5,
+§6.6, §8.2), turn out to have been written from background knowledge
+with **zero WebSearch queries actually logged**, so their prior
+Medium/High grades were overstated and are now honestly downgraded to
+Unverified. This includes all nine references in §6.4, the Ghadeer
+Khumm bundle previously flagged as this project's single highest-value
+verification target, now fully Unverified rather than a medium/low
+mix. Conversely, roughly 45 references across the project that showed
+genuine independent search convergence were upgraded to High, credit
+they weren't previously getting.
+
+**What did not change:** no citation's actual content, no `[R#]`
+numbering, no Answer prose. Only the confidence phrase inside each
+Reference entry. `TEMPLATE.md` updated to point future dossiers at the
+new rubric.
+
+**Public artifact:** rebuilt and republished with the corrected,
+consistent green/gold/red confidence colors (the earlier blue "high
+confidence" tint inside the Weighing-it and Sunni panels, a leftover
+from the old panel-accent scheme, is fixed) and the new specific
+per-reference labels wired into the tap-to-open popup.
+
+---
+
 ## 2026-08-29: All 39 questions answered; public artifact reference-popup bug fixed
 
 **What:** Completed the remaining 24 P1/P2 questions (§1.3, §1.4, §2.2
