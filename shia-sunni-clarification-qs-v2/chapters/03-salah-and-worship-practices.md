@@ -10,7 +10,7 @@ reproduced verbatim from the source transcript.
 
 | # | Question | Priority | Status | Answer & Documentation |
 |---|---|---|---|---|
-| 3.1 | Is the modern Salawat ("and his companions") a bid'ah? | P1 | ⬜ Not Started | [`answers/03-salah-and-worship-practices/3.1.md`](../answers/03-salah-and-worship-practices/3.1.md) |
+| 3.1 | Is the modern Salawat ("and his companions") a bid'ah? | P1 | ✅ Answered | [`answers/03-salah-and-worship-practices/3.1.md`](../answers/03-salah-and-worship-practices/3.1.md) |
 | 3.2 | Abu Hurairah's dog/donkey/woman hadith, and Aisha's reported rebuke | P0 | ✅ Answered | [`answers/03-salah-and-worship-practices/3.2.md`](../answers/03-salah-and-worship-practices/3.2.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
@@ -20,7 +20,7 @@ reproduced verbatim from the source transcript.
 ## 3.1 — Is the modern *Salawat* (including "and his companions") a *bid'ah*? Why do Ahl-e-Hadith also follow it?
 
 **Priority:** P1 — Ritual-practice bid'ah dispute
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/03-salah-and-worship-practices/3.1.md`](../answers/03-salah-and-worship-practices/3.1.md)
 
 **Question (verbatim):**

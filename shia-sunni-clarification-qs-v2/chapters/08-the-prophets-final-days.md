@@ -13,7 +13,7 @@ All wording is reproduced verbatim from the source transcript.
 
 | # | Question | Priority | Status | Answer & Documentation |
 |---|---|---|---|---|
-| 8.1 | Was the Prophet ﷺ martyred by a reactivated poison? | P1 | ⬜ Not Started | [`answers/08-the-prophets-final-days/8.1.md`](../answers/08-the-prophets-final-days/8.1.md) |
+| 8.1 | Was the Prophet ﷺ martyred by a reactivated poison? | P1 | ✅ Answered | [`answers/08-the-prophets-final-days/8.1.md`](../answers/08-the-prophets-final-days/8.1.md) |
 | 8.2 | Deathbed conduct: rejecting the Qirtas request, "is he even our prophet," Bukhari 7280 | P0 | ✅ Answered | [`answers/08-the-prophets-final-days/8.2.md`](../answers/08-the-prophets-final-days/8.2.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
@@ -23,7 +23,7 @@ All wording is reproduced verbatim from the source transcript.
 ## 8.1 — Was the Prophet ﷺ martyred by a reactivated poison (from Khaybar), consistent with a claimed pattern that his line dies only by battle or poisoning?
 
 **Priority:** P1 — A specific historical/medical claim requiring primary sourcing
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/08-the-prophets-final-days/8.1.md`](../answers/08-the-prophets-final-days/8.1.md)
 
 **Question and links (verbatim):**

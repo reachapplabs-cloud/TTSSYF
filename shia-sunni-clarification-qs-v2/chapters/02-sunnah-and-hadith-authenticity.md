@@ -16,7 +16,7 @@ transcript.
 | 2.3 | Cross-reference index (not a standalone question) | — | N/A | — |
 | 2.4 | Is everything in Bukhari a hadith of the Prophet? How was ~600,000 narrations narrowed to ~7,500? | P1 | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.4.md`](../answers/02-sunnah-and-hadith-authenticity/2.4.md) |
 | 2.5 | "The righteous lie more in hadith than in anything else" — Muslim's own introduction on pious-narrator unreliability | P0 | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.5.md`](../answers/02-sunnah-and-hadith-authenticity/2.5.md) |
-| 2.6 | Were the "Shiat-al-Ali" the first muhaddithin, and is "Ahl-e-Hadith" a Qur'anic term? | P2 | ⬜ Not Started | [`answers/02-sunnah-and-hadith-authenticity/2.6.md`](../answers/02-sunnah-and-hadith-authenticity/2.6.md) |
+| 2.6 | Were the "Shiat-al-Ali" the first muhaddithin, and is "Ahl-e-Hadith" a Qur'anic term? | P2 | ✅ Answered | [`answers/02-sunnah-and-hadith-authenticity/2.6.md`](../answers/02-sunnah-and-hadith-authenticity/2.6.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
 
@@ -396,7 +396,7 @@ owner asked in conversation, 2026-08-28 — not from either raw transcript.
 ## 2.6 — Were the "Shiat-al-Ali" the first muhaddithin with written narrations, and does the term "Ahl-e-Hadith" originate from Qur'anic text rather than being man-made like "Ahl as-Sunnah"?
 
 **Priority:** P2 — A specific etymological/historical claim, narrower scope, no source given for either half
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/02-sunnah-and-hadith-authenticity/2.6.md`](../answers/02-sunnah-and-hadith-authenticity/2.6.md)
 
 **Claim (verbatim):**

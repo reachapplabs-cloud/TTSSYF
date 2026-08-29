@@ -15,7 +15,7 @@ Khumm. All wording is reproduced verbatim from the source transcript.
 | 6.4 | Verifying the nine-source Ghadeer Khumm reference bundle | P0 | ✅ Answered | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.4.md) |
 | 6.5 | What do Nahjul Balagha Sermons 3 and 193 say about the succession? | P1 | ✅ Answered | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.5.md) |
 | 6.6 | Does Bukhari Vol.8 Book 82 Hadith 817 obscure Ali's name with fulan? | P0 | ✅ Answered | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.6.md) |
-| 6.7 | Did Umar claim divine sanction despite no divine appointment? | P1 | ⬜ Not Started | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md) |
+| 6.7 | Did Umar claim divine sanction despite no divine appointment? | P1 | ✅ Answered | [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
 
@@ -278,7 +278,7 @@ from the hadith.
 **Priority:** P1 — Direct claim about a specific Caliph's own words,
 bears on the "Khulafa Rashidun by divine decree" framing discussed
 across this chapter
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md`](../answers/06-imamate-khilafah-and-ghadeer-khumm/6.7.md)
 
 **Question (verbatim):**

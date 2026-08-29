@@ -14,8 +14,8 @@ against [`../source/raw-transcript.md`](../source/raw-transcript.md).
 |---|---|---|---|---|
 | 1.1 | Is it fair to accuse Shias of believing the Qur'an is incomplete? | P0 | ✅ Answered | [`answers/01-quran/1.1.md`](../answers/01-quran/1.1.md) |
 | 1.2 | Where is the hadith declaring the Qur'an complete? What of the missing 6 ahruf? | P0 | ✅ Answered | [`answers/01-quran/1.2.md`](../answers/01-quran/1.2.md) |
-| 1.3 | Could Qur'an 5:3 have been revealed at Arafah before Hajj rites were complete? | P1 | ⬜ Not Started | [`answers/01-quran/1.3.md`](../answers/01-quran/1.3.md) |
-| 1.4 | Why Iqra not Qul — what evidentiary standard should apply to oral hadith? | P1 | ⬜ Not Started | [`answers/01-quran/1.4.md`](../answers/01-quran/1.4.md) |
+| 1.3 | Could Qur'an 5:3 have been revealed at Arafah before Hajj rites were complete? | P1 | ✅ Answered | [`answers/01-quran/1.3.md`](../answers/01-quran/1.3.md) |
+| 1.4 | Why Iqra not Qul — what evidentiary standard should apply to oral hadith? | P1 | ✅ Answered | [`answers/01-quran/1.4.md`](../answers/01-quran/1.4.md) |
 | 1.5 | Surah 'Abasa (80) — who "frowned"? Does the traditional Sunni reading conflict with the Prophet's ﷺ own Qur'anic character reference? | P0 | ✅ Answered | [`answers/01-quran/1.5.md`](../answers/01-quran/1.5.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
@@ -394,7 +394,7 @@ rejects it?
 ## 1.3 — How could Qur'an 5:3 ("today I have perfected your religion") have been revealed at Arafah, if Hajj rites were not yet complete?
 
 **Priority:** P1 — Specific tafsir/timeline dispute
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/01-quran/1.3.md`](../answers/01-quran/1.3.md)
 
 **Question (verbatim):**
@@ -413,7 +413,7 @@ rejects it?
 ## 1.4 — Why *Iqra* and not *Qul*? And what standard of textual proof should apply, given oral hadith (even *sahih* by chain) can still be false?
 
 **Priority:** P1 — Sets the evidentiary standard used to weigh every other question here
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/01-quran/1.4.md`](../answers/01-quran/1.4.md)
 
 **Proof/reference (verbatim):**

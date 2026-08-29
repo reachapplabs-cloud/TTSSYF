@@ -9,19 +9,19 @@ them. All wording is reproduced verbatim from the source transcript.
 
 | # | Question | Priority | Status | Answer & Documentation |
 |---|---|---|---|---|
-| 4.1 | The Muawiyah forbidden-drink narration: sahih chain, false content? | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.1.md`](../answers/04-sahaba-companions-and-disputes/4.1.md) |
+| 4.1 | The Muawiyah forbidden-drink narration: sahih chain, false content? | P1 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.1.md`](../answers/04-sahaba-companions-and-disputes/4.1.md) |
 | 4.2 | Why did Umar block paper and pen from the Prophet ﷺ? (Hadith of Qirtas) | P0 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.2.md`](../answers/04-sahaba-companions-and-disputes/4.2.md) |
-| 4.3 | Why did Muawiyah order Ali cursed from the pulpit? | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.3.md`](../answers/04-sahaba-companions-and-disputes/4.3.md) |
-| 4.4 | Who narrated the ashara mubashara/Talha "walking martyr" hadith, and why the omission? | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.4.md`](../answers/04-sahaba-companions-and-disputes/4.4.md) |
-| 4.5 | The Haud al-Kawthar "ashabi" hadith and differentiated companion status | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.5.md`](../answers/04-sahaba-companions-and-disputes/4.5.md) |
-| 4.6 | Was Aisha a pawn behind the first fitnah? | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.6.md`](../answers/04-sahaba-companions-and-disputes/4.6.md) |
+| 4.3 | Why did Muawiyah order Ali cursed from the pulpit? | P1 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.3.md`](../answers/04-sahaba-companions-and-disputes/4.3.md) |
+| 4.4 | Who narrated the ashara mubashara/Talha "walking martyr" hadith, and why the omission? | P2 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.4.md`](../answers/04-sahaba-companions-and-disputes/4.4.md) |
+| 4.5 | The Haud al-Kawthar "ashabi" hadith and differentiated companion status | P1 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.5.md`](../answers/04-sahaba-companions-and-disputes/4.5.md) |
+| 4.6 | Was Aisha a pawn behind the first fitnah? | P2 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.6.md`](../answers/04-sahaba-companions-and-disputes/4.6.md) |
 | 4.7 | Which companion (identified: Talhah ibn Ubaydullah) was "already planning" after the Prophet's ﷺ death? | P0 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.7.md`](../answers/04-sahaba-companions-and-disputes/4.7.md) |
 | 4.8 | Does Qur'an 9:100 really grant blanket approval to all companions? | P0 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.8.md`](../answers/04-sahaba-companions-and-disputes/4.8.md) |
-| 4.9 | Marwan: a case study in uneven justice for companions | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.9.md`](../answers/04-sahaba-companions-and-disputes/4.9.md) |
-| 4.10 | Was Abu Bakr really first to accept Islam after Khadija? | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.10.md`](../answers/04-sahaba-companions-and-disputes/4.10.md) |
-| 4.11 | What do the names "Muawiya" and "Yazid" mean, and why were they given? | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.11.md`](../answers/04-sahaba-companions-and-disputes/4.11.md) |
-| 4.12 | Was Abu Sufyan the originator, and what is the Hind→Muawiya→Yazid→Sufyani lineage theory? | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.12.md`](../answers/04-sahaba-companions-and-disputes/4.12.md) |
-| 4.13 | Applying the money/power-trail heuristic: do pro-Umar narration chains trace to his family and appointees, and were classical muhaddithin incentivized? | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.13.md`](../answers/04-sahaba-companions-and-disputes/4.13.md) |
+| 4.9 | Marwan: a case study in uneven justice for companions | P2 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.9.md`](../answers/04-sahaba-companions-and-disputes/4.9.md) |
+| 4.10 | Was Abu Bakr really first to accept Islam after Khadija? | P1 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.10.md`](../answers/04-sahaba-companions-and-disputes/4.10.md) |
+| 4.11 | What do the names "Muawiya" and "Yazid" mean, and why were they given? | P2 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.11.md`](../answers/04-sahaba-companions-and-disputes/4.11.md) |
+| 4.12 | Was Abu Sufyan the originator, and what is the Hind→Muawiya→Yazid→Sufyani lineage theory? | P2 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.12.md`](../answers/04-sahaba-companions-and-disputes/4.12.md) |
+| 4.13 | Applying the money/power-trail heuristic: do pro-Umar narration chains trace to his family and appointees, and were classical muhaddithin incentivized? | P1 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.13.md`](../answers/04-sahaba-companions-and-disputes/4.13.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
 
@@ -30,7 +30,7 @@ them. All wording is reproduced verbatim from the source transcript.
 ## 4.1 — Is a narration graded *sahih* by chain still reliable if its content looks false? (The Muawiyah forbidden-drink narration)
 
 **Priority:** P1 — Hadith-grading-vs-content case study
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.1.md`](../answers/04-sahaba-companions-and-disputes/4.1.md)
 
 **Opening framing (verbatim):**
@@ -95,7 +95,7 @@ source batch.*
 ## 4.3 — Why did Muawiyah instruct governors/imams to curse Ali during Friday sermons?
 
 **Priority:** P1 — Direct companion-conduct allegation
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.3.md`](../answers/04-sahaba-companions-and-disputes/4.3.md)
 
 **Question (verbatim, from the same combined message list as §4.2):**
@@ -115,7 +115,7 @@ pulpit.*
 ## 4.4 — Who propagated the *ashara mubashara* hadith, and the one about Talha being a "walking martyr"? And why is it omitted from Bukhari and Muslim?
 
 **Priority:** P2 — Narrator-identification question, narrower scope
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.4.md`](../answers/04-sahaba-companions-and-disputes/4.4.md)
 
 **Question (verbatim):**
@@ -147,7 +147,7 @@ and **6:57:24 AM**, with image `image5.png`.
 ## 4.5 — Some of the Prophet's "*ashabi*" (companions) will be driven away at the Pool of Kawthar — how does this square with a blanket claim that all companions are just?
 
 **Priority:** P1 — Central eschatological argument on differentiated companion status
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.5.md`](../answers/04-sahaba-companions-and-disputes/4.5.md)
 
 **Question (verbatim):**
@@ -224,7 +224,7 @@ before the **25/08/2026, 6:00:30 AM** video messages), and the
 ## 4.6 — Was Aisha a pawn of someone else behind the first fitnah?
 
 **Priority:** P2 — Unproven theory as given; needs primary sourcing
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.6.md`](../answers/04-sahaba-companions-and-disputes/4.6.md)
 
 **Question (verbatim — reproduced in full at §4.4 above, since it was sent
@@ -446,7 +446,7 @@ and **2:58:09 PM**, with images `image7.png` and `image6.png`.
 ## 4.9 — Marwan: a case study in whether justice applies evenly to companions
 
 **Priority:** P2 — Single-companion case study
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.9.md`](../answers/04-sahaba-companions-and-disputes/4.9.md)
 
 **Framing statement (verbatim, immediately following the tafsir images
@@ -515,7 +515,7 @@ with images `image9.png` and `image8.png`.
 ## 4.10 — Is there a reliable narrative that Abu Bakr was the first to accept Islam after Khadija? What proves this, given multiple reports say otherwise?
 
 **Priority:** P1 — Contested historical-precedence claim
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.10.md`](../answers/04-sahaba-companions-and-disputes/4.10.md)
 
 **Question (verbatim):**
@@ -538,7 +538,7 @@ question was independently restated in the second source batch —
 
 **Priority:** P2 — Etymology/naming question, narrower scope but tied to
 the Muawiyah-narration case study at §4.1
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.11.md`](../answers/04-sahaba-companions-and-disputes/4.11.md)
 
 **Question and commentary (verbatim, from the second source batch):**
@@ -577,7 +577,7 @@ as an open research item, not a settled translation.
 
 **Priority:** P2 — Dynastic-lineage theory, tied to §4.1/§4.11 but a
 distinct claim
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.12.md`](../answers/04-sahaba-companions-and-disputes/4.12.md)
 
 **Question and commentary (verbatim):**
@@ -627,7 +627,7 @@ verified.
 ## 4.13 — Applying the money/power-trail heuristic: do pro-Umar narration chains trace to his family and appointees, and were classical muhaddithin financially incentivized to "whitewash" hadith?
 
 **Priority:** P1 — Direct application of `METHODOLOGY.md` Principle 5; a serious claim that needs careful, non-uncritical treatment
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.13.md`](../answers/04-sahaba-companions-and-disputes/4.13.md)
 
 **Claims (verbatim, from three separate messages, presented together

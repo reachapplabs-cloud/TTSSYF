@@ -11,11 +11,11 @@ wording is reproduced verbatim from the source transcript.
 |---|---|---|---|---|
 | 5.1 | Does Sahih Muslim 2424 try to exclude the Prophet's wives from Ahl al-Bayt? | P0 | ✅ Answered | [`answers/05-ahlul-bayt-fatima-and-fadak/5.1.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.1.md) |
 | 5.2 | Was Fatima denied inheritance, and did she stay angry at Abu Bakr? | P0 | ✅ Answered | [`answers/05-ahlul-bayt-fatima-and-fadak/5.2.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.2.md) |
-| 5.3 | Fadak: comparing a Sunni sheikh's account against Fatima's own sermon | P1 | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.3.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.3.md) |
-| 5.4 | Imam Ali's sermon at Fatima's grave: authenticity | P2 | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.4.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.4.md) |
-| 5.5 | The book accusing Umar of Fatima's death, narrated via a transmitter Sahih Muslim calls a liar | P2 | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.5.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.5.md) |
-| 5.6 | What is the "Attacking the House of Fatimah" incident, distinct from Fadak? | P1 | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.6.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.6.md) |
-| 5.7 | If Fadak was stolen, does the companions-justice defense still apply to those who justified it? | P1 | ⬜ Not Started | [`answers/05-ahlul-bayt-fatima-and-fadak/5.7.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.7.md) |
+| 5.3 | Fadak: comparing a Sunni sheikh's account against Fatima's own sermon | P1 | ✅ Answered | [`answers/05-ahlul-bayt-fatima-and-fadak/5.3.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.3.md) |
+| 5.4 | Imam Ali's sermon at Fatima's grave: authenticity | P2 | ✅ Answered | [`answers/05-ahlul-bayt-fatima-and-fadak/5.4.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.4.md) |
+| 5.5 | The book accusing Umar of Fatima's death, narrated via a transmitter Sahih Muslim calls a liar | P2 | ✅ Answered | [`answers/05-ahlul-bayt-fatima-and-fadak/5.5.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.5.md) |
+| 5.6 | What is the "Attacking the House of Fatimah" incident, distinct from Fadak? | P1 | ✅ Answered | [`answers/05-ahlul-bayt-fatima-and-fadak/5.6.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.6.md) |
+| 5.7 | If Fadak was stolen, does the companions-justice defense still apply to those who justified it? | P1 | ✅ Answered | [`answers/05-ahlul-bayt-fatima-and-fadak/5.7.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.7.md) |
 
 *Priority scale: P0 = foundational/highest value, P1 = high, P2 = medium, P3 = lower/supplementary. See [`../TRACKER.md`](../TRACKER.md) for the cross-chapter view and rationale, and [`../RESEARCHER-PROTOCOL.md`](../RESEARCHER-PROTOCOL.md) for how to work a question from ⬜ Not Started through to ✅ Verified.*
 
@@ -56,7 +56,7 @@ wording is reproduced verbatim from the source transcript.
 ## 5.3 — Comparing the Fadak incident as recorded by a named Sunni sheikh against Fatima's own sermon in Masjid al-Nabawi: which account is authentic?
 
 **Priority:** P1 — Comparative authenticity question
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/05-ahlul-bayt-fatima-and-fadak/5.3.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.3.md)
 
 **Question (verbatim):**
@@ -79,7 +79,7 @@ wording is reproduced verbatim from the source transcript.
 ## 5.4 — Imam Ali's (AS) sermon at the grave of Fatima (RA): the full text, and the question of its authenticity
 
 **Priority:** P2 — Devotional text, authenticity check
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/05-ahlul-bayt-fatima-and-fadak/5.4.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.4.md)
 
 **Framing note that immediately preceded these images (verbatim, part of
@@ -162,7 +162,7 @@ timestamped **26/08/2026, 9:01:45 PM**.
 ## 5.5 — A book accusing Umar of Fatima's death, narrated through a transmitter Sahih Muslim calls a liar
 
 **Priority:** P2 — Narrow source-criticism question
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/05-ahlul-bayt-fatima-and-fadak/5.5.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.5.md)
 
 **Reference (verbatim, appears immediately after the Qur'an-completeness
@@ -183,7 +183,7 @@ message timestamped **25/08/2026, 12:13:37 AM** (see
 
 **Priority:** P1 — Distinct from §5.2's inheritance dispute; a separate,
 serious allegation about physical treatment of Fatima's household
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/05-ahlul-bayt-fatima-and-fadak/5.6.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.6.md)
 
 **Reference (verbatim):**
@@ -208,7 +208,7 @@ content behind this link, per `METHODOLOGY.md` Principle 4.
 
 **Priority:** P1 — A conditional logical argument connecting an existing
 citation (§4.8's Bukhari 6787) to a new one, capped with a Qur'anic verse
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/05-ahlul-bayt-fatima-and-fadak/5.7.md`](../answers/05-ahlul-bayt-fatima-and-fadak/5.7.md)
 
 **Question and argument (verbatim):**

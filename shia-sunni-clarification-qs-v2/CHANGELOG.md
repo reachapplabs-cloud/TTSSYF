@@ -15,6 +15,56 @@ here can be diffed against.
 
 ---
 
+## 2026-08-29: All 39 questions answered; public artifact reference-popup bug fixed
+
+**What:** Completed the remaining 24 P1/P2 questions (§1.3, §1.4, §2.2
+(rebuilt), §2.4 (rebuilt), §2.6, §3.1, §4.1, §4.3, §4.4, §4.5, §4.6,
+§4.9, §4.10, §4.11, §4.12, §4.13, §5.3, §5.4, §5.5, §5.6, §5.7, §6.7,
+§8.1) in the three-voice format, using four parallel research passes
+each briefed with the same methodology, template, and citation
+standard already established for the 15 P0 items. Every dossier's
+Status line and Priority now match `TRACKER.md`; `TRACKER.md`,
+`MASTER-TABLE.md`, and `MASTER-TABLE.csv` regenerated, every chapter
+file's Chapter Progress table and inline `**Status:**` line synced.
+**All 39 questions in this project are now ✅ Answered.** None are yet
+✅✅ Verified, unchanged from every prior entry's standing caveat: this
+session cannot reach sunnah.com, al-islam.org, wikishia.net, or
+islamic-awareness.org directly, so every dossier is built from
+triangulated search results with an honest confidence tag, not a
+primary page read in full.
+
+**Two citation issues in the original source material were surfaced
+during this pass**, per `RESEARCHER-PROTOCOL.md`'s error-correction
+rule, flagged in the relevant dossier rather than silently edited into
+the verbatim chapter text: (1) §5.7's chapter text cites "Bukhari
+6787" for the inheritance-restriction hadith ("we prophets do not
+leave inheritance"); that hadith number is actually the unrelated
+Makhzumiyyah theft report ("if Fatima daughter of Muhammad stole, I
+would cut her hand"), the inheritance hadith is Bukhari 6730. (2)
+§4.1's chapter text groups a `sunnah.com/abudawud:4646` link with the
+Muawiyah forbidden-drink narration; every independent search this
+session ran returns that number as an unrelated hadith (Safinah's "30
+years then kingship" report). Both are flagged as open items for the
+project owner to re-check against the original forwarded material if
+it can be reopened, not resolved unilaterally by this project.
+
+**Bug found and fixed in the public "Three Voices" artifact:** every
+reference tag (`[R1]`, `[R2]`, ...) was showing "Reference not found"
+when clicked. Root cause: the build script's reference-lookup regex
+still expected the original em-dash-separated References format from
+before the project-wide em-dash cleanup logged in the entry below,
+which rewrote every dossier's References section to a colon-separated
+format (`- **R1**: text`) but didn't touch the separate build tooling
+that renders the public document, so every lookup silently failed. Fixed, verified
+against all 39 dossiers (zero "Reference not found" occurrences in the
+rebuilt output), and republished. The public artifact now shows all 39
+questions (previously 16), each panel color-coded (the reasoning panel
+blue, Shia position white, Sunni position black), with a working
+"what would make this Verified" popup and reader comment thread
+carried over from the prior milestone.
+
+---
+
 ## 2026-08-29: All 15 P0 questions answered; project-wide em-dash cleanup
 
 **What:** Completed the full P0 (foundational) research list in the
