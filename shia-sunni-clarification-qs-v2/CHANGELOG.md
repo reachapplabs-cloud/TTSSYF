@@ -15,7 +15,30 @@ here can be diffed against.
 
 ---
 
-## 2026-08-28: Mr. Arif edition, no em dashes, and one more internal reference removed
+## 2026-08-29: Inline `[R#]` reference tags added to every dossier
+
+**What:** Project owner asked that no claim in an answer's prose go
+uncited, even where an abbreviation or an appendix-style tag is all
+that's practical. `RESEARCHER-PROTOCOL.md` now codifies this as a
+requirement for reaching ✅ Answered status: every dossier's "Supporting
+Documentation & Proofs" section is renamed **References**, numbered
+`R1`, `R2`, ... in citation order, and every factual claim in the
+Answer's prose (Weighing it / Shia position / Sunni position) carries an
+inline `[R#]` tag pointing at the matching entry, repeated wherever the
+same reference is invoked again. `answers/TEMPLATE.md` updated to
+scaffold this for every future dossier.
+
+Retrofitted into all 9 dossiers answered so far (§1.1, §1.2, §2.1, §3.2,
+§4.2, §5.1, §5.2, §6.6, §8.2), no wording changed, only the citation
+scaffolding. The published three-voice artifact was rebuilt to match:
+inline `[R#]` tags render as small tap-to-jump chips, and each question
+carries a collapsible References panel with confidence ratings.
+
+**Why:** a citation list sitting at the bottom of a long dossier,
+disconnected from which sentence it actually supports, isn't fully
+traceable. Tying every claim to a specific numbered reference closes
+that gap.
+
 
 **What:** Two more fixes to the Mr. Arif edition, on top of the neutral
 framing fix logged just below. First, every em dash in the document was

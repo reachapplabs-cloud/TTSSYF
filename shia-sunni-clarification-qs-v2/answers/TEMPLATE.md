@@ -20,21 +20,30 @@
 > intentionally does not duplicate that text, to avoid any risk of it
 > drifting from the source of truth — open the chapter section above
 > before starting research here. See [`../../RESEARCHER-PROTOCOL.md`](../../RESEARCHER-PROTOCOL.md)
-> for how to fill in every section below.
+> for how to fill in every section below, in particular the inline
+> `[R#]` reference-tag rule.
 
 ## Answer
 
 *(Empty. Do not fill in until the Full Source Consultation Log below is
 complete — see `RESEARCHER-PROTOCOL.md`. An answer written before the log
 is complete is exactly the "take it at face value" mistake this project
-exists to avoid.)*
+exists to avoid. Structure as three sections — "Weighing it" (a
+reconciling analysis using aql and the evidence), "The Shia position,
+after this research", and "The Sunni / Ahl-e-Hadith position, after this
+research" — per the format agreed 2026-08-28. Every claim in all three
+sections needs an inline `[R#]` tag pointing at an entry in References
+below; nothing goes uncited by omission.)*
 
-## Supporting Documentation & Proofs
+## References
 
-*(Empty. Every citation here needs a precise locator — collection,
-book/chapter, volume, page or hadith number — and a direct link where one
-exists. No citation should be entered here without first appearing in the
-Source Consultation Log below.)*
+*(Empty. Number every entry `R1`, `R2`, ... in citation order. Every
+citation here needs a precise locator — collection, book/chapter,
+volume, page or hadith number — and a direct link where one exists, plus
+a confidence tag: **high** / **medium** / **low confidence or lead**.
+No citation should be entered here without first appearing in the
+Source Consultation Log below, and every `[R#]` tag used in the Answer
+above must resolve to an entry here.)*
 
 ## Full Source Consultation Log
 

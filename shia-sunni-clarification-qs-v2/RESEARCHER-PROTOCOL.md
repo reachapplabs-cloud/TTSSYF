@@ -86,6 +86,37 @@ cannot pin the exact reference, say so explicitly and mark the item
 own additions are held to the same standard it applies to the sources it's
 critiquing.
 
+## No claim in the answer text goes uncited — inline `[R#]` tags
+
+**Added 2026-08-29, at the project owner's explicit instruction: a
+reference list at the bottom of a dossier is not enough on its own — the
+prose of the Answer itself must show, sentence by sentence, which
+reference backs which claim.** A confidence-tagged list that a reader
+has to manually match back to the paragraph above it is not fully
+traceable; an abbreviation is fine, a full citation inline every time is
+not required, but every factual claim needs *some* marker tying it to
+its source.
+
+The convention every dossier under `answers/` now follows:
+
+1. Number every entry in **References** (renamed from "Supporting
+   Documentation & Proofs") `R1`, `R2`, `R3`, ... in the order it's first
+   cited.
+2. In the Answer's prose (Weighing it / the Shia position / the Sunni
+   position, or whatever section structure the question uses), append
+   the matching `[R#]` tag immediately after each claim that reference
+   supports — including when the same reference is invoked again in a
+   later paragraph or a different panel.
+3. A claim with no reference to attach is a sign either that it needs
+   one (go find it, or mark the gap explicitly) or that it's this
+   dossier's own reasoning/inference rather than a sourced fact, in
+   which case say so in words ("this dossier's own inference," "an
+   interpretive step, not a citation") rather than leaving it looking
+   uncited by omission.
+4. `[R#]` tags may repeat across the Weighing it / Shia / Sunni sections
+   freely — the same reference often supports more than one section's
+   argument, and re-tagging it each time is expected, not redundant.
+
 ## State your methodology explicitly
 
 Every dossier's **Methodology Applied** section must say, in plain
@@ -119,7 +150,7 @@ If a question doesn't cleanly map to one of the three principles, say why
 |---|---|---|
 | ⬜ Not Started | Default state | — |
 | 🟨 In Progress | Actively being researched | Researcher name/date entered |
-| ✅ Answered | Answer + documentation written | Full Source Consultation Log complete per the rules above; Methodology Applied filled in |
+| ✅ Answered | Answer + documentation written | Full Source Consultation Log complete per the rules above; Methodology Applied filled in; every claim in the Answer's prose carries an inline `[R#]` tag per the rule above |
 | ✅✅ Verified | A second pass has independently checked the sourcing | A different researcher (or the same researcher after a genuine cooling-off re-read) has re-checked every citation in Supporting Documentation against its primary source and confirmed the log is complete |
 
 Do not mark a question ✅ Answered with an empty or partial Source
