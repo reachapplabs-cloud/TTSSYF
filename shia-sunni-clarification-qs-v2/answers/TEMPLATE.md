@@ -40,7 +40,10 @@ below; nothing goes uncited by omission.)*
 *(Empty. Number every entry `R1`, `R2`, ... in citation order. Every
 citation here needs a precise locator, collection, book/chapter,
 volume, page or hadith number, and a direct link where one exists, plus
-a confidence tag: **high** / **medium** / **low confidence or lead**.
+a confidence tag using exactly one of the four phrasings in
+`RESEARCHER-PROTOCOL.md`'s "What a confidence tag actually measures":
+**High confidence.** / **Medium confidence.** / **Low confidence,
+citation not pinned.** / **Unverified, not independently checked.**
 No citation should be entered here without first appearing in the
 Source Consultation Log below, and every `[R#]` tag used in the Answer
 above must resolve to an entry here.)*

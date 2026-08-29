@@ -117,6 +117,56 @@ The convention every dossier under `answers/` now follows:
    freely — the same reference often supports more than one section's
    argument, and re-tagging it each time is expected, not redundant.
 
+## What a confidence tag actually measures
+
+**Added 2026-08-29, after the project owner flagged a grading
+inconsistency and this project confirmed, by directly testing it with
+`WebFetch`, that its network access to sunnah.com, al-islam.org,
+wikishia.net, and even plain Wikipedia is genuinely blocked at the
+network egress proxy level (`EGRESS_BLOCKED`), not a self-imposed or
+imagined restriction.** A confidence tag grades how sure this project is
+that *this specific citation* (an exact hadith number, page, or wording)
+is accurate, not how strong or important the claim is. Use exactly one
+of these four phrasings to open a Reference entry's confidence sentence,
+so the wording stays machine-parseable for the public document as well
+as human-readable:
+
+- **`High confidence.`** Either (a) directly verifiable without needing
+  a blocked primary database — the Qur'an's own text, or a claim already
+  established in this project's own prior research — or (b) two or more
+  independent `WebSearch` queries converged on the same specific fact or
+  number with no contradicting result found anywhere. Convergent
+  independent search corroboration is real evidence, not a consolation
+  grade below what a primary-page read would give — a primary-page read
+  isn't available this session, so this is the strongest evidence this
+  project can actually produce, and should be graded like it.
+- **`Medium confidence.`** The substance of the claim is supported by
+  search results, but either only one source was found, or independent
+  results showed minor variation (e.g. differing hadith-count figures)
+  without contradicting the core claim.
+- **`Low confidence, citation not pinned.`** The underlying claim, event,
+  or report is solidly attested, but a specific citation detail (exact
+  hadith number, page, wording) could not be pinned to one unambiguous
+  reference this session, often because a source repeats the same
+  material under more than one number or placement. This is a
+  bibliographic gap, not a credibility problem with the underlying fact
+  — don't undersell a well-attested claim just because the modern
+  numbering is fuzzy.
+- **`Unverified, not independently checked.`** This claim has not been
+  checked against any source this session at all, or the only source
+  found is itself contested, single-chain, or otherwise shaky. This is a
+  real evidentiary gap in the argument, and reads meaningfully weaker
+  than the citation-precision case above even though the public document
+  colors both the same (red, "low or below" — see below).
+
+The public artifact colors confidence in exactly three tiers (green =
+high, gold = medium, red = everything at or below low confidence), so
+`Low confidence, citation not pinned` and `Unverified, not independently
+checked` render as the same color by design. The distinction is carried
+in the label text itself, which is why the exact phrasing above matters:
+a reader who taps the reference should immediately see which kind of gap
+they're looking at, not just a generic "low confidence."
+
 ## State your methodology explicitly
 
 Every dossier's **Methodology Applied** section must say, in plain
