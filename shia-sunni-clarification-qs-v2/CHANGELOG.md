@@ -15,6 +15,37 @@ here can be diffed against.
 
 ---
 
+## 2026-08-29: All 15 P0 questions answered; project-wide em-dash cleanup
+
+**What:** Completed the full P0 (foundational) research list in the
+three-voice format: §1.1, §1.2, §1.5, §2.1, §2.5, §3.2, §4.2, §4.7,
+§4.8, §5.1, §5.2, §6.1, §6.4, §6.5 (P1, done alongside its P0
+neighbors in the same cluster), §6.6, and §8.2. Every one carries
+inline `[R#]` reference tags with confidence ratings. TRACKER.md,
+MASTER-TABLE.md/.csv, and every touched chapter file synced to
+`✅ Answered`.
+
+Also found and fixed a real regression while rebuilding the public
+artifact for this milestone: the `### Weighing it — aql, evidence &
+sources` heading (and similar em-dash use in Priority/Status lines and
+Reference/Log bullets) had crept back into every dossier written this
+session, despite the project owner's earlier "no em dashes" instruction
+having already been applied once, to the Mr. Arif document specifically.
+That instruction was a standing one. Fixed across all 39 answer
+dossiers and `answers/TEMPLATE.md`. **Not yet extended to this
+project's own top-level files** (README.md, this file, METHODOLOGY.md,
+TRACKER.md, and others still use em dashes in their own prose) — noted
+here rather than silently left undone, since those are internal process
+documentation rather than reader-facing Q&A content, but the instruction
+was never scoped that narrowly and this is flagged as a known
+remaining gap.
+
+The public three-voice artifact was rebuilt to include all 16 answered
+questions (previously showed 9), with the em-dash fixes applied and
+verified before republishing.
+
+---
+
 ## 2026-08-29: Inline `[R#]` reference tags added to every dossier
 
 **What:** Project owner asked that no claim in an answer's prose go
