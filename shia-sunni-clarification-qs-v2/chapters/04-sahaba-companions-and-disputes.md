@@ -16,7 +16,7 @@ them. All wording is reproduced verbatim from the source transcript.
 | 4.5 | The Haud al-Kawthar "ashabi" hadith and differentiated companion status | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.5.md`](../answers/04-sahaba-companions-and-disputes/4.5.md) |
 | 4.6 | Was Aisha a pawn behind the first fitnah? | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.6.md`](../answers/04-sahaba-companions-and-disputes/4.6.md) |
 | 4.7 | Which companion (identified: Talhah ibn Ubaydullah) was "already planning" after the Prophet's ﷺ death? | P0 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.7.md`](../answers/04-sahaba-companions-and-disputes/4.7.md) |
-| 4.8 | Does Qur'an 9:100 really grant blanket approval to all companions? | P0 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.8.md`](../answers/04-sahaba-companions-and-disputes/4.8.md) |
+| 4.8 | Does Qur'an 9:100 really grant blanket approval to all companions? | P0 | ✅ Answered | [`answers/04-sahaba-companions-and-disputes/4.8.md`](../answers/04-sahaba-companions-and-disputes/4.8.md) |
 | 4.9 | Marwan: a case study in uneven justice for companions | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.9.md`](../answers/04-sahaba-companions-and-disputes/4.9.md) |
 | 4.10 | Was Abu Bakr really first to accept Islam after Khadija? | P1 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.10.md`](../answers/04-sahaba-companions-and-disputes/4.10.md) |
 | 4.11 | What do the names "Muawiya" and "Yazid" mean, and why were they given? | P2 | ⬜ Not Started | [`answers/04-sahaba-companions-and-disputes/4.11.md`](../answers/04-sahaba-companions-and-disputes/4.11.md) |
@@ -375,7 +375,7 @@ not part of either raw transcript.
 ## 4.8 — If Qur'an 9:100 grants blanket approval to "the Companions," why do Sunni and Shia tafsir differ on who it actually covers — and does "justice" apply evenly to all companions regardless of wrongdoing?
 
 **Priority:** P0 — Foundational to the whole "blanket justice for companions" framework
-**Status:** ⬜ Not Started
+**Status:** ✅ Answered
 **Answer & documentation:** [`answers/04-sahaba-companions-and-disputes/4.8.md`](../answers/04-sahaba-companions-and-disputes/4.8.md)
 
 **Question (verbatim):**
